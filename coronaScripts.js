@@ -65,10 +65,26 @@ function screenCheckerCorona() {
   } else if (hash == "#RoyalAirMaroc") {
     coronaWidthCheck('Regras-de-cias', 'coronaRegrasOrigin', 'coronaClonedRegrasContent', 'coronaRegrasContent', 'Tabs3');
     coronaModalVNInitial('RoyalAirMaroc');
-  } else {
+  }
+  else {
     window.location.hash = "#Informacoes-importantes"
+    document.getElementById("Brasileiros-no-exterior").style.display = "none";
+    document.getElementById("Regras-de-cias").style.display = "none";
+    document.getElementById("Prioridade-2").style.display = "none";
+    document.getElementById("Prioridade-3").style.display = "none";
+    document.getElementById("AirFrance").style.display = "none";
+    document.getElementById("Ethiopian").style.display = "none";
+    document.getElementById("KLM").style.display = "none";
+    document.getElementById("Norwegian").style.display = "none";
+    document.getElementById("Paranair").style.display = "none";
+    document.getElementById("Qantas").style.display = "none";
+    document.getElementById("Qatar").style.display = "none";
+    document.getElementById("RoyalAirMaroc").style.display = "none";
+    document.getElementById("Informacoes-importantes").style.display = "block";
+    openCoronaTabsonLoad("coronaAtendimentoContent", "Tabs1");
   }
 };
+
 
 function openCoronaTabsonLoad(coronaContentType, tabNumber) {
   var i;

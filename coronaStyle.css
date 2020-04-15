@@ -431,7 +431,8 @@ padding:22px;
   margin-bottom:8px;
 }
 
-#coronaPage .coronaModalContent article h4{
+
+#coronaPage .coronaModalContent article h4, #coronaPage .coronaTabsContents h4{ 
   font-size:16px;
   font-family:ProximaNova-Semibold,ProximaNovaA-Semibold,ProximaNovaS-Semibold;
   margin-bottom:0px;

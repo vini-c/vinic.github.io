@@ -11,6 +11,16 @@
 </head>
 
 <body>
+
+  <!-- Use esses textos no find/replace para alterar as sessões:
+
+  Conteudo de Atendimento
+  Conteudo de Brasileiros no exterior
+  Conteudo de Cias
+  Conteudo de Reembolso
+  Modais de Prioridade
+  Modais de Cia
+-->
   <div id="coronaPage">
     <div id="Informacoes-importantes" class="coronaFade">
       <section id="coronaTop">
@@ -18,7 +28,7 @@
           <div class="coronaBreadcrumb coronaFullWidth">
             <ul>
               <li><a href="https://www.viajanet.com.br">ViajaNet</a></li>
-              <li><a href="#">
+              <li><a href="#informacoes-importantes">
                   <svg width="8px" height="16px" viewBox="0 0 10 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g id="arrowLeftCorona" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                       <g id="ArrowCorona" transform="translate(-451.000000, -394.000000)" fill="#FFFFFF" fill-rule="nonzero">
@@ -141,6 +151,7 @@
             <div class="coronaTabsResults">
               <div class="coronaTabsContents coronaFade" id="coronaAtendimentoContent">
                 <section id="coronaAtendimentoOrigin">
+                   <!-- Conteudo de atendimento -->
                   <h2>Atendimento</h2>
                   <p>Com o intuito de melhor atender os nossos clientes, criamos diferentes níveis de prioridade de atendimento, descritos abaixo:</p>
                   <p><small>Lembramos que não é necessário fazer uma nova solicitação no intuito de acelerar o atendimento. Solicitações duplicadas fazem com que o tempo de resposta se torne maior do que o necessário, contamos com a sua
@@ -188,6 +199,8 @@
               </div>
               <div class="coronaTabsContents coronaFade" style="display:none" id="coronaBrasileirosContent">
                 <section id="coronaBrasileirosOrigin">
+                  <!-- Conteudo de Brasileiros no Exterior -->
+
                   <h2>Brasileiros no Exterior</h2>
                   <p>Turistas brasileiros em viagem no exterior, e que não estão conseguindo retornar ao Brasil devido ao cancelamento de seus voos em países com restrição para o deslocamento aéreo:</p>
                   <p>O governo brasileiro está fazendo um esforço de coordenação para identificá-los e viabilizar o retorno ao Brasil. A Agência Nacional de Aviação Civil (ANAC) disponibiliza um formulário online para receber suas informações.
@@ -196,6 +209,8 @@
               </div>
               <div class="coronaTabsContents coronaFade" style="display:none" id="coronaRegrasContent">
                 <section id="coronaRegrasOrigin">
+                  <!-- Conteudo de Cias -->
+
                   <h2>Regras de companhias aéreas</h2>
                   <p>Para mantê-lo atualizado, selecione a companhia aérea e confira as condições e regras.</p>
                   <ul class="coronaAirCias">
@@ -1069,12 +1084,21 @@
               </div>
               <div class="coronaTabsContents coronaFade" style="display:none" id="coronaReembolsoContent">
                 <section id="coronaReembolsoOrigin">
+                  <!-- Conteudo de Reembolso -->
                   <h2>Reembolso</h2>
-                  <p>Caso queira optar pelo cancelamento com reembolso, este ocorrerá dentro das regras do bilhete, ou seja, com eventual multa da companhia aérea, e somente será efetivado após <strong>12 meses do pedido de cancelamento.</strong></p>
-                  <p><small>Esse novo regramento foi publicado pela Presidência da República do Brasil, através da Medida Provisória nº 925, em 18 de março de 2020, como uma forma para tentar conter os impactos da crise causada pela pandemia do
-                      Coronavírus na indústria do turismo. Caso opte pelo crédito no valor do bilhete, conforme esta mesma Medida Provisória, não haverá cobrança de penalidade.</small>
+                  <h4>Gostaria de cancelar minha compra devido à pandemia do Coronavírus, pagarei alguma multa?</h4>
+                    <p>Esse novo regramento foi publicado pela Presidência da República do Brasil, através da Medida Provisória nº 925, em 18 de março de 2020, como uma forma para tentar conter os impactos da crise causada pela pandemia do
+                      Coronavírus na indústria do turismo. Caso opte pelo crédito no valor do bilhete, conforme esta mesma Medida Provisória, não haverá cobrança de penalidade.
                     <br>
                     <a href="http://www.planalto.gov.br/ccivil_03/_Ato2019-2022/2020/Mpv/mpv925.htm" target="_blank">Veja aqui o documento na íntegra</a></p>
+                    <p><small>Como no cancelamento com crédito não há nenhuma multa ou penalidade das cias aéreas, somente eventual diferença tarifária na remarcação, indicamos essa opção como preferencial, mas a escolha será sempre do nosso cliente.</small></p>
+                    <p>Para consultar as políticas de cancelamento das companhias aéreas, <span class="mobileCoronaInline"><a onclick="changeCoronaPage('Regras-de-cias','coronaRegrasOrigin','coronaClonedRegrasContent');coronaTopRules()">acesse o link</a></span><span class="desktopCoronaInline"><a onclick="openCoronaTabs(event,'coronaRegrasContent','Regras-de-cias');coronaTopRules()">acesse o link</a></span>.
+                    </p>
+                  <br>
+                  <h4>Decidi que prefiro o reembolso, mesmo com multa e prazo de pagamento de 1 ano. Como solicito o reembolso?</h4>
+                  <p>Caso queira optar pelo cancelamento com reembolso, <a href="https://www.viajanet.com.br/atendimento/enviar-email" target="_blank">solicite aqui.</a></p>
+                  <p><small>*Esclarecemos que a Medida Provisória nº 925, de 18 de março de 2020, foi publicada pelo Governo do Brasil como uma forma de conter os impactos da crise causada pela pandemia do Coronavírus na indústria do turismo. Caso opte pelo crédito no valor do bilhete, conforme esta mesma Medida Provisória, não haverá cobrança de penalidad</small></p>
+
                 </section>
               </div>
             </div>
@@ -1105,7 +1129,8 @@
                       </svg>
                     </span>
                   </button></li>
-                <li class="coronaTabs"><button class="coronaTabsCTA" onclick="changeCoronaPage('Brasileiros-no-exterior','coronaBrasileirosOrigin','coronaClonedBrasileirosContent')">Brasileiros no exterior<span class="coronaArrowIcon">
+                <li class="coronaTabs">
+                  <button class="coronaTabsCTA" onclick="changeCoronaPage('Brasileiros-no-exterior','coronaBrasileirosOrigin','coronaClonedBrasileirosContent')">Brasileiros no exterior<span class="coronaArrowIcon">
                       <svg width="10px" height="16px" viewBox="0 0 10 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <g id="arrowLeftCorona" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                           <g id="ArrowCorona" transform="translate(-451.000000, -394.000000)" fill="#FFFFFF" fill-rule="nonzero">
@@ -1124,7 +1149,8 @@
                         </g>
                       </svg>
                     </span></button></li>
-                <li class="coronaTabs"><button class="coronaTabsCTA" onclick="changeCoronaPage('Regras-de-cias','coronaRegrasOrigin','coronaClonedRegrasContent');coronaTopRules()">Regras de cias aéreas<span class="coronaArrowIcon">
+                <li class="coronaTabs">
+                  <button class="coronaTabsCTA" onclick="changeCoronaPage('Regras-de-cias','coronaRegrasOrigin','coronaClonedRegrasContent');coronaTopRules()">Regras de cias aéreas<span class="coronaArrowIcon">
                       <svg width="10px" height="16px" viewBox="0 0 10 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <g id="arrowLeftCorona" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                           <g id="ArrowCorona" transform="translate(-451.000000, -394.000000)" fill="#FFFFFF" fill-rule="nonzero">
@@ -1143,7 +1169,8 @@
                         </g>
                       </svg>
                     </span></button></li>
-                <li class="coronaTabs"><button class="coronaTabsCTA" onclick="changeCoronaPage('Reembolso','coronaReembolsoOrigin','coronaClonedReembolsoContent')">Reembolso<span class="coronaArrowIcon">
+                <li class="coronaTabs">
+                  <button class="coronaTabsCTA" onclick="changeCoronaPage('Reembolso','coronaReembolsoOrigin','coronaClonedReembolsoContent')">Reembolso<span class="coronaArrowIcon">
                       <svg width="10px" height="16px" viewBox="0 0 10 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <g id="arrowLeftCorona" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                           <g id="ArrowCorona" transform="translate(-451.000000, -394.000000)" fill="#FFFFFF" fill-rule="nonzero">
@@ -1168,6 +1195,9 @@
         </div>
       </section>
     </div>
+
+
+    <!-- não editar: paginas clone mobile -->
     <div id="Atendimento" class="coronaFade CoronaMobilePages" style="display:none">
       <div class="coronaContainer">
         <div class="coronaBreadcrumb coronaFullWidth">
@@ -1269,6 +1299,7 @@
     </div>
 
 
+    <!-- Modais de Prioridade-->
     <div id="Prioridade-2" class="modal coronaModal coronaFade" aria-hidden="true">
       <div tabindex="-1" class="coronaModalArea">
         <div role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
@@ -1312,26 +1343,10 @@
                   </div>
                 </a>
               </div>
-
               <br>
-
               <h4>Meu voo não é operado por nenhuma companhia aérea listada acima, o que devo fazer?</h4>
               <p>Verifique sua caixa de e-mail*, caso não tenha recebido nenhum comunicado por e-mail a respeito do status da sua viagem, ou ainda não enviou sua solicitação, <a href="https://www.viajanet.com.br/atendimento/enviar-email" target="_blank">entre em contato</a>.</p>
               <p><small>*Caso você não encontre nenhum comunicado do ViajaNet na sua caixa de entrada, por favor, verifique na caixa de spam ou lixo eletrônico do seu e-mail.</small></p>
-              <!-- <p> <span class="mobileCoronaInline"><a onclick="changeCoronaPageModal('Regras-de-cias','coronaRegrasOrigin','coronaClonedRegrasContent','modalMidPriority')">Confira</a></span>
-                <span class="desktopCoronaInline"><a onclick="openCoronaTabsModal(event,'coronaRegrasContent','modalMidPriority')">Confira</a>.</span>
-              </p> -->
-
-              <!-- <p>Assim que o status do seu pedido no <a href="https://www.viajanet.com.br/shop/myaccount/#/reservations" target="_blank">Minha Conta</a> esteja como <strong>“cancelamento com crédito”</strong>, o crédito já estará disponível para
-                utilização.</p> -->
-
-              <!-- <p>A remarcação estará sujeita à disponibilidade de voos de cada companhia aérea, então planeje suas novas datas com calma, fale com nosso atendimento <strong>quando a situação de pandemia do Coronavírus estiver normalizada</strong>.
-                Antes
-                disso, a malha aérea das companhias aéreas poderá sofrer novas alterações e afetar sua viagem.</p> -->
-
-              <!-- <p><small>* Eventuais taxas de serviços do ViajaNet não são creditáveis, conforme artigo 2° da MP 948 de 8 de abril de 2020.</small></p> -->
-
-
             </article>
             <article class="modalContent">
               <h3>Voos nacionais: Redução da malha aérea de voos nacionais</h3>
@@ -1427,6 +1442,7 @@
       </div>
     </div>
 
+    <!-- Modais de cia -->
     <div id="AirFrance" class="modal coronaModal coronaFade" aria-hidden="true">
       <div tabindex="-1" class="coronaModalArea">
         <div role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
