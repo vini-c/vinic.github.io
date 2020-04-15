@@ -347,7 +347,7 @@ transition: transform .8s;
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0,0,0,0);
 }
 
 #coronaPage .closeCorona {
@@ -403,6 +403,7 @@ transition: transform .8s;
   /* animation-duration: 0.4s */
   border-radius:10px;
   top:20px;
+  z-index:2;
 }
 #coronaPage .coronaModalContent{
 padding:22px;
@@ -411,11 +412,11 @@ padding:22px;
   font-size:18px;
   margin-bottom:18px;
 }
-#coronaPage #modalMidPriority .coronaModalContent h3{
+#coronaPage #Prioridade-2 .coronaModalContent h3{
   color:#FF9E00;
   letter-spacing:-0.25px;
 }
-#coronaPage #modalLowPriority .coronaModalContent h3{
+#coronaPage #Prioridade-3 .coronaModalContent h3{
   color:#74B252;
 }
 #coronaPage .coronaModalContent article{
@@ -424,13 +425,14 @@ padding:22px;
   box-shadow:0px 0px 8px rgba(0,0,0,0.12);
   margin-bottom:24px;
 }
-#coronaPage #modalMidPriority .coronaModalContent article h3{
+#coronaPage #Prioridade-2 .coronaModalContent article h3{
   font-size:18px;
   color:#333;
   margin-bottom:8px;
 }
 
-#coronaPage .coronaModalContent article h4{
+
+#coronaPage .coronaModalContent article h4, #coronaPage .coronaTabsContents h4{
   font-size:16px;
   font-family:ProximaNova-Semibold,ProximaNovaA-Semibold,ProximaNovaS-Semibold;
   margin-bottom:0px;
@@ -451,57 +453,57 @@ color:#0074D4}
   /* display:none; */
   opacity:0;
 }
-#coronaPage #modalMidPriority .coronaModalContent .flexCoronacias{
+#coronaPage #Prioridade-2 .coronaModalContent .flexCoronacias{
   display:flex;
   flex-direction:row;
   justify-content:flex-start;
   align-content:stretch;
 }
-#coronaPage #modalMidPriority .coronaModalContent .flexCoronacias .coronaCiax3{
+#coronaPage #Prioridade-2 .coronaModalContent .flexCoronacias .coronaCiax3{
   border:1px solid #d9d9d9;
   display:flex;
   flex-direction:column;
   border-radius:3px;
   padding:8px;
 }
-#coronaPage #modalMidPriority .coronaModalContent .flexCoronacias .coronaCiax3 span{
+#coronaPage #Prioridade-2 .coronaModalContent .flexCoronacias .coronaCiax3 span{
   text-align:center;
   font-family:ProximaNova-SemiBold,ProximaNovaA-SemiBold,ProximaNovaS-SemiBold;
   letter-spacing: -0.25px;
   color:#0164BF;
   font-size:14px;
 }
-#coronaPage #modalMidPriority .coronaModalContent .flexCoronacias a{
+#coronaPage #Prioridade-2 .coronaModalContent .flexCoronacias a{
 text-decoration: none;
 width: auto;
 }
-#coronaPage #modalMidPriority .coronaModalContent .flexCoronacias a img{
+#coronaPage #Prioridade-2 .coronaModalContent .flexCoronacias a img{
   width:76px;
   align-self: center;
   margin-bottom:8px;
 }
-#coronaPage #modalMidPriority .coronaModalContent .flexCoronacias .coronaCiax3{
+#coronaPage #Prioridade-2 .coronaModalContent .flexCoronacias .coronaCiax3{
   margin-right:20px;
   transition: transform .3s;
 }
-#coronaPage #modalMidPriority .coronaModalContent .flexCoronacias .coronaCiax3:hover{
+#coronaPage #Prioridade-2 .coronaModalContent .flexCoronacias .coronaCiax3:hover{
   cursor:pointer;
   transform:scale(1.04);
 }
-#coronaPage #modalMidPriority .coronaModalContent .flexCoronacias{
+#coronaPage #Prioridade-2 .coronaModalContent .flexCoronacias{
   margin-bottom:20px;
 }
-#coronaPage #modalMidPriority .coronaModalContent ul{
+#coronaPage #Prioridade-2 .coronaModalContent ul{
   padding-left:0px;
 }
-#coronaPage #modalMidPriority .coronaModalContent ul li{
+#coronaPage #Prioridade-2 .coronaModalContent ul li{
   margin-bottom:8px;
   color:#333;
   font-size:16px;
   letter-spacing:-0.25px;
   line-height:1.2;
 }
-#coronaPage #modalMidPriority .coronaModalContent ul li a{
+#coronaPage #Prioridade-2 .coronaModalContent ul li a{
   font-family:ProximaNova-SemiBold,ProximaNovaA-SemiBold,ProximaNovaS-SemiBold;
   letter-spacing: -0.25px;
   color:#0164BF;
@@ -541,4 +543,20 @@ color:#0164BF;
   background-color: #00519c;
   transform:translateY(-8px);
   transition: transform .2s, background-color .3s ;
+}
+#coronaPage .backdrop{
+  position:fixed;
+  display:block;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,.4);
+  top:0;
+  right:0;
+  overflow: hidden;
+  z-index:1;
+}
+
+#coronaPage .coronaFocusContent {
+  transition: border .3s;
+  border:2px #0164BF solid
 }
