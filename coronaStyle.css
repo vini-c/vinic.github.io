@@ -433,7 +433,7 @@ padding:22px;
 #coronaPage .coronaModalContent article h4{
   font-size:16px;
   font-family:ProximaNova-Semibold,ProximaNovaA-Semibold,ProximaNovaS-Semibold;
-  margin-bottom:6px;
+  margin-bottom:0px;
   letter-spacing:-0.25px;
   color:#333;
 }
