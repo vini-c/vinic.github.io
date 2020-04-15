@@ -117,6 +117,9 @@ padding: 20px 20px 20px 0px;
 #coronaPage .mobileCoronaInline{
   display:inline;
 }
+#coronaPage .backdrop{
+  background-color:rgba(255,255,255,1);
+}
 }
 @media screen and (max-width:520px){
   #coronaPage section#coronaTop {
