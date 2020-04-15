@@ -12,7 +12,7 @@
 
 <body>
   <div id="coronaPage">
-    <div id="coronaHome" class="coronaFade">
+    <div id="Informacoes-importantes" class="coronaFade">
       <section id="coronaTop">
         <div class="coronaContainer">
           <div class="coronaBreadcrumb coronaFullWidth">
@@ -55,7 +55,7 @@
           <div class="coronaOneThird coronaDesktop">
             <ul class="coronaTabsList">
               <li class="coronaTabs">
-                <button class="coronaTabsCTA coronaActiveTab Tabs1" onclick="openCoronaTabs(event,'coronaAtendimentoContent')">
+                <button class="coronaTabsCTA coronaActiveTab" id="Tabs1" onclick="openCoronaTabs(event,'coronaAtendimentoContent','Atendimento')">
                   Atendimento
                   <span class="coronaArrowIcon">
                     <svg width="10px" height="16px" viewBox="0 0 10 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -76,8 +76,9 @@
                       </g>
                     </svg>
                   </span>
-                </button></li>
-              <li class="coronaTabs"><button class="coronaTabsCTA Tabs2" onclick="openCoronaTabs(event,'coronaBrasileirosContent')">Brasileiros no exterior<span class="coronaArrowIcon">
+                </button>
+              </li>
+              <li class="coronaTabs"><button class="coronaTabsCTA" id="Tabs2" onclick="openCoronaTabs(event,'coronaBrasileirosContent','Brasileiros-no-exterior')">Brasileiros no exterior<span class="coronaArrowIcon">
                     <svg width="10px" height="16px" viewBox="0 0 10 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                       <g id="arrowLeftCorona" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                         <g id="ArrowCorona" transform="translate(-451.000000, -394.000000)" fill="#FFFFFF" fill-rule="nonzero">
@@ -96,7 +97,7 @@
                       </g>
                     </svg>
                   </span></button></li>
-              <li class="coronaTabs"><button class="coronaTabsCTA Tabs3" onclick="openCoronaTabs(event,'coronaRegrasContent');coronaTopRules()">Regras de cias aéreas<span class="coronaArrowIcon">
+              <li class="coronaTabs"><button class="coronaTabsCTA" id="Tabs3" onclick="openCoronaTabs(event,'coronaRegrasContent','Regras-de-cias');coronaTopRules()">Regras de cias aéreas<span class="coronaArrowIcon">
                     <svg width="10px" height="16px" viewBox="0 0 10 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                       <g id="arrowLeftCorona" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                         <g id="ArrowCorona" transform="translate(-451.000000, -394.000000)" fill="#FFFFFF" fill-rule="nonzero">
@@ -115,7 +116,7 @@
                       </g>
                     </svg>
                   </span></button></li>
-              <li class="coronaTabs"><button class="coronaTabsCTA Tabs4" onclick="openCoronaTabs(event,'coronaReembolsoContent')">Novas condições para reembolso<span class="coronaArrowIcon">
+              <li class="coronaTabs"><button class="coronaTabsCTA" id="Tabs4" onclick="openCoronaTabs(event,'coronaReembolsoContent','Reembolso')">Reembolso<span class="coronaArrowIcon">
                     <svg width="10px" height="16px" viewBox="0 0 10 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                       <g id="arrowLeftCorona" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                         <g id="ArrowCorona" transform="translate(-451.000000, -394.000000)" fill="#FFFFFF" fill-rule="nonzero">
@@ -162,7 +163,7 @@
                     </div>
                     <div class="coronaOneThird">
                       <a class="coronaPriorityLinks">
-                        <div class="coronaPrioritysBlocks midPriority" onclick="coronaModalVN('modalMidPriority')">
+                        <div class="coronaPrioritysBlocks midPriority" onclick="coronaModalVN('Prioridade-2')">
                           <div class="coronaPriorityIndicator"></div>
                           <div class="coronaPriorityContent">
                             <h3>Prioridade 2</h3>
@@ -173,7 +174,7 @@
                     </div>
                     <div class="coronaOneThird">
                       <a class="coronaPriorityLinks">
-                        <div class="coronaPrioritysBlocks lowPriority" onclick="coronaModalVN('modalLowPriority')">
+                        <div class="coronaPrioritysBlocks lowPriority" onclick="coronaModalVN('Prioridade-3')">
                           <div class="coronaPriorityIndicator"></div>
                           <div class="coronaPriorityContent">
                             <h3>Prioridade 3</h3>
@@ -333,7 +334,7 @@
                         </span>
                       </li>
                     </a>
-                    <a onclick="coronaModalVN('modalAirFrance')" class="coronaCiasLinks">
+                    <a onclick="coronaModalVN('AirFrance')" class="coronaCiasLinks">
                       <li>
                         <div class="coronaCiaLogo">
                           <img src="https://imgur.com/JeCef9O.png" alt="">
@@ -630,7 +631,7 @@
                         </span>
                       </li>
                     </a>
-                    <a onclick="coronaModalVN('modalEthiopian')" class="coronaCiasLinks">
+                    <a onclick="coronaModalVN('Ethiopian')" class="coronaCiasLinks">
                       <li>
                         <div class="coronaCiaLogo">
                           <img src="https://imgur.com/GaRUqnl.png" alt="">
@@ -738,7 +739,7 @@
                         </span>
                       </li>
                     </a>
-                    <a onclick="coronaModalVN('modalKLM')" class="coronaCiasLinks">
+                    <a onclick="coronaModalVN('KLM')" class="coronaCiasLinks">
                       <li>
                         <div class="coronaCiaLogo">
                           <img src="https://imgur.com/Tg4UbZa.png" alt="">
@@ -819,7 +820,7 @@
                         </span>
                       </li>
                     </a>
-                    <a onclick="coronaModalVN('modalNorwegian')" class="coronaCiasLinks">
+                    <a onclick="coronaModalVN('Norwegian')" class="coronaCiasLinks">
                       <li>
                         <div class="coronaCiaLogo">
                           <img src="https://imgur.com/QLJVKGf.png" alt="">
@@ -846,7 +847,7 @@
                         </span>
                       </li>
                     </a>
-                    <a onclick="coronaModalVN('modalParanair')" class="coronaCiasLinks">
+                    <a onclick="coronaModalVN('Paranair')" class="coronaCiasLinks">
                       <li>
                         <div class="coronaCiaLogo">
                           <img src="https://imgur.com/dm2F4bX.png" alt="">
@@ -873,7 +874,7 @@
                         </span>
                       </li>
                     </a>
-                    <a onclick="coronaModalVN('modalQantas')" class="coronaCiasLinks">
+                    <a onclick="coronaModalVN('Qantas')" class="coronaCiasLinks">
                       <li>
                         <div class="coronaCiaLogo">
                           <img src="https://imgur.com/4OvDg0P.png" alt="">
@@ -900,7 +901,7 @@
                         </span>
                       </li>
                     </a>
-                    <a onclick="coronaModalVN('modalQatar')" class="coronaCiasLinks">
+                    <a onclick="coronaModalVN('Qatar')" class="coronaCiasLinks">
                       <li>
                         <div class="coronaCiaLogo">
                           <img src="https://imgur.com/F4R1hFz.png" alt="">
@@ -927,7 +928,7 @@
                         </span>
                       </li>
                     </a>
-                    <a onclick="coronaModalVN('modalRoyalAirMaroc')" class="coronaCiasLinks">
+                    <a onclick="coronaModalVN('RoyalAirMaroc')" class="coronaCiasLinks">
                       <li>
                         <div class="coronaCiaLogo">
                           <img src="https://imgur.com/hDnOAfS.png" alt="">
@@ -1082,7 +1083,7 @@
             <div class="coronaOneThird">
               <ul class="coronaTabsList">
                 <li class="coronaTabs">
-                  <button class="coronaTabsCTA" onclick="changeCoronaPage('coronaAtendimentoPage','coronaAtendimentoOrigin','coronaClonedAtendimentoContent')">
+                  <button class="coronaTabsCTA" onclick="changeCoronaPage('Atendimento','coronaAtendimentoOrigin','coronaClonedAtendimentoContent')">
                     Atendimento
                     <span class="coronaArrowIcon">
                       <svg width="10px" height="16px" viewBox="0 0 10 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -1104,7 +1105,7 @@
                       </svg>
                     </span>
                   </button></li>
-                <li class="coronaTabs"><button class="coronaTabsCTA" onclick="changeCoronaPage('coronaBrasileirosPage','coronaBrasileirosOrigin','coronaClonedBrasileirosContent')">Brasileiros no exterior<span class="coronaArrowIcon">
+                <li class="coronaTabs"><button class="coronaTabsCTA" onclick="changeCoronaPage('Brasileiros-no-exterior','coronaBrasileirosOrigin','coronaClonedBrasileirosContent')">Brasileiros no exterior<span class="coronaArrowIcon">
                       <svg width="10px" height="16px" viewBox="0 0 10 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <g id="arrowLeftCorona" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                           <g id="ArrowCorona" transform="translate(-451.000000, -394.000000)" fill="#FFFFFF" fill-rule="nonzero">
@@ -1123,7 +1124,7 @@
                         </g>
                       </svg>
                     </span></button></li>
-                <li class="coronaTabs"><button class="coronaTabsCTA" onclick="changeCoronaPage('coronaRulesPage','coronaRegrasOrigin','coronaClonedRegrasContent');coronaTopRules()">Regras de cias aéreas<span class="coronaArrowIcon">
+                <li class="coronaTabs"><button class="coronaTabsCTA" onclick="changeCoronaPage('Regras-de-cias','coronaRegrasOrigin','coronaClonedRegrasContent');coronaTopRules()">Regras de cias aéreas<span class="coronaArrowIcon">
                       <svg width="10px" height="16px" viewBox="0 0 10 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <g id="arrowLeftCorona" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                           <g id="ArrowCorona" transform="translate(-451.000000, -394.000000)" fill="#FFFFFF" fill-rule="nonzero">
@@ -1142,7 +1143,7 @@
                         </g>
                       </svg>
                     </span></button></li>
-                <li class="coronaTabs"><button class="coronaTabsCTA" onclick="changeCoronaPage('coronaReembolsoPage','coronaReembolsoOrigin','coronaClonedReembolsoContent')">Novas condições para reembolso<span class="coronaArrowIcon">
+                <li class="coronaTabs"><button class="coronaTabsCTA" onclick="changeCoronaPage('Reembolso','coronaReembolsoOrigin','coronaClonedReembolsoContent')">Reembolso<span class="coronaArrowIcon">
                       <svg width="10px" height="16px" viewBox="0 0 10 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <g id="arrowLeftCorona" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                           <g id="ArrowCorona" transform="translate(-451.000000, -394.000000)" fill="#FFFFFF" fill-rule="nonzero">
@@ -1167,11 +1168,11 @@
         </div>
       </section>
     </div>
-    <div id="coronaAtendimentoPage" class="coronaFade CoronaMobilePages" style="display:none">
+    <div id="Atendimento" class="coronaFade CoronaMobilePages" style="display:none">
       <div class="coronaContainer">
         <div class="coronaBreadcrumb coronaFullWidth">
           <ul>
-            <li onclick="coronaBackHome('coronaAtendimentoPage','coronaClonedAtendimentoContent')">
+            <li onclick="coronaBackHome('Atendimento','coronaClonedAtendimentoContent')">
               <svg width="5px" height="8px" viewBox="0 0 5 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <g id="V2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                   <g id="3.0---Mobile---Brasileiros-no-exterior" transform="translate(-18.000000, -102.000000)" fill="#333333" fill-rule="nonzero">
@@ -1188,11 +1189,11 @@
         </div>
       </div>
     </div>
-    <div id="coronaBrasileirosPage" class="coronaFade CoronaMobilePages" style="display:none">
+    <div id="Brasileiros-no-exterior" class="coronaFade CoronaMobilePages" style="display:none">
       <div class="coronaInternPage coronaContainer">
         <div class="coronaBreadcrumb coronaFullWidth">
           <ul>
-            <li onclick="coronaBackHome('coronaBrasileirosPage','coronaClonedBrasileirosContent')">
+            <li onclick="coronaBackHome('Brasileiros-no-exterior','coronaClonedBrasileirosContent')">
               <svg width="5px" height="8px" viewBox="0 0 5 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
                 <title>Path</title>
@@ -1212,11 +1213,11 @@
         </div>
       </div>
     </div>
-    <div id="coronaRulesPage" class="coronaFade CoronaMobilePages" style="display:none">
+    <div id="Regras-de-cias" class="coronaFade CoronaMobilePages" style="display:none">
       <div class="coronaInternPage coronaContainer">
         <div class="coronaBreadcrumb coronaFullWidth">
           <ul>
-            <li onclick="coronaBackHome('coronaRulesPage','coronaClonedRegrasContent');">
+            <li onclick="coronaBackHome('Regras-de-cias','coronaClonedRegrasContent');">
               <svg width="5px" height="8px" viewBox="0 0 5 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <g id="V2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                   <g id="3.0---Mobile---Brasileiros-no-exterior" transform="translate(-18.000000, -102.000000)" fill="#333333" fill-rule="nonzero">
@@ -1246,11 +1247,11 @@
             </g>
         </svg></button>
     </div>
-    <div id="coronaReembolsoPage" class="coronaFade CoronaMobilePages" style="display:none">
+    <div id="Reembolso" class="coronaFade CoronaMobilePages" style="display:none">
       <div class="coronaInternPage coronaContainer">
         <div class="coronaBreadcrumb coronaFullWidth">
           <ul>
-            <li onclick="coronaBackHome('coronaReembolsoPage','coronaClonedReembolsoContent')">
+            <li onclick="coronaBackHome('Reembolso','coronaClonedReembolsoContent')">
               <svg width="5px" height="8px" viewBox="0 0 5 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <g id="V2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                   <g id="3.0---Mobile---Brasileiros-no-exterior" transform="translate(-18.000000, -102.000000)" fill="#333333" fill-rule="nonzero">
@@ -1268,14 +1269,14 @@
     </div>
 
 
-    <div id="modalMidPriority" class="modal coronaModal coronaFade" aria-hidden="true">
+    <div id="Prioridade-2" class="modal coronaModal coronaFade" aria-hidden="true">
       <div tabindex="-1" class="coronaModalArea">
         <div role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
           <header class="coronaModalTitle">
             <h2 id="modal-title">
               Prioridade 2
             </h2>
-            <span class="closeCorona" onclick="coronaCloseModal('modalMidPriority')">&times;</span>
+            <span class="closeCorona" onclick="coronaCloseModal('Prioridade-2','Atendimento')">&times;</span>
           </header>
           <div class="coronaModalContent">
             <h3>Passageiros com embarque programado para até 30 de abril:</h3>
@@ -1317,7 +1318,7 @@
               <h4>Meu voo não é operado por nenhuma companhia aérea listada acima, o que devo fazer?</h4>
               <p>Verifique sua caixa de e-mail*, caso não tenha recebido nenhum comunicado por e-mail a respeito do status da sua viagem, ou ainda não enviou sua solicitação, <a href="https://www.viajanet.com.br/atendimento/enviar-email" target="_blank">entre em contato</a>.</p>
               <p><small>*Caso você não encontre nenhum comunicado do ViajaNet na sua caixa de entrada, por favor, verifique na caixa de spam ou lixo eletrônico do seu e-mail.</small></p>
-              <!-- <p> <span class="mobileCoronaInline"><a onclick="changeCoronaPageModal('coronaRulesPage','coronaRegrasOrigin','coronaClonedRegrasContent','modalMidPriority')">Confira</a></span>
+              <!-- <p> <span class="mobileCoronaInline"><a onclick="changeCoronaPageModal('Regras-de-cias','coronaRegrasOrigin','coronaClonedRegrasContent','modalMidPriority')">Confira</a></span>
                 <span class="desktopCoronaInline"><a onclick="openCoronaTabsModal(event,'coronaRegrasContent','modalMidPriority')">Confira</a>.</span>
               </p> -->
 
@@ -1397,15 +1398,17 @@
           </div>
         </div>
       </div>
+      <div class="backdrop" onclick="coronaCloseModal('Prioridade-2','Atendimento')">
+      </div>
     </div>
-    <div id="modalLowPriority" class="modal coronaModal coronaFade" aria-hidden="true">
+    <div id="Prioridade-3" class="modal coronaModal coronaFade" aria-hidden="true">
       <div tabindex="-1" class="coronaModalArea">
         <div role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
           <header class="coronaModalTitle">
             <h2 id="modal-title">
               Prioridade 3
             </h2>
-            <span class="closeCorona" onclick="coronaCloseModal('modalLowPriority')">&times;</span>
+            <span class="closeCorona" onclick="coronaCloseModal('Prioridade-3','Atendimento')">&times;</span>
           </header>
           <div class="coronaModalContent">
             <h3>Passageiros com embarque programado após 01 de maio de 2020:</h3>
@@ -1420,16 +1423,18 @@
           </div>
         </div>
       </div>
+      <div class="backdrop" onclick="coronaCloseModal('Prioridade-3','Atendimento')">
+      </div>
     </div>
 
-    <div id="modalAirFrance" class="modal coronaModal coronaFade" aria-hidden="true">
+    <div id="AirFrance" class="modal coronaModal coronaFade" aria-hidden="true">
       <div tabindex="-1" class="coronaModalArea">
         <div role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
           <header class="coronaModalTitle">
             <h2 id="modal-title">
               Air France
             </h2>
-            <span class="closeCorona" onclick="coronaCloseModal('modalAirFrance')">&times;</span>
+            <span class="closeCorona" onclick="coronaCloseModal('AirFrance','Regras-de-cias')">&times;</span>
           </header>
           <div class="coronaModalContent">
             <article class="modalContent">
@@ -1465,26 +1470,23 @@
                   </ul>
                 </li>
               </ol>
-
               <p><small>Fonte: <a href="https://www.airfrance.com.br/BR/pt/common/page_flottante/hp/news-air-traffic-air-france.htm" target="_blank">Site Air France</a></small></p>
-
-
             </article>
-
-
           </div>
-
         </div>
       </div>
+      <div class="backdrop" onclick="coronaCloseModal('AirFrance','Regras-de-cias')">
+
+      </div>
     </div>
-    <div id="modalEthiopian" class="modal coronaModal coronaFade" aria-hidden="true">
+    <div id="Ethiopian" class="modal coronaModal coronaFade" aria-hidden="true">
       <div tabindex="-1" class="coronaModalArea">
         <div role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
           <header class="coronaModalTitle">
             <h2 id="modal-title">
               Ethiopian Airlines
             </h2>
-            <span class="closeCorona" onclick="coronaCloseModal('modalEthiopian')">&times;</span>
+            <span class="closeCorona" onclick="coronaCloseModal('Ethiopian','Regras-de-cias')">&times;</span>
           </header>
           <div class="coronaModalContent">
             <article class="modalContent">
@@ -1533,44 +1535,43 @@
           </div>
         </div>
       </div>
+      <div class="backdrop"  onclick="coronaCloseModal('Ethiopian','Regras-de-cias')">
+
+      </div>
     </div>
-    <div id="modalKLM" class="modal coronaModal coronaFade" aria-hidden="true">
+    <div id="KLM" class="modal coronaModal coronaFade" aria-hidden="true">
       <div tabindex="-1" class="coronaModalArea">
         <div role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
           <header class="coronaModalTitle">
             <h2 id="modal-title">
               KLM
             </h2>
-            <span class="closeCorona" onclick="coronaCloseModal('modalKLM')">&times;</span>
+            <span class="closeCorona" onclick="coronaCloseModal('KLM','Regras-de-cias')">&times;</span>
           </header>
           <div class="coronaModalContent">
             <article class="modalContent">
-
               <ol>
                 <li><strong>1</strong> - Desde o surto do Coronavírus, monitoramos minuciosamente a situação e estamos fazendo todo o possível para ajudá-lo com seus próximos planos de viagem.</li>
                 <li><strong>2</strong> - É altamente recomendável usar as opções de autoatendimento para alterar seu voo.</li>
                 <li><strong>3</strong> - Você pode fazê-lo até 30 de setembro de 2020, para ter certeza de que poderá viajar posteriormente.</li>
                 <li><strong>4</strong> - Não vá ao seu aeroporto de partida se o seu voo não estiver confirmado para partir, porque nossos agentes no aeroporto não poderão responder às suas perguntas neste momento.</li>
               </ol>
-
               <p><small>Fonte: <a href="https://www.klm.com/travel/br_br/prepare_for_travel/up_to_date/flight_update/index.htm" target="_blank">Site KLM</a></small></p>
-
-
             </article>
-
-
           </div>
         </div>
       </div>
+      <div class="backdrop" onclick="coronaCloseModal('KLM','Regras-de-cias')">
+      </div>
     </div>
-    <div id="modalNorwegian" class="modal coronaModal coronaFade" aria-hidden="true">
+    <div id="Norwegian" class="modal coronaModal coronaFade" aria-hidden="true">
       <div tabindex="-1" class="coronaModalArea">
         <div role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
           <header class="coronaModalTitle">
             <h2 id="modal-title">
               Norwegian
             </h2>
-            <span class="closeCorona" onclick="coronaCloseModal('modalNorwegian')">&times;</span>
+            <span class="closeCorona" onclick="coronaCloseModal('Norwegian','Regras-de-cias')">&times;</span>
           </header>
           <div class="coronaModalContent">
             <article class="modalContent">
@@ -1593,15 +1594,17 @@
           </div>
         </div>
       </div>
+      <div class="backdrop" onclick="coronaCloseModal('Norwegian','Regras-de-cias')">
+      </div>
     </div>
-    <div id="modalParanair" class="modal coronaModal coronaFade" aria-hidden="true">
+    <div id="Paranair" class="modal coronaModal coronaFade" aria-hidden="true">
       <div tabindex="-1" class="coronaModalArea">
         <div role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
           <header class="coronaModalTitle">
             <h2 id="modal-title">
               Paranair
             </h2>
-            <span class="closeCorona" onclick="coronaCloseModal('modalParanair')">&times;</span>
+            <span class="closeCorona" onclick="coronaCloseModal('Paranair','Regras-de-cias')">&times;</span>
           </header>
           <div class="coronaModalContent">
             <article class="modalContent">
@@ -1632,15 +1635,17 @@
           </div>
         </div>
       </div>
+      <div class="backdrop" onclick="coronaCloseModal('Paranair','Regras-de-cias')">
+      </div>
     </div>
-    <div id="modalQantas" class="modal coronaModal coronaFade" aria-hidden="true">
+    <div id="Qantas" class="modal coronaModal coronaFade" aria-hidden="true">
       <div tabindex="-1" class="coronaModalArea">
         <div role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
           <header class="coronaModalTitle">
             <h2 id="modal-title">
               Qantas
             </h2>
-            <span class="closeCorona" onclick="coronaCloseModal('modalQantas')">&times;</span>
+            <span class="closeCorona" onclick="coronaCloseModal('Qantas','Regras-de-cias')">&times;</span>
           </header>
           <div class="coronaModalContent">
             <article class="modalContent">
@@ -1660,15 +1665,17 @@
           </div>
         </div>
       </div>
+      <div class="backdrop" onclick="coronaCloseModal('Qantas','Regras-de-cias')">
+      </div>
     </div>
-    <div id="modalQatar" class="modal coronaModal coronaFade" aria-hidden="true">
+    <div id="Qatar" class="modal coronaModal coronaFade" aria-hidden="true">
       <div tabindex="-1" class="coronaModalArea">
         <div role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
           <header class="coronaModalTitle">
             <h2 id="modal-title">
               Qatar Airways
             </h2>
-            <span class="closeCorona" onclick="coronaCloseModal('modalQatar')">&times;</span>
+            <span class="closeCorona" onclick="coronaCloseModal('Qatar','Regras-de-cias')">&times;</span>
           </header>
           <div class="coronaModalContent">
             <article class="modalContent">
@@ -1692,15 +1699,17 @@
           </div>
         </div>
       </div>
+      <div class="backdrop" onclick="coronaCloseModal('Qatar','Regras-de-cias')">
+      </div>
     </div>
-    <div id="modalRoyalAirMaroc" class="modal coronaModal coronaFade" aria-hidden="true">
+    <div id="RoyalAirMaroc" class="modal coronaModal coronaFade" aria-hidden="true">
       <div tabindex="-1" class="coronaModalArea">
         <div role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
           <header class="coronaModalTitle">
             <h2 id="modal-title">
               Royal Air Maroc
             </h2>
-            <span class="closeCorona" onclick="coronaCloseModal('modalRoyalAirMaroc')">&times;</span>
+            <span class="closeCorona" onclick="coronaCloseModal('RoyalAirMaroc','Regras-de-cias')">&times;</span>
           </header>
           <div class="coronaModalContent">
             <article class="modalContent">
@@ -1732,8 +1741,8 @@
           </div>
         </div>
       </div>
+      <div class="backdrop" onclick="coronaCloseModal('RoyalAirMaroc','Regras-de-cias')"></div>
     </div>
-
   </div>
 </body>
 <script src="coronaScripts.js" charset="utf-8"></script>
