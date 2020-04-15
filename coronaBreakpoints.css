@@ -120,6 +120,13 @@ padding: 20px 20px 20px 0px;
 #coronaPage .backdrop{
   background-color:rgba(255,255,255,1);
 }
+#coronaPage .CoronaMobilePages h4{
+  font-size:16px;
+  font-family:ProximaNova-Semibold,ProximaNovaA-Semibold,ProximaNovaS-Semibold;
+  margin-bottom:0px;
+  letter-spacing:-0.25px;
+  color:#333;
+}
 }
 @media screen and (max-width:520px){
   #coronaPage section#coronaTop {
