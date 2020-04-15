@@ -36,6 +36,7 @@ function screenCheckerCorona() {
     coronaCloseModalBack('RoyalAirMaroc');
     coronaWidthCheck('Regras-de-cias', 'coronaRegrasOrigin', 'coronaClonedRegrasContent', 'coronaRegrasContent', 'Tabs3');
   } else if (hash == "#Reembolso") {
+    coronaBackHomeonLoad('Regras-de-cias','coronaClonedRegrasContent');
     coronaWidthCheck('Reembolso', 'coronaReembolsoOrigin', 'coronaClonedReembolsoContent', 'coronaReembolsoContent', 'Tabs4');
   } else if (hash == "#Prioridade-2") {
     coronaWidthCheck('Atendimento', 'coronaAtendimentoOrigin', 'coronaClonedAtendimentoContent', 'coronaAtendimentoContent', 'Tabs1');
