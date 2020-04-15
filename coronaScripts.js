@@ -24,6 +24,7 @@ function screenCheckerCorona() {
   } else if (hash == "#Brasileiros-no-exterior") {
     coronaWidthCheck('Brasileiros-no-exterior', 'coronaBrasileirosOrigin', 'coronaClonedBrasileirosContent', 'coronaBrasileirosContent', 'Tabs2');
   } else if (hash == "#Regras-de-cias") {
+    coronaTopRules();
     coronaBackHomeonLoad('Reembolso','coronaClonedReembolsoContent');
     coronaCloseModalBack('AirFrance');
     coronaCloseModalBack('Ethiopian');
