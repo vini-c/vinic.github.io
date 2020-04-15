@@ -24,6 +24,7 @@ function screenCheckerCorona() {
   } else if (hash == "#Brasileiros-no-exterior") {
     coronaWidthCheck('Brasileiros-no-exterior', 'coronaBrasileirosOrigin', 'coronaClonedBrasileirosContent', 'coronaBrasileirosContent', 'Tabs2');
   } else if (hash == "#Regras-de-cias") {
+    coronaBackHomeonLoad('Reembolso','coronaClonedReembolsoContent');
     coronaCloseModalBack('AirFrance');
     coronaCloseModalBack('Ethiopian');
     coronaCloseModalBack('KLM');
@@ -68,20 +69,14 @@ function screenCheckerCorona() {
   }
   else {
     window.location.hash = "#Informacoes-importantes"
-    document.getElementById("Brasileiros-no-exterior").style.display = "none";
-    document.getElementById("Regras-de-cias").style.display = "none";
-    document.getElementById("Prioridade-2").style.display = "none";
-    document.getElementById("Prioridade-3").style.display = "none";
-    document.getElementById("AirFrance").style.display = "none";
-    document.getElementById("Ethiopian").style.display = "none";
-    document.getElementById("KLM").style.display = "none";
-    document.getElementById("Norwegian").style.display = "none";
-    document.getElementById("Paranair").style.display = "none";
-    document.getElementById("Qantas").style.display = "none";
-    document.getElementById("Qatar").style.display = "none";
-    document.getElementById("RoyalAirMaroc").style.display = "none";
+    coronaBackHomeonLoad('Atendimento','coronaClonedAtendimentoContent');
+    coronaBackHomeonLoad('Brasileiros-no-exterior','coronaClonedBrasileirosContent');
+    coronaBackHomeonLoad('Regras-de-cias','coronaClonedRegrasContent');
+    coronaBackHomeonLoad('Reembolso','coronaClonedReembolsoContent');
     document.getElementById("Informacoes-importantes").style.display = "block";
     openCoronaTabsonLoad("coronaAtendimentoContent", "Tabs1");
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
   }
 };
 
@@ -146,7 +141,11 @@ function coronaBackHome(coronaPageName, coronaClonedContent) {
   document.documentElement.scrollTop = 0;
   window.location.hash = "#Informacoes-importantes";
 }
+function coronaBackHomeonLoad(coronaPageName, coronaClonedContent) {
+  document.getElementById(coronaPageName).style.display = "none";
+  document.getElementById(coronaClonedContent).innerHTML = "";
 
+}
 function coronaModalVN(coronaPageModal) {
   var coronaModal = document.getElementById(coronaPageModal);
   document.getElementById(coronaPageModal).style.display = "block";
