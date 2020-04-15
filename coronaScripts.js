@@ -239,3 +239,8 @@ function topCoronaFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+function coronaFocus(idName){
+  document.getElementById(idName).focus()
+  document.getElementById(idName).classList.add("coronaFocusContent")
+}

@@ -432,7 +432,7 @@ padding:22px;
 }
 
 
-#coronaPage .coronaModalContent article h4, #coronaPage .coronaTabsContents h4{ 
+#coronaPage .coronaModalContent article h4, #coronaPage .coronaTabsContents h4{
   font-size:16px;
   font-family:ProximaNova-Semibold,ProximaNovaA-Semibold,ProximaNovaS-Semibold;
   margin-bottom:0px;
@@ -555,3 +555,5 @@ color:#0164BF;
   overflow: hidden;
   z-index:1;
 }
+
+#coronaPage .coronaFocusContent {border:2px #0164BF solid}
