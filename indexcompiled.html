@@ -2646,13 +2646,13 @@
   }
   function screenCheckerCorona() {
     var hash = window.location.hash;
-    if (hash == '!#Atendimento') {
+    if (hash == '#!#Atendimento') {
       coronaCloseModalBack('Prioridade-2');
       coronaCloseModalBack('Prioridade-3');
       coronaWidthCheck('Atendimento', 'coronaAtendimentoOrigin', 'coronaClonedAtendimentoContent', 'coronaAtendimentoContent', 'Tabs1');
-    } else if (hash == '!#Brasileiros-no-exterior') {
+    } else if (hash == '#!#Brasileiros-no-exterior') {
       coronaWidthCheck('Brasileiros-no-exterior', 'coronaBrasileirosOrigin', 'coronaClonedBrasileirosContent', 'coronaBrasileirosContent', 'Tabs2');
-    } else if (hash == '!#Regras-de-cias') {
+    } else if (hash == '#!#Regras-de-cias') {
       coronaTopRules();
       coronaBackHomeonLoad('Reembolso', 'coronaClonedReembolsoContent');
       coronaCloseModalBack('AirFrance');
@@ -2664,48 +2664,48 @@
       coronaCloseModalBack('Qatar');
       coronaCloseModalBack('RoyalAirMaroc');
       coronaWidthCheck('Regras-de-cias', 'coronaRegrasOrigin', 'coronaClonedRegrasContent', 'coronaRegrasContent', 'Tabs3');
-    } else if (hash == '!#Reembolso') {
+    } else if (hash == '#!#Reembolso') {
       coronaBackHomeonLoad('Regras-de-cias', 'coronaClonedRegrasContent');
       coronaWidthCheck('Reembolso', 'coronaReembolsoOrigin', 'coronaClonedReembolsoContent', 'coronaReembolsoContent', 'Tabs4');
-    } else if (hash == '!#Prioridade-2') {
+    } else if (hash == '#!#Prioridade-2') {
       coronaWidthCheck('Atendimento', 'coronaAtendimentoOrigin', 'coronaClonedAtendimentoContent', 'coronaAtendimentoContent', 'Tabs1');
       coronaModalVNInitial('Prioridade-2');
-    } else if (hash == '!#Prioridade-3') {
+    } else if (hash == '#!#Prioridade-3') {
       coronaWidthCheck('Atendimento', 'coronaAtendimentoOrigin', 'coronaClonedAtendimentoContent', 'coronaAtendimentoContent', 'Tabs1');
       coronaModalVNInitial('Prioridade-3');
-    } else if (hash == '!#AirFrance') {
+    } else if (hash == '#!#AirFrance') {
       coronaWidthCheck('Regras-de-cias', 'coronaRegrasOrigin', 'coronaClonedRegrasContent', 'coronaRegrasContent', 'Tabs3');
       coronaModalVNInitial('AirFrance');
-    } else if (hash == '!#Ethiopian') {
+    } else if (hash == '#!#Ethiopian') {
       coronaWidthCheck('Regras-de-cias', 'coronaRegrasOrigin', 'coronaClonedRegrasContent', 'coronaRegrasContent', 'Tabs3');
       coronaModalVNInitial('Ethiopian');
-    } else if (hash == '!#KLM') {
+    } else if (hash == '#!#KLM') {
       coronaWidthCheck('Regras-de-cias', 'coronaRegrasOrigin', 'coronaClonedRegrasContent', 'coronaRegrasContent', 'Tabs3');
       coronaModalVNInitial('KLM');
-    } else if (hash == '!#Norwegian') {
+    } else if (hash == '#!#Norwegian') {
       coronaWidthCheck('Regras-de-cias', 'coronaRegrasOrigin', 'coronaClonedRegrasContent', 'coronaRegrasContent', 'Tabs3');
       coronaModalVNInitial('Norwegian');
-    } else if (hash == '!#Paranair') {
+    } else if (hash == '#!#Paranair') {
       coronaWidthCheck('Regras-de-cias', 'coronaRegrasOrigin', 'coronaClonedRegrasContent', 'coronaRegrasContent', 'Tabs3');
       coronaModalVNInitial('Paranair');
-    } else if (hash == '!#Qantas') {
+    } else if (hash == '#!#Qantas') {
       coronaWidthCheck('Regras-de-cias', 'coronaRegrasOrigin', 'coronaClonedRegrasContent', 'coronaRegrasContent', 'Tabs3');
       coronaModalVNInitial('Qantas');
-    } else if (hash == '!#Qatar') {
+    } else if (hash == '#!#Qatar') {
       coronaWidthCheck('Regras-de-cias', 'coronaRegrasOrigin', 'coronaClonedRegrasContent', 'coronaRegrasContent', 'Tabs3');
       coronaModalVNInitial('Qatar');
-    } else if (hash == '!#RoyalAirMaroc') {
+    } else if (hash == '#!#RoyalAirMaroc') {
       coronaWidthCheck('Regras-de-cias', 'coronaRegrasOrigin', 'coronaClonedRegrasContent', 'coronaRegrasContent', 'Tabs3');
       coronaModalVNInitial('RoyalAirMaroc');
     }
-      else if (hash == '!#pacote-de-viagem') {
+      else if (hash == '#!#pacote-de-viagem') {
         coronaWidthCheck('Atendimento', 'coronaAtendimentoOrigin', 'coronaClonedAtendimentoContent', 'coronaAtendimentoContent', 'Tabs1');
         coronaModalVNInitial('Prioridade-2');
         coronaFocus('pacote-de-viagem');
         window.location.hash = 'pacote-de-viagem';
       }
     else {
-      window.location.hash = '!#Informacoes-importantes'
+      window.location.hash = '#!#Informacoes-importantes'
       coronaBackHomeonLoad('Atendimento', 'coronaClonedAtendimentoContent');
       coronaBackHomeonLoad('Brasileiros-no-exterior', 'coronaClonedBrasileirosContent');
       coronaBackHomeonLoad('Regras-de-cias', 'coronaClonedRegrasContent');
