@@ -6,734 +6,1119 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Corona Virus</title>
   <link rel="stylesheet" type="text/css" href="https://www.viajanet.com.br/static/ashx/css.ashx?company=ViajaNet&amp;debug=False&amp;filename=travel-insurance-overwrite&amp;g=c6a7c01d-827f-4d84-a288-5047d8d6e6af">
-  <link rel="stylesheet" type="text/css" href="coronaStyle.css">
-  <link rel="stylesheet" type="text/css" href="coronaBreakpoints.css">
 </head>
 
 <body>
-<style>
-#coronaPage{
-  display:flex;
-  justify-content: center;
-  flex-direction:column;
-  width:100%;
-  background:#f5f5f5;
-  padding-bottom:40px;
-}
+  <style>
+    #coronaPage {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 100%;
+      background: #f5f5f5;
+      padding-bottom: 40px;
+    }
 
-#coronaPage h2, #coronaPage h3, #coronaPage h4{
-  line-height:1.4;
-}
-#coronaPage button{
-  text-align: initial;
-color: initial;
-border: 0;
--webkit-appearance: none;
-background-color: transparent;
-padding: 0;
-margin: 0;
-font-size: initial;
-font-weight: initial;
-font-size: initial;
-}
-#coronaPage a{
-  text-decoration:none;
-}
-#coronaPage a:hover{
-  cursor:pointer;
-}
-#coronaPage{
-  letter-spacing: -0.25px;
-}
-#coronaPage p a, #coronaPage .coronaHiperlink{
-  font-family:ProximaNova-SemiBold,ProximaNovaA-SemiBold,ProximaNovaS-SemiBold;
-  letter-spacing: -0.25px;
-  color:#0164BF;
-}
-#coronaPage strong{
-  font-family:ProximaNova-SemiBold,ProximaNovaA-SemiBold,ProximaNovaS-SemiBold;
-  display:inline;
-}
-#coronaPage section#coronaTop{
-  width:100%;
-  background:url("https://i.imgur.com/QxGlglp.png") 100% -40px no-repeat, #FFA202;
-  padding-top:32px;
-  padding-bottom:84px;
-}
-#coronaPage .coronaContainer{
-  width: 100%;
-  max-width: 1260px;
-  margin:0 auto;
-  padding:0 40px;
-}
-#coronaPage .coronaBreadcrumb{
-  padding-bottom:22px;
-}
-#coronaPage .coronaBreadcrumb ul li{
-  display:inline-block;
-  color:#fff;
-  position:relative;
-}
-#coronaPage .coronaBreadcrumb ul li:last-child{
-  display:inline-block;
-  color:#fff;
-  position:relative;
-  margin-left:20px;
-}
-#coronaPage .coronaBreadcrumb ul li a{
-  color:#fff;
-  letter-spacing: -0.25px;
-  font-size:14px;
-}
-#coronaPage .coronaBreadcrumb ul li svg{
-  position:absolute;left:-15px;transform: scale(0.8) translateY(1px);
-}
-#coronaPage .coronaTitle{
-  width:100%;
-  padding-bottom:26px;
-}
-#coronaPage .coronaTitle h1{
-  font-size:32px;
-  font-family:ProximaNova-SemiBold,ProximaNovaA-SemiBold,ProximaNovaS-SemiBold;
-  color:#fff;
-  letter-spacing: -0.25px;
-}
-#coronaPage .coronaTextIntro{
-  background-color:#fff;
-  padding:26px;
-  border-radius:3px;
-  box-shadow:0px 4px 10px rgba(0,0,0,.08);
-  margin-top:-84px;
-  margin-bottom:42px;
-}
-#coronaPage .coronaTextIntro p{
-  font-size:16px;
-  color:#333333;
-  letter-spacing: -0.25px;
+    #coronaPage h2,
+    #coronaPage h3,
+    #coronaPage h4 {
+      line-height: 1.4;
+    }
 
-}
-#coronaPage .coronaFullWidth{
-  width:100%;
-}
-#coronaPage #coronaContent .coronaContainer{
-  width:100%;
-  display:flex;
-  flex-direction:row;
-  flex-wrap:wrap;
-}
+    #coronaPage button {
+      text-align: initial;
+      color: initial;
+      border: 0;
+      -webkit-appearance: none;
+      background-color: transparent;
+      padding: 0;
+      margin: 0;
+      font-size: initial;
+      font-weight: initial;
+      font-size: initial;
+    }
 
-#coronaPage #coronaContent .coronaOneThird{
-width:33.333333%;
-}
+    #coronaPage a {
+      text-decoration: none;
+    }
 
-#coronaPage #coronaContent .coronaTwoThird{
-width:66.66666667%;
-}
+    #coronaPage a:hover {
+      cursor: pointer;
+    }
 
-#coronaPage #coronaContent .coronaOneThird .coronaTabsList{
-  width:100%;
-}
-#coronaPage #coronaContent .coronaOneThird .coronaTabsList .coronaTabs button{
-  width:100%;
-  text-align:left;
-  background:none;
-  box-shadow:none;
-  -webkit-appearance:none;
-  border:0;
-  padding:16px;
-  font-size:16px;
-  font-family:ProximaNova-SemiBold,ProximaNovaA-SemiBold,ProximaNovaS-SemiBold;
-  /* border:0; */
-  border-style: inset;
-  border-bottom:1px solid #d9d9d9;
-  transition: color .3s, background-color .3s, padding-left .6s;
-}
-#coronaPage #coronaContent .coronaOneThird .coronaTabsList .coronaTabs button.Tabs1{
-  /* border-color:transparent; */
-}
-#coronaPage #coronaContent .coronaOneThird .coronaTabsList .coronaTabs:hover button{
-  color:#0164BF;
-  cursor:pointer;
-  padding-left:20px;
-  transition: color .3s, background-color .3s, padding-left .3s;
-}
+    #coronaPage {
+      letter-spacing: -0.25px;
+    }
 
-#coronaPage #coronaContent .coronaOneThird .coronaTabsList .coronaTabs:hover button.coronaActiveTab{
-  cursor:default;
-  padding-left:16px;
-}
-#coronaPage #coronaContent .coronaOneThird .coronaTabsList .coronaTabs:hover button .coronaArrowIcon svg #ArrowCorona{
-  fill:#0164BF;
-}
-#coronaPage #coronaContent .coronaOneThird .coronaTabsList .coronaTabs button.coronaActiveTab{
-  background-color:#0164BF;
-  border-radius:3px;
-  color:#fff;
-  /* border:0;
+    #coronaPage p a,
+    #coronaPage .coronaHiperlink {
+      font-family: ProximaNova-SemiBold, ProximaNovaA-SemiBold, ProximaNovaS-SemiBold;
+      letter-spacing: -0.25px;
+      color: #0164BF;
+    }
+
+    #coronaPage strong {
+      font-family: ProximaNova-SemiBold, ProximaNovaA-SemiBold, ProximaNovaS-SemiBold;
+      display: inline;
+    }
+
+    #coronaPage section#coronaTop {
+      width: 100%;
+      background: url("https://i.imgur.com/QxGlglp.png") 100% -40px no-repeat, #FFA202;
+      padding-top: 32px;
+      padding-bottom: 84px;
+    }
+
+    #coronaPage .coronaContainer {
+      width: 100%;
+      max-width: 1260px;
+      margin: 0 auto;
+      padding: 0 40px;
+    }
+
+    #coronaPage .coronaBreadcrumb {
+      padding-bottom: 22px;
+    }
+
+    #coronaPage .coronaBreadcrumb ul li {
+      display: inline-block;
+      color: #fff;
+      position: relative;
+    }
+
+    #coronaPage .coronaBreadcrumb ul li:last-child {
+      display: inline-block;
+      color: #fff;
+      position: relative;
+      margin-left: 20px;
+    }
+
+    #coronaPage .coronaBreadcrumb ul li a {
+      color: #fff;
+      letter-spacing: -0.25px;
+      font-size: 14px;
+    }
+
+    #coronaPage .coronaBreadcrumb ul li svg {
+      position: absolute;
+      left: -15px;
+      transform: scale(0.8) translateY(1px);
+    }
+
+    #coronaPage .coronaTitle {
+      width: 100%;
+      padding-bottom: 26px;
+    }
+
+    #coronaPage .coronaTitle h1 {
+      font-size: 32px;
+      font-family: ProximaNova-SemiBold, ProximaNovaA-SemiBold, ProximaNovaS-SemiBold;
+      color: #fff;
+      letter-spacing: -0.25px;
+    }
+
+    #coronaPage .coronaTextIntro {
+      background-color: #fff;
+      padding: 26px;
+      border-radius: 3px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, .08);
+      margin-top: -84px;
+      margin-bottom: 42px;
+    }
+
+    #coronaPage .coronaTextIntro p {
+      font-size: 16px;
+      color: #333333;
+      letter-spacing: -0.25px;
+
+    }
+
+    #coronaPage .coronaFullWidth {
+      width: 100%;
+    }
+
+    #coronaPage #coronaContent .coronaContainer {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    #coronaPage #coronaContent .coronaOneThird {
+      width: 33.333333%;
+    }
+
+    #coronaPage #coronaContent .coronaTwoThird {
+      width: 66.66666667%;
+    }
+
+    #coronaPage #coronaContent .coronaOneThird .coronaTabsList {
+      width: 100%;
+    }
+
+    #coronaPage #coronaContent .coronaOneThird .coronaTabsList .coronaTabs button {
+      width: 100%;
+      text-align: left;
+      background: none;
+      box-shadow: none;
+      -webkit-appearance: none;
+      border: 0;
+      padding: 16px;
+      font-size: 16px;
+      font-family: ProximaNova-SemiBold, ProximaNovaA-SemiBold, ProximaNovaS-SemiBold;
+      /* border:0; */
+      border-style: inset;
+      border-bottom: 1px solid #d9d9d9;
+      transition: color .3s, background-color .3s, padding-left .6s;
+    }
+
+    #coronaPage #coronaContent .coronaOneThird .coronaTabsList .coronaTabs button.Tabs1 {
+      /* border-color:transparent; */
+    }
+
+    #coronaPage #coronaContent .coronaOneThird .coronaTabsList .coronaTabs:hover button {
+      color: #0164BF;
+      cursor: pointer;
+      padding-left: 20px;
+      transition: color .3s, background-color .3s, padding-left .3s;
+    }
+
+    #coronaPage #coronaContent .coronaOneThird .coronaTabsList .coronaTabs:hover button.coronaActiveTab {
+      cursor: default;
+      padding-left: 16px;
+    }
+
+    #coronaPage #coronaContent .coronaOneThird .coronaTabsList .coronaTabs:hover button .coronaArrowIcon svg #ArrowCorona {
+      fill: #0164BF;
+    }
+
+    #coronaPage #coronaContent .coronaOneThird .coronaTabsList .coronaTabs button.coronaActiveTab {
+      background-color: #0164BF;
+      border-radius: 3px;
+      color: #fff;
+      /* border:0;
   margin:1px 0; */
-}
-#coronaPage #coronaContent .coronaOneThird .coronaTabsList .coronaTabs{
-  position:relative;
-}
-#coronaPage #coronaContent .coronaOneThird .coronaTabsList .coronaTabs button .coronaArrowIcon{
-  position:absolute;
-  right:20px;
-}
-#coronaPage #coronaContent .coronaOneThird .coronaTabsList .coronaTabs button.coronaActiveTab .coronaArrowIcon svg #ArrowCorona{
-  fill:#fff;
-}
-#coronaPage #coronaContent .coronaOneThird .coronaTabsList .coronaTabs button .coronaArrowIcon svg #ArrowCorona{
-  fill:#828282;
-}
-
-#coronaPage .coronaTabsContents{
-  padding:0 0 0 28px;
-}
-
-#coronaPage h2{
-  font-family:ProximaNova-SemiBold,ProximaNovaA-SemiBold,ProximaNovaS-SemiBold;
-  font-size:22px;
-  color:#333333;
-  margin-bottom:8px;
-  letter-spacing: -0.25px;
-}
-#coronaPage p{
-  font-size:16px;
-  color:#333333;
-  letter-spacing: -0.25px;
-  margin-bottom:8px;
-}
-
-#coronaPage p {
-  line-height:1.4;
-}
-#coronaPage p b{
-  font-family:ProximaNova-SemiBold,ProximaNovaA-SemiBold,ProximaNovaS-SemiBold;
-  letter-spacing: -0.25px;
-}
-
-#coronaPage p small{
-  font-size:14px;
-  color:#333333;
-  letter-spacing: -0.25px;
-  /* line-height:14px; */
-}
-
-#coronaPage h3{
-  font-family:ProximaNova-SemiBold,ProximaNovaA-SemiBold,ProximaNovaS-SemiBold;
-  font-size:18px;
-  color:#333333;
-  letter-spacing: -0.25px;
-  margin-bottom:8px;
-}
-
-#coronaPage .coronaPrioridadesContent{
-  padding-top:22px;
-  display:flex;
-  flex-direction:row;
-  flex-wrap:wrap;
-  width:100%;
-  align-items:stretch;
-}
-
-#coronaPage .coronaPrioridadesContent .coronaPrioritysBlocks{
-  background:#fff;
-  border-radius:3px;
-  margin-right:10px;
-  margin-top:10px;
-  box-shadow:0px 4px 10px rgba(0,0,0,.08);
-  transition: transform .6s, box-shadow .8s;
-  align-self:stretch;
-  height:100%;
-}
-#coronaPage .coronaPrioridadesContent .coronaPrioritysBlocks:hover{
-  transform:translateY(-4px);
-  box-shadow:0px 8px 14px rgba(0,0,0,.08);
-  transition: transform .3s, box-shadow .6s;
-  cursor:pointer;
-}
-#coronaPage .coronaPrioridadesContent .coronaPrioritysBlocks.highPriority .coronaPriorityIndicator{
-  background-color:#FF2723;
-  border-radius:3px 3px 0px 0px;
-}
-
-#coronaPage .coronaPrioridadesContent .coronaPrioritysBlocks.highPriority h3{
-  color:#FF2723;
-}
-#coronaPage .coronaPrioridadesContent .coronaPrioritysBlocks.midPriority .coronaPriorityIndicator{
-  background-color:#FF9100;
-  border-radius:3px 3px 0px 0px;
-}
-#coronaPage .coronaPrioridadesContent .coronaPrioritysBlocks.midPriority h3{
-  color:#FF9100;
-}
-#coronaPage .coronaPrioridadesContent .coronaPrioritysBlocks.lowPriority .coronaPriorityIndicator{
-  background-color:#74B252;
-  border-radius:3px 3px 0px 0px;
-}
-#coronaPage .coronaPrioridadesContent .coronaPrioritysBlocks.lowPriority h3{
-  color:#74B252;
-}
-#coronaPage .coronaPrioridadesContent .coronaPrioritysBlocks .coronaPriorityIndicator{
-  width:100%;
-  height:5px;
-  transition: height .6s;
-
-}
-
-#coronaPage .coronaPrioridadesContent .coronaPrioritysBlocks:hover .coronaPriorityIndicator{
-  height:12px;
-  transition: height .3s;
-}
-#coronaPage .coronaPrioridadesContent .coronaPrioritysBlocks .coronaPriorityContent{
-  padding:16px 16px 22px;
-}
-
-#coronaPage .coronaPrioridadesContent .coronaPrioritysBlocks .coronaPriorityContent h3{
-  padding-bottom:16px;
-}
-
-#coronaPage .coronaFade{
-    animation:opac 0.3s
-}
-@keyframes opac {
-    from {
-        opacity:0
     }
-    to {
+
+    #coronaPage #coronaContent .coronaOneThird .coronaTabsList .coronaTabs {
+      position: relative;
+    }
+
+    #coronaPage #coronaContent .coronaOneThird .coronaTabsList .coronaTabs button .coronaArrowIcon {
+      position: absolute;
+      right: 20px;
+    }
+
+    #coronaPage #coronaContent .coronaOneThird .coronaTabsList .coronaTabs button.coronaActiveTab .coronaArrowIcon svg #ArrowCorona {
+      fill: #fff;
+    }
+
+    #coronaPage #coronaContent .coronaOneThird .coronaTabsList .coronaTabs button .coronaArrowIcon svg #ArrowCorona {
+      fill: #828282;
+    }
+
+    #coronaPage .coronaTabsContents {
+      padding: 0 0 0 28px;
+    }
+
+    #coronaPage h2 {
+      font-family: ProximaNova-SemiBold, ProximaNovaA-SemiBold, ProximaNovaS-SemiBold;
+      font-size: 22px;
+      color: #333333;
+      margin-bottom: 8px;
+      letter-spacing: -0.25px;
+    }
+
+    #coronaPage p {
+      font-size: 16px;
+      color: #333333;
+      letter-spacing: -0.25px;
+      margin-bottom: 8px;
+    }
+
+    #coronaPage p {
+      line-height: 1.4;
+    }
+
+    #coronaPage p b {
+      font-family: ProximaNova-SemiBold, ProximaNovaA-SemiBold, ProximaNovaS-SemiBold;
+      letter-spacing: -0.25px;
+    }
+
+    #coronaPage p small {
+      font-size: 14px;
+      color: #333333;
+      letter-spacing: -0.25px;
+      /* line-height:14px; */
+    }
+
+    #coronaPage h3 {
+      font-family: ProximaNova-SemiBold, ProximaNovaA-SemiBold, ProximaNovaS-SemiBold;
+      font-size: 18px;
+      color: #333333;
+      letter-spacing: -0.25px;
+      margin-bottom: 8px;
+    }
+
+    #coronaPage .coronaPrioridadesContent {
+      padding-top: 22px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+      align-items: stretch;
+    }
+
+    #coronaPage .coronaPrioridadesContent .coronaPrioritysBlocks {
+      background: #fff;
+      border-radius: 3px;
+      margin-right: 10px;
+      margin-top: 10px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, .08);
+      transition: transform .6s, box-shadow .8s;
+      align-self: stretch;
+      height: 100%;
+    }
+
+    #coronaPage .coronaPrioridadesContent .coronaPrioritysBlocks:hover {
+      transform: translateY(-4px);
+      box-shadow: 0px 8px 14px rgba(0, 0, 0, .08);
+      transition: transform .3s, box-shadow .6s;
+      cursor: pointer;
+    }
+
+    #coronaPage .coronaPrioridadesContent .coronaPrioritysBlocks.highPriority .coronaPriorityIndicator {
+      background-color: #FF2723;
+      border-radius: 3px 3px 0px 0px;
+    }
+
+    #coronaPage .coronaPrioridadesContent .coronaPrioritysBlocks.highPriority h3 {
+      color: #FF2723;
+    }
+
+    #coronaPage .coronaPrioridadesContent .coronaPrioritysBlocks.midPriority .coronaPriorityIndicator {
+      background-color: #FF9100;
+      border-radius: 3px 3px 0px 0px;
+    }
+
+    #coronaPage .coronaPrioridadesContent .coronaPrioritysBlocks.midPriority h3 {
+      color: #FF9100;
+    }
+
+    #coronaPage .coronaPrioridadesContent .coronaPrioritysBlocks.lowPriority .coronaPriorityIndicator {
+      background-color: #74B252;
+      border-radius: 3px 3px 0px 0px;
+    }
+
+    #coronaPage .coronaPrioridadesContent .coronaPrioritysBlocks.lowPriority h3 {
+      color: #74B252;
+    }
+
+    #coronaPage .coronaPrioridadesContent .coronaPrioritysBlocks .coronaPriorityIndicator {
+      width: 100%;
+      height: 5px;
+      transition: height .6s;
+
+    }
+
+    #coronaPage .coronaPrioridadesContent .coronaPrioritysBlocks:hover .coronaPriorityIndicator {
+      height: 12px;
+      transition: height .3s;
+    }
+
+    #coronaPage .coronaPrioridadesContent .coronaPrioritysBlocks .coronaPriorityContent {
+      padding: 16px 16px 22px;
+    }
+
+    #coronaPage .coronaPrioridadesContent .coronaPrioritysBlocks .coronaPriorityContent h3 {
+      padding-bottom: 16px;
+    }
+
+    #coronaPage .coronaFade {
+      animation: opac 0.3s
+    }
+
+    @keyframes opac {
+      from {
+        opacity: 0
+      }
+
+      to {
         opacity: 1
+      }
     }
-}
 
-#coronaPage .coronaAirCias{
-  margin-top:28px;
-}
-#coronaPage .coronaAirCias li{
-  background:#ffffff;
-  display:flex;
-  padding:12px;
-  border-radius:6px;
-  box-shadow:0px 4px 10px rgba(0,0,0,.08);
-  align-items: baseline;
-  position:relative;
-  margin-bottom:12px;
-}
-#coronaPage .coronaAirCias .coronaCiaLogo{
-  flex-grow:1;
-}
-#coronaPage .coronaAirCias h3{
-  align-self: center;
-  margin-bottom:0;
-  margin-left:8px;
-  flex-grow:50;
-  font-size:16px;
-}
-#coronaPage .coronaAirCias li .coronaArrowIcon{
-transform:translateY(-8px) translateX(-12px);
-transition: transform .8s;
-}
-#coronaPage .coronaAirCias li .coronaArrowIcon svg #ArrowCorona{
-  fill:#0164BF;
-}
-#coronaPage .coronaAirCias li{
-  transition: transform .8s;
-}
-#coronaPage .coronaAirCias li:hover{
-  transform: translateX(8px);
-  transition: transform .3s;
-}
-#coronaPage .coronaAirCias li:hover .coronaArrowIcon{
-  transform:translateY(-8px) translateX(-8px);
-  transition: transform .3s;
-}
-#coronaPage .coronaDesktop {
-  display:flex;
-}
-#coronaPage .coronaMobile{display:none;}
+    #coronaPage .coronaAirCias {
+      margin-top: 28px;
+    }
 
-#coronaPage .coronaMobilebr{display:none;}
+    #coronaPage .coronaAirCias li {
+      background: #ffffff;
+      display: flex;
+      padding: 12px;
+      border-radius: 6px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, .08);
+      align-items: baseline;
+      position: relative;
+      margin-bottom: 12px;
+    }
 
-#coronaPage .coronaModal {
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0,0,0,0);
-}
+    #coronaPage .coronaAirCias .coronaCiaLogo {
+      flex-grow: 1;
+    }
 
-#coronaPage .closeCorona {
-  color: #aaa;
-  float: right;
-  font-size: 38px;
-  font-weight: bold;
-  margin-top: -10px;
-}
+    #coronaPage .coronaAirCias h3 {
+      align-self: center;
+      margin-bottom: 0;
+      margin-left: 8px;
+      flex-grow: 50;
+      font-size: 16px;
+    }
 
-#coronaPage .closeCorona:hover,
-#coronaPage .closeCorona:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
+    #coronaPage .coronaAirCias li .coronaArrowIcon {
+      transform: translateY(-8px) translateX(-12px);
+      transition: transform .8s;
+    }
 
-#coronaPage .desktopCoronaInline{
-  display:inline;
-}
-#coronaPage .mobileCoronaInline{
-  display:none;
-}
-#coronaPage .coronaModalTitle {
-  padding: 22px;
-  text-align: center;
-  border:0;
-  border-bottom-width:1px;
-  border-color:#d4d4d4;
-  border-style: solid;
-}
+    #coronaPage .coronaAirCias li .coronaArrowIcon svg #ArrowCorona {
+      fill: #0164BF;
+    }
 
-#coronaPage .coronaModalTitle h2{
-  font-family:ProximaNova-Regular,ProximaNovaA-Regular,ProximaNovaS-Regular;
-  font-size:18px;
-  margin:0;
-}
+    #coronaPage .coronaAirCias li {
+      transition: transform .8s;
+    }
 
-#coronaPage .modal-body {padding: 2px 16px;}
+    #coronaPage .coronaAirCias li:hover {
+      transform: translateX(8px);
+      transition: transform .3s;
+    }
 
-#coronaPage .modal-footer {
-  padding: 2px 16px;
-}
+    #coronaPage .coronaAirCias li:hover .coronaArrowIcon {
+      transform: translateY(-8px) translateX(-8px);
+      transition: transform .3s;
+    }
 
-#coronaPage .coronaModalArea {
-  position: relative;
-  background-color: #fefefe;
-  margin: auto;
-  padding: 0;
-  width: 60%;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-  /* animation-name: animatetop; */
-  /* animation-duration: 0.4s */
-  border-radius:10px;
-  top:20px;
-  z-index:2;
-}
-#coronaPage .coronaModalContent{
-padding:22px;
-}
-#coronaPage .coronaModalContent h3{
-  font-size:18px;
-  margin-bottom:18px;
-}
-#coronaPage #Prioridade-2 .coronaModalContent h3{
-  color:#FF9E00;
-  letter-spacing:-0.25px;
-}
-#coronaPage #Prioridade-3 .coronaModalContent h3{
-  color:#74B252;
-}
-#coronaPage .coronaModalContent article{
-  padding:22px 16px;
-  border-radius:10px;
-  box-shadow:0px 0px 8px rgba(0,0,0,0.12);
-  margin-bottom:24px;
-}
-#coronaPage #Prioridade-2 .coronaModalContent article h3{
-  font-size:18px;
-  color:#333;
-  margin-bottom:8px;
-}
+    #coronaPage .coronaDesktop {
+      display: flex;
+    }
+
+    #coronaPage .coronaMobile {
+      display: none;
+    }
+
+    #coronaPage .coronaMobilebr {
+      display: none;
+    }
+
+    #coronaPage .coronaModal {
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0);
+    }
+
+    #coronaPage .closeCorona {
+      color: #aaa;
+      float: right;
+      font-size: 38px;
+      font-weight: bold;
+      margin-top: -10px;
+    }
+
+    #coronaPage .closeCorona:hover,
+    #coronaPage .closeCorona:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    #coronaPage .desktopCoronaInline {
+      display: inline;
+    }
+
+    #coronaPage .mobileCoronaInline {
+      display: none;
+    }
+
+    #coronaPage .coronaModalTitle {
+      padding: 22px;
+      text-align: center;
+      border: 0;
+      border-bottom-width: 1px;
+      border-color: #d4d4d4;
+      border-style: solid;
+    }
+
+    #coronaPage .coronaModalTitle h2 {
+      font-family: ProximaNova-Regular, ProximaNovaA-Regular, ProximaNovaS-Regular;
+      font-size: 18px;
+      margin: 0;
+    }
+
+    #coronaPage .modal-body {
+      padding: 2px 16px;
+    }
+
+    #coronaPage .modal-footer {
+      padding: 2px 16px;
+    }
+
+    #coronaPage .coronaModalArea {
+      position: relative;
+      background-color: #fefefe;
+      margin: auto;
+      padding: 0;
+      width: 60%;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      /* animation-name: animatetop; */
+      /* animation-duration: 0.4s */
+      border-radius: 10px;
+      top: 20px;
+      z-index: 2;
+    }
+
+    #coronaPage .coronaModalContent {
+      padding: 22px;
+    }
+
+    #coronaPage .coronaModalContent h3 {
+      font-size: 18px;
+      margin-bottom: 18px;
+    }
+
+    #coronaPage #Prioridade-2 .coronaModalContent h3 {
+      color: #FF9E00;
+      letter-spacing: -0.25px;
+    }
+
+    #coronaPage #Prioridade-3 .coronaModalContent h3 {
+      color: #74B252;
+    }
+
+    #coronaPage .coronaModalContent article {
+      padding: 22px 16px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
+      margin-bottom: 24px;
+    }
+
+    #coronaPage #Prioridade-2 .coronaModalContent article h3 {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 8px;
+    }
 
 
-#coronaPage .coronaModalContent article h4, #coronaPage .coronaTabsContents h4, #coronaPage .CoronaMobilePages h4{
-  font-size:16px;
-  font-family:ProximaNova-Semibold,ProximaNovaA-Semibold,ProximaNovaS-Semibold;
-  margin-bottom:0px;
-  letter-spacing:-0.25px;
-  color:#333;
-}
-#coronaPage .coronaModalContent article p{
-  font-size:16px;  letter-spacing:-0.25px;
-  margin-bottom:12px;
-}
-#coronaPage .coronaModalContent article p:last-child{
-  margin-bottom:0px;
-}
-#coronaPage .coronaModalContent article h4 span{
-color:#0074D4}
+    #coronaPage .coronaModalContent article h4,
+    #coronaPage .coronaTabsContents h4,
+    #coronaPage .CoronaMobilePages h4 {
+      font-size: 16px;
+      font-family: ProximaNova-Semibold, ProximaNovaA-Semibold, ProximaNovaS-Semibold;
+      margin-bottom: 0px;
+      letter-spacing: -0.25px;
+      color: #333;
+    }
 
-.coronaCiaLogo svg{
-  /* display:none; */
-  opacity:0;
-}
-#coronaPage #Prioridade-2 .coronaModalContent .flexCoronacias{
-  display:flex;
-  flex-direction:row;
-  justify-content:flex-start;
-  align-content:stretch;
-}
-#coronaPage #Prioridade-2 .coronaModalContent .flexCoronacias .coronaCiax3{
-  border:1px solid #d9d9d9;
-  display:flex;
-  flex-direction:column;
-  border-radius:3px;
-  padding:8px;
-}
-#coronaPage #Prioridade-2 .coronaModalContent .flexCoronacias .coronaCiax3 span{
-  text-align:center;
-  font-family:ProximaNova-SemiBold,ProximaNovaA-SemiBold,ProximaNovaS-SemiBold;
-  letter-spacing: -0.25px;
-  color:#0164BF;
-  font-size:14px;
-}
-#coronaPage #Prioridade-2 .coronaModalContent .flexCoronacias a{
-text-decoration: none;
-width: auto;
-}
-#coronaPage #Prioridade-2 .coronaModalContent .flexCoronacias a img{
-  width:76px;
-  align-self: center;
-  margin-bottom:8px;
-}
-#coronaPage #Prioridade-2 .coronaModalContent .flexCoronacias .coronaCiax3{
-  margin-right:20px;
-  transition: transform .3s;
-}
-#coronaPage #Prioridade-2 .coronaModalContent .flexCoronacias .coronaCiax3:hover{
-  cursor:pointer;
-  transform:scale(1.04);
-}
-#coronaPage #Prioridade-2 .coronaModalContent .flexCoronacias{
-  margin-bottom:20px;
-}
-#coronaPage #Prioridade-2 .coronaModalContent ul{
-  padding-left:0px;
-}
-#coronaPage #Prioridade-2 .coronaModalContent ul li{
-  margin-bottom:8px;
-  color:#333;
-  font-size:16px;
-  letter-spacing:-0.25px;
-  line-height:1.2;
-}
-#coronaPage #Prioridade-2 .coronaModalContent ul li a{
-  font-family:ProximaNova-SemiBold,ProximaNovaA-SemiBold,ProximaNovaS-SemiBold;
-  letter-spacing: -0.25px;
-  color:#0164BF;
-}
-#coronaPage .modalContent ol li h4{
-  margin-bottom:6px;
-}
-#coronaPage .modalContent ol li{
-  margin-bottom:22px;
-  font-size:16px;
-  line-height:1.2;
-  color:#333;
-}
+    #coronaPage .coronaModalContent article p {
+      font-size: 16px;
+      letter-spacing: -0.25px;
+      margin-bottom: 12px;
+    }
 
-#coronaPage .modalContent ol li ul li{
-  margin-bottom:12px;
-}
-#coronaPage .modalContent ol li a{
-font-family:ProximaNova-SemiBold,ProximaNovaA-SemiBold,ProximaNovaS-SemiBold;
-letter-spacing: -0.25px;
-color:#0164BF;
-}
+    #coronaPage .coronaModalContent article p:last-child {
+      margin-bottom: 0px;
+    }
 
-#coronaPage #coronaScrolltoTop{
-  background-color: #0164BF;
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  padding:14px;
-  border-radius:3px;
-  box-shadow:0px 1px 6px rgba(0,0,0,.3);
-  cursor:pointer;
-  transition: transform .8s, background-color .3s ;
-}
+    #coronaPage .coronaModalContent article h4 span {
+      color: #0074D4
+    }
 
-#coronaPage #coronaScrolltoTop:hover{
-  background-color: #00519c;
-  transform:translateY(-8px);
-  transition: transform .2s, background-color .3s ;
-}
-#coronaPage .backdrop{
-  position:fixed;
-  display:block;
-  width:100%;
-  height:100%;
-  background:rgba(0,0,0,.4);
-  top:0;
-  right:0;
-  overflow: hidden;
-  z-index:1;
-}
+    .coronaCiaLogo svg {
+      /* display:none; */
+      opacity: 0;
+    }
 
-#coronaPage .coronaFocusContent {
-  transition: border .3s;
-  border:2px #0164BF solid
-}
+    #coronaPage #Prioridade-2 .coronaModalContent .flexCoronacias {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-content: stretch;
+    }
 
-@media screen and (max-width:800px){
-#coronaPage .coronaContainer{
-  padding:0 20px;
-}
-#coronaPage #coronaContent .coronaOneThird{
-  width:100%;
-}
-#coronaPage section#coronaTop{
-  padding-bottom:120px;
-}
-#coronaPage .coronaTextIntro{
-  margin-top:-120px;
-  margin-bottom: 20px;
-}
-#coronaPage .coronaBreadcrumb ul li svg {
-position: absolute;
-left: -15px;
-transform: scale(0.7) translateY(0px);
-}
-#coronaPage .CoronaMobilePages .coronaBreadcrumb ul li svg {
-position: absolute;
-left: -15px;
-transform: scale(0.9) translateY(2px);
-}
-#coronaPage .coronaTabsResults{
-  display:none;
-}
-#coronaPage .coronaPrioridadesContent .coronaPrioritysBlocks{
-  margin-right: 0;
-  height: auto;
-  margin-bottom: 10px;
-}
-#coronaPage .coronaMobile{display:flex; width:100%;}
-#coronaPage .coronaDesktop{display:none;}
-#coronaPage .coronaBreadcrumb ul li:last-child {
-display: inline-block;
-color: #333;
-position: relative;
-margin-left: 20px;
-}
+    #coronaPage #Prioridade-2 .coronaModalContent .flexCoronacias .coronaCiax3 {
+      border: 1px solid #d9d9d9;
+      display: flex;
+      flex-direction: column;
+      border-radius: 3px;
+      padding: 8px;
+    }
 
-#coronaPage .coronaBreadcrumb ul li svg #arrowLeftCorona{
-  fill:#333333;
-}
+    #coronaPage #Prioridade-2 .coronaModalContent .flexCoronacias .coronaCiax3 span {
+      text-align: center;
+      font-family: ProximaNova-SemiBold, ProximaNovaA-SemiBold, ProximaNovaS-SemiBold;
+      letter-spacing: -0.25px;
+      color: #0164BF;
+      font-size: 14px;
+    }
 
-#coronaPage .coronaMobilePages .coronaBreadcrumb ul li svg {
-position: absolute;
-left: -15px;
-top: 2px;
-}
-.CoronaMobilePages{
-  width:100%;
-}
-#coronaPage .coronaModal {
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(255,255,255,1);
-}
-#coronaPage .coronaModalArea{
-  width: 100%;
-  box-shadow:none;
-  top:0;
-}
-#coronaPage .coronaModalTitle{
-  padding:19px 0px 10px;
-  height:auto;
-}
-#coronaPage .coronaModalTitle h2{
-  padding-left: 20px;
-}
-#coronaPage .closeCorona{
-padding-right: 20px;
-}
+    #coronaPage #Prioridade-2 .coronaModalContent .flexCoronacias a {
+      text-decoration: none;
+      width: auto;
+    }
 
-#coronaPage .coronaPrioridadesContent .coronaOneThird{
-  width:100%;
-}
-#coronaPage #Prioridade-2 .coronaModalContent .flexCoronacias a{
-text-decoration: none;
-width: 30%;
-}
-#coronaPage #Prioridade-2 .coronaModalContent .flexCoronacias a.midCoronaMargin{
-  margin:0px 4.5%;
-}
-#coronaPage #Prioridade-2 .coronaModalContent .flexCoronacias{
-  display:flex;
-  flex-direction:row;
-  justify-content:center;
-  align-content:stretch;
-  margin-bottom: 20px;
-}
-#coronaPage #Prioridade-2 .coronaModalContent .flexCoronacias .coronaCiax3{
-  margin:0;
-}
-#coronaPage .coronaModalContent{
-  padding-top:90px;
-}
-#coronaPage .coronaModalTitle{
-  position:fixed;
-  background:#fff;
-}
-#coronaPage .CoronaMobilePages .coronaBreadcrumb ul li:last-child{
-padding: 20px 20px 20px 0px;
-}
-#coronaPage .CoronaMobilePages .coronaBreadcrumb ul li:last-child:hover{
-  cursor:pointer;
-}
-#coronaPage .desktopCoronaInline{
-  display:none;
-}
-#coronaPage .mobileCoronaInline{
-  display:inline;
-}
-#coronaPage .backdrop{
-  background-color:rgba(255,255,255,1);
-}
-#coronaPage .CoronaMobilePages h4{
-  font-size:16px;
-  font-family:ProximaNova-Semibold,ProximaNovaA-Semibold,ProximaNovaS-Semibold;
-  margin-bottom:0px;
-  letter-spacing:-0.25px;
-  color:#333;
-}
-}
-@media screen and (max-width:520px){
-  #coronaPage section#coronaTop {
-  background: url("https://i.imgur.com/QxGlglp.png") 160% 0px no-repeat, #FFA202;
-  }
-}
-@media screen and (max-width:375px){
-  #coronaPage section#coronaTop {
-  background: url("https://i.imgur.com/QxGlglp.png") 200px 0px no-repeat, #FFA202;
-  }
-  #coronaPage .coronaTitle h1{
-    font-size:28px;
-  }
-  #coronaPage .coronaMobilebr{display:none;}
-}
-@media screen and (max-width:360px){
-  #coronaPage .coronaTitle h1{
-    font-size:26px;
-  }
-  #coronaPage #Prioridade-2 .coronaModalContent .flexCoronacias a img{
-    width:56px;
-    height:auto;
-  }
-}
-@media screen and (max-width:320px){
-  #coronaPage #coronaContent .coronaOneThird .coronaTabsList .coronaTabs button{
-  font-size:14px;
-  }
-}
+    #coronaPage #Prioridade-2 .coronaModalContent .flexCoronacias a img {
+      width: 76px;
+      align-self: center;
+      margin-bottom: 8px;
+    }
 
-</style>
+    #coronaPage #Prioridade-2 .coronaModalContent .flexCoronacias .coronaCiax3 {
+      margin-right: 20px;
+      transition: transform .3s;
+    }
+
+    #coronaPage #Prioridade-2 .coronaModalContent .flexCoronacias .coronaCiax3:hover {
+      cursor: pointer;
+      transform: scale(1.04);
+    }
+
+    #coronaPage #Prioridade-2 .coronaModalContent .flexCoronacias {
+      margin-bottom: 20px;
+    }
+
+    #coronaPage #Prioridade-2 .coronaModalContent ul {
+      padding-left: 0px;
+    }
+
+    #coronaPage #Prioridade-2 .coronaModalContent ul li {
+      margin-bottom: 8px;
+      color: #333;
+      font-size: 16px;
+      letter-spacing: -0.25px;
+      line-height: 1.2;
+    }
+
+    #coronaPage #Prioridade-2 .coronaModalContent ul li a {
+      font-family: ProximaNova-SemiBold, ProximaNovaA-SemiBold, ProximaNovaS-SemiBold;
+      letter-spacing: -0.25px;
+      color: #0164BF;
+    }
+
+    #coronaPage .modalContent ol li h4 {
+      margin-bottom: 6px;
+    }
+
+    #coronaPage .modalContent ol li {
+      margin-bottom: 22px;
+      font-size: 16px;
+      line-height: 1.2;
+      color: #333;
+    }
+
+    #coronaPage .modalContent ol li ul li {
+      margin-bottom: 12px;
+    }
+
+    #coronaPage .modalContent ol li a {
+      font-family: ProximaNova-SemiBold, ProximaNovaA-SemiBold, ProximaNovaS-SemiBold;
+      letter-spacing: -0.25px;
+      color: #0164BF;
+    }
+
+    #coronaPage #coronaScrolltoTop {
+      background-color: #0164BF;
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      padding: 14px;
+      border-radius: 3px;
+      box-shadow: 0px 1px 6px rgba(0, 0, 0, .3);
+      cursor: pointer;
+      transition: transform .8s, background-color .3s;
+    }
+
+    #coronaPage #coronaScrolltoTop:hover {
+      background-color: #00519c;
+      transform: translateY(-8px);
+      transition: transform .2s, background-color .3s;
+    }
+
+    #coronaPage .backdrop {
+      position: fixed;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, .4);
+      top: 0;
+      right: 0;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    #coronaPage .coronaFocusContent {
+      transition: border .3s;
+      border: 2px #0164BF solid
+    }
+
+    @media screen and (max-width:800px) {
+      #coronaPage .coronaContainer {
+        padding: 0 20px;
+      }
+
+      #coronaPage #coronaContent .coronaOneThird {
+        width: 100%;
+      }
+
+      #coronaPage section#coronaTop {
+        padding-bottom: 120px;
+      }
+
+      #coronaPage .coronaTextIntro {
+        margin-top: -120px;
+        margin-bottom: 20px;
+      }
+
+      #coronaPage .coronaBreadcrumb ul li svg {
+        position: absolute;
+        left: -15px;
+        transform: scale(0.7) translateY(0px);
+      }
+
+      #coronaPage .CoronaMobilePages .coronaBreadcrumb ul li svg {
+        position: absolute;
+        left: -15px;
+        transform: scale(0.9) translateY(2px);
+      }
+
+      #coronaPage .coronaTabsResults {
+        display: none;
+      }
+
+      #coronaPage .coronaPrioridadesContent .coronaPrioritysBlocks {
+        margin-right: 0;
+        height: auto;
+        margin-bottom: 10px;
+      }
+
+      #coronaPage .coronaMobile {
+        display: flex;
+        width: 100%;
+      }
+
+      #coronaPage .coronaDesktop {
+        display: none;
+      }
+
+      #coronaPage .coronaBreadcrumb ul li:last-child {
+        display: inline-block;
+        color: #333;
+        position: relative;
+        margin-left: 20px;
+      }
+
+      #coronaPage .coronaBreadcrumb ul li svg #arrowLeftCorona {
+        fill: #333333;
+      }
+
+      #coronaPage .coronaMobilePages .coronaBreadcrumb ul li svg {
+        position: absolute;
+        left: -15px;
+        top: 2px;
+      }
+
+      .CoronaMobilePages {
+        width: 100%;
+      }
+
+      #coronaPage .coronaModal {
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(255, 255, 255, 1);
+      }
+
+      #coronaPage .coronaModalArea {
+        width: 100%;
+        box-shadow: none;
+        top: 0;
+      }
+
+      #coronaPage .coronaModalTitle {
+        padding: 19px 0px 10px;
+        height: auto;
+      }
+
+      #coronaPage .coronaModalTitle h2 {
+        padding-left: 20px;
+      }
+
+      #coronaPage .closeCorona {
+        padding-right: 20px;
+      }
+
+      #coronaPage .coronaPrioridadesContent .coronaOneThird {
+        width: 100%;
+      }
+
+      #coronaPage #Prioridade-2 .coronaModalContent .flexCoronacias a {
+        text-decoration: none;
+        width: 30%;
+      }
+
+      #coronaPage #Prioridade-2 .coronaModalContent .flexCoronacias a.midCoronaMargin {
+        margin: 0px 4.5%;
+      }
+
+      #coronaPage #Prioridade-2 .coronaModalContent .flexCoronacias {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: stretch;
+        margin-bottom: 20px;
+      }
+
+      #coronaPage #Prioridade-2 .coronaModalContent .flexCoronacias .coronaCiax3 {
+        margin: 0;
+      }
+
+      #coronaPage .coronaModalContent {
+        padding-top: 90px;
+      }
+
+      #coronaPage .coronaModalTitle {
+        position: fixed;
+        background: #fff;
+      }
+
+      #coronaPage .CoronaMobilePages .coronaBreadcrumb ul li:last-child {
+        padding: 20px 20px 20px 0px;
+      }
+
+      #coronaPage .CoronaMobilePages .coronaBreadcrumb ul li:last-child:hover {
+        cursor: pointer;
+      }
+
+      #coronaPage .desktopCoronaInline {
+        display: none;
+      }
+
+      #coronaPage .mobileCoronaInline {
+        display: inline;
+      }
+
+      #coronaPage .backdrop {
+        background-color: rgba(255, 255, 255, 1);
+      }
+
+      #coronaPage .CoronaMobilePages h4 {
+        font-size: 16px;
+        font-family: ProximaNova-Semibold, ProximaNovaA-Semibold, ProximaNovaS-Semibold;
+        margin-bottom: 0px;
+        letter-spacing: -0.25px;
+        color: #333;
+      }
+    }
+
+    @media screen and (max-width:520px) {
+      #coronaPage section#coronaTop {
+        background: url("https://i.imgur.com/QxGlglp.png") 160% 0px no-repeat, #FFA202;
+      }
+    }
+
+    @media screen and (max-width:375px) {
+      #coronaPage section#coronaTop {
+        background: url("https://i.imgur.com/QxGlglp.png") 200px 0px no-repeat, #FFA202;
+      }
+
+      #coronaPage .coronaTitle h1 {
+        font-size: 28px;
+      }
+
+      #coronaPage .coronaMobilebr {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width:360px) {
+      #coronaPage .coronaTitle h1 {
+        font-size: 26px;
+      }
+
+      #coronaPage #Prioridade-2 .coronaModalContent .flexCoronacias a img {
+        width: 56px;
+        height: auto;
+      }
+    }
+
+    @media screen and (max-width:320px) {
+      #coronaPage #coronaContent .coronaOneThird .coronaTabsList .coronaTabs button {
+        font-size: 14px;
+      }
+    }
+  </style>
+
+
+  <script type="text/javascript">
+    var homeVNCoronaPage = document.getElementById("Informacoes-importantes");
+    var coronaMediaScreen = window.matchMedia("(max-width: 800px)")
+    var hash = window.location.hash;
+
+    function coronaWidthCheck(pagehash, originContent, clonedContent, realContent, tabNumber) {
+      if (coronaMediaScreen.matches) {
+        changeCoronaPageonLoad(pagehash, originContent, clonedContent);
+      } else {
+        openCoronaTabsonLoad(realContent, tabNumber);
+      }
+    }
+
+    window.onload = screenCheckerCorona();
+    window.onhashchange = function() {
+      screenCheckerCorona();
+    };
+
+    function screenCheckerCorona() {
+      var hash = window.location.hash;
+      if (hash == "#!#Atendimento") {
+        coronaCloseModalBack('Prioridade-2');
+        coronaCloseModalBack('Prioridade-3');
+        coronaWidthCheck('Atendimento', 'coronaAtendimentoOrigin', 'coronaClonedAtendimentoContent', 'coronaAtendimentoContent', 'Tabs1');
+      } else if (hash == "#!#Brasileiros-no-exterior") {
+        coronaWidthCheck('Brasileiros-no-exterior', 'coronaBrasileirosOrigin', 'coronaClonedBrasileirosContent', 'coronaBrasileirosContent', 'Tabs2');
+      } else if (hash == "#!#Regras-de-cias") {
+        coronaTopRules();
+        coronaBackHomeonLoad('Reembolso', 'coronaClonedReembolsoContent');
+        coronaCloseModalBack('AirFrance');
+        coronaCloseModalBack('Ethiopian');
+        coronaCloseModalBack('KLM');
+        coronaCloseModalBack('Norwegian');
+        coronaCloseModalBack('Paranair');
+        coronaCloseModalBack('Qantas');
+        coronaCloseModalBack('Qatar');
+        coronaCloseModalBack('RoyalAirMaroc');
+        coronaWidthCheck('Regras-de-cias', 'coronaRegrasOrigin', 'coronaClonedRegrasContent', 'coronaRegrasContent', 'Tabs3');
+      } else if (hash == "#!#Reembolso") {
+        coronaBackHomeonLoad('Regras-de-cias', 'coronaClonedRegrasContent');
+        coronaWidthCheck('Reembolso', 'coronaReembolsoOrigin', 'coronaClonedReembolsoContent', 'coronaReembolsoContent', 'Tabs4');
+      } else if (hash == "#!#Prioridade-2") {
+        coronaWidthCheck('Atendimento', 'coronaAtendimentoOrigin', 'coronaClonedAtendimentoContent', 'coronaAtendimentoContent', 'Tabs1');
+        coronaModalVNInitial('Prioridade-2');
+      } else if (hash == "#!#Prioridade-3") {
+        coronaWidthCheck('Atendimento', 'coronaAtendimentoOrigin', 'coronaClonedAtendimentoContent', 'coronaAtendimentoContent', 'Tabs1');
+        coronaModalVNInitial('Prioridade-3');
+      } else if (hash == "#!#AirFrance") {
+        coronaWidthCheck('Regras-de-cias', 'coronaRegrasOrigin', 'coronaClonedRegrasContent', 'coronaRegrasContent', 'Tabs3');
+        coronaModalVNInitial('AirFrance');
+      } else if (hash == "#!#Ethiopian") {
+        coronaWidthCheck('Regras-de-cias', 'coronaRegrasOrigin', 'coronaClonedRegrasContent', 'coronaRegrasContent', 'Tabs3');
+        coronaModalVNInitial('Ethiopian');
+      } else if (hash == "#!#KLM") {
+        coronaWidthCheck('Regras-de-cias', 'coronaRegrasOrigin', 'coronaClonedRegrasContent', 'coronaRegrasContent', 'Tabs3');
+        coronaModalVNInitial('KLM');
+      } else if (hash == "#!#Norwegian") {
+        coronaWidthCheck('Regras-de-cias', 'coronaRegrasOrigin', 'coronaClonedRegrasContent', 'coronaRegrasContent', 'Tabs3');
+        coronaModalVNInitial('Norwegian');
+      } else if (hash == "#!#Paranair") {
+        coronaWidthCheck('Regras-de-cias', 'coronaRegrasOrigin', 'coronaClonedRegrasContent', 'coronaRegrasContent', 'Tabs3');
+        coronaModalVNInitial('Paranair');
+      } else if (hash == "#!#Qantas") {
+        coronaWidthCheck('Regras-de-cias', 'coronaRegrasOrigin', 'coronaClonedRegrasContent', 'coronaRegrasContent', 'Tabs3');
+        coronaModalVNInitial('Qantas');
+      } else if (hash == "#!#Qatar") {
+        coronaWidthCheck('Regras-de-cias', 'coronaRegrasOrigin', 'coronaClonedRegrasContent', 'coronaRegrasContent', 'Tabs3');
+        coronaModalVNInitial('Qatar');
+      } else if (hash == "#!#RoyalAirMaroc") {
+        coronaWidthCheck('Regras-de-cias', 'coronaRegrasOrigin', 'coronaClonedRegrasContent', 'coronaRegrasContent', 'Tabs3');
+        coronaModalVNInitial('RoyalAirMaroc');
+      } else {
+        window.location.hash = "#Informacoes-importantes"
+        coronaBackHomeonLoad('Atendimento', 'coronaClonedAtendimentoContent');
+        coronaBackHomeonLoad('Brasileiros-no-exterior', 'coronaClonedBrasileirosContent');
+        coronaBackHomeonLoad('Regras-de-cias', 'coronaClonedRegrasContent');
+        coronaBackHomeonLoad('Reembolso', 'coronaClonedReembolsoContent');
+        document.getElementById("Informacoes-importantes").style.display = "block";
+        openCoronaTabsonLoad("coronaAtendimentoContent", "Tabs1");
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    };
+
+
+    function openCoronaTabsonLoad(coronaContentType, tabNumber) {
+      var i;
+      var x = document.getElementsByClassName("coronaTabsContents");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      coronaTabsLinks = document.getElementsByClassName("coronaTabsCTA");
+      for (i = 0; i < x.length; i++) {
+        coronaTabsLinks[i].className = coronaTabsLinks[i].className.replace(" coronaActiveTab", "");
+      }
+      document.getElementById(coronaContentType).style.display = "block";
+      document.getElementById(tabNumber).classList.add("coronaActiveTab")
+    }
+
+    function openCoronaTabs(evtCorona, coronaContentType, coronaPageName) {
+      var i;
+      var x = document.getElementsByClassName("coronaTabsContents");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      coronaTabsLinks = document.getElementsByClassName("coronaTabsCTA");
+      for (i = 0; i < x.length; i++) {
+        coronaTabsLinks[i].className = coronaTabsLinks[i].className.replace(" coronaActiveTab", "");
+      }
+      document.getElementById(coronaContentType).style.display = "block";
+      evtCorona.currentTarget.className += " coronaActiveTab";
+      window.location.hash = coronaPageName;
+    }
+
+    function changeCoronaPage(coronaPageName, coronaContentOrigin, coronaClonedContent) {
+      document.getElementById(coronaClonedContent).innerHTML = "";
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+      homeVNCoronaPage.style.display = "none";
+      document.getElementById(coronaPageName).style.display = "block";
+      var coronaDaddyClone = document.getElementById(coronaContentOrigin);
+      var coronaClone = coronaDaddyClone.cloneNode(true);
+      document.getElementById(coronaClonedContent).appendChild(coronaClone);
+      window.location.hash = coronaPageName;
+    }
+
+    function changeCoronaPageonLoad(coronaPageName, coronaContentOrigin, coronaClonedContent) {
+      document.getElementById(coronaClonedContent).innerHTML = "";
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+      homeVNCoronaPage.style.display = "none";
+      document.getElementById(coronaPageName).style.display = "block";
+      var coronaDaddyClone = document.getElementById(coronaContentOrigin);
+      var coronaClone = coronaDaddyClone.cloneNode(true);
+      document.getElementById(coronaClonedContent).appendChild(coronaClone);
+    }
+
+    function coronaBackHome(coronaPageName, coronaClonedContent) {
+      homeVNCoronaPage.style.display = "block";
+      document.getElementById(coronaPageName).style.display = "none";
+      document.getElementById(coronaClonedContent).innerHTML = "";
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+      window.location.hash = "#!#Informacoes-importantes";
+    }
+
+    function coronaBackHomeonLoad(coronaPageName, coronaClonedContent) {
+      document.getElementById(coronaPageName).style.display = "none";
+      document.getElementById(coronaClonedContent).innerHTML = "";
+
+    }
+
+    function coronaModalVN(coronaPageModal) {
+      var coronaModal = document.getElementById(coronaPageModal);
+      document.getElementById(coronaPageModal).style.display = "block";
+      window.location.hash = coronaPageModal;
+      document.onkeydown = function(evt) {
+        evt = evt || window.event;
+        var isEscape = false;
+        if ("key" in evt) {
+          isEscape = (evt.key === "Escape" || evt.key === "Esc");
+        } else {
+          isEscape = (evt.keyCode === 27);
+        }
+        if (isEscape) {
+          document.getElementById(coronaPageModal).style.display = "none";
+        }
+      };
+    }
+
+    function coronaModalVNInitial(coronaPageModal) {
+      var coronaModal = document.getElementById(coronaPageModal);
+      document.getElementById(coronaPageModal).style.display = "block";
+      document.onkeydown = function(evt) {
+        evt = evt || window.event;
+        var isEscape = false;
+        if ("key" in evt) {
+          isEscape = (evt.key === "Escape" || evt.key === "Esc");
+        } else {
+          isEscape = (evt.keyCode === 27);
+        }
+        if (isEscape) {
+          document.getElementById(coronaPageModal).style.display = "none";
+        }
+      };
+    }
+
+    function coronaCloseModal(coronaPageModal, coronaPageName) {
+      var coronaModal = document.getElementById(coronaPageModal);
+      document.getElementById(coronaPageModal).style.display = "none";
+      window.location.hash = coronaPageName;
+    }
+
+    function coronaCloseModalBack(coronaPageModal) {
+      document.getElementById(coronaPageModal).style.display = "none";
+    }
+
+    function coronaTopRules() {
+      coronaScrolLCTA = document.getElementById("coronaScrolltoTop");
+      window.onscroll = function() {
+        scrollFunctionCorona()
+      };
+    }
+
+    function scrollFunctionCorona() {
+      if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 20) {
+        coronaScrolLCTA.style.display = "block";
+      } else {
+        coronaScrolLCTA.style.display = "none";
+      }
+    }
+
+    function changeCoronaPageModal(coronaPageName, coronaContentOrigin, coronaClonedContent, coronaPageModal) {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+      homeVNCoronaPage.style.display = "none";
+      document.getElementById('coronaAtendimentoPage').style.display = "none";
+      document.getElementById(coronaPageName).style.display = "block";
+      var coronaDaddyClone = document.getElementById(coronaContentOrigin);
+      var coronaClone = coronaDaddyClone.cloneNode(true);
+      document.getElementById(coronaClonedContent).appendChild(coronaClone);
+      var coronaModal = document.getElementById(coronaPageModal);
+      document.getElementById(coronaPageModal).style.display = "none";
+    }
+
+    function openCoronaTabsModal(evtCorona, coronaContentType, coronaPageModal) {
+      var i;
+      var x = document.getElementsByClassName("coronaTabsContents");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      coronaTabsLinks = document.getElementsByClassName("coronaTabsCTA");
+      for (i = 0; i < x.length; i++) {
+        coronaTabsLinks[i].className = coronaTabsLinks[i].className.replace(" coronaActiveTab", "");
+      }
+      document.getElementById(coronaContentType).style.display = "block";
+      evtCorona.currentTarget.className += " coronaActiveTab";
+
+      var coronaModal = document.getElementById(coronaPageModal);
+      document.getElementById(coronaPageModal).style.display = "none";
+    }
+
+    function topCoronaFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
+    function coronaFocus(idName) {
+      document.getElementById(idName).focus()
+      document.getElementById(idName).classList.add("coronaFocusContent")
+    }
+  </script>
+
   <!-- Use esses textos no find/replace para alterar as sessões:
 
   Conteudo de Atendimento
@@ -873,7 +1258,7 @@ padding: 20px 20px 20px 0px;
             <div class="coronaTabsResults">
               <div class="coronaTabsContents coronaFade" id="coronaAtendimentoContent">
                 <section id="coronaAtendimentoOrigin">
-                   <!-- Conteudo de atendimento -->
+                  <!-- Conteudo de atendimento -->
                   <h2>Atendimento</h2>
                   <p>Com o intuito de melhor atender os nossos clientes, criamos diferentes níveis de prioridade de atendimento, descritos abaixo:</p>
                   <p><small>Lembramos que não é necessário fazer uma nova solicitação no intuito de acelerar o atendimento. Solicitações duplicadas fazem com que o tempo de resposta se torne maior do que o necessário, contamos com a sua
@@ -1809,17 +2194,20 @@ padding: 20px 20px 20px 0px;
                   <!-- Conteudo de Reembolso -->
                   <h2>Reembolso</h2>
                   <h4>Gostaria de cancelar minha compra devido à pandemia do Coronavírus, pagarei alguma multa?</h4>
-                    <p>Esse novo regramento foi publicado pela Presidência da República do Brasil, através da Medida Provisória nº 925, em 18 de março de 2020, como uma forma para tentar conter os impactos da crise causada pela pandemia do
-                      Coronavírus na indústria do turismo. Caso opte pelo crédito no valor do bilhete, conforme esta mesma Medida Provisória, não haverá cobrança de penalidade.
+                  <p>Esse novo regramento foi publicado pela Presidência da República do Brasil, através da Medida Provisória nº 925, em 18 de março de 2020, como uma forma para tentar conter os impactos da crise causada pela pandemia do
+                    Coronavírus na indústria do turismo. Caso opte pelo crédito no valor do bilhete, conforme esta mesma Medida Provisória, não haverá cobrança de penalidade.
                     <br>
                     <a href="http://www.planalto.gov.br/ccivil_03/_Ato2019-2022/2020/Mpv/mpv925.htm" target="_blank">Veja aqui o documento na íntegra</a></p>
-                    <p><small>Como no cancelamento com crédito não há nenhuma multa ou penalidade das cias aéreas, somente eventual diferença tarifária na remarcação, indicamos essa opção como preferencial, mas a escolha será sempre do nosso cliente.</small></p>
-                    <p>Para consultar as políticas de cancelamento das companhias aéreas, <span class="mobileCoronaInline"><a onclick="changeCoronaPage('Regras-de-cias','coronaRegrasOrigin','coronaClonedRegrasContent');coronaTopRules()">acesse o link</a></span><span class="desktopCoronaInline"><a onclick="openCoronaTabs(event,'coronaRegrasContent','Regras-de-cias');coronaTopRules()">acesse o link</a></span>.
-                    </p>
+                  <p><small>Como no cancelamento com crédito não há nenhuma multa ou penalidade das cias aéreas, somente eventual diferença tarifária na remarcação, indicamos essa opção como preferencial, mas a escolha será sempre do nosso
+                      cliente.</small></p>
+                  <p>Para consultar as políticas de cancelamento das companhias aéreas, <span class="mobileCoronaInline"><a onclick="changeCoronaPage('Regras-de-cias','coronaRegrasOrigin','coronaClonedRegrasContent');coronaTopRules()">acesse o
+                        link</a></span><span class="desktopCoronaInline"><a onclick="openCoronaTabs(event,'coronaRegrasContent','Regras-de-cias');coronaTopRules()">acesse o link</a></span>.
+                  </p>
                   <br>
                   <h4>Decidi que prefiro o reembolso, mesmo com multa e prazo de pagamento de 1 ano. Como solicito o reembolso?</h4>
                   <p>Caso queira optar pelo cancelamento com reembolso, <a href="https://www.viajanet.com.br/atendimento/enviar-email" target="_blank">solicite aqui.</a></p>
-                  <p><small>*Esclarecemos que a Medida Provisória nº 925, de 18 de março de 2020, foi publicada pelo Governo do Brasil como uma forma de conter os impactos da crise causada pela pandemia do Coronavírus na indústria do turismo. Caso opte pelo crédito no valor do bilhete, conforme esta mesma Medida Provisória, não haverá cobrança de penalidad</small></p>
+                  <p><small>*Esclarecemos que a Medida Provisória nº 925, de 18 de março de 2020, foi publicada pelo Governo do Brasil como uma forma de conter os impactos da crise causada pela pandemia do Coronavírus na indústria do turismo. Caso
+                      opte pelo crédito no valor do bilhete, conforme esta mesma Medida Provisória, não haverá cobrança de penalidad</small></p>
 
                 </section>
               </div>
@@ -1988,15 +2376,17 @@ padding: 20px 20px 20px 0px;
       </div>
       <button style="display:none" onclick="topCoronaFunction()" id="coronaScrolltoTop" class="coronaFade" title="Subir a página">
         <svg width="18px" height="11px" viewBox="0 0 18 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <g id="scrollTopCorona" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                <g id="2.0---Mobile---Atendimento---Modal" transform="translate(-313.000000, -2605.000000)" fill="#FFFFFF" fill-rule="nonzero">
-                    <g id="Scroll-Up" transform="translate(304.000000, 2594.000000)">
-                        <g id="up-arrow" transform="translate(8.530576, 11.379310)">
-                            <path d="M18.2495003,8.89648132 L9.99965773,0.231004183 C9.70642546,-0.0770013943 9.23242346,-0.0770013943 8.93919119,0.231004183 L0.689348661,8.89648132 C0.396116394,9.2044869 0.396116394,9.70236955 0.689348661,10.0103751 C0.982580929,10.3183807 1.45658293,10.3183807 1.74981519,10.0103751 L9.46940688,1.90186336 L17.1889986,10.0103751 C17.3352456,10.1639902 17.5272299,10.2412039 17.7192494,10.2412039 C17.9112689,10.2412039 18.1032533,10.1639902 18.2495003,10.0103751 C18.5427325,9.70236955 18.5427325,9.2044869 18.2495003,8.89648132 Z" id="Path"></path>
-                        </g>
-                    </g>
+          <g id="scrollTopCorona" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="2.0---Mobile---Atendimento---Modal" transform="translate(-313.000000, -2605.000000)" fill="#FFFFFF" fill-rule="nonzero">
+              <g id="Scroll-Up" transform="translate(304.000000, 2594.000000)">
+                <g id="up-arrow" transform="translate(8.530576, 11.379310)">
+                  <path
+                    d="M18.2495003,8.89648132 L9.99965773,0.231004183 C9.70642546,-0.0770013943 9.23242346,-0.0770013943 8.93919119,0.231004183 L0.689348661,8.89648132 C0.396116394,9.2044869 0.396116394,9.70236955 0.689348661,10.0103751 C0.982580929,10.3183807 1.45658293,10.3183807 1.74981519,10.0103751 L9.46940688,1.90186336 L17.1889986,10.0103751 C17.3352456,10.1639902 17.5272299,10.2412039 17.7192494,10.2412039 C17.9112689,10.2412039 18.1032533,10.1639902 18.2495003,10.0103751 C18.5427325,9.70236955 18.5427325,9.2044869 18.2495003,8.89648132 Z"
+                    id="Path"></path>
                 </g>
+              </g>
             </g>
+          </g>
         </svg></button>
     </div>
     <div id="Reembolso" class="coronaFade CoronaMobilePages" style="display:none">
@@ -2035,15 +2425,19 @@ padding: 20px 20px 20px 0px;
             <h3>Passageiros com embarque programado para até 30 de abril:</h3>
             <article class="modalContent">
               <h3>Voos internacionais: Suspensão de voos internacionais por restrição de espaço aéreo</h3>
-              <p>Voos internacionais com embarque até <strong>30 de abril de 2020</strong> e operados pelas companhias aéreas: Aerolíneas Argentinas, Air Canada, Air China, Air Europa, Air New Zealand, Alitalia, American Airlines, Avianca, Azul, Cabo Verde Airlines, Copa Airlines, Delta, Emirates, Gol, Latam, Qantas, Royal Air Maroc, Swiss, Tap, Taag, Turkish, United <strong>estão automaticamente cancelados</strong> devido ao fechamento de fronteiras e restrição à entrada de estrangeiros nestes destinos.</p>
+              <p>Voos internacionais com embarque até <strong>30 de abril de 2020</strong> e operados pelas companhias aéreas: Aerolíneas Argentinas, Air Canada, Air China, Air Europa, Air New Zealand, Alitalia, American Airlines, Avianca, Azul, Cabo
+                Verde Airlines, Copa Airlines, Delta, Emirates, Gol, Latam, Qantas, Royal Air Maroc, Swiss, Tap, Taag, Turkish, United <strong>estão automaticamente cancelados</strong> devido ao fechamento de fronteiras e restrição à entrada de
+                estrangeiros nestes destinos.</p>
               <br>
               <h4>Como saber o status do meu pedido e solicitar o cancelamento com crédito?</h4>
-              <p>Se o seu voo é operado pelas companhias aéreas listadas acima, não é necessário solicitar o cancelamento com crédito do seu bilhete. Verifique mais detalhes do seu pedido no <a href="https://www.viajanet.com.br/shop/myaccount/#/reservations" target="_blank">Minha Conta</a>
-              assim que o status estiver como “cancelamento com crédito”, o crédito estará disponível. O prazo para utilização do crédito* seguirá as regras de companhia aérea.</p>
+              <p>Se o seu voo é operado pelas companhias aéreas listadas acima, não é necessário solicitar o cancelamento com crédito do seu bilhete. Verifique mais detalhes do seu pedido no <a
+                  href="https://www.viajanet.com.br/shop/myaccount/#/reservations" target="_blank">Minha Conta</a>
+                assim que o status estiver como “cancelamento com crédito”, o crédito estará disponível. O prazo para utilização do crédito* seguirá as regras de companhia aérea.</p>
               <p><small>* Eventuais taxas de serviços do ViajaNet não são creditáveis, conforme artigo 2° da MP 948 de 8 de abril de 2020</small></p>
               <br>
               <h4>Quando poderei utilizar o crédito para remarcar minha viagem?</h4>
-              <p>A remarcação estará sujeita à disponibilidade de voos de cada companhia aérea, então planeje suas novas datas com calma, fale com nosso atendimento <strong>quando a situação de pandemia do Coronavírus estiver normalizada</strong>. Antes disso, a malha aérea das companhias aéreas poderá sofrer novas alterações e afetar sua viagem.</p>
+              <p>A remarcação estará sujeita à disponibilidade de voos de cada companhia aérea, então planeje suas novas datas com calma, fale com nosso atendimento <strong>quando a situação de pandemia do Coronavírus estiver normalizada</strong>.
+                Antes disso, a malha aérea das companhias aéreas poderá sofrer novas alterações e afetar sua viagem.</p>
               <p>Se seu voo é operado pelas companhias Azul, Gol e Latam. Verifique as possibilidades de remarcação diretamente nos sites destas companhias:</p>
               <div class="flexCoronacias">
                 <a href="https://www.voeazul.com.br/para-sua-viagem/alertas-de-viagem" target="_blank">
@@ -2067,12 +2461,14 @@ padding: 20px 20px 20px 0px;
               </div>
               <br>
               <h4>Meu voo não é operado por nenhuma companhia aérea listada acima, o que devo fazer?</h4>
-              <p>Verifique sua caixa de e-mail*, caso não tenha recebido nenhum comunicado por e-mail a respeito do status da sua viagem, ou ainda não enviou sua solicitação, <a href="https://www.viajanet.com.br/atendimento/enviar-email" target="_blank">entre em contato</a>.</p>
+              <p>Verifique sua caixa de e-mail*, caso não tenha recebido nenhum comunicado por e-mail a respeito do status da sua viagem, ou ainda não enviou sua solicitação, <a href="https://www.viajanet.com.br/atendimento/enviar-email"
+                  target="_blank">entre em contato</a>.</p>
               <p><small>*Caso você não encontre nenhum comunicado do ViajaNet na sua caixa de entrada, por favor, verifique na caixa de spam ou lixo eletrônico do seu e-mail.</small></p>
             </article>
             <article class="modalContent">
               <h3>Voos nacionais: Redução da malha aérea de voos nacionais</h3>
-              <p>Voos com embarque até <strong>30 de abril de 2020</strong> e operados pelas companhias Azul, Gol e Latam tiveram uma redução em sua malha aérea, e esse procedimento afetou as rotas nacionais operadas por essas empresas. Caso deseje <strong>remarcar</strong> ou <strong>consultar o status de sua viagem</strong>, clique na companhia aérea correspondente ao seu voo.</p>
+              <p>Voos com embarque até <strong>30 de abril de 2020</strong> e operados pelas companhias Azul, Gol e Latam tiveram uma redução em sua malha aérea, e esse procedimento afetou as rotas nacionais operadas por essas empresas. Caso deseje
+                <strong>remarcar</strong> ou <strong>consultar o status de sua viagem</strong>, clique na companhia aérea correspondente ao seu voo.</p>
 
               <div class="flexCoronacias">
                 <a href="https://www.voeazul.com.br/para-sua-viagem/alertas-de-viagem" target="_blank">
@@ -2094,7 +2490,7 @@ padding: 20px 20px 20px 0px;
                   </div>
                 </a>
               </div>
-              <p  id="pacoteCoronaM">Caso o seu voo seja operado pela companhia aérea VoePass (Passaredo) <strong>está automaticamente cancelado</strong>.</p>
+              <p id="pacoteCoronaM">Caso o seu voo seja operado pela companhia aérea VoePass (Passaredo) <strong>está automaticamente cancelado</strong>.</p>
 
               <!-- <p>Caso o seu voo não seja operado pelas companhias aéreas citadas acima e você ainda não tenha solicitado seu cancelamento com crédito, <a href="https://www.viajanet.com.br/atendimento/enviar-email" target="_blank">clique aqui</a> e
                 preencha o formulário para analisarmos seu pedido.</p> -->
@@ -2129,8 +2525,9 @@ padding: 20px 20px 20px 0px;
             <article class="modalContent">
               <h3>Reservas em hotéis</h3>
               <p>É possível administrar sua reserva de hotel diretamente no site do nosso parceiro <strong>Booking,</strong> <a href="https://hoteis.viajanet.com.br/" target="_blank">clique aqui.</a></p>
-              <p>Caso sua reserva seja um <strong>Pacote de Viagem (aéreo e hotel)</strong>, <span class="mobileCoronaInline"><a onclick="coronaFocus('pacoteCorona');" href="#pacoteCoronaM">verifique aqui</a></span><span class="desktopCoronaInline"><a href="#pacoteCoronaM" onclick="coronaFocus('pacoteCorona');">verifique aqui</a></span>.
-                </p>
+              <p>Caso sua reserva seja um <strong>Pacote de Viagem (aéreo e hotel)</strong>, <span class="mobileCoronaInline"><a onclick="coronaFocus('pacoteCorona');" href="#pacoteCoronaM">verifique aqui</a></span><span
+                  class="desktopCoronaInline"><a href="#pacoteCoronaM" onclick="coronaFocus('pacoteCorona');">verifique aqui</a></span>.
+              </p>
             </article>
           </div>
         </div>
@@ -2273,7 +2670,7 @@ padding: 20px 20px 20px 0px;
           </div>
         </div>
       </div>
-      <div class="backdrop"  onclick="coronaCloseModal('Ethiopian','Regras-de-cias')">
+      <div class="backdrop" onclick="coronaCloseModal('Ethiopian','Regras-de-cias')">
 
       </div>
     </div>
@@ -2483,253 +2880,5 @@ padding: 20px 20px 20px 0px;
     </div>
   </div>
 </body>
-<script type="text/javascript">
-  var homeVNCoronaPage = document.getElementById("Informacoes-importantes");
-  var coronaMediaScreen = window.matchMedia("(max-width: 800px)")
-  var hash = window.location.hash;
 
-  function coronaWidthCheck(pagehash, originContent, clonedContent, realContent, tabNumber) {
-    if (coronaMediaScreen.matches) {
-      changeCoronaPageonLoad(pagehash, originContent, clonedContent);
-    } else {
-      openCoronaTabsonLoad(realContent, tabNumber);
-    }
-  }
-
-  window.onload = screenCheckerCorona();
-  window.onhashchange = function(){
-    screenCheckerCorona();
-  };
-
-  function screenCheckerCorona() {
-    var hash = window.location.hash;
-    if (hash == "#Atendimento") {
-      coronaCloseModalBack('Prioridade-2');
-      coronaCloseModalBack('Prioridade-3');
-      coronaWidthCheck('Atendimento', 'coronaAtendimentoOrigin', 'coronaClonedAtendimentoContent', 'coronaAtendimentoContent', 'Tabs1');
-    } else if (hash == "#Brasileiros-no-exterior") {
-      coronaWidthCheck('Brasileiros-no-exterior', 'coronaBrasileirosOrigin', 'coronaClonedBrasileirosContent', 'coronaBrasileirosContent', 'Tabs2');
-    } else if (hash == "#Regras-de-cias") {
-      coronaTopRules();
-      coronaBackHomeonLoad('Reembolso','coronaClonedReembolsoContent');
-      coronaCloseModalBack('AirFrance');
-      coronaCloseModalBack('Ethiopian');
-      coronaCloseModalBack('KLM');
-      coronaCloseModalBack('Norwegian');
-      coronaCloseModalBack('Paranair');
-      coronaCloseModalBack('Qantas');
-      coronaCloseModalBack('Qatar');
-      coronaCloseModalBack('RoyalAirMaroc');
-      coronaWidthCheck('Regras-de-cias', 'coronaRegrasOrigin', 'coronaClonedRegrasContent', 'coronaRegrasContent', 'Tabs3');
-    } else if (hash == "#Reembolso") {
-      coronaBackHomeonLoad('Regras-de-cias','coronaClonedRegrasContent');
-      coronaWidthCheck('Reembolso', 'coronaReembolsoOrigin', 'coronaClonedReembolsoContent', 'coronaReembolsoContent', 'Tabs4');
-    } else if (hash == "#Prioridade-2") {
-      coronaWidthCheck('Atendimento', 'coronaAtendimentoOrigin', 'coronaClonedAtendimentoContent', 'coronaAtendimentoContent', 'Tabs1');
-      coronaModalVNInitial('Prioridade-2');
-    } else if (hash == "#Prioridade-3") {
-      coronaWidthCheck('Atendimento', 'coronaAtendimentoOrigin', 'coronaClonedAtendimentoContent', 'coronaAtendimentoContent', 'Tabs1');
-      coronaModalVNInitial('Prioridade-3');
-    } else if (hash == "#AirFrance") {
-      coronaWidthCheck('Regras-de-cias', 'coronaRegrasOrigin', 'coronaClonedRegrasContent', 'coronaRegrasContent', 'Tabs3');
-      coronaModalVNInitial('AirFrance');
-    } else if (hash == "#Ethiopian") {
-      coronaWidthCheck('Regras-de-cias', 'coronaRegrasOrigin', 'coronaClonedRegrasContent', 'coronaRegrasContent', 'Tabs3');
-      coronaModalVNInitial('Ethiopian');
-    } else if (hash == "#KLM") {
-      coronaWidthCheck('Regras-de-cias', 'coronaRegrasOrigin', 'coronaClonedRegrasContent', 'coronaRegrasContent', 'Tabs3');
-      coronaModalVNInitial('KLM');
-    } else if (hash == "#Norwegian") {
-      coronaWidthCheck('Regras-de-cias', 'coronaRegrasOrigin', 'coronaClonedRegrasContent', 'coronaRegrasContent', 'Tabs3');
-      coronaModalVNInitial('Norwegian');
-    } else if (hash == "#Paranair") {
-      coronaWidthCheck('Regras-de-cias', 'coronaRegrasOrigin', 'coronaClonedRegrasContent', 'coronaRegrasContent', 'Tabs3');
-      coronaModalVNInitial('Paranair');
-    } else if (hash == "#Qantas") {
-      coronaWidthCheck('Regras-de-cias', 'coronaRegrasOrigin', 'coronaClonedRegrasContent', 'coronaRegrasContent', 'Tabs3');
-      coronaModalVNInitial('Qantas');
-    } else if (hash == "#Qatar") {
-      coronaWidthCheck('Regras-de-cias', 'coronaRegrasOrigin', 'coronaClonedRegrasContent', 'coronaRegrasContent', 'Tabs3');
-      coronaModalVNInitial('Qatar');
-    } else if (hash == "#RoyalAirMaroc") {
-      coronaWidthCheck('Regras-de-cias', 'coronaRegrasOrigin', 'coronaClonedRegrasContent', 'coronaRegrasContent', 'Tabs3');
-      coronaModalVNInitial('RoyalAirMaroc');
-    }
-    else {
-      window.location.hash = "#Informacoes-importantes"
-      coronaBackHomeonLoad('Atendimento','coronaClonedAtendimentoContent');
-      coronaBackHomeonLoad('Brasileiros-no-exterior','coronaClonedBrasileirosContent');
-      coronaBackHomeonLoad('Regras-de-cias','coronaClonedRegrasContent');
-      coronaBackHomeonLoad('Reembolso','coronaClonedReembolsoContent');
-      document.getElementById("Informacoes-importantes").style.display = "block";
-      openCoronaTabsonLoad("coronaAtendimentoContent", "Tabs1");
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
-  };
-
-
-  function openCoronaTabsonLoad(coronaContentType, tabNumber) {
-    var i;
-    var x = document.getElementsByClassName("coronaTabsContents");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-    }
-    coronaTabsLinks = document.getElementsByClassName("coronaTabsCTA");
-    for (i = 0; i < x.length; i++) {
-      coronaTabsLinks[i].className = coronaTabsLinks[i].className.replace(" coronaActiveTab", "");
-    }
-    document.getElementById(coronaContentType).style.display = "block";
-    document.getElementById(tabNumber).classList.add("coronaActiveTab")
-  }
-
-  function openCoronaTabs(evtCorona, coronaContentType, coronaPageName) {
-    var i;
-    var x = document.getElementsByClassName("coronaTabsContents");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-    }
-    coronaTabsLinks = document.getElementsByClassName("coronaTabsCTA");
-    for (i = 0; i < x.length; i++) {
-      coronaTabsLinks[i].className = coronaTabsLinks[i].className.replace(" coronaActiveTab", "");
-    }
-    document.getElementById(coronaContentType).style.display = "block";
-    evtCorona.currentTarget.className += " coronaActiveTab";
-    window.location.hash = coronaPageName;
-  }
-
-  function changeCoronaPage(coronaPageName, coronaContentOrigin, coronaClonedContent) {
-    document.getElementById(coronaClonedContent).innerHTML = "";
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-    homeVNCoronaPage.style.display = "none";
-    document.getElementById(coronaPageName).style.display = "block";
-    var coronaDaddyClone = document.getElementById(coronaContentOrigin);
-    var coronaClone = coronaDaddyClone.cloneNode(true);
-    document.getElementById(coronaClonedContent).appendChild(coronaClone);
-    window.location.hash = coronaPageName;
-  }
-
-  function changeCoronaPageonLoad(coronaPageName, coronaContentOrigin, coronaClonedContent) {
-    document.getElementById(coronaClonedContent).innerHTML = "";
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-    homeVNCoronaPage.style.display = "none";
-    document.getElementById(coronaPageName).style.display = "block";
-    var coronaDaddyClone = document.getElementById(coronaContentOrigin);
-    var coronaClone = coronaDaddyClone.cloneNode(true);
-    document.getElementById(coronaClonedContent).appendChild(coronaClone);
-  }
-
-  function coronaBackHome(coronaPageName, coronaClonedContent) {
-    homeVNCoronaPage.style.display = "block";
-    document.getElementById(coronaPageName).style.display = "none";
-    document.getElementById(coronaClonedContent).innerHTML = "";
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-    window.location.hash = "#Informacoes-importantes";
-  }
-  function coronaBackHomeonLoad(coronaPageName, coronaClonedContent) {
-    document.getElementById(coronaPageName).style.display = "none";
-    document.getElementById(coronaClonedContent).innerHTML = "";
-
-  }
-  function coronaModalVN(coronaPageModal) {
-    var coronaModal = document.getElementById(coronaPageModal);
-    document.getElementById(coronaPageModal).style.display = "block";
-    window.location.hash = coronaPageModal;
-    document.onkeydown = function(evt) {
-      evt = evt || window.event;
-      var isEscape = false;
-      if ("key" in evt) {
-        isEscape = (evt.key === "Escape" || evt.key === "Esc");
-      } else {
-        isEscape = (evt.keyCode === 27);
-      }
-      if (isEscape) {
-        document.getElementById(coronaPageModal).style.display = "none";
-      }
-    };
-  }
-
-  function coronaModalVNInitial(coronaPageModal) {
-    var coronaModal = document.getElementById(coronaPageModal);
-    document.getElementById(coronaPageModal).style.display = "block";
-    document.onkeydown = function(evt) {
-      evt = evt || window.event;
-      var isEscape = false;
-      if ("key" in evt) {
-        isEscape = (evt.key === "Escape" || evt.key === "Esc");
-      } else {
-        isEscape = (evt.keyCode === 27);
-      }
-      if (isEscape) {
-        document.getElementById(coronaPageModal).style.display = "none";
-      }
-    };
-  }
-
-  function coronaCloseModal(coronaPageModal, coronaPageName) {
-    var coronaModal = document.getElementById(coronaPageModal);
-    document.getElementById(coronaPageModal).style.display = "none";
-    window.location.hash = coronaPageName;
-  }
-  function coronaCloseModalBack(coronaPageModal){
-    document.getElementById(coronaPageModal).style.display = "none";
-  }
-  function coronaTopRules() {
-    coronaScrolLCTA = document.getElementById("coronaScrolltoTop");
-    window.onscroll = function() {
-      scrollFunctionCorona()
-    };
-  }
-
-  function scrollFunctionCorona() {
-    if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 20) {
-      coronaScrolLCTA.style.display = "block";
-    } else {
-      coronaScrolLCTA.style.display = "none";
-    }
-  }
-
-  function changeCoronaPageModal(coronaPageName, coronaContentOrigin, coronaClonedContent, coronaPageModal) {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-    homeVNCoronaPage.style.display = "none";
-    document.getElementById('coronaAtendimentoPage').style.display = "none";
-    document.getElementById(coronaPageName).style.display = "block";
-    var coronaDaddyClone = document.getElementById(coronaContentOrigin);
-    var coronaClone = coronaDaddyClone.cloneNode(true);
-    document.getElementById(coronaClonedContent).appendChild(coronaClone);
-    var coronaModal = document.getElementById(coronaPageModal);
-    document.getElementById(coronaPageModal).style.display = "none";
-  }
-
-  function openCoronaTabsModal(evtCorona, coronaContentType, coronaPageModal) {
-    var i;
-    var x = document.getElementsByClassName("coronaTabsContents");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-    }
-    coronaTabsLinks = document.getElementsByClassName("coronaTabsCTA");
-    for (i = 0; i < x.length; i++) {
-      coronaTabsLinks[i].className = coronaTabsLinks[i].className.replace(" coronaActiveTab", "");
-    }
-    document.getElementById(coronaContentType).style.display = "block";
-    evtCorona.currentTarget.className += " coronaActiveTab";
-
-    var coronaModal = document.getElementById(coronaPageModal);
-    document.getElementById(coronaPageModal).style.display = "none";
-  }
-
-  function topCoronaFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  }
-
-  function coronaFocus(idName){
-    document.getElementById(idName).focus()
-    document.getElementById(idName).classList.add("coronaFocusContent")
-  }
-</script>
 </html>
