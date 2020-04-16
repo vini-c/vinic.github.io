@@ -281,7 +281,7 @@
     }
 
     #coronaPage .coronaPrioridadesContent .coronaPrioritysBlocks:hover {
-      transform: scale(1.02);
+      transform: scale(1.03);
       box-shadow: 0px 8px 14px rgba(0, 0, 0, .08);
       transition: transform .3s, box-shadow .6s;
       cursor: pointer;
@@ -317,14 +317,8 @@
     #coronaPage .coronaPrioridadesContent .coronaPrioritysBlocks .coronaPriorityIndicator {
       width: 100%;
       height: 5px;
-      transition: height .6s;
-
     }
 
-    #coronaPage .coronaPrioridadesContent .coronaPrioritysBlocks:hover .coronaPriorityIndicator {
-      height: 12px;
-      transition: height .3s;
-    }
 
     #coronaPage .coronaPrioridadesContent .coronaPrioritysBlocks .coronaPriorityContent {
       padding: 16px 16px 22px;
@@ -2642,17 +2636,17 @@
     } else {
       openCoronaTabsonLoad(realContent, tabNumber);
     }
-    console.log("width checker ok!");
+    // console.log("width checker ok!");
   }
   function screenCheckerCorona() {
     var hash = window.location.hash;
-    if (hash == '#!#Atendimento') {
+    if (hash == '!#Atendimento') {
       coronaCloseModalBack('Prioridade-2');
       coronaCloseModalBack('Prioridade-3');
       coronaWidthCheck('Atendimento', 'coronaAtendimentoOrigin', 'coronaClonedAtendimentoContent', 'coronaAtendimentoContent', 'Tabs1');
-    } else if (hash == '#!#Brasileiros-no-exterior') {
+    } else if (hash == '!#Brasileiros-no-exterior') {
       coronaWidthCheck('Brasileiros-no-exterior', 'coronaBrasileirosOrigin', 'coronaClonedBrasileirosContent', 'coronaBrasileirosContent', 'Tabs2');
-    } else if (hash == '#!#Regras-de-cias') {
+    } else if (hash == '!#Regras-de-cias') {
       coronaTopRules();
       coronaBackHomeonLoad('Reembolso', 'coronaClonedReembolsoContent');
       coronaCloseModalBack('AirFrance');
@@ -2664,48 +2658,48 @@
       coronaCloseModalBack('Qatar');
       coronaCloseModalBack('RoyalAirMaroc');
       coronaWidthCheck('Regras-de-cias', 'coronaRegrasOrigin', 'coronaClonedRegrasContent', 'coronaRegrasContent', 'Tabs3');
-    } else if (hash == '#!#Reembolso') {
+    } else if (hash == '!#Reembolso') {
       coronaBackHomeonLoad('Regras-de-cias', 'coronaClonedRegrasContent');
       coronaWidthCheck('Reembolso', 'coronaReembolsoOrigin', 'coronaClonedReembolsoContent', 'coronaReembolsoContent', 'Tabs4');
-    } else if (hash == '#!#Prioridade-2') {
+    } else if (hash == '!#Prioridade-2') {
       coronaWidthCheck('Atendimento', 'coronaAtendimentoOrigin', 'coronaClonedAtendimentoContent', 'coronaAtendimentoContent', 'Tabs1');
       coronaModalVNInitial('Prioridade-2');
-    } else if (hash == '#!#Prioridade-3') {
+    } else if (hash == '!#Prioridade-3') {
       coronaWidthCheck('Atendimento', 'coronaAtendimentoOrigin', 'coronaClonedAtendimentoContent', 'coronaAtendimentoContent', 'Tabs1');
       coronaModalVNInitial('Prioridade-3');
-    } else if (hash == '#!#AirFrance') {
+    } else if (hash == '!#AirFrance') {
       coronaWidthCheck('Regras-de-cias', 'coronaRegrasOrigin', 'coronaClonedRegrasContent', 'coronaRegrasContent', 'Tabs3');
       coronaModalVNInitial('AirFrance');
-    } else if (hash == '#!#Ethiopian') {
+    } else if (hash == '!#Ethiopian') {
       coronaWidthCheck('Regras-de-cias', 'coronaRegrasOrigin', 'coronaClonedRegrasContent', 'coronaRegrasContent', 'Tabs3');
       coronaModalVNInitial('Ethiopian');
-    } else if (hash == '#!#KLM') {
+    } else if (hash == '!#KLM') {
       coronaWidthCheck('Regras-de-cias', 'coronaRegrasOrigin', 'coronaClonedRegrasContent', 'coronaRegrasContent', 'Tabs3');
       coronaModalVNInitial('KLM');
-    } else if (hash == '#!#Norwegian') {
+    } else if (hash == '!#Norwegian') {
       coronaWidthCheck('Regras-de-cias', 'coronaRegrasOrigin', 'coronaClonedRegrasContent', 'coronaRegrasContent', 'Tabs3');
       coronaModalVNInitial('Norwegian');
-    } else if (hash == '#!#Paranair') {
+    } else if (hash == '!#Paranair') {
       coronaWidthCheck('Regras-de-cias', 'coronaRegrasOrigin', 'coronaClonedRegrasContent', 'coronaRegrasContent', 'Tabs3');
       coronaModalVNInitial('Paranair');
-    } else if (hash == '#!#Qantas') {
+    } else if (hash == '!#Qantas') {
       coronaWidthCheck('Regras-de-cias', 'coronaRegrasOrigin', 'coronaClonedRegrasContent', 'coronaRegrasContent', 'Tabs3');
       coronaModalVNInitial('Qantas');
-    } else if (hash == '#!#Qatar') {
+    } else if (hash == '!#Qatar') {
       coronaWidthCheck('Regras-de-cias', 'coronaRegrasOrigin', 'coronaClonedRegrasContent', 'coronaRegrasContent', 'Tabs3');
       coronaModalVNInitial('Qatar');
-    } else if (hash == '#!#RoyalAirMaroc') {
+    } else if (hash == '!#RoyalAirMaroc') {
       coronaWidthCheck('Regras-de-cias', 'coronaRegrasOrigin', 'coronaClonedRegrasContent', 'coronaRegrasContent', 'Tabs3');
       coronaModalVNInitial('RoyalAirMaroc');
     }
-      else if (hash == '#!#pacote-de-viagem') {
+      else if (hash == '!#pacote-de-viagem') {
         coronaWidthCheck('Atendimento', 'coronaAtendimentoOrigin', 'coronaClonedAtendimentoContent', 'coronaAtendimentoContent', 'Tabs1');
         coronaModalVNInitial('Prioridade-2');
         coronaFocus('pacote-de-viagem');
         window.location.hash = 'pacote-de-viagem';
       }
     else {
-      window.location.hash = '#!#Informacoes-importantes'
+      window.location.hash = '!#Informacoes-importantes'
       coronaBackHomeonLoad('Atendimento', 'coronaClonedAtendimentoContent');
       coronaBackHomeonLoad('Brasileiros-no-exterior', 'coronaClonedBrasileirosContent');
       coronaBackHomeonLoad('Regras-de-cias', 'coronaClonedRegrasContent');
@@ -2715,7 +2709,7 @@
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
     }
-    console.log("screen checker ok!");
+    // console.log("screen checker ok!");
   };
 
   function openCoronaTabsonLoad(coronaContentType, tabNumber) {
@@ -2732,7 +2726,7 @@
     var tabid = document.getElementById(tabNumber);
     coronaid.style.display = 'block';
     tabid.classList.add('coronaActiveTab');
-    console.log("open Tabs no add hash");
+    // console.log("open Tabs no add hash");
 
   }
   function openCoronaTabs(evtCorona, coronaContentType, coronaPageName) {
@@ -2749,7 +2743,7 @@
     coronaid.style.display = 'block';
     evtCorona.currentTarget.className += ' coronaActiveTab';
     window.location.hash = coronaPageName;
-    console.log("open Tabs add hash");
+    // console.log("open Tabs add hash");
   }
 
   function changeCoronaPage(coronaPageName, coronaContentOrigin, coronaClonedContent) {
@@ -2764,7 +2758,7 @@
     var coronaClone = coronaDaddyClone.cloneNode(true);
     coronaClonedcontent.appendChild(coronaClone);
     window.location.hash = coronaPageName;
-    console.log("Change");
+    // console.log("Change");
   }
 
   function changeCoronaPageonLoad(coronaPageName, coronaContentOrigin, coronaClonedContent) {
@@ -2778,7 +2772,7 @@
     var coronaDaddyClone = document.getElementById(coronaContentOrigin);
     var coronaClone = coronaDaddyClone.cloneNode(true);
     coronaClonedcontent.appendChild(coronaClone);
-    console.log("Change On Load");
+    // console.log("Change On Load");
   }
 
   function coronaBackHome(coronaPageName, coronaClonedContent) {
@@ -2790,7 +2784,7 @@
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
     window.location.hash = '#Informacoes-importantes';
-    console.log(" Back Home");
+    // console.log(" Back Home");
   }
 
   function coronaBackHomeonLoad(coronaPageName, coronaClonedContent) {
@@ -2798,7 +2792,7 @@
     var coronaclonedid = document.getElementById(coronaClonedContent);
     coronapageid.style.display = 'none';
     coronaclonedid.innerHTML = '';
-    console.log(" Back Home on Load");
+    // console.log(" Back Home on Load");
 
   }
 
@@ -2816,10 +2810,10 @@
       }
       if (isEscape) {
         coronaModal.style.display = 'none';
-        console.log("modal esc");
+        // console.log("modal esc");
       }
     };
-    console.log("modal open");
+    // console.log("modal open");
   }
 
   function coronaModalVNInitial(coronaPageModal) {
@@ -2835,23 +2829,23 @@
       }
       if (isEscape) {
         coronaModal.style.display = 'none';
-        console.log("modal initial esc");
+        // console.log("modal initial esc");
       }
     };
-    console.log("modal initial open");
+    // console.log("modal initial open");
   }
 
   function coronaCloseModal(coronaPageModal, coronaPageName) {
     var coronaModal = document.getElementById(coronaPageModal);
     coronaModal.style.display = 'none';
     window.location.hash = coronaPageName;
-    console.log("modal close");
+    // console.log("modal close");
   }
 
   function coronaCloseModalBack(coronaPageModal) {
     var coronaModal = document.getElementById(coronaPageModal);
     coronaModal.style.display = 'none';
-    console.log("modal close cta");
+    // console.log("modal close cta");
   }
 
   function coronaTopRules() {
@@ -2900,21 +2894,21 @@
 
     var coronaModal = document.getElementById(coronaPageModal);
     coronaModal.style.display = 'none';
-    console.log("Modal + Tabs open");
+    // console.log("Modal + Tabs open");
 
   }
 
   function topCoronaFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
-    console.log("scroll to top function");
+    // console.log("scroll to top function");
   }
 
   function coronaFocus(idName) {
     var focusContentId = document.getElementById(idName);
     focusContentId.focus()
     focusContentId.classList.add('coronaFocusContent')
-    console.log("Focus Content");
+    // console.log("Focus Content");
   }
 
 
