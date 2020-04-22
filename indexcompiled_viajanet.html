@@ -881,7 +881,7 @@
           <div class="coronaBreadcrumb coronaFullWidth">
             <ul>
               <li><a href="https://www.viajanet.com.br">ViajaNet</a></li>
-              <li><a href="#informacoes-importantes">
+              <li><a>
                   <svg width="8px" height="16px" viewBox="0 0 10 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g id="arrowLeftCorona" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                       <g id="ArrowCorona" transform="translate(-451.000000, -394.000000)" fill="#FFFFFF" fill-rule="nonzero">
@@ -2271,8 +2271,7 @@
             <article class="modalContent">
               <h3>Reservas em hotéis</h3>
               <p>É possível administrar sua reserva de hotel diretamente no site do nosso parceiro <strong>Booking,</strong> <a href="https://hoteis.viajanet.com.br/" target="_blank">clique aqui.</a></p>
-              <p>Caso sua reserva seja um <strong>Pacote de Viagem (aéreo e hotel)</strong>, <span class="mobileCoronaInline"><a onclick="coronaFocus('pacote-de-viagem');" href="#pacote-de-viagem">verifique aqui</a></span><span
-                  class="desktopCoronaInline"><a href="#pacote-de-viagem-m" onclick="coronaFocus('pacote-de-viagem');">verifique aqui</a></span>.
+              <p>Caso sua reserva seja um <strong>Pacote de Viagem (aéreo e hotel)</strong>, <span class=""><a onclick="coronaFocusMobile('pacote-de-viagem-m');">verifique aqui</a></span>.
               </p>
             </article>
           </div>
@@ -2629,12 +2628,12 @@
 <script type="text/javascript">
   var homeVNCoronaPage = document.getElementById('Informacoes-importantes');
   var coronaMediaScreen = window.matchMedia('(max-width: 800px)')
-  var hash = window.location.hash;
-
+  var hash = window.location.href;
+  // console.log(window.location);
   window.onload = screenCheckerCorona();
-  window.onhashchange = function() {
-    screenCheckerCorona();
-  };
+  // window.onhashchange = function() {
+  //   screenCheckerCorona();
+  // };
 
   function coronaWidthCheck(pagehash, originContent, clonedContent, realContent, tabNumber) {
     if (coronaMediaScreen.matches) {
@@ -2642,17 +2641,18 @@
     } else {
       openCoronaTabsonLoad(realContent, tabNumber);
     }
-    console.log("width checker ok!");
+    // console.log("width checker ok!");
   }
+
   function screenCheckerCorona() {
-    var hash = window.location.hash;
-    if (hash == '#Atendimento') {
+    var hash = window.location.href;
+    if (hash == 'https://www.viajanet.com.br/informacao-coronavirus-new?Atendimento') {
       coronaCloseModalBack('Prioridade-2');
       coronaCloseModalBack('Prioridade-3');
       coronaWidthCheck('Atendimento', 'coronaAtendimentoOrigin', 'coronaClonedAtendimentoContent', 'coronaAtendimentoContent', 'Tabs1');
-    } else if (hash == '#Brasileiros-no-exterior') {
+    } else if (hash == 'https://www.viajanet.com.br/informacao-coronavirus-new?Brasileiros-no-exterior') {
       coronaWidthCheck('Brasileiros-no-exterior', 'coronaBrasileirosOrigin', 'coronaClonedBrasileirosContent', 'coronaBrasileirosContent', 'Tabs2');
-    } else if (hash == '#Regras-de-cias') {
+    } else if (hash == 'https://www.viajanet.com.br/informacao-coronavirus-new?Regras-de-cias') {
       coronaTopRules();
       coronaBackHomeonLoad('Reembolso', 'coronaClonedReembolsoContent');
       coronaCloseModalBack('AirFrance');
@@ -2664,48 +2664,45 @@
       coronaCloseModalBack('Qatar');
       coronaCloseModalBack('RoyalAirMaroc');
       coronaWidthCheck('Regras-de-cias', 'coronaRegrasOrigin', 'coronaClonedRegrasContent', 'coronaRegrasContent', 'Tabs3');
-    } else if (hash == '#Reembolso') {
+    } else if (hash == 'https://www.viajanet.com.br/informacao-coronavirus-new?Reembolso') {
       coronaBackHomeonLoad('Regras-de-cias', 'coronaClonedRegrasContent');
       coronaWidthCheck('Reembolso', 'coronaReembolsoOrigin', 'coronaClonedReembolsoContent', 'coronaReembolsoContent', 'Tabs4');
-    } else if (hash == '#Prioridade-2') {
+    } else if (hash == 'https://www.viajanet.com.br/informacao-coronavirus-new?Prioridade-2') {
       coronaWidthCheck('Atendimento', 'coronaAtendimentoOrigin', 'coronaClonedAtendimentoContent', 'coronaAtendimentoContent', 'Tabs1');
       coronaModalVNInitial('Prioridade-2');
-    } else if (hash == '#Prioridade-3') {
+    } else if (hash == 'https://www.viajanet.com.br/informacao-coronavirus-new?Prioridade-3') {
       coronaWidthCheck('Atendimento', 'coronaAtendimentoOrigin', 'coronaClonedAtendimentoContent', 'coronaAtendimentoContent', 'Tabs1');
       coronaModalVNInitial('Prioridade-3');
-    } else if (hash == '#AirFrance') {
+    } else if (hash == 'https://www.viajanet.com.br/informacao-coronavirus-new?AirFrance') {
       coronaWidthCheck('Regras-de-cias', 'coronaRegrasOrigin', 'coronaClonedRegrasContent', 'coronaRegrasContent', 'Tabs3');
       coronaModalVNInitial('AirFrance');
-    } else if (hash == '#Ethiopian') {
+    } else if (hash == 'https://www.viajanet.com.br/informacao-coronavirus-new?Ethiopian') {
       coronaWidthCheck('Regras-de-cias', 'coronaRegrasOrigin', 'coronaClonedRegrasContent', 'coronaRegrasContent', 'Tabs3');
       coronaModalVNInitial('Ethiopian');
-    } else if (hash == '#KLM') {
+    } else if (hash == 'https://www.viajanet.com.br/informacao-coronavirus-new?KLM') {
       coronaWidthCheck('Regras-de-cias', 'coronaRegrasOrigin', 'coronaClonedRegrasContent', 'coronaRegrasContent', 'Tabs3');
       coronaModalVNInitial('KLM');
-    } else if (hash == '#Norwegian') {
+    } else if (hash == 'https://www.viajanet.com.br/informacao-coronavirus-new?Norwegian') {
       coronaWidthCheck('Regras-de-cias', 'coronaRegrasOrigin', 'coronaClonedRegrasContent', 'coronaRegrasContent', 'Tabs3');
       coronaModalVNInitial('Norwegian');
-    } else if (hash == '#Paranair') {
+    } else if (hash == 'https://www.viajanet.com.br/informacao-coronavirus-new?Paranair') {
       coronaWidthCheck('Regras-de-cias', 'coronaRegrasOrigin', 'coronaClonedRegrasContent', 'coronaRegrasContent', 'Tabs3');
       coronaModalVNInitial('Paranair');
-    } else if (hash == '#Qantas') {
+    } else if (hash == 'https://www.viajanet.com.br/informacao-coronavirus-new?Qantas') {
       coronaWidthCheck('Regras-de-cias', 'coronaRegrasOrigin', 'coronaClonedRegrasContent', 'coronaRegrasContent', 'Tabs3');
       coronaModalVNInitial('Qantas');
-    } else if (hash == '#Qatar') {
+    } else if (hash == 'https://www.viajanet.com.br/informacao-coronavirus-new?Qatar') {
       coronaWidthCheck('Regras-de-cias', 'coronaRegrasOrigin', 'coronaClonedRegrasContent', 'coronaRegrasContent', 'Tabs3');
       coronaModalVNInitial('Qatar');
-    } else if (hash == '#RoyalAirMaroc') {
+    } else if (hash == 'https://www.viajanet.com.br/informacao-coronavirus-new?RoyalAirMaroc') {
       coronaWidthCheck('Regras-de-cias', 'coronaRegrasOrigin', 'coronaClonedRegrasContent', 'coronaRegrasContent', 'Tabs3');
       coronaModalVNInitial('RoyalAirMaroc');
-    }
-      else if (hash == '#pacote-de-viagem') {
-        coronaWidthCheck('Atendimento', 'coronaAtendimentoOrigin', 'coronaClonedAtendimentoContent', 'coronaAtendimentoContent', 'Tabs1');
-        coronaModalVNInitial('Prioridade-2');
-        coronaFocus('pacote-de-viagem');
-        window.location.hash = 'pacote-de-viagem';
-      }
-    else {
-      window.location.hash = '#Informacoes-importantes'
+    } else if (hash == 'https://www.viajanet.com.br/informacao-coronavirus-new?pacote-de-viagem') {
+      coronaWidthCheck('Atendimento', 'coronaAtendimentoOrigin', 'coronaClonedAtendimentoContent', 'coronaAtendimentoContent', 'Tabs1');
+      coronaModalVNInitial('Prioridade-2');
+      coronaFocus('pacote-de-viagem');
+      // window.location.hash = 'pacote-de-viagem';
+    } else if (hash == 'https://www.viajanet.com.br/informacao-coronavirus-new?Informacoes-importantes'){
       coronaBackHomeonLoad('Atendimento', 'coronaClonedAtendimentoContent');
       coronaBackHomeonLoad('Brasileiros-no-exterior', 'coronaClonedBrasileirosContent');
       coronaBackHomeonLoad('Regras-de-cias', 'coronaClonedRegrasContent');
@@ -2715,7 +2712,18 @@
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
     }
-    console.log("screen checker ok!");
+    else  {
+      window.location.search == 'https://www.viajanet.com.br/informacao-coronavirus-new'
+      coronaBackHomeonLoad('Atendimento', 'coronaClonedAtendimentoContent');
+      coronaBackHomeonLoad('Brasileiros-no-exterior', 'coronaClonedBrasileirosContent');
+      coronaBackHomeonLoad('Regras-de-cias', 'coronaClonedRegrasContent');
+      coronaBackHomeonLoad('Reembolso', 'coronaClonedReembolsoContent');
+      document.getElementById('Informacoes-importantes').style.display = 'block';
+      openCoronaTabsonLoad('coronaAtendimentoContent', 'Tabs1');
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    // console.log("screen checker ok!");
   };
 
   function openCoronaTabsonLoad(coronaContentType, tabNumber) {
@@ -2726,15 +2734,16 @@
     }
     coronaTabsLinks = document.getElementsByClassName('coronaTabsCTA');
     for (i = 0; i < x.length; i++) {
-    coronaTabsLinks[i].className = coronaTabsLinks[i].className.replace(' coronaActiveTab', '');
+      coronaTabsLinks[i].className = coronaTabsLinks[i].className.replace(' coronaActiveTab', '');
     }
     var coronaid = document.getElementById(coronaContentType);
     var tabid = document.getElementById(tabNumber);
     coronaid.style.display = 'block';
     tabid.classList.add('coronaActiveTab');
-    console.log("open Tabs no add hash");
+    // console.log("open Tabs no add hash");
 
   }
+
   function openCoronaTabs(evtCorona, coronaContentType, coronaPageName) {
     var i;
     var x = document.getElementsByClassName('coronaTabsContents');
@@ -2748,8 +2757,8 @@
     var coronaid = document.getElementById(coronaContentType);
     coronaid.style.display = 'block';
     evtCorona.currentTarget.className += ' coronaActiveTab';
-    window.location.hash = coronaPageName;
-    console.log("open Tabs add hash");
+    window.location.search = coronaPageName;
+    // console.log("open Tabs add hash");
   }
 
   function changeCoronaPage(coronaPageName, coronaContentOrigin, coronaClonedContent) {
@@ -2763,8 +2772,8 @@
     var coronaDaddyClone = document.getElementById(coronaContentOrigin);
     var coronaClone = coronaDaddyClone.cloneNode(true);
     coronaClonedcontent.appendChild(coronaClone);
-    window.location.hash = coronaPageName;
-    console.log("Change");
+    window.location.search = coronaPageName;
+    // console.log("Change");
   }
 
   function changeCoronaPageonLoad(coronaPageName, coronaContentOrigin, coronaClonedContent) {
@@ -2778,7 +2787,7 @@
     var coronaDaddyClone = document.getElementById(coronaContentOrigin);
     var coronaClone = coronaDaddyClone.cloneNode(true);
     coronaClonedcontent.appendChild(coronaClone);
-    console.log("Change On Load");
+    // console.log("Change On Load");
   }
 
   function coronaBackHome(coronaPageName, coronaClonedContent) {
@@ -2789,8 +2798,9 @@
     coronaClonedcontent.innerHTML = '';
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
-    window.location.hash = '#Informacoes-importantes';
-    console.log(" Back Home");
+    // window.location.hash = '#Informacoes-importantes';
+    // console.log(" Back Home");
+    window.location.search = 'Informacoes-importantes';
   }
 
   function coronaBackHomeonLoad(coronaPageName, coronaClonedContent) {
@@ -2798,14 +2808,14 @@
     var coronaclonedid = document.getElementById(coronaClonedContent);
     coronapageid.style.display = 'none';
     coronaclonedid.innerHTML = '';
-    console.log(" Back Home on Load");
-
+    // console.log(" Back Home on Load");
   }
 
   function coronaModalVN(coronaPageModal) {
     var coronaModal = document.getElementById(coronaPageModal);
     coronaModal.style.display = 'block';
-    window.location.hash = coronaPageModal;
+    // window.location.hash = coronaPageModal;
+    window.location.search = coronaPageModal;
     document.onkeydown = function(evt) {
       evt = evt || window.event;
       var isEscape = false;
@@ -2816,10 +2826,10 @@
       }
       if (isEscape) {
         coronaModal.style.display = 'none';
-        console.log("modal esc");
+        // console.log("modal esc");
       }
     };
-    console.log("modal open");
+    // console.log("modal open");
   }
 
   function coronaModalVNInitial(coronaPageModal) {
@@ -2835,23 +2845,24 @@
       }
       if (isEscape) {
         coronaModal.style.display = 'none';
-        console.log("modal initial esc");
+        // console.log("modal initial esc");
       }
     };
-    console.log("modal initial open");
+    // console.log("modal initial open");
   }
 
   function coronaCloseModal(coronaPageModal, coronaPageName) {
     var coronaModal = document.getElementById(coronaPageModal);
     coronaModal.style.display = 'none';
-    window.location.hash = coronaPageName;
-    console.log("modal close");
+    // window.location.hash = coronaPageName;
+    window.location.search = coronaPageName;
+    // console.log("modal close");
   }
 
   function coronaCloseModalBack(coronaPageModal) {
     var coronaModal = document.getElementById(coronaPageModal);
     coronaModal.style.display = 'none';
-    console.log("modal close cta");
+    // console.log("modal close cta");
   }
 
   function coronaTopRules() {
@@ -2895,28 +2906,33 @@
     for (i = 0; i < x.length; i++) {
       coronaTabsLinks[i].className = coronaTabsLinks[i].className.replace(' coronaActiveTab', '');
     }
-    coronaContents .style.display = 'block';
+    coronaContents.style.display = 'block';
     evtCorona.currentTarget.className += ' coronaActiveTab';
-
     var coronaModal = document.getElementById(coronaPageModal);
     coronaModal.style.display = 'none';
-    console.log("Modal + Tabs open");
-
+    // console.log("Modal + Tabs open");
   }
 
   function topCoronaFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
-    console.log("scroll to top function");
+    // console.log("scroll to top function");
   }
 
   function coronaFocus(idName) {
     var focusContentId = document.getElementById(idName);
     focusContentId.focus()
     focusContentId.classList.add('coronaFocusContent')
-    console.log("Focus Content");
+    var elmnt = document.getElementById(idName);
+    elmnt.scrollIntoView();
   }
-
-
+  function coronaFocusMobile(idName) {
+    var focusContentId = document.getElementById('pacote-de-viagem');
+    focusContentId.focus()
+    focusContentId.classList.add('coronaFocusContent')
+    var elmnt = document.getElementById('pacote-de-viagem-m');
+    elmnt.scrollIntoView();
+  }
 </script>
+
 </html>
