@@ -22,8 +22,20 @@ function screenCheckerCorona() {
     coronaCloseModalBack('Prioridade-3');
     coronaWidthCheck('Atendimento', 'coronaAtendimentoOrigin', 'coronaClonedAtendimentoContent', 'coronaAtendimentoContent', 'Tabs1');
   } else if (hash == "#Brasileiros-no-exterior") {
-    coronaWidthCheck('Brasileiros-no-exterior', 'coronaBrasileirosOrigin', 'coronaClonedBrasileirosContent', 'coronaBrasileirosContent', 'Tabs2');
-  } else if (hash == "#Regras-de-cias") {
+    coronaWidthCheck('Brasileiros-no-exterior', 'coronaBrasileirosOrigin', 'coronaClonedBrasileirosContent', 'coronaBrasileirosContent', 'Tabs5');
+  }
+  else if (hash == "#Hoteis-seguros-e-carros") {
+    coronaWidthCheck('Hoteis-seguros-e-carros', 'coronaOutrosServicosOrigin', 'coronaClonedOutrosServicosContent', 'coronaOutrosServicosContent', 'Tabs5');
+  }
+  else if (hash == "#Faca-voce-mesmo") {
+    coronaWidthCheck('Faca-voce-mesmo', 'coronaFacaVoceMesmoOrigin', 'coronaClonedFacaVoceMesmoContent', 'coronaFacaVoceMesmoContent', 'Tabs4');
+  }
+
+  else if (hash == "#Cancelamento-de-viagem") {
+    coronaWidthCheck('Cancelamento-de-viagem', 'coronaCancelamentoOrigin', 'coronaClonedCancelamentoContent', 'coronaCancelamentoContent', 'Tabs7');
+  }
+
+  else if (hash == "#Regras-de-cias") {
     coronaTopRules();
     coronaBackHomeonLoad('Reembolso','coronaClonedReembolsoContent');
     coronaCloseModalBack('AirFrance');
@@ -35,9 +47,8 @@ function screenCheckerCorona() {
     coronaCloseModalBack('Qatar');
     coronaCloseModalBack('RoyalAirMaroc');
     coronaWidthCheck('Regras-de-cias', 'coronaRegrasOrigin', 'coronaClonedRegrasContent', 'coronaRegrasContent', 'Tabs3');
-  } else if (hash == "#Reembolso") {
-    coronaWidthCheck('Reembolso', 'coronaReembolsoOrigin', 'coronaClonedReembolsoContent', 'coronaReembolsoContent', 'Tabs4');
-  } else if (hash == "#Prioridade-2") {
+  }
+  else if (hash == "#Prioridade-2") {
     coronaWidthCheck('Atendimento', 'coronaAtendimentoOrigin', 'coronaClonedAtendimentoContent', 'coronaAtendimentoContent', 'Tabs1');
     coronaModalVNInitial('Prioridade-2');
   } else if (hash == "#Prioridade-3") {
@@ -74,6 +85,8 @@ function screenCheckerCorona() {
     coronaBackHomeonLoad('Brasileiros-no-exterior','coronaClonedBrasileirosContent');
     coronaBackHomeonLoad('Regras-de-cias','coronaClonedRegrasContent');
     coronaBackHomeonLoad('Reembolso','coronaClonedReembolsoContent');
+    coronaBackHomeonLoad('Faca-voce-mesmo','coronaClonedFacaVoceMesmoContent');
+    coronaBackHomeonLoad('Cancelamento','coronaClonedCancelamentoContent');
     document.getElementById("Informacoes-importantes").style.display = "block";
     openCoronaTabsonLoad("coronaAtendimentoContent", "Tabs1");
     document.body.scrollTop = 0;

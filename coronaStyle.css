@@ -557,3 +557,7 @@ color:#0164BF;
 }
 
 #coronaPage .coronaFocusContent {border:2px #0164BF solid}
+
+@media screen and (max-width:500px){
+  iframe{width:100%;};
+}
