@@ -10,566 +10,866 @@
   <link rel="stylesheet" type="text/css" href="coronaBreakpoints.css"> -->
 
   <style>
-  #coronaPage{
-    display:flex;
-    justify-content: center;
-    flex-direction:column;
-    width:100%;
-    background:#f5f5f5;
-    padding-bottom:40px;
-  }
+  <style>
+      #coronaPage {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        background: #f5f5f5;
+        padding-bottom: 40px;
+      }
 
-  #coronaPage h2, #coronaPage h3, #coronaPage h4{
-    line-height:1.4;
-  }
-  #coronaPage button{
-    text-align: initial;
-  color: initial;
-  border: 0;
-  -webkit-appearance: none;
-  background-color: transparent;
-  padding: 0;
-  margin: 0;
-  font-size: initial;
-  font-weight: initial;
-  font-size: initial;
-  }
-  #coronaPage a{
-    text-decoration:none;
-  }
-  #coronaPage a:hover{
-    cursor:pointer;
-  }
-  #coronaPage{
-    letter-spacing: -0.25px;
-  }
-  #coronaPage p a, #coronaPage .coronaHiperlink{
-    font-family:ProximaNova-SemiBold,ProximaNovaA-SemiBold,ProximaNovaS-SemiBold;
-    letter-spacing: -0.25px;
-    color:#0164BF;
-  }
-  #coronaPage strong{
-    font-family:ProximaNova-SemiBold,ProximaNovaA-SemiBold,ProximaNovaS-SemiBold;
-    display:inline;
-  }
-  #coronaPage section#coronaTop{
-    width:100%;
-    background:url("https://i.imgur.com/QxGlglp.png") 100% -40px no-repeat, #FFA202;
-    padding-top:32px;
-    padding-bottom:84px;
-  }
-  #coronaPage .coronaContainer{
-    width: 100%;
-    max-width: 1260px;
-    margin:0 auto;
-    padding:0 40px;
-  }
-  #coronaPage .coronaBreadcrumb{
-    padding-bottom:22px;
-  }
-  #coronaPage .coronaBreadcrumb ul li{
-    display:inline-block;
-    color:#fff;
-    position:relative;
-  }
-  #coronaPage .coronaBreadcrumb ul li:last-child{
-    display:inline-block;
-    color:#fff;
-    position:relative;
-    margin-left:20px;
-  }
-  #coronaPage .coronaBreadcrumb ul li a{
-    color:#fff;
-    letter-spacing: -0.25px;
-    font-size:14px;
-  }
-  #coronaPage .coronaBreadcrumb ul li svg{
-    position:absolute;left:-15px;transform: scale(0.8) translateY(1px);
-  }
-  #coronaPage .coronaTitle{
-    width:100%;
-    padding-bottom:26px;
-  }
-  #coronaPage .coronaTitle h1{
-    font-size:32px;
-    font-family:ProximaNova-SemiBold,ProximaNovaA-SemiBold,ProximaNovaS-SemiBold;
-    color:#fff;
-    letter-spacing: -0.25px;
-  }
-  #coronaPage .coronaTextIntro{
-    background-color:#fff;
-    padding:26px;
-    border-radius:3px;
-    box-shadow:0px 4px 10px rgba(0,0,0,.08);
-    margin-top:-84px;
-    margin-bottom:42px;
-  }
-  #coronaPage .coronaTextIntro p{
-    font-size:16px;
-    color:#333333;
-    letter-spacing: -0.25px;
+      #coronaPage h2,
+      #coronaPage h3,
+      #coronaPage h4 {
+        line-height: 1.4;
+      }
 
-  }
-  #coronaPage .coronaFullWidth{
-    width:100%;
-  }
-  #coronaPage #coronaContent .coronaContainer{
-    width:100%;
-    display:flex;
-    flex-direction:row;
-    flex-wrap:wrap;
-  }
+      #coronaPage button {
+        text-align: initial;
+        color: initial;
+        border: 0;
+        -webkit-appearance: none;
+        background-color: transparent;
+        padding: 0;
+        margin: 0;
+        font-size: initial;
+        font-weight: initial;
+        font-size: initial;
+      }
 
-  #coronaPage #coronaContent .coronaOneThird{
-  width:33.333333%;
-  }
+      #coronaPage a {
+        text-decoration: none;
+      }
 
-  #coronaPage #coronaContent .coronaTwoThird{
-  width:66.66666667%;
-  }
+      #coronaPage a:hover {
+        cursor: pointer;
+      }
 
-  #coronaPage #coronaContent .coronaOneThird .coronaTabsList{
-    width:100%;
-  }
-  #coronaPage #coronaContent .coronaOneThird .coronaTabsList .coronaTabs button{
-    width:100%;
-    text-align:left;
-    background:none;
-    box-shadow:none;
-    -webkit-appearance:none;
-    border:0;
-    padding:16px;
-    font-size:16px;
-    font-family:ProximaNova-SemiBold,ProximaNovaA-SemiBold,ProximaNovaS-SemiBold;
-    /* border:0; */
-    border-style: inset;
-    border-bottom:1px solid #d9d9d9;
-    transition: color .3s, background-color .3s, padding-left .6s;
-  }
-  #coronaPage #coronaContent .coronaOneThird .coronaTabsList .coronaTabs button.Tabs1{
-    /* border-color:transparent; */
-  }
-  #coronaPage #coronaContent .coronaOneThird .coronaTabsList .coronaTabs:hover button{
-    color:#0164BF;
-    cursor:pointer;
-    padding-left:20px;
-    transition: color .3s, background-color .3s, padding-left .3s;
-  }
+      #coronaPage {
+        letter-spacing: -0.25px;
+      }
 
-  #coronaPage #coronaContent .coronaOneThird .coronaTabsList .coronaTabs:hover button.coronaActiveTab{
-    cursor:default;
-    padding-left:16px;
-  }
-  #coronaPage #coronaContent .coronaOneThird .coronaTabsList .coronaTabs:hover button .coronaArrowIcon svg #ArrowCorona{
-    fill:#0164BF;
-  }
-  #coronaPage #coronaContent .coronaOneThird .coronaTabsList .coronaTabs button.coronaActiveTab{
-    background-color:#0164BF;
-    border-radius:3px;
-    color:#fff;
-    /* border:0;
+      #coronaPage p a,
+      #coronaPage .coronaHiperlink {
+        font-family: ProximaNova-SemiBold, ProximaNovaA-SemiBold, ProximaNovaS-SemiBold;
+        letter-spacing: -0.25px;
+        color: #0164BF;
+      }
+
+      #coronaPage strong {
+        font-family: ProximaNova-SemiBold, ProximaNovaA-SemiBold, ProximaNovaS-SemiBold;
+        display: inline;
+      }
+
+      #coronaPage section#coronaTop {
+        width: 100%;
+        background: url("https://i.imgur.com/QxGlglp.png") 100% -40px no-repeat, #FFA202;
+        padding-top: 32px;
+        padding-bottom: 84px;
+      }
+
+      #coronaPage .coronaContainer {
+        width: 100%;
+        max-width: 1260px;
+        margin: 0 auto;
+        padding: 0 40px;
+      }
+
+      #coronaPage .coronaBreadcrumb {
+        padding-bottom: 22px;
+      }
+
+      #coronaPage .coronaBreadcrumb ul li {
+        display: inline-block;
+        color: #fff;
+        position: relative;
+      }
+
+      #coronaPage .coronaBreadcrumb ul li:last-child {
+        display: inline-block;
+        color: #fff;
+        position: relative;
+        margin-left: 20px;
+      }
+
+      #coronaPage .coronaBreadcrumb ul li a {
+        color: #fff;
+        letter-spacing: -0.25px;
+        font-size: 14px;
+      }
+
+      #coronaPage .coronaBreadcrumb ul li svg {
+        position: absolute;
+        left: -15px;
+        transform: scale(0.8) translateY(1px);
+      }
+
+      #coronaPage .coronaTitle {
+        width: 100%;
+        padding-bottom: 26px;
+      }
+
+      #coronaPage .coronaTitle h1 {
+        font-size: 32px;
+        font-family: ProximaNova-SemiBold, ProximaNovaA-SemiBold, ProximaNovaS-SemiBold;
+        color: #fff;
+        letter-spacing: -0.25px;
+      }
+
+      #coronaPage .coronaTextIntro {
+        background-color: #fff;
+        padding: 26px;
+        border-radius: 3px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, .08);
+        margin-top: -84px;
+        margin-bottom: 42px;
+      }
+
+      #coronaPage .coronaTextIntro p {
+        font-size: 16px;
+        color: #333333;
+        letter-spacing: -0.25px;
+
+      }
+
+      #coronaPage .coronaFullWidth {
+        width: 100%;
+      }
+
+      #topo {
+        opacity: 0;
+      }
+
+      #coronaPage #coronaContent .coronaContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
+      #coronaPage #coronaContent .coronaOneThird {
+        width: 33.333333%;
+      }
+
+      #coronaPage #coronaContent .coronaTwoThird {
+        width: 66.66666667%;
+      }
+
+      #coronaPage #coronaContent .coronaOneThird .coronaTabsList {
+        width: 100%;
+      }
+
+      #coronaPage #coronaContent .coronaOneThird .coronaTabsList .coronaTabs button {
+        width: 100%;
+        text-align: left;
+        background: none;
+        box-shadow: none;
+        -webkit-appearance: none;
+        border: 0;
+        padding: 16px;
+        font-size: 16px;
+        font-family: ProximaNova-SemiBold, ProximaNovaA-SemiBold, ProximaNovaS-SemiBold;
+        /* border:0; */
+        border-style: inset;
+        border-bottom: 1px solid #d9d9d9;
+        transition: color .3s, background-color .3s, padding-left .6s;
+      }
+
+      #coronaPage #coronaContent .coronaOneThird .coronaTabsList .coronaTabs button.Tabs1 {
+        /* border-color:transparent; */
+      }
+
+      #coronaPage #coronaContent .coronaOneThird .coronaTabsList .coronaTabs:hover button {
+        color: #0164BF;
+        cursor: pointer;
+        padding-left: 20px;
+        transition: color .3s, background-color .3s, padding-left .3s;
+      }
+
+      #coronaPage #coronaContent .coronaOneThird .coronaTabsList .coronaTabs:hover button.coronaActiveTab {
+        cursor: default;
+        padding-left: 16px;
+      }
+
+      #coronaPage #coronaContent .coronaOneThird .coronaTabsList .coronaTabs:hover button .coronaArrowIcon svg #ArrowCorona {
+        fill: #0164BF;
+      }
+
+      #coronaPage #coronaContent .coronaOneThird .coronaTabsList .coronaTabs button.coronaActiveTab {
+        background-color: #0164BF;
+        border-radius: 3px;
+        color: #fff;
+        /* border:0;
     margin:1px 0; */
-  }
-  #coronaPage #coronaContent .coronaOneThird .coronaTabsList .coronaTabs{
-    position:relative;
-  }
-  #coronaPage #coronaContent .coronaOneThird .coronaTabsList .coronaTabs button .coronaArrowIcon{
-    position:absolute;
-    right:20px;
-  }
-  #coronaPage #coronaContent .coronaOneThird .coronaTabsList .coronaTabs button.coronaActiveTab .coronaArrowIcon svg #ArrowCorona{
-    fill:#fff;
-  }
-  #coronaPage #coronaContent .coronaOneThird .coronaTabsList .coronaTabs button .coronaArrowIcon svg #ArrowCorona{
-    fill:#828282;
-  }
-
-  #coronaPage .coronaTabsContents{
-    padding:0 0 0 28px;
-  }
-
-  #coronaPage h2{
-    font-family:ProximaNova-SemiBold,ProximaNovaA-SemiBold,ProximaNovaS-SemiBold;
-    font-size:22px;
-    color:#333333;
-    margin-bottom:8px;
-    letter-spacing: -0.25px;
-  }
-  #coronaPage p{
-    font-size:16px;
-    color:#333333;
-    letter-spacing: -0.25px;
-    margin-bottom:8px;
-  }
-
-  #coronaPage p {
-    line-height:1.4;
-  }
-  #coronaPage p b{
-    font-family:ProximaNova-SemiBold,ProximaNovaA-SemiBold,ProximaNovaS-SemiBold;
-    letter-spacing: -0.25px;
-  }
-
-  #coronaPage p small{
-    font-size:14px;
-    color:#333333;
-    letter-spacing: -0.25px;
-    /* line-height:14px; */
-  }
-
-  #coronaPage h3{
-    font-family:ProximaNova-SemiBold,ProximaNovaA-SemiBold,ProximaNovaS-SemiBold;
-    font-size:18px;
-    color:#333333;
-    letter-spacing: -0.25px;
-    margin-bottom:8px;
-  }
-
-  #coronaPage .coronaPrioridadesContent{
-    padding-top:22px;
-    display:flex;
-    flex-direction:row;
-    flex-wrap:wrap;
-    width:100%;
-    align-items:stretch;
-  }
-
-  #coronaPage .coronaPrioridadesContent .coronaPrioritysBlocks{
-    background:#fff;
-    border-radius:3px;
-    margin-right:10px;
-    margin-top:10px;
-    box-shadow:0px 4px 10px rgba(0,0,0,.08);
-    transition: transform .6s, box-shadow .8s;
-    align-self:stretch;
-    height:100%;
-  }
-  #coronaPage .coronaPrioridadesContent .coronaPrioritysBlocks:hover{
-    transform:translateY(-4px);
-    box-shadow:0px 8px 14px rgba(0,0,0,.08);
-    transition: transform .3s, box-shadow .6s;
-    cursor:pointer;
-  }
-  #coronaPage .coronaPrioridadesContent .coronaPrioritysBlocks.highPriority .coronaPriorityIndicator{
-    background-color:#FF2723;
-    border-radius:3px 3px 0px 0px;
-  }
-
-  #coronaPage .coronaPrioridadesContent .coronaPrioritysBlocks.highPriority h3{
-    color:#FF2723;
-  }
-  #coronaPage .coronaPrioridadesContent .coronaPrioritysBlocks.midPriority .coronaPriorityIndicator{
-    background-color:#FF9100;
-    border-radius:3px 3px 0px 0px;
-  }
-  #coronaPage .coronaPrioridadesContent .coronaPrioritysBlocks.midPriority h3{
-    color:#FF9100;
-  }
-  #coronaPage .coronaPrioridadesContent .coronaPrioritysBlocks.lowPriority .coronaPriorityIndicator{
-    background-color:#74B252;
-    border-radius:3px 3px 0px 0px;
-  }
-  #coronaPage .coronaPrioridadesContent .coronaPrioritysBlocks.lowPriority h3{
-    color:#74B252;
-  }
-  #coronaPage .coronaPrioridadesContent .coronaPrioritysBlocks .coronaPriorityIndicator{
-    width:100%;
-    height:5px;
-    transition: height .6s;
-
-  }
-
-  #coronaPage .coronaPrioridadesContent .coronaPrioritysBlocks:hover .coronaPriorityIndicator{
-    height:12px;
-    transition: height .3s;
-  }
-  #coronaPage .coronaPrioridadesContent .coronaPrioritysBlocks .coronaPriorityContent{
-    padding:16px 16px 22px;
-  }
-
-  #coronaPage .coronaPrioridadesContent .coronaPrioritysBlocks .coronaPriorityContent h3{
-    padding-bottom:16px;
-  }
-
-  #coronaPage .coronaFade{
-      animation:opac 0.3s
-  }
-  @keyframes opac {
-      from {
-          opacity:0
       }
-      to {
+
+      #coronaPage #coronaContent .coronaOneThird .coronaTabsList .coronaTabs {
+        position: relative;
+      }
+
+      #coronaPage #coronaContent .coronaOneThird .coronaTabsList .coronaTabs button .coronaArrowIcon {
+        position: absolute;
+        right: 20px;
+      }
+
+      #coronaPage #coronaContent .coronaOneThird .coronaTabsList .coronaTabs button.coronaActiveTab .coronaArrowIcon svg #ArrowCorona {
+        fill: #fff;
+      }
+
+      #coronaPage #coronaContent .coronaOneThird .coronaTabsList .coronaTabs button .coronaArrowIcon svg #ArrowCorona {
+        fill: #828282;
+      }
+
+      #coronaPage .coronaTabsContents {
+        padding: 0 0 0 28px;
+      }
+
+      #coronaPage h2 {
+        font-family: ProximaNova-SemiBold, ProximaNovaA-SemiBold, ProximaNovaS-SemiBold;
+        font-size: 22px;
+        color: #333333;
+        margin-bottom: 8px;
+        letter-spacing: -0.25px;
+      }
+
+      #coronaPage p {
+        font-size: 16px;
+        color: #333333;
+        letter-spacing: -0.25px;
+        margin-bottom: 8px;
+      }
+
+      #coronaPage p {
+        line-height: 1.4;
+      }
+
+      #coronaPage p b {
+        font-family: ProximaNova-SemiBold, ProximaNovaA-SemiBold, ProximaNovaS-SemiBold;
+        letter-spacing: -0.25px;
+      }
+
+      #coronaPage p small {
+        font-size: 14px;
+        color: #333333;
+        letter-spacing: -0.25px;
+        /* line-height:14px; */
+      }
+
+      #coronaPage h3 {
+        font-family: ProximaNova-SemiBold, ProximaNovaA-SemiBold, ProximaNovaS-SemiBold;
+        font-size: 18px;
+        color: #333333;
+        letter-spacing: -0.25px;
+        margin-bottom: 8px;
+      }
+
+      #coronaPage .coronaPrioridadesContent {
+        padding-top: 22px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        align-items: stretch;
+      }
+
+      #coronaPage .coronaPrioridadesContent .coronaPrioritysBlocks {
+        background: #fff;
+        border-radius: 3px;
+        margin-right: 10px;
+        margin-top: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, .08);
+        transition: transform .6s, box-shadow .8s;
+        align-self: stretch;
+        height: 100%;
+      }
+
+      #coronaPage .coronaPrioridadesContent .coronaPrioritysBlocks:hover {
+        transform: translateY(-4px);
+        box-shadow: 0px 8px 14px rgba(0, 0, 0, .08);
+        transition: transform .3s, box-shadow .6s;
+        cursor: pointer;
+      }
+
+      #coronaPage .coronaPrioridadesContent .coronaPrioritysBlocks.highPriority .coronaPriorityIndicator {
+        background-color: #FF2723;
+        border-radius: 3px 3px 0px 0px;
+      }
+
+      #coronaPage .coronaPrioridadesContent .coronaPrioritysBlocks.highPriority h3 {
+        color: #FF2723;
+      }
+
+      #coronaPage .coronaPrioridadesContent .coronaPrioritysBlocks.midPriority .coronaPriorityIndicator {
+        background-color: #FF9100;
+        border-radius: 3px 3px 0px 0px;
+      }
+
+      #coronaPage .coronaPrioridadesContent .coronaPrioritysBlocks.midPriority h3 {
+        color: #FF9100;
+      }
+
+      #coronaPage .coronaPrioridadesContent .coronaPrioritysBlocks.lowPriority .coronaPriorityIndicator {
+        background-color: #74B252;
+        border-radius: 3px 3px 0px 0px;
+      }
+
+      #coronaPage .coronaPrioridadesContent .coronaPrioritysBlocks.lowPriority h3 {
+        color: #74B252;
+      }
+
+      #coronaPage .coronaPrioridadesContent .coronaPrioritysBlocks .coronaPriorityIndicator {
+        width: 100%;
+        height: 5px;
+        transition: height .6s;
+
+      }
+
+      #coronaPage .coronaPrioridadesContent .coronaPrioritysBlocks:hover .coronaPriorityIndicator {
+        height: 12px;
+        transition: height .3s;
+      }
+
+      #coronaPage .coronaPrioridadesContent .coronaPrioritysBlocks .coronaPriorityContent {
+        padding: 16px 16px 22px;
+      }
+
+      #coronaPage .coronaPrioridadesContent .coronaPrioritysBlocks .coronaPriorityContent h3 {
+        padding-bottom: 16px;
+      }
+
+      #coronaPage .coronaFade {
+        animation: opac 0.5s
+      }
+
+      @keyframes opac {
+        from {
+          opacity: 0
+        }
+
+        to {
           opacity: 1
+        }
       }
-  }
 
-  #coronaPage .coronaAirCias{
-    margin-top:28px;
-  }
-  #coronaPage .coronaAirCias li{
-    background:#ffffff;
-    display:flex;
-    padding:12px;
-    border-radius:6px;
-    box-shadow:0px 4px 10px rgba(0,0,0,.08);
-    align-items: baseline;
-    position:relative;
-    margin-bottom:12px;
-  }
-  #coronaPage .coronaAirCias .coronaCiaLogo{
-    flex-grow:1;
-  }
-  #coronaPage .coronaAirCias h3{
-    align-self: center;
-    margin-bottom:0;
-    margin-left:8px;
-    flex-grow:50;
-    font-size:16px;
-  }
-  #coronaPage .coronaAirCias li .coronaArrowIcon{
-  transform:translateY(-8px) translateX(-12px);
-  transition: transform .8s;
-  }
-  #coronaPage .coronaAirCias li .coronaArrowIcon svg #ArrowCorona{
-    fill:#0164BF;
-  }
-  #coronaPage .coronaAirCias li{
-    transition: transform .8s;
-  }
-  #coronaPage .coronaAirCias li:hover{
-    transform: translateX(8px);
-    transition: transform .3s;
-  }
-  #coronaPage .coronaAirCias li:hover .coronaArrowIcon{
-    transform:translateY(-8px) translateX(-8px);
-    transition: transform .3s;
-  }
-  #coronaPage .coronaDesktop {
-    display:flex;
-  }
-  #coronaPage .coronaMobile{display:none;}
+      #coronaPage .coronaAirCias {
+        margin-top: 28px;
+      }
 
-  #coronaPage .coronaMobilebr{display:none;}
+      #coronaPage .coronaAirCias li {
+        background: #ffffff;
+        display: flex;
+        padding: 12px;
+        border-radius: 6px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, .08);
+        align-items: baseline;
+        position: relative;
+        margin-bottom: 12px;
+      }
 
-  #coronaPage .coronaModal {
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0);
-  }
+      #coronaPage .coronaAirCias .coronaCiaLogo {
+        flex-grow: 1;
+      }
 
-  #coronaPage .closeCorona {
-    color: #aaa;
-    float: right;
-    font-size: 38px;
-    font-weight: bold;
-    margin-top: -10px;
-  }
+      #coronaPage .coronaAirCias h3 {
+        align-self: center;
+        margin-bottom: 0;
+        margin-left: 8px;
+        flex-grow: 50;
+        font-size: 16px;
+      }
 
-  #coronaPage .closeCorona:hover,
-  #coronaPage .closeCorona:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  }
+      #coronaPage .coronaAirCias li .coronaArrowIcon {
+        transform: translateY(-8px) translateX(-12px);
+        transition: transform .8s;
+      }
 
-  #coronaPage .desktopCoronaInline{
-    display:inline;
-  }
-  #coronaPage .mobileCoronaInline{
-    display:none;
-  }
-  #coronaPage .coronaModalTitle {
-    padding: 22px;
-    text-align: center;
-    border:0;
-    border-bottom-width:1px;
-    border-color:#d4d4d4;
-    border-style: solid;
-  }
+      #coronaPage .coronaAirCias li .coronaArrowIcon svg #ArrowCorona {
+        fill: #0164BF;
+      }
 
-  #coronaPage .coronaModalTitle h2{
-    font-family:ProximaNova-Regular,ProximaNovaA-Regular,ProximaNovaS-Regular;
-    font-size:18px;
-    margin:0;
-  }
+      #coronaPage .coronaAirCias li {
+        transition: transform .8s;
+      }
 
-  #coronaPage .modal-body {padding: 2px 16px;}
+      #coronaPage .coronaAirCias li:hover {
+        transform: translateX(8px);
+        transition: transform .3s;
+      }
 
-  #coronaPage .modal-footer {
-    padding: 2px 16px;
-  }
+      #coronaPage .coronaAirCias li:hover .coronaArrowIcon {
+        transform: translateY(-8px) translateX(-8px);
+        transition: transform .3s;
+      }
 
-  #coronaPage .coronaModalArea {
-    position: relative;
-    background-color: #fefefe;
-    margin: auto;
-    padding: 0;
-    width: 60%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    /* animation-name: animatetop; */
-    /* animation-duration: 0.4s */
-    border-radius:10px;
-    top:20px;
-    z-index:2;
-  }
-  #coronaPage .coronaModalContent{
-  padding:22px;
-  }
-  #coronaPage .coronaModalContent h3{
-    font-size:18px;
-    margin-bottom:18px;
-  }
-  #coronaPage #Prioridade-2 .coronaModalContent h3{
-    color:#FF9E00;
-    letter-spacing:-0.25px;
-  }
-  #coronaPage #Prioridade-3 .coronaModalContent h3{
-    color:#74B252;
-  }
-  #coronaPage .coronaModalContent article{
-    padding:22px 16px;
-    border-radius:10px;
-    box-shadow:0px 0px 8px rgba(0,0,0,0.12);
-    margin-bottom:24px;
-  }
-  #coronaPage #Prioridade-2 .coronaModalContent article h3{
-    font-size:18px;
-    color:#333;
-    margin-bottom:8px;
-  }
+      #coronaPage .coronaDesktop {
+        display: flex;
+      }
+
+      #coronaPage .coronaMobile {
+        display: none;
+      }
+
+      #coronaPage .coronaMobilebr {
+        display: none;
+      }
+
+      #coronaPage .coronaModal {
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0);
+      }
+
+      #coronaPage .closeCorona {
+        color: #aaa;
+        float: right;
+        font-size: 38px;
+        font-weight: bold;
+        margin-top: -10px;
+      }
+
+      #coronaPage .closeCorona:hover,
+      #coronaPage .closeCorona:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      #coronaPage .desktopCoronaInline {
+        display: inline;
+      }
+
+      #coronaPage .mobileCoronaInline {
+        display: none;
+      }
+
+      #coronaPage .coronaModalTitle {
+        padding: 22px;
+        text-align: center;
+        border: 0;
+        border-bottom-width: 1px;
+        border-color: #d4d4d4;
+        border-style: solid;
+      }
+
+      #coronaPage .coronaModalTitle h2 {
+        font-family: ProximaNova-Regular, ProximaNovaA-Regular, ProximaNovaS-Regular;
+        font-size: 18px;
+        margin: 0;
+      }
+
+      #coronaPage .modal-body {
+        padding: 2px 16px;
+      }
+
+      #coronaPage .modal-footer {
+        padding: 2px 16px;
+      }
+
+      #coronaPage .coronaModalArea {
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0;
+        width: 60%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        /* animation-name: animatetop; */
+        /* animation-duration: 0.4s */
+        border-radius: 10px;
+        top: 20px;
+        z-index: 2;
+      }
+
+      #coronaPage .coronaModalContent {
+        padding: 22px;
+      }
+
+      #coronaPage .coronaModalContent h3 {
+        font-size: 18px;
+        margin-bottom: 18px;
+      }
+
+      #coronaPage #Prioridade-2 .coronaModalContent h3 {
+        color: #FF9E00;
+        letter-spacing: -0.25px;
+      }
+
+      #coronaPage #Prioridade-3 .coronaModalContent h3 {
+        color: #74B252;
+      }
+
+      #coronaPage .coronaModalContent article {
+        padding: 22px 16px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
+        margin-bottom: 24px;
+      }
+
+      #coronaPage #Prioridade-2 .coronaModalContent article h3 {
+        font-size: 18px;
+        color: #333;
+        margin-bottom: 8px;
+      }
 
 
-  #coronaPage .coronaModalContent article h4, #coronaPage .coronaTabsContents h4{
-    font-size:16px;
-    font-family:ProximaNova-Semibold,ProximaNovaA-Semibold,ProximaNovaS-Semibold;
-    margin-bottom:0px;
-    letter-spacing:-0.25px;
-    color:#333;
-  }
-  #coronaPage .coronaModalContent article p{
-    font-size:16px;  letter-spacing:-0.25px;
-    margin-bottom:12px;
-  }
-  #coronaPage .coronaModalContent article p:last-child{
-    margin-bottom:0px;
-  }
-  #coronaPage .coronaModalContent article h4 span{
-  color:#0074D4}
+      #coronaPage .coronaModalContent article h4,
+      #coronaPage .coronaTabsContents h4,
+      #coronaPage .CoronaMobilePages h4 {
+        font-size: 16px;
+        font-family: ProximaNova-Semibold, ProximaNovaA-Semibold, ProximaNovaS-Semibold;
+        margin-bottom: 0px;
+        letter-spacing: -0.25px;
+        color: #333;
+      }
 
-  .coronaCiaLogo svg{
-    /* display:none; */
-    opacity:0;
-  }
-  #coronaPage #Prioridade-2 .coronaModalContent .flexCoronacias{
-    display:flex;
-    flex-direction:row;
-    justify-content:flex-start;
-    align-content:stretch;
-  }
-  #coronaPage #Prioridade-2 .coronaModalContent .flexCoronacias .coronaCiax3{
-    border:1px solid #d9d9d9;
-    display:flex;
-    flex-direction:column;
-    border-radius:3px;
-    padding:8px;
-  }
-  #coronaPage #Prioridade-2 .coronaModalContent .flexCoronacias .coronaCiax3 span{
-    text-align:center;
-    font-family:ProximaNova-SemiBold,ProximaNovaA-SemiBold,ProximaNovaS-SemiBold;
-    letter-spacing: -0.25px;
-    color:#0164BF;
-    font-size:14px;
-  }
-  #coronaPage #Prioridade-2 .coronaModalContent .flexCoronacias a{
-  text-decoration: none;
-  width: auto;
-  }
-  #coronaPage #Prioridade-2 .coronaModalContent .flexCoronacias a img{
-    width:76px;
-    align-self: center;
-    margin-bottom:8px;
-  }
-  #coronaPage #Prioridade-2 .coronaModalContent .flexCoronacias .coronaCiax3{
-    margin-right:20px;
-    transition: transform .3s;
-  }
-  #coronaPage #Prioridade-2 .coronaModalContent .flexCoronacias .coronaCiax3:hover{
-    cursor:pointer;
-    transform:scale(1.04);
-  }
-  #coronaPage #Prioridade-2 .coronaModalContent .flexCoronacias{
-    margin-bottom:20px;
-  }
-  #coronaPage #Prioridade-2 .coronaModalContent ul{
-    padding-left:0px;
-  }
-  #coronaPage #Prioridade-2 .coronaModalContent ul li{
-    margin-bottom:8px;
-    color:#333;
-    font-size:16px;
-    letter-spacing:-0.25px;
-    line-height:1.2;
-  }
-  #coronaPage #Prioridade-2 .coronaModalContent ul li a{
-    font-family:ProximaNova-SemiBold,ProximaNovaA-SemiBold,ProximaNovaS-SemiBold;
-    letter-spacing: -0.25px;
-    color:#0164BF;
-  }
-  #coronaPage .modalContent ol li h4{
-    margin-bottom:6px;
-  }
-  #coronaPage .modalContent ol li{
-    margin-bottom:22px;
-    font-size:16px;
-    line-height:1.2;
-    color:#333;
-  }
+      #coronaPage .coronaModalContent article p {
+        font-size: 16px;
+        letter-spacing: -0.25px;
+        margin-bottom: 12px;
+      }
 
-  #coronaPage .modalContent ol li ul li{
-    margin-bottom:12px;
-  }
-  #coronaPage .modalContent ol li a{
-  font-family:ProximaNova-SemiBold,ProximaNovaA-SemiBold,ProximaNovaS-SemiBold;
-  letter-spacing: -0.25px;
-  color:#0164BF;
-  }
+      #coronaPage .coronaModalContent article p:last-child {
+        margin-bottom: 0px;
+      }
 
-  #coronaPage #coronaScrolltoTop{
-    background-color: #0164BF;
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    padding:14px;
-    border-radius:3px;
-    box-shadow:0px 1px 6px rgba(0,0,0,.3);
-    cursor:pointer;
-    transition: transform .8s, background-color .3s ;
-  }
+      #coronaPage .coronaModalContent article h4 span {
+        color: #0074D4
+      }
 
-  #coronaPage #coronaScrolltoTop:hover{
-    background-color: #00519c;
-    transform:translateY(-8px);
-    transition: transform .2s, background-color .3s ;
-  }
-  #coronaPage .backdrop{
-    position:fixed;
-    display:block;
-    width:100%;
-    height:100%;
-    background:rgba(0,0,0,.4);
-    top:0;
-    right:0;
-    overflow: hidden;
-    z-index:1;
-  }
+      .coronaCiaLogo svg {
+        /* display:none; */
+        opacity: 0;
+      }
 
-  #coronaPage .coronaFocusContent {border:2px #0164BF solid}
+      #coronaPage #Prioridade-2 .coronaModalContent .flexCoronacias {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-content: stretch;
+      }
 
+      #coronaPage #Prioridade-2 .coronaModalContent .flexCoronacias .coronaCiax3 {
+        border: 1px solid #d9d9d9;
+        display: flex;
+        flex-direction: column;
+        border-radius: 3px;
+        padding: 8px;
+      }
+
+      #coronaPage #Prioridade-2 .coronaModalContent .flexCoronacias .coronaCiax3 span {
+        text-align: center;
+        font-family: ProximaNova-SemiBold, ProximaNovaA-SemiBold, ProximaNovaS-SemiBold;
+        letter-spacing: -0.25px;
+        color: #0164BF;
+        font-size: 14px;
+      }
+
+      #coronaPage #Prioridade-2 .coronaModalContent .flexCoronacias a {
+        text-decoration: none;
+        width: auto;
+      }
+
+      #coronaPage #Prioridade-2 .coronaModalContent .flexCoronacias a img {
+        width: 76px;
+        align-self: center;
+        margin-bottom: 8px;
+      }
+
+      #coronaPage #Prioridade-2 .coronaModalContent .flexCoronacias .coronaCiax3 {
+        margin-right: 20px;
+        transition: transform .3s;
+      }
+
+      #coronaPage #Prioridade-2 .coronaModalContent .flexCoronacias .coronaCiax3:hover {
+        cursor: pointer;
+        transform: scale(1.04);
+      }
+
+      #coronaPage #Prioridade-2 .coronaModalContent .flexCoronacias {
+        margin-bottom: 20px;
+      }
+
+      #coronaPage #Prioridade-2 .coronaModalContent ul {
+        padding-left: 0px;
+      }
+
+      #coronaPage #Prioridade-2 .coronaModalContent ul li {
+        margin-bottom: 8px;
+        color: #333;
+        font-size: 16px;
+        letter-spacing: -0.25px;
+        line-height: 1.2;
+      }
+
+      #coronaPage #Prioridade-2 .coronaModalContent ul li a {
+        font-family: ProximaNova-SemiBold, ProximaNovaA-SemiBold, ProximaNovaS-SemiBold;
+        letter-spacing: -0.25px;
+        color: #0164BF;
+      }
+
+      #coronaPage .modalContent ol li h4 {
+        margin-bottom: 6px;
+      }
+
+      #coronaPage .modalContent ol li {
+        margin-bottom: 22px;
+        font-size: 16px;
+        line-height: 1.2;
+        color: #333;
+      }
+
+      #coronaPage .modalContent ol li ul li {
+        margin-bottom: 12px;
+      }
+
+      #coronaPage .modalContent ol li a {
+        font-family: ProximaNova-SemiBold, ProximaNovaA-SemiBold, ProximaNovaS-SemiBold;
+        letter-spacing: -0.25px;
+        color: #0164BF;
+      }
+
+      #coronaPage #coronaScrolltoTop {
+        background-color: #0164BF;
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        padding: 14px;
+        border-radius: 3px;
+        box-shadow: 0px 1px 6px rgba(0, 0, 0, .3);
+        cursor: pointer;
+        transition: transform .8s, background-color .3s;
+      }
+
+      #coronaPage #coronaScrolltoTop:hover {
+        background-color: #00519c;
+        transform: translateY(-8px);
+        transition: transform .2s, background-color .3s;
+      }
+
+      #coronaPage .backdrop {
+        position: fixed;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, .4);
+        top: 0;
+        right: 0;
+        overflow: hidden;
+        z-index: 1;
+      }
+
+      #coronaPage .coronaFocusContent {
+        transition: border .3s;
+        border: 2px #0164BF solid
+      }
+
+      @media screen and (max-width:800px) {
+        #coronaPage .coronaContainer {
+          padding: 0 20px;
+        }
+
+        #coronaPage #coronaContent .coronaOneThird {
+          width: 100%;
+        }
+
+        #coronaPage section#coronaTop {
+          padding-bottom: 120px;
+        }
+
+        #coronaPage .coronaTextIntro {
+          margin-top: -120px;
+          margin-bottom: 20px;
+        }
+
+        #coronaPage .coronaBreadcrumb ul li svg {
+          position: absolute;
+          left: -15px;
+          transform: scale(0.7) translateY(0px);
+        }
+
+        #coronaPage .CoronaMobilePages .coronaBreadcrumb ul li svg {
+          position: absolute;
+          left: -15px;
+          transform: scale(0.9) translateY(2px);
+        }
+
+        #coronaPage .coronaTabsResults {
+          display: none;
+        }
+
+        #coronaPage .coronaPrioridadesContent .coronaPrioritysBlocks {
+          margin-right: 0;
+          height: auto;
+          margin-bottom: 10px;
+        }
+
+        #coronaPage .coronaMobile {
+          display: flex;
+          width: 100%;
+        }
+
+        #coronaPage .coronaDesktop {
+          display: none;
+        }
+
+        #coronaPage .coronaBreadcrumb ul li:last-child {
+          display: inline-block;
+          color: #333;
+          position: relative;
+          margin-left: 20px;
+        }
+
+        #coronaPage .coronaBreadcrumb ul li svg #arrowLeftCorona {
+          fill: #333333;
+        }
+
+        #coronaPage .coronaMobilePages .coronaBreadcrumb ul li svg {
+          position: absolute;
+          left: -15px;
+          top: 2px;
+        }
+
+        .CoronaMobilePages {
+          width: 100%;
+        }
+
+        #coronaPage .coronaModal {
+          position: fixed;
+          z-index: 1;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          overflow: auto;
+          background-color: rgba(255, 255, 255, 1);
+        }
+
+        #coronaPage .coronaModalArea {
+          width: 100%;
+          box-shadow: none;
+          top: 0;
+        }
+
+        #coronaPage .coronaModalTitle {
+          padding: 19px 0px 10px;
+          height: auto;
+        }
+
+        #coronaPage .coronaModalTitle h2 {
+          padding-left: 20px;
+        }
+
+        #coronaPage .closeCorona {
+          padding-right: 20px;
+        }
+
+        #coronaPage .coronaPrioridadesContent .coronaOneThird {
+          width: 100%;
+        }
+
+        #coronaPage #Prioridade-2 .coronaModalContent .flexCoronacias a {
+          text-decoration: none;
+          width: 30%;
+        }
+
+        #coronaPage #Prioridade-2 .coronaModalContent .flexCoronacias a.midCoronaMargin {
+          margin: 0px 4.5%;
+        }
+
+        #coronaPage #Prioridade-2 .coronaModalContent .flexCoronacias {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-content: stretch;
+          margin-bottom: 20px;
+        }
+
+        #coronaPage #Prioridade-2 .coronaModalContent .flexCoronacias .coronaCiax3 {
+          margin: 0;
+        }
+
+        #coronaPage .coronaModalContent {
+          padding-top: 90px;
+        }
+
+        #coronaPage .coronaModalTitle {
+          position: fixed;
+          background: #fff;
+        }
+
+        #coronaPage .CoronaMobilePages .coronaBreadcrumb ul li:last-child {
+          padding: 20px 20px 20px 0px;
+        }
+
+        #coronaPage .CoronaMobilePages .coronaBreadcrumb ul li:last-child:hover {
+          cursor: pointer;
+        }
+
+        #coronaPage .desktopCoronaInline {
+          display: none;
+        }
+
+        #coronaPage .mobileCoronaInline {
+          display: inline;
+        }
+
+        #coronaPage .backdrop {
+          background-color: rgba(255, 255, 255, 1);
+        }
+
+        #coronaPage .CoronaMobilePages h4 {
+          font-size: 16px;
+          font-family: ProximaNova-Semibold, ProximaNovaA-Semibold, ProximaNovaS-Semibold;
+          margin-bottom: 0px;
+          letter-spacing: -0.25px;
+          color: #333;
+        }
+      }
+
+      @media screen and (max-width:520px) {
+        #coronaPage section#coronaTop {
+          background: url("https://i.imgur.com/QxGlglp.png") 160% 0px no-repeat, #FFA202;
+        }
+        #coronaPage .coronaVideo_VN{height:220px}
+      }
+
+      @media screen and (max-width:375px) {
+        #coronaPage section#coronaTop {
+          background: url("https://i.imgur.com/QxGlglp.png") 200px 0px no-repeat, #FFA202;
+        }
+
+        #coronaPage .coronaTitle h1 {
+          font-size: 28px;
+        }
+
+        #coronaPage .coronaMobilebr {
+          display: none;
+        }
+      }
+
+      @media screen and (max-width:360px) {
+        #coronaPage .coronaTitle h1 {
+          font-size: 26px;
+        }
+
+        #coronaPage #Prioridade-2 .coronaModalContent .flexCoronacias a img {
+          width: 56px;
+          height: auto;
+        }
+      }
+
+      @media screen and (max-width:320px) {
+        #coronaPage #coronaContent .coronaOneThird .coronaTabsList .coronaTabs button {
+          font-size: 14px;
+        }
+      }
+      
   @media screen and (max-width:500px){
     iframe{width:100%;};
   }
@@ -658,7 +958,7 @@
             </li>
             <li class="coronaTabs">
               <button class="coronaTabsCTA" id="Tabs2" onclick="openCoronaTabs(event,'coronaOutrosServicosContent','Hoteis-seguros-e-carros')">
-                Remarcação e Atendimento de <br>hotéis, seguros e carros.
+                Remarcação e Atendimento de <br>hotéis, seguros e carros
                 <span class="coronaArrowIcon">
                   <svg width="10px" height="16px" viewBox="0 0 10 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g id="arrowLeftCorona" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -1936,7 +2236,7 @@
                 </button>
               </li>
               <li class="coronaTabs">
-                <button class="coronaTabsCTA" onclick="changeCoronaPage('Hoteis-seguros-e-carros','coronaOutrosServicosOrigin','coronaClonedOutrosServicosContent')">Remarcação e Atendimento<br> de hotéis, seguros e carros.<span class="coronaArrowIcon">
+                <button class="coronaTabsCTA" onclick="changeCoronaPage('Hoteis-seguros-e-carros','coronaOutrosServicosOrigin','coronaClonedOutrosServicosContent')">Remarcação e Atendimento<br> de hotéis, seguros e carros<span class="coronaArrowIcon">
                     <svg width="10px" height="16px" viewBox="0 0 10 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                       <g id="arrowLeftCorona" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                         <g id="ArrowCorona" transform="translate(-451.000000, -394.000000)" fill="#FFFFFF" fill-rule="nonzero">
