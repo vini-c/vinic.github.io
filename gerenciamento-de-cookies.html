@@ -94,10 +94,11 @@
   .CookiesPage li{
     padding-bottom:6px;
   }
+  .CookiesPage_visibleMobile{display:none}
   @media screen and (max-width:768px) {
     .CookiesPage_image svg{width:180px;height:auto;}
 
-
+    .CookiesPage_visibleMobile{display:inline-block}
     .CookiesPage {
       flex-direction: column;
       padding-top:0px;
@@ -125,6 +126,16 @@
 
 
   <div class="wrapper">
+    <nav class="institutional__nav">
+<h2 class="institutional__title">Política de privacidade</h2>
+<a class="institutional__nav__btn"><img src="/static/assets/platform/img/institutional/icon-arrow-down.svg" alt="Abrir menu"></a>
+<ul class="institucionalNav">
+<li><a href="/vantagens">Vantagens</a></li>
+<li><a href="/trabalhe-conosco">Trabalhe conosco</a></li>
+<li><a href="/termos-de-uso">Termos de uso</a></li>
+<li><a href="/politica-de-privacidade" class="active">Privacidade</a></li>
+</ul>
+</nav>
     <section class="CookiesPage">
 
 
@@ -269,7 +280,7 @@
           <button class="btn-default" onclick="if (!window.__cfRLUnblockHandlers) return false; updateCookie()">Salvar</button>
         </div>
         <p>Ficou com dúvidas? Confira nossa <a href="politica-de-cookies" class="CookiesPage_link">Política de Cookies</a>.
-          <br>Você pode alterar suas preferências a qualquer momento.
+          Você pode alterar suas preferências a qualquer momento.
         </p>
       </div>
     </section>
