@@ -15,7 +15,10 @@
   .CookiesPage{
     padding-top:40px
   }
-
+  .CookiesPage_image svg{
+    width:250px;
+    height:auto;
+  }
   .CookiesPage p,.CookiesPage li{
     line-height:1.2;
   }
@@ -53,6 +56,8 @@
 
   .CookiesPage {
     display: flex;
+    flex-direction: column;
+
   }
 
   .CookiesPage_image {
@@ -61,12 +66,12 @@
 
   .CookiesPage_text {
     padding: 20px;
-    width: 60%;
+    width: 100%;
   }
 
   .CookiesPage_form {
     padding: 20px;
-    width: 40%;
+    width: 100%;
   }
 
   .CookiesPage_marker {
@@ -85,15 +90,13 @@
   .CookiesPage hr {
     display:none;
   }
-  .CookiesPage_image svg{width:180px;height:auto;}
 
   .CookiesPage li{
     padding-bottom:6px;
   }
   @media screen and (max-width:768px) {
-    .CookiesPage-desktopImg {
-      display: none;
-    }
+   .CookiesPage_image svg{width:180px;height:auto;}
+
 
     .CookiesPage {
       flex-direction: column;
@@ -265,7 +268,7 @@
 
           <button class="btn-default" onclick="if (!window.__cfRLUnblockHandlers) return false; updateCookie()">Salvar</button>
         </div>
-        <p>Ficou com dúvidas? Confira nossa <a href="" class="CookiesPage_link">Política de Cookies</a>.
+        <p>Ficou com dúvidas? Confira nossa <a href="politica-de-cookies" class="CookiesPage_link">Política de Cookies</a>.
           <br>Você pode alterar suas preferências a qualquer momento.
         </p>
       </div>
@@ -274,56 +277,54 @@
   </div>
 
 
-  <script type="text/javascript">
-    const cookie = 'LGPD';
-    const valueCookie = 'Opt-Out';
+  <script>
+	const cookie = 'LGPD';
+	const valueCookie = 'Opt-Out';
 
-    function deleteOptOutCookie() {
-      let containsCookie = getOptOutCookie();
-      if (containsCookie) {
-        setCookie('expires=Thu, 01 Jan 1970 00:00:00 UTC');
-      }
-    }
+	function deleteOptOutCookie(){
+		let containsCookie = getOptOutCookie();
+        	if(containsCookie){
+            		setCookie('expires=Thu, 01 Jan 1970 00:00:00 UTC');
+        	}
+	}
 
-    function getOptOutCookie() {
-      let value = document.cookie.split(';').filter((item) => {
-        return item === ' ' + cookie + '=' + valueCookie
-      })[0];
-      if (value !== undefined) {
-        value = value.substring(1);
-      }
-      return value;
-    }
+	function getOptOutCookie(){
+  		let value = document.cookie.split(';').filter((item) => { return item === ' ' + cookie + '=' + valueCookie })[0];
+		if(value !== undefined){
+			value = value.substring(1);
+		}
+		return value;
+	}
 
-    function setOptOutCookie() {
-      let containsCookie = getOptOutCookie();
-      if (!containsCookie) {
-        setCookie('Sessao');
-      }
-    }
+	function setOptOutCookie(){
+		let containsCookie = getOptOutCookie();
+        	if(!containsCookie){
+            		setCookie('Sessao');
+        	}
+	}
 
-    function setCookie(expired) {
-      document.cookie = cookie + "=" + valueCookie + ";" + expired + ";path=/";
-    }
+    	function setCookie(expired){
+        	document.cookie = cookie + "=" + valueCookie + ";" + expired + ";path=/";
+    	}
 
-    function redirectHome(elementChecked) {
-      let value = getOptOutCookie();
-      if (elementChecked) {
-        !value ? window.location.href = window.location.origin : redirectHome(elementChecked);
-      } else {
-        !value ? redirectHome(elementChecked) : window.location.href = window.location.origin;
-      }
-    }
+	function redirectHome(elementChecked){
+		let value = getOptOutCookie();
+		if(elementChecked){
+			!value ? window.location.href = window.location.origin : redirectHome(elementChecked);
+		}else{
+			!value ? redirectHome(elementChecked) : window.location.href = window.location.origin;
+		}
+	}
 
-    function updateCookie() {
-      let elementChecked = document.getElementById('socialCookies').checked;
-      elementChecked ? deleteOptOutCookie() : setOptOutCookie();
-      redirectHome(elementChecked);
-    }
+	function updateCookie(){
+		let elementChecked = document.getElementById('socialCookies').checked;
+		elementChecked ? deleteOptOutCookie() : setOptOutCookie();
+		redirectHome(elementChecked);
+	}
 
-    window.onload = () => {
-      document.getElementById('socialCookies').checked = getOptOutCookie() === undefined;
-    }
-  </script>
+	window.onload = () => {
+		document.getElementById('socialCookies').checked = getOptOutCookie() === undefined;
+	}
+</script>
 
 </body>
