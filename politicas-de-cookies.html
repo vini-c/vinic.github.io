@@ -14,7 +14,7 @@
   }
 
   .CookiesPage {
-    padding-top: 40px
+    padding-top: 16px
   }
 
   .CookiesPage p,
@@ -58,6 +58,7 @@
     display: flex;
   }
 
+  .CookiesPage a.text_link{color:#0164bf;    font-family: ProximaNova-Semibold; text-decoration:none}
   .CookiesPage_image {
     text-align: left
   }
@@ -80,10 +81,6 @@
 
   .CookiesPage_marker.negative {
     background: #E7455A;
-  }
-
-  .CookiesPage hr {
-    display: none;
   }
 
   .CookiesPage_image svg {
@@ -162,7 +159,12 @@
 }
 .CookiesList_row td{
   font-size:11px;
-
+}
+p.CookiesPage_smallinfo{
+  font-size:12px;
+}
+.CookiesPage_cookiestype{
+  padding:10px 0;
 }
 .wrapperAccordion input[type="checkbox"] + label .arrowAccordion{
  transition:all .2s;
@@ -208,6 +210,16 @@
 
 
   <div class="wrapper">
+    <nav class="institutional__nav">
+<h2 class="institutional__title">Política de privacidade</h2>
+<a class="institutional__nav__btn"><img src="/static/assets/platform/img/institutional/icon-arrow-down.svg" alt="Abrir menu"></a>
+<ul class="institucionalNav">
+<li><a href="/vantagens">Vantagens</a></li>
+<li><a href="/trabalhe-conosco">Trabalhe conosco</a></li>
+<li><a href="/termos-de-uso">Termos de uso</a></li>
+<li><a href="/politica-de-privacidade" class="active">Privacidade</a></li>
+</ul>
+</nav>
     <section class="CookiesPage">
 
 
@@ -509,6 +521,30 @@
               </ul>
             </div>
           </div>
+          
+          <hr class="CookiesPage_divisor">
+          <div class="CookiesPage_cookiestype">
+            <h3>Como gerenciar ou desativar os cookies ?</h3>
+            <p>A maneira mais simples de gerenciar os cookies e tecnologias semelhantes que o ViajaNet utiliza, é através das <a class="text_link" href="politica-de-cookies/preferencias">Configurações dos Cookies</a>.  Com essas configurações, você pode habilitar ou desabilitar o uso de cookies e tecnologias não essenciais semelhantes, utilizadas para melhorar sua experiência ou para personalizar as ofertas e anúncios.</p>
+          </div>
+          <div class="CookiesPage_cookiestype">
+            <h3>Por quanto tempo armazenamos os dados?</h3>
+            <p>Armazenamos seus dados  pelo tempo necessário para facilitar o uso dos nossos serviços. Depois disso, eles são apagados ou anonimizados.</p>
+          </div>
+          <div class="CookiesPage_cookiestype">
+            <h3>Transferência Internacional de Dados</h3>
+            <p>??????</p>
+          </div>
+          <div class="CookiesPage_cookiestype">
+            <h3>Atualização da Política de Privacidade</h3>
+            <p>O ViajaNet poderá atualizar esta Política de Privacidade quando necessário. Por favor, entenda que podemos revisar, de vez em quando, conforme considerarmos apropriado. Sem o seu consentimento explícito, o ViajaNet não reduzirá seus direitos sob esta Política de Privacidade. </p>
+          </div>
+          <div class="CookiesPage_cookiestype">
+            <h3>Dúvidas, comentários ou precisa de ajuda?</h3>
+            <p>Assuntos relacionados à esta a Política de Cookies  ou outros assuntos relativos à proteção de dados pessoais devem ser endereçados –ao Data Protection Officer/Responsável pelo tratamento de dados pessoais através do e-mail <a class="text_link" href="mailto:privacidade@viajanet.com.br">privacidade@viajanet.com.br</a></p>
+            <p class="CookiesPage_smallinfo">Assuntos não relacionados à proteção e privacidade de dados (como envio de currículos, atendimento, dúvidas sobre a plataforma, entre outros) não serão tratados neste e-mail.</p>
+          </div>
+          <p>Última atualização: xx/xx/xxxx</p>
       </div>
 
 
