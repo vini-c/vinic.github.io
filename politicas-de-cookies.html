@@ -64,12 +64,7 @@
 
   .CookiesPage_text {
     padding: 20px;
-    width: 60%;
-  }
-
-  .CookiesPage_form {
-    padding: 20px;
-    width: 40%;
+    width: 100%;
   }
 
   .CookiesPage_marker {
@@ -119,10 +114,11 @@
   border-bottom: none;
   background:#fff;
   border-radius:3px;
+  margin-top:16px;
 }
 
 .wrapperAccordion label:hover{
-  background: #26C281;
+  background: #fff;
 }
 
 .wrapperAccordion label.last{
@@ -140,6 +136,11 @@
   left: -9999px;
 }
 
+
+.wrapperAccordion input[type="checkbox"] ~ ul{
+  background:#fff;
+  padding:10px 20px 0px;
+}
 .wrapperAccordion input[type="checkbox"] ~ ul{
   height: 0;
   transform: scaleY(0);
@@ -151,12 +152,26 @@
   transition: transform .2s ease-out;
   transform: scaleY(1);
 }
-
+.wrapperAccordion .CookiesList_head{border-bottom:1px solid #ebebeb;}
 .wrapperAccordion input[type="checkbox"]:checked + label{
-  background: #26C281;
+  background: #fff;
   border-bottom: 1px solid #fff;
 }
-.arrowAccordion{position:absolute;right:0px;}
+.CookiesList_head th{
+  font-size:11px;
+}
+.CookiesList_row td{
+  font-size:11px;
+
+}
+.wrapperAccordion input[type="checkbox"] + label .arrowAccordion{
+ transition:all .2s;
+}
+.wrapperAccordion input[type="checkbox"]:checked + label .arrowAccordion{
+ transform:rotate(-180deg);
+ transition:all .2s;
+}
+.arrowAccordion{position:absolute;right:20px;top:8px}
 .essencialCookiesList{position:relative;}
 
   @media screen and (max-width:768px) {
@@ -206,94 +221,298 @@
         <br>
         <p class="CookiesPage_smallinfo">Refere ao tratamento de dados pessoais, de acordo com os parâmetros estabelecidos pela Lei Geral de Proteção de Dados (Lei nº 13.709/2018).</p>
 
-        <div class="CookesPage_cookiestype">
-          <h3>Cookies essenciais</h3>
-          <p>Estes são os tipos de cookies essenciais para o funcionamento do site ou aplicativo. Eles incluem, por exemplo, cookies que permitem fazer login e acessar páginas seguras.</p>
-
-          <div class="wrapperAccordion">
-            <ul>
-              <li>
-                <input type="checkbox" id="list-item-1">
-                <label for="list-item-1" class="essencialCookiesList">Confira a lista de cookies essenciais <div class="arrowAccordion"><svg width="12px" height="7px" viewBox="0 0 12 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                        <g id="1.0---VN---Mobile---Politicas-de-cookies" transform="translate(-310.000000, -633.000000)" fill="#979797" fill-rule="nonzero">
-                            <g id="Group-2" transform="translate(23.000000, 521.000000)">
-                                <path d="M287.292893,112.292893 C287.653377,111.932409 288.220608,111.90468 288.612899,112.209705 L288.707107,112.292893 L293,116.585 L297.292893,112.292893 C297.653377,111.932409 298.220608,111.90468 298.612899,112.209705 L298.707107,112.292893 C299.067591,112.653377 299.09532,113.220608 298.790295,113.612899 L298.707107,113.707107 L293.707107,118.707107 C293.346623,119.067591 292.779392,119.09532 292.387101,118.790295 L292.292893,118.707107 L287.292893,113.707107 C286.902369,113.316582 286.902369,112.683418 287.292893,112.292893 Z" id="arrowAccordion"></path>
-                            </g>
-                        </g>
-                    </g>
-                </svg></div></label>
-                <ul>
-                  <table class="CookiesList_table">
-                    <tbody>
-                      <tr class="CookiesList_head">
-                        <th>Nome</th>
-                        <th>Objetivo</th>
-                        <th>Plataforma</th>
-                      </tr>
-                      <tr class="CookiesList_head">
-                        <td>Nome do Cookie</td>
-                        <td>Lista de objetivos do cookie em duas linhas</td>
-                        <td>Website e App</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </ul>
-              </li>
-              <li>
-            </ul>
+        <div class="CookiesPage_cookiestype">
+          <h3>Somos transparentes</h3>
+          <p>Mostramos de forma simples e objetiva como e por que usamos suas informações e com quem podemos compartilhá-los.</p>
           </div>
-        </div>
 
+          <div class="CookiesPage_cookiestype">
+            <h3>Protegemos seus dados</h3>
+            <p>Reconhecemos a importância de proteger seus dados e estamos empenhados no tratamento das mesmas de forma responsável e de acordo com a LGPD (Lei Geral de Proteção de Dados) e demais legislações de proteção.</p>
+          </div>
 
+          <div class="CookiesPage_cookiestype">
+            <h3>Suas Escolhas</h3>
+            <p>Você pode escolher se deseja aceitar os cookies ou não. Porém, ao desativar essas tecnologias, talvez você não consiga aproveitar as funcionalidades.</p>
+          </div>
+          <hr class="CookiesPage_divisor">
 
-
-        <h4>Os cookies são utilizados para:</h4>
-        <ul>
-          <li><span class="CookiesPage_marker positive"></span>Apresentar as tendências de viagens</li>
-          <li><span class="CookiesPage_marker positive"></span>Lembrar suas preferências (como pesquisas recentes, seu aeroporto de origem)</li>
-          <li><span class="CookiesPage_marker positive"></span>Exibir anúncios de viagens que são mais relevantes para você</li>
-        </ul>
-        <h4>Os cookies não são utilizados para:</h4>
-        <ul>
-          <li><span class="CookiesPage_marker negative"></span>Compartilhado entre plataformas sem consentimento</li>
-          <li><span class="CookiesPage_marker negative"></span>Cookies nunca não armazena dados sensíveis;</li>
-        </ul>
-      </div>
-
-
-      <div class="CookiesPage_form">
-
-        <hr>
-
-        <h2>Configuração de Cookies</h2>
-        <div class="CookiesPage_optsection">
-          <form>
-
-            <div class="checkCookies">
-              <div class="itens">
-                <input type="checkbox" id="essentialCookies" name="essentialCookies" disabled="" checked="">
-                <label for="essentialCookies">Essenciais</label>
-                <label class="description-item" for="essentialCookies">Necessários para o funcionamento mínimo do site ou aplicativo.</label>
-              </div>
-              <div class="itens">
-                <input type="checkbox" id="analyticalCookies" name="analyticalCookies" checked="">
-                <label for="analyticalCookies">Estatísticas e Marketing</label>
-                <label class="description-item" for="analyticalCookies">Seus dados ajudam a testar, melhorar e desenvolver novas funcionalidades.</label>
-              </div>
-              <div class="itens">
-                <input type="checkbox" id="socialCookies" name="socialCookies" checked=""><label for="socialCookies">Personalização</label>
-                <label class="description-item" for="socialCookies">Veja os anúncios de viagem que são mais relevantes para você.</label>
-              </div>
+          <h2>O que são Cookies?</h2>
+          <p>São arquivos em formato de textos,  enviados pelos servidores das Plataformas Digitais para o dispositivo do internauta, com a finalidade de identificar o dispositivo e obter dados de acesso, como páginas navegadas ou links clicados, permitindo, desta forma, personalizar a navegação do internauta nas Plataformas Digitais, de acordo com o seu perfil;</p>
+          <div class="CookiesPage_cookiestype">
+            <h3>Quais os tipos de cookies o ViajaNet utiliza?</h3>
+            <p>Utilizamos os seguintes cookies:</p>
+          </div>
+          <div class="CookiesPage_cookiestype">
+            <h3>Cookies essenciais</h3>
+            <p>Estes são os tipos de cookies essenciais para o funcionamento do site ou aplicativo. Eles incluem, por exemplo, cookies que permitem fazer login e acessar páginas seguras.</p>
+            <div class="wrapperAccordion">
+              <ul>
+                <li>
+                  <input type="checkbox" id="essencialCookies">
+                  <label for="essencialCookies" class="essencialCookiesList">Confira a lista de cookies essenciais <div class="arrowAccordion"><svg width="12px" height="7px" viewBox="0 0 12 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                          <g id="1.0---VN---Mobile---Politicas-de-cookies" transform="translate(-310.000000, -633.000000)" fill="#979797" fill-rule="nonzero">
+                              <g id="Group-2" transform="translate(23.000000, 521.000000)">
+                                  <path d="M287.292893,112.292893 C287.653377,111.932409 288.220608,111.90468 288.612899,112.209705 L288.707107,112.292893 L293,116.585 L297.292893,112.292893 C297.653377,111.932409 298.220608,111.90468 298.612899,112.209705 L298.707107,112.292893 C299.067591,112.653377 299.09532,113.220608 298.790295,113.612899 L298.707107,113.707107 L293.707107,118.707107 C293.346623,119.067591 292.779392,119.09532 292.387101,118.790295 L292.292893,118.707107 L287.292893,113.707107 C286.902369,113.316582 286.902369,112.683418 287.292893,112.292893 Z" id="arrowAccordion"></path>
+                              </g>
+                          </g>
+                      </g>
+                  </svg></div></label>
+                  <ul>
+                    <table class="CookiesList_table">
+                      <tbody>
+                        <tr class="CookiesList_head">
+                          <th>Nome</th>
+                          <th>Objetivo</th>
+                          <th>Plataforma</th>
+                        </tr>
+                        <tr class="CookiesList_row">
+                          <td>Nome do Cookie</td>
+                          <td>Lista de objetivos do cookie em duas linhas</td>
+                          <td>Website e App</td>
+                        </tr>
+                        <tr class="CookiesList_row">
+                          <td>Nome do Cookie</td>
+                          <td>Lista de objetivos do cookie em duas linhas</td>
+                          <td>Website e App</td>
+                        </tr>
+                        <tr class="CookiesList_row">
+                          <td>Nome do Cookie</td>
+                          <td>Lista de objetivos do cookie em duas linhas</td>
+                          <td>Website e App</td>
+                        </tr>
+                        <tr class="CookiesList_row">
+                          <td>Nome do Cookie</td>
+                          <td>Lista de objetivos do cookie em duas linhas</td>
+                          <td>Website e App</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </ul>
+                </li>
+                <li>
+              </ul>
             </div>
-          </form>
+          </div>
+          <hr class="CookiesPage_divisor">
 
-          <button class="btn-default" onclick="if (!window.__cfRLUnblockHandlers) return false; updateCookie()">Salvar</button>
-        </div>
-        <p>Ficou com dúvidas? Confira nossa <a href="" class="CookiesPage_link">Política de Cookies</a>.
-          <br>Você pode alterar suas preferências a qualquer momento.
-        </p>
+          <h2>Cookies não-essenciais</h2>
+
+          <div class="CookiesPage_cookiestype">
+            <h3>Cookies de funcionalidade: </h3>
+            <p>Estes são usados para identificar quando usuários que  retornam ao site ou aplicativo. Isso permite apresentarmos suas preferências (por exemplo, seu aeroporto de origem).</p>
+            <div class="wrapperAccordion">
+              <ul>
+                <li>
+                  <input type="checkbox" id="functionCookies">
+                  <label for="functionCookies" class="essencialCookiesList">Confira a lista de cookies essenciais <div class="arrowAccordion"><svg width="12px" height="7px" viewBox="0 0 12 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                          <g id="1.0---VN---Mobile---Politicas-de-cookies" transform="translate(-310.000000, -633.000000)" fill="#979797" fill-rule="nonzero">
+                              <g id="Group-2" transform="translate(23.000000, 521.000000)">
+                                  <path d="M287.292893,112.292893 C287.653377,111.932409 288.220608,111.90468 288.612899,112.209705 L288.707107,112.292893 L293,116.585 L297.292893,112.292893 C297.653377,111.932409 298.220608,111.90468 298.612899,112.209705 L298.707107,112.292893 C299.067591,112.653377 299.09532,113.220608 298.790295,113.612899 L298.707107,113.707107 L293.707107,118.707107 C293.346623,119.067591 292.779392,119.09532 292.387101,118.790295 L292.292893,118.707107 L287.292893,113.707107 C286.902369,113.316582 286.902369,112.683418 287.292893,112.292893 Z" id="arrowAccordion"></path>
+                              </g>
+                          </g>
+                      </g>
+                  </svg></div></label>
+                  <ul>
+                    <table class="CookiesList_table">
+                      <tbody>
+                        <tr class="CookiesList_head">
+                          <th>Nome</th>
+                          <th>Objetivo</th>
+                          <th>Plataforma</th>
+                        </tr>
+                        <tr class="CookiesList_row">
+                          <td>Nome do Cookie</td>
+                          <td>Lista de objetivos do cookie em duas linhas</td>
+                          <td>Website e App</td>
+                        </tr>
+                        <tr class="CookiesList_row">
+                          <td>Nome do Cookie</td>
+                          <td>Lista de objetivos do cookie em duas linhas</td>
+                          <td>Website e App</td>
+                        </tr>
+                        <tr class="CookiesList_row">
+                          <td>Nome do Cookie</td>
+                          <td>Lista de objetivos do cookie em duas linhas</td>
+                          <td>Website e App</td>
+                        </tr>
+                        <tr class="CookiesList_row">
+                          <td>Nome do Cookie</td>
+                          <td>Lista de objetivos do cookie em duas linhas</td>
+                          <td>Website e App</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </ul>
+                </li>
+                <li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="CookiesPage_cookiestype">
+            <h3>Cookies analíticos e de desempenho:</h3>
+            <p>Estes nos permitem contar o número de visitantes e visualizar como eles navegam. Gerando insights que ajudam a melhorar as funcionalidades do site ou aplicativo, por exemplo, garantindo que os usuários encontrem o que buscam com mais facilidade.</p>
+            <div class="wrapperAccordion">
+              <ul>
+                <li>
+                  <input type="checkbox" id="analyticsCookies">
+                  <label for="analyticsCookies" class="essencialCookiesList">Confira a lista de cookies essenciais <div class="arrowAccordion"><svg width="12px" height="7px" viewBox="0 0 12 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                          <g id="1.0---VN---Mobile---Politicas-de-cookies" transform="translate(-310.000000, -633.000000)" fill="#979797" fill-rule="nonzero">
+                              <g id="Group-2" transform="translate(23.000000, 521.000000)">
+                                  <path d="M287.292893,112.292893 C287.653377,111.932409 288.220608,111.90468 288.612899,112.209705 L288.707107,112.292893 L293,116.585 L297.292893,112.292893 C297.653377,111.932409 298.220608,111.90468 298.612899,112.209705 L298.707107,112.292893 C299.067591,112.653377 299.09532,113.220608 298.790295,113.612899 L298.707107,113.707107 L293.707107,118.707107 C293.346623,119.067591 292.779392,119.09532 292.387101,118.790295 L292.292893,118.707107 L287.292893,113.707107 C286.902369,113.316582 286.902369,112.683418 287.292893,112.292893 Z" id="arrowAccordion"></path>
+                              </g>
+                          </g>
+                      </g>
+                  </svg></div></label>
+                  <ul>
+                    <table class="CookiesList_table">
+                      <tbody>
+                        <tr class="CookiesList_head">
+                          <th>Nome</th>
+                          <th>Objetivo</th>
+                          <th>Plataforma</th>
+                        </tr>
+                        <tr class="CookiesList_row">
+                          <td>Nome do Cookie</td>
+                          <td>Lista de objetivos do cookie em duas linhas</td>
+                          <td>Website e App</td>
+                        </tr>
+                        <tr class="CookiesList_row">
+                          <td>Nome do Cookie</td>
+                          <td>Lista de objetivos do cookie em duas linhas</td>
+                          <td>Website e App</td>
+                        </tr>
+                        <tr class="CookiesList_row">
+                          <td>Nome do Cookie</td>
+                          <td>Lista de objetivos do cookie em duas linhas</td>
+                          <td>Website e App</td>
+                        </tr>
+                        <tr class="CookiesList_row">
+                          <td>Nome do Cookie</td>
+                          <td>Lista de objetivos do cookie em duas linhas</td>
+                          <td>Website e App</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </ul>
+                </li>
+                <li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="CookiesPage_cookiestype">
+            <h3>Cookies de segmentação:</h3>
+            <p>Estes registram sua visita no site ou aplicativo, as páginas que você visitou e os links internos que você seguiu. Usaremos essas informações para tornar nosso site e os produtos de viagem exibidos a você mais relevantes para seus interesses.</p>
+            <div class="wrapperAccordion">
+              <ul>
+                <li>
+                  <input type="checkbox" id="segmentCookies">
+                  <label for="segmentCookies" class="essencialCookiesList">Confira a lista de cookies essenciais <div class="arrowAccordion"><svg width="12px" height="7px" viewBox="0 0 12 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                          <g id="1.0---VN---Mobile---Politicas-de-cookies" transform="translate(-310.000000, -633.000000)" fill="#979797" fill-rule="nonzero">
+                              <g id="Group-2" transform="translate(23.000000, 521.000000)">
+                                  <path d="M287.292893,112.292893 C287.653377,111.932409 288.220608,111.90468 288.612899,112.209705 L288.707107,112.292893 L293,116.585 L297.292893,112.292893 C297.653377,111.932409 298.220608,111.90468 298.612899,112.209705 L298.707107,112.292893 C299.067591,112.653377 299.09532,113.220608 298.790295,113.612899 L298.707107,113.707107 L293.707107,118.707107 C293.346623,119.067591 292.779392,119.09532 292.387101,118.790295 L292.292893,118.707107 L287.292893,113.707107 C286.902369,113.316582 286.902369,112.683418 287.292893,112.292893 Z" id="arrowAccordion"></path>
+                              </g>
+                          </g>
+                      </g>
+                  </svg></div></label>
+                  <ul>
+                    <table class="CookiesList_table">
+                      <tbody>
+                        <tr class="CookiesList_head">
+                          <th>Nome</th>
+                          <th>Objetivo</th>
+                          <th>Plataforma</th>
+                        </tr>
+                        <tr class="CookiesList_row">
+                          <td>Nome do Cookie</td>
+                          <td>Lista de objetivos do cookie em duas linhas</td>
+                          <td>Website e App</td>
+                        </tr>
+                        <tr class="CookiesList_row">
+                          <td>Nome do Cookie</td>
+                          <td>Lista de objetivos do cookie em duas linhas</td>
+                          <td>Website e App</td>
+                        </tr>
+                        <tr class="CookiesList_row">
+                          <td>Nome do Cookie</td>
+                          <td>Lista de objetivos do cookie em duas linhas</td>
+                          <td>Website e App</td>
+                        </tr>
+                        <tr class="CookiesList_row">
+                          <td>Nome do Cookie</td>
+                          <td>Lista de objetivos do cookie em duas linhas</td>
+                          <td>Website e App</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </ul>
+                </li>
+                <li>
+              </ul>
+            </div>
+          </div>
+          <div class="CookiesPage_cookiestype">
+            <h3>Utilizamos cookies persistentes e de sessão</h3>
+            <p>Os cookies de sessão são excluídos quando você fecha o navegador. Os cookies persistentes permanecem no seu computador e são ativados na próxima vez que você visitar o nosso site.</p>
+            <div class="wrapperAccordion">
+              <ul>
+                <li>
+                  <input type="checkbox" id="persistentCookies">
+                  <label for="persistentCookies" class="essencialCookiesList">Confira a lista de cookies essenciais <div class="arrowAccordion"><svg width="12px" height="7px" viewBox="0 0 12 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                          <g id="1.0---VN---Mobile---Politicas-de-cookies" transform="translate(-310.000000, -633.000000)" fill="#979797" fill-rule="nonzero">
+                              <g id="Group-2" transform="translate(23.000000, 521.000000)">
+                                  <path d="M287.292893,112.292893 C287.653377,111.932409 288.220608,111.90468 288.612899,112.209705 L288.707107,112.292893 L293,116.585 L297.292893,112.292893 C297.653377,111.932409 298.220608,111.90468 298.612899,112.209705 L298.707107,112.292893 C299.067591,112.653377 299.09532,113.220608 298.790295,113.612899 L298.707107,113.707107 L293.707107,118.707107 C293.346623,119.067591 292.779392,119.09532 292.387101,118.790295 L292.292893,118.707107 L287.292893,113.707107 C286.902369,113.316582 286.902369,112.683418 287.292893,112.292893 Z" id="arrowAccordion"></path>
+                              </g>
+                          </g>
+                      </g>
+                  </svg></div></label>
+                  <ul>
+                    <table class="CookiesList_table">
+                      <tbody>
+                        <tr class="CookiesList_head">
+                          <th>Nome</th>
+                          <th>Objetivo</th>
+                          <th>Plataforma</th>
+                        </tr>
+                        <tr class="CookiesList_row">
+                          <td>Nome do Cookie</td>
+                          <td>Lista de objetivos do cookie em duas linhas</td>
+                          <td>Website e App</td>
+                        </tr>
+                        <tr class="CookiesList_row">
+                          <td>Nome do Cookie</td>
+                          <td>Lista de objetivos do cookie em duas linhas</td>
+                          <td>Website e App</td>
+                        </tr>
+                        <tr class="CookiesList_row">
+                          <td>Nome do Cookie</td>
+                          <td>Lista de objetivos do cookie em duas linhas</td>
+                          <td>Website e App</td>
+                        </tr>
+                        <tr class="CookiesList_row">
+                          <td>Nome do Cookie</td>
+                          <td>Lista de objetivos do cookie em duas linhas</td>
+                          <td>Website e App</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </ul>
+                </li>
+                <li>
+              </ul>
+            </div>
+          </div>
       </div>
+
+
+
     </section>
 
   </div>
