@@ -1,0 +1,417 @@
+<div class="wrapper">
+    <nav class="institutional__nav" vn-institucional-nav>
+        <h2 class="institutional__title">Política de privacidade</h2>
+        <!-- ADICIONAR A CLASSE class="institutional__nav__btn--opened" NO TOGGLE DO BOTÃO -->
+        <a href="javascript:void(0);" class="institutional__nav__btn">
+            <img src="/static/assets/platform/img/institutional/icon-arrow-down.svg" alt="Abrir menu" />
+        </a>
+        <!-- ADICIONAR A CLASSE class="opened" NO TOGGLE DO MENU -->
+        <ul class="institucionalNav">
+            <li>
+                <a href="termos-de-uso">Termos de uso</a>
+            </li>
+            <li>
+                <a href="politica-de-privacidade">Privacidade</a>
+            </li>
+            <li>
+                <a href="politica-de-cookies" class="active">Pólítica de cookies</a>
+            </li>
+        </ul>
+    </nav>
+    <section class="institutional terms">
+        <h1 id="settings">Configurações de cookies</h1>
+
+        <form>
+            <div class="checkCookies">
+                <div class="itens">
+                    <input type="checkbox" id="essentialCookies" name="essentialCookies" disabled checked />
+                    <label for="essentialCookies">Cookies essenciais e funcionais</label>
+                </div>
+
+                <div class="itens">
+                    <input type="checkbox" id="analyticalCookies" name="analyticalCookies" disabled checked />
+                    <label for="analyticalCookies">Cookies analíticos</label>
+                </div>
+
+                <div class="itens">
+                    <input type="checkbox" id="socialCookies" name="socialCookies" checked />
+                    <label for="socialCookies">Cookies de publicidade, marketing e mídia social</label>
+                </div>
+            </div>
+            <button class="btn-default btn-cadastrar" onclick="updateCookie()">salvar</button>
+        </form>
+
+        <hr />
+
+        <h2>Política de Cookies</h2>
+        <p>
+            A Adyen NV (“Adyen” ou “nós”) deseja garantir que sua visita ao nosso site seja tranquila, confiável e o mais útil possível para você. Para nos ajudar a fazer isso, usamos cookies para tornar nosso site relevante aos seus interesses e necessidades.
+        </p>
+
+        <h3>O que são cookies?</h3>
+        <p>
+            Cookies são pequenos arquivos de texto que são colocados automaticamente em seu computador, tablet, telefone celular ou outro dispositivo (“dispositivo”) quando você visita nosso site. Eles são armazenados pelo navegador da Internet e podem conter informações básicas sobre o dispositivo ou o uso da Internet. Seu navegador envia esses cookies de volta ao nosso site toda vez que você o visita, para que possamos reconhecer seu computador ou dispositivo móvel e personalizar e melhorar sua experiência de navegação.
+        </p>
+
+        <h3>Que tipo de cookies usamos?</h3>
+        <p>Os cookies que usamos se enquadram em 3 categorias. Essas categorias são descritas abaixo:</p>
+
+        <h3>Cookies essenciais e funcionais:</h3>
+        <p>
+            Os cookies essenciais são necessários para o bom funcionamento do nosso site e para ajudá-lo a acessar e navegar pelo nosso site e usar todos os seus recursos. Também usamos cookies funcionais, por exemplo, para lembrar suas preferências de idioma para evitar o trabalho de alterá-los sempre que entrar em nosso site. Sem esses cookies, nosso site não funcionaria corretamente e você não seria capaz de usar alguns recursos importantes.
+        </p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Domínio</th>
+                    <th>Objetivo</th>
+                    <th>Tempo de vida</th>
+                    <th>Técnica</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>_ALGOLIA</td>
+                    <td><a class="link-default" href="https://www.adyen.com/">www.adyen.com</a></td>
+                    <td>Este cookie fornece o recurso de pesquisa para o site e fornece resultados relevantes em tempo real.</td>
+                    <td>1 ano</td>
+                    <td>Cookie</td>
+                </tr>
+                <tr>
+                    <td>JSESSIONID</td>
+                    <td><a class="link-default" href="https://www.adyen.com/">www.adyen.com</a></td>
+                    <td>Este cookie é usado para rastrear usuários logados e nos permite, por exemplo, evitar que você tenha que reinserir seus dados de login se uma página for recarregada.</td>
+                    <td>Duração da sessão de navegação</td>
+                    <td>Cookie</td>
+                </tr>
+                <tr>
+                    <td>__cfduid</td>
+                    <td><a class="link-default" href="https://www.adyen.com/">www.adyen.com</a></td>
+                    <td>Este cookie é usado para identificar o tráfego da web confiável.</td>
+                    <td>1 dia</td>
+                    <td>Cookie</td>
+                </tr>
+                <tr>
+                    <td>consent_used</td>
+                    <td><a class="link-default" href="https://www.adyen.com/">www.adyen.com</a></td>
+                    <td>Este cookie é usado para rastrear o seu consentimento com os cookies.</td>
+                    <td>1 dia</td>
+                    <td>Cookie</td>
+                </tr>
+                <tr>
+                    <td>document_query</td>
+                    <td><a class="link-default" href="https://www.adyen.com/">www.adyen.com</a></td>
+                    <td>Este cookie rastreia as consultas de pesquisa.</td>
+                    <td>1 dia</td>
+                    <td>Cookie</td>
+                </tr>
+                <tr>
+                    <td>gdpr</td>
+                    <td><a class="link-default" href="https://www.adyen.com/">www.adyen.com</a></td>
+                    <td>Este cookie é usado para rastrear o seu consentimento com os cookies.</td>
+                    <td>1 dia</td>
+                    <td>Cookie</td>
+                </tr>
+                <tr>
+                    <td>lang_CNTRY</td>
+                    <td><a class="link-default" href="https://www.adyen.com/">www.adyen.com</a></td>
+                    <td>Este cookie lembra sua escolha de idioma.</td>
+                    <td>1 dia</td>
+                    <td>Cookie</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Cookies analíticos:</h3>
+
+        <p>Usamos cookies para nos ajudar a compreender como os visitantes chegam ao nosso site, como e por quanto tempo o utilizam e como podemos melhorar sua experiência. Este tipo de cookies denominados "analíticos" pode fornecer-nos informações que nos ajudam a compreender quais as partes do nosso site que interessam aos nossos visitantes e se apresentam algum erro. Usamos esses cookies para testar diferentes designs e recursos de nossos sites e também os usamos para nos ajudar a monitorar como nossos visitantes chegam aos nossos sites.</p>
+
+        <p>Usamos o Google Analytics para colocar e ler cookies para o uso acima mencionado. Alteramos nossas configurações do Google Analytics para proteger ainda mais sua privacidade. Por exemplo, certificamo-nos de que o último octeto do seu endereço IP é invisível e desativamos a configuração que permite o compartilhamento de dados com o Google. Também não estamos usando nenhum outro serviço de cookies relacionado ao Google Analytics oferecido pelo Google.</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Domínio</th>
+                    <th>Objetivo</th>
+                    <th>Tempo de vida</th>
+                    <th>Técnica</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>_gaexp</td>
+                    <td><a href="https://www.adyen.com/" class="link-default">www.adyen.com</a></td>
+                    <td>Este cookie é usado durante a execução de experimentos no site (como testes A / B) para identificar qual versão do site o visitante está vendo.</td>
+                    <td>90 dias</td>
+                    <td>Cookie</td>
+                </tr>
+                <tr>
+                    <td>_ga</td>
+                    <td><a href="https://www.adyen.com/" class="link-default">www.adyen.com</a></td>
+                    <td>Este cookie é usado para distinguir entre os visitantes e como eles usam o site, que usamos para melhorar o nosso site.</td>
+                    <td>2 anos</td>
+                    <td>Cookie</td>
+                </tr>
+                <tr>
+                    <td>_gat_UA-3072609-19</td>
+                    <td><a href="https://www.adyen.com/" class="link-default">www.adyen.com</a></td>
+                    <td>Este cookie é usado para distinguir entre os visitantes e como eles usam o site, que usamos para melhorar o nosso site.</td>
+                    <td>1 dia</td>
+                    <td>Cookie</td>
+                </tr>
+                <tr>
+                    <td>_gid</td>
+                    <td><a href="https://www.adyen.com/" class="link-default">www.adyen.com</a></td>
+                    <td>Este cookie é usado para distinguir entre os visitantes e como eles usam o site, que usamos para melhorar o nosso site.</td>
+                    <td>1 dia</td>
+                    <td>Cookie</td>
+                </tr>
+                <tr>
+                    <td>first_hit</td>
+                    <td><a href="https://www.adyen.com/" class="link-default">www.adyen.com</a></td>
+                    <td>Este cookie é colocado na primeira visita ao site, que usamos para identificar e distinguir entre visitantes de primeira viagem e visitantes de retorno.</td>
+                    <td>1 dia</td>
+                    <td>Cookie</td>
+                </tr>
+                <tr>
+                    <td>document_referrer</td>
+                    <td><a href="https://www.adyen.com/" class="link-default">www.adyen.com</a></td>
+                    <td>Este cookie é usado para ver se os visitantes utilizam nossos diferentes sites (adyen.com, docs.adyen.com e support.adyen.com), com a finalidade de rastrear se os visitantes viajam entre esses domínios.</td>
+                    <td>1 dia</td>
+                    <td>Cookie</td>
+                </tr>
+                <tr>
+                    <td>referer_used</td>
+                    <td><a href="https://www.adyen.com/" class="link-default">www.adyen.com</a></td>
+                    <td>Este cookie é usado para ver como um visitante acessou nosso site (por exemplo, se ele clicou em um link ou anúncio).</td>
+                    <td>1 dia</td>
+                    <td>Cookie</td>
+                </tr>
+                <tr>
+                    <td>_hjDonePolls</td>
+                    <td><a href="https://www.adyen.com/" class="link-default">www.adyen.com</a></td>
+                    <td>Este cookie é colocado para rastrear os visitantes que já completaram uma enquete, para excluir esses visitantes da mesma enquete.</td>
+                    <td>1 ano</td>
+                    <td>Cookie</td>
+                </tr>
+                <tr>
+                    <td>_hjIncludedInSample</td>
+                    <td><a href="https://www.adyen.com/" class="link-default">www.adyen.com</a></td>
+                    <td>Este cookie é usado para analisar a experiência do usuário em nosso site.</td>
+                    <td>Duração da sessão de navegação</td>
+                    <td>Cookie</td>
+                </tr>
+                <tr>
+                    <td>_cfduid</td>
+                    <td>.pingdom.net</td>
+                    <td>Este cookie é usado para identificar clientes individuais por trás de um endereço IP compartilhado.</td>
+                    <td>1 ano</td>
+                    <td>Cookie</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Cookies de publicidade, marketing e mídia social:</h3>
+
+        <p>Só colocamos cookies de publicidade, marketing e mídia social se você nos der sua permissão para fazer isso.</p>
+
+        <p>Os cookies de publicidade e marketing coletam informações sobre seus hábitos de navegação para tornar nosso conteúdo e publicidade o mais relevante possível para você e seus interesses. Esses cookies também são usados ??para nos ajudar a medir a eficácia de nossas campanhas publicitárias, rastreando o número de cliques. Os cookies são normalmente colocados por redes de publicidade de terceiros. Eles lembram os sites que você visita e usam essas informações para dar-lhe acesso a conteúdos interessantes e empolgantes em nosso site e para mostrar anúncios mais personalizados quando você visita outros sites. Esses cookies também ajudam a melhorar sua experiência de navegação, por exemplo, ajudando a evitar que o mesmo anúncio reapareça para você.</p>
+
+        <p>Além disso, plataformas de mídia social como Facebook e Twitter podem usar cookies para ver se você está conectado e permitir que você "curta" o conteúdo ou o encaminhe para seus amigos. Dependendo de suas configurações, esses terceiros podem usar suas informações para seus próprios fins, como publicidade. Se você deseja saber mais como essas plataformas de mídia social usam os dados, consulte os avisos de privacidade dessas plataformas.</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Domínio</th>
+                    <th>Objetivo</th>
+                    <th>Tempo de vida</th>
+                    <th>Técnica</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>_fbp</td>
+                    <td><a href="https://www.adyen.com/" class="link-default">www.adyen.com</a></td>
+                    <td>Este cookie é usado pelo Facebook para fornecer uma série de produtos de publicidade, como lances em tempo real de anunciantes terceiros.</td>
+                    <td>90 dias</td>
+                    <td>Cookie</td>
+                </tr>
+                <tr>
+                    <td>_gcl_au</td>
+                    <td><a href="https://www.adyen.com/" class="link-default">www.adyen.com</a></td>
+                    <td>Este cookie é usado pelo Facebook para fornecer uma série de produtos de publicidade, como lances em tempo real de anunciantes terceiros.</td>
+                    <td>90 dias</td>
+                    <td>Cookie</td>
+                </tr>
+                <tr>
+                    <td>MUID</td>
+                    <td>.bing.com</td>
+                    <td>Este cookie é usado para redirecionar os visitantes do site no Bing.</td>
+                    <td>1 ano</td>
+                    <td>Cookie</td>
+                </tr>
+                <tr>
+                    <td>_ARESTAS</td>
+                    <td>.bing.com</td>
+                    <td>Esse cookie é usado para redirecionar os visitantes do site por meio do Bing.</td>
+                    <td>Duração da sessão de navegação</td>
+                    <td>Cookie</td>
+                </tr>
+                <tr>
+                    <td>MUIDB</td>
+                    <td>.bing.com</td>
+                    <td>Esse cookie é usado para redirecionar os visitantes do site por meio do Bing.</td>
+                    <td>1 ano</td>
+                    <td>Cookie</td>
+                </tr>
+                <tr>
+                    <td>IDE</td>
+                    <td>.doubleclick.net</td>
+                    <td>Cookies usados ??por nosso gerente de campanha.</td>
+                    <td>1 ano</td>
+                    <td>Cookie</td>
+                </tr>
+                <tr>
+                    <td>bcookie</td>
+                    <td>.linkedin.com</td>
+                    <td>Este cookie é usado para redirecionar os visitantes do site através do LinkedIn.</td>
+                    <td>2 anos</td>
+                    <td>Cookie</td>
+                </tr>
+                <tr>
+                    <td>UserMatchhistory</td>
+                    <td>.linkedin.com</td>
+                    <td>Este cookie é usado para redirecionar os visitantes do site através do LinkedIn.</td>
+                    <td>1 mês</td>
+                    <td>Cookie</td>
+                </tr>
+                <tr>
+                    <td>Lidc</td>
+                    <td>.linkedin.com</td>
+                    <td>Este cookie é usado para redirecionar os visitantes do site através do LinkedIn.</td>
+                    <td>1 dia</td>
+                    <td>Cookie</td>
+                </tr>
+                <tr>
+                    <td>lang</td>
+                    <td>.linkedin.com</td>
+                    <td>Este cookie é usado para redirecionar os visitantes do site através do LinkedIn.</td>
+                    <td>Durante a sessão de navegação</td>
+                    <td>Cookie</td>
+                </tr>
+                <tr>
+                    <td>fr</td>
+                    <td>.facebook.com</td>
+                    <td>Este cookie é usado para redirecionar os visitantes do site através do Facebook.</td>
+                    <td>3 meses</td>
+                    <td>Cookie</td>
+                </tr>
+                <tr>
+                    <td>BizoID</td>
+                    <td>.ads.linkedin.com</td>
+                    <td>Este cookie é usado para redirecionar os visitantes do site através do LinkedIn.</td>
+                    <td>1 mês</td>
+                    <td>Cookie</td>
+                </tr>
+                <tr>
+                    <td>lang</td>
+                    <td>.ads.linkedin.com</td>
+                    <td>Este cookie é usado para redirecionar os visitantes do site através do LinkedIn.</td>
+                    <td>Durante a sessão de navegação</td>
+                    <td>Cookie</td>
+                </tr>
+                <tr>
+                    <td>_mkto_trk</td>
+                    <td>.marketo.com</td>
+                    <td>Esse cookie é usado para rastrear o comportamento dos visitantes do site e para vincular um visitante ao destinatário de uma campanha de marketing por e-mail, para medir a eficácia da campanha. O rastreamento é realizado anonimamente até que um usuário se identifique enviando um formulário.</td>
+                    <td>2 anos</td>
+                    <td>Cookie</td>
+                </tr>
+                <tr>
+                    <td>_utm</td>
+                    <td><a href="https://www.adyen.com/" class="link-default">www.adyen.com</a></td>
+                    <td>Esse cookie é usado para registrar por quais canais de marketing os visitantes chegaram ao site e para repassar esses valores ao Marketo após o envio do formulário.</td>
+                    <td>5 anos</td>
+                    <td>Cookie</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Retirando seu consentimento</h3>
+
+        <p>Você pode retirar seu consentimento para cookies de publicidade, marketing e mídia social usando nossa ferramenta de gerenciamento de consentimento, que você pode encontrar <a href="#settings" class="link-default">aqui</a>. </p>
+
+
+        <h3>Gerenciando suas configurações de cookies e excluindo cookies</h3>
+
+        <p>Conforme explicado acima, só colocamos cookies de publicidade e segmentação (incluindo cookies de rastreamento) se você nos der seu consentimento para fazer isso. Se nos deu o seu consentimento, mas gostaria que os cookies que colocámos fossem removidos, pode fazê-lo eliminando-os através do seu navegador. Pesquise "cookies" no “menu Ajuda” do seu navegador ou visite <a class="link-default" href="https://www.allaboutcookies.org/">www.allaboutcookies.org</a> para obter mais informações sobre como fazer isso. </p>
+
+        <p>Você também pode habilitar ou desabilitar (tipos de) cookies por meio de suas configurações de navegação. Por exemplo, você pode fazer com que o navegador o notifique quando você receber um novo cookie, excluir cookies individuais ou excluir todos os cookies. A maioria das redes de publicidade oferece uma maneira de cancelar os cookies de publicidade. Consulte as páginas <a href="https://optout.aboutads.info/?c=2&lang=EN" class="link-default">Escolha do consumidor</a> da  <a href="https://optout.aboutads.info/?c=2&lang=EN" class="link-default">Digital Advertising Alliance</a>  e  <a href="https://www.youronlinechoices.com/" class="link-default">Suas escolhas online</a> para obter informações úteis sobre como fazer isso.</p>
+
+        <p>Observe que, se você optar por excluir os cookies da Adyen, seu acesso a algumas funcionalidades e áreas de nosso site pode ser degradado ou restrito.</p>
+
+
+        <h3>Mais informações sobre nosso uso de dados</h3>
+
+        <p>Você pode encontrar mais informações sobre a forma como lidamos com dados pessoais em nossa <a href="https://www.adyen.com/policies-and-disclaimer/privacy-policy" class="link-default">Política de Privacidade</a>.</p>
+
+
+        <h3>Dúvidas, comentários ou precisa de ajuda?</h3>
+
+        <p>Se você tiver alguma dúvida ou se pudermos ajudá-lo em algo, ficaremos felizes em ajudar se você entrar em contato conosco em: <a href="https://support.adyen.com/hc/en-us/requests/new" class="link-default">https://support.adyen.com/hc/en-us/requests/new.</a> </p>
+
+    </section>
+</div>
+<script>
+	const cookie = 'LGPD';
+	const valueCookie = 'Opt-Out';
+
+	function deleteOptOutCookie(){
+		let containsCookie = getOptOutCookie();
+        	if(containsCookie){
+            		setCookie('expires=Thu, 01 Jan 1970 00:00:00 UTC');
+        	}
+	}
+
+	function getOptOutCookie(){
+  		let value = document.cookie.split(';').filter((item) => { return item === ' ' + cookie + '=' + valueCookie })[0];
+		if(value !== undefined){
+			value = value.substring(1);
+		}
+		return value;
+	}
+
+	function setOptOutCookie(){
+		let containsCookie = getOptOutCookie();
+        	if(!containsCookie){
+            		setCookie('Sessao');
+        	}
+	}
+
+    	function setCookie(expired){
+        	document.cookie = cookie + "=" + valueCookie + ";" + expired + ";path=/";
+    	}
+
+	function redirectHome(elementChecked){
+		let value = getOptOutCookie();
+		if(elementChecked){
+			!value ? window.location.href = window.location.origin : redirectHome(elementChecked);
+		}else{
+			!value ? redirectHome(elementChecked) : window.location.href = window.location.origin;
+		}
+	}
+
+	function updateCookie(){
+		let elementChecked = document.getElementById('socialCookies').checked;
+		elementChecked ? deleteOptOutCookie() : setOptOutCookie();
+		redirectHome(elementChecked);
+	}
+
+	window.onload = () => {
+		document.getElementById('socialCookies').checked = getOptOutCookie() === undefined;
+	}
+</script>

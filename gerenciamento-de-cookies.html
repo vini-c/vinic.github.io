@@ -15,9 +15,14 @@
   .CookiesPage{
     padding-top:40px
   }
+
+  .CookiesPage p,.CookiesPage li{
+    line-height:1.2;
+  }
   .CookiesPage_link {
     color: #0164bf;
-    text-decoration: none
+    text-decoration: none;
+    font-family: ProximaNova-Semibold;
   }
 
   .CookiesPage_optsection label {
@@ -43,6 +48,7 @@
     display: block;
     font-family: ProximaNova-Regular;
     padding-top: 0;
+    line-height:1.2;
   }
 
   .CookiesPage {
@@ -81,6 +87,9 @@
   }
   .CookiesPage_image svg{width:180px;height:auto;}
 
+  .CookiesPage li{
+    padding-bottom:6px;
+  }
   @media screen and (max-width:768px) {
     .CookiesPage-desktopImg {
       display: none;
@@ -95,7 +104,9 @@
     .CookiesPage_form {
       width: 100%;
     }
-
+    .CookiesPage_form{
+      padding-top:0px;
+    }
     .CookiesPage_image {
       text-align: center
     }
@@ -109,165 +120,6 @@
 
 <body style="background:#f7f7f7;">
 
-  <vn-header page="home" class="ng-isolate-scope">
-    <header-b2c>
-      <section id="headerSection">
-        <div class="navigation-bar navmobile--full" ng-class="{'bg-colored' : !vm.WhiteBgHeader}">
-          <input id="navigation-checkbox" class="navigation-checkbox" type="checkbox">
-          <label class="navigation-toggle" for="navigation-checkbox" ng-click="vm.ShowMenuPanel()">
-            <span class="navigation-toggle-icon"></span>
-          </label>
-        </div>
-        <vn-share-checkout class="ng-isolate-scope">
-          <!-- ngIf: vmShareCheckoutBtn.IsCheckout -->
-        </vn-share-checkout>
-
-        <!-- ngIf: vm.HeaderMenu.ShowAuthenticator && vm.isMobile -->
-
-        <div class="mobile navmobile--full" ng-class="vm.HeaderMenu.ShowMenuMobile ? 'opened' : ''">
-          <div class="user-profile--header" ng-class="{'bg-colored' : !vm.WhiteBgHeader}">
-            <img itemprop="logo" src="/static/assets/platform/img/logo.svg" data-2x="/static/assets/platform/img/logo.png" alt="ViajaNet" title="ViajaNet">
-          </div>
-          <div class="mobile__scroll">
-            <ul class="navmobile navmobile--full">
-              <li ng-show="vm.HeaderMenu.ShowBlackFriday" class="ng-hide"><a href="/promocao/black-friday" title="Black Friday" target="_blank" class="btn-black-friday" id="navmobile-link-0">Black Friday</a></li>
-              <li><a href="/passagens-aereas" title="Passagens Aéreas" target="_self" class="btn-passagens-aereas" id="navmobile-link-1">Passagens Aéreas</a></li>
-              <li><a href="/pacotes-viagens" title="Pacotes de Viagem" target="_blank" class="vn_menu_item" id="navmobile-link-2">Pacotes de Viagem</a></li>
-              <!-- ngIf: vm.HeaderMenu.ShowHotel -->
-              <li ng-if="vm.HeaderMenu.ShowHotel" class="ng-scope"><a href="https://sp.booking.com/index.pt-br.html?aid=1918203&amp;lang=pt-br&amp;selected_currency=BRL&amp;label=ViajaNet_Home_Menu_Header" title="Hotéis" target="_blank"
-                  class="btn-hoteis">Hotéis</a></li><!-- end ngIf: vm.HeaderMenu.ShowHotel -->
-              <li><a href="http://carros.viajanet.com.br" title="Carros" target="_blank" class="btn-carros btn-carros-nav" id="navmobile-link-4">Carros</a></li>
-              <li><a href="/seguros" title="Seguros" target="_blank" id="navmobile-link-5">Seguros</a></li>
-              <li><a href="/passagens-aereas/quandoviajar" title="QuandoViajar" target="_blank" class="vn_menu_item" id="navmobile-link-6">QuandoViajar</a></li>
-              <li><a ng-href="https://www.viajanet.com.br/Atendimento" title="Atendimento" target="_self" class="btn-atendimento" id="navmobile-link-7" href="https://www.viajanet.com.br/Atendimento">Atendimento</a></li>
-              <!-- ngIf: !vm.Authentication.IsAuthenticated -->
-              <li class="boxtel">
-                <h5>LIGUE</h5>
-                <p class="phone"><a href="tel:40071510" id="vn-phone-local-mobile">4007-1510</a></p>
-                <p>Capitais e Regiões Metropolitanas</p>
-                <p class="phone phone--small"><a href="tel:1140071510" id="vn-phone-full-mobile">(11) 4007-1510</a></p>
-                <p>Demais Regiões</p>
-              </li>
-            </ul>
-          </div>
-
-        </div>
-
-        <!-- Fim menu mobile -->
-
-        <header class="vn-header-novo">
-          <div class="vn-content-novo">
-            <div class="logo" itemscope="" itemtype="http://schema.org/Organization">
-              <a itemprop="url" id="img_logo" href="/" target="_self">
-                <img itemprop="logo" src="/static/assets/platform/img/logo.svg" data-2x="/static/assets/platform/img/logo.png" alt="ViajaNet" title="ViajaNet">
-              </a>
-              <i class="icons-home"></i>
-            </div>
-            <nav class="vn-nav-global-novo">
-              <!-- ngIf: vm.HeaderMenu.ShowMenuDesktop -->
-              <ul class="nav-global-novo nav-left ng-scope" ng-if="vm.HeaderMenu.ShowMenuDesktop">
-                <li ng-show="vm.HeaderMenu.ShowBlackFriday" class="ng-hide"><a href="/promocao/black-friday" title="Black Friday" target="_blank" class="btn-black-friday">Black Friday</a></li>
-                <li><a href="/passagens-aereas" title="Passagens Aéreas" target="_self" class="btn-passagens-aereas">Passagens Aéreas</a></li>
-                <li><a href="/pacotes-viagens" title="Pacotes de Viagem" target="_blank" class="vn_menu_item">Pacotes de Viagem</a></li>
-                <!-- ngIf: vm.HeaderMenu.ShowHotel -->
-                <li ng-if="vm.HeaderMenu.ShowHotel" class="ng-scope"><a href="https://sp.booking.com/index.pt-br.html?aid=1918203&amp;lang=pt-br&amp;selected_currency=BRL&amp;label=ViajaNet_Home_Menu_Header" title="Hotéis" target="_blank"
-                    class="btn-hoteis">Hotéis</a></li><!-- end ngIf: vm.HeaderMenu.ShowHotel -->
-                <li><a href="http://carros.viajanet.com.br" title="Carros" target="_blank" class="btn-carros btn-carros-nav">Carros</a></li>
-                <li><a href="/seguros" title="Seguros" target="_blank">Seguros</a></li>
-                <li><a href="/passagens-aereas/quandoviajar" title="QuandoViajar" target="_blank" class="vn_menu_item">QuandoViajar</a></li>
-                <li><a ng-href="https://www.viajanet.com.br/Atendimento" title="Atendimento" target="_self" class="btn-atendimento" href="https://www.viajanet.com.br/Atendimento">Atendimento</a></li>
-              </ul><!-- end ngIf: vm.HeaderMenu.ShowMenuDesktop -->
-
-              <ul class="nav-global-novo nav-right">
-
-                <!-- ngIf: vm.HeaderMenu.ShowAuthenticator -->
-                <vn-authenticator page="home" section="header" ng-if="vm.HeaderMenu.ShowAuthenticator" on-update="vm.RefreshCustomer(value)" tp-component="OnBoardingPopOver" tp-page="home" class="ng-scope ng-isolate-scope">
-                  <!-- ngIf: vm.Section == 'header' || vm.Section == 'headermobile' -->
-                  <ul class="user-data ng-scope" ng-if="vm.Section == 'header' || vm.Section == 'headermobile'" ng-class="vm.WhiteBgHeader === false ? 'header-colored-bg' : ''">
-
-                    <!-- ngIf: vm.Authentication.IsAuthenticated -->
-                    <li class="perfil no-border ng-scope" ng-if="vm.Authentication.IsAuthenticated" ng-click="!vm.isMobile || vm.MenuFixHeaderMobile ? vm.OpenMenuSignHeader(!vm.messageActive, $event) : vm.OpenModalUserProfile()" id="btn-perfil-1">
-                      <a href="" class="btn-perfil">
-                        <span class="photo-user">
-                          <span class="photo-user__alt">
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16">
-                              <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                <g transform="translate(-408.000000, -121.000000)" class="photo-user__alt__fill">
-                                  <g transform="translate(80.000000, 99.000000)">
-                                    <g transform="translate(328.000000, 22.000000)">
-                                      <path d="M8,8 C10.21,8 12,6.21 12,4 C12,1.79 10.21,0 8,0 C5.79,0 4,1.79 4,4 C4,6.21 5.79,8 8,8 Z M8,10 C5.33,10 0,11.34 0,14 L0,16 L16,16 L16,14 C16,11.34 10.67,10 8,10 Z"></path>
-                                    </g>
-                                  </g>
-                                </g>
-                              </g>
-                            </svg>
-                          </span>
-                          <!-- ngIf: vm.Customer.PathImageUserFit -->
-                        </span>
-                        <!-- ngIf: vm.LoginShowUserName === true || !vm.isMobile --><span ng-if="vm.LoginShowUserName === true || !vm.isMobile" class="name-user ng-binding ng-scope">Janethy Oriundi</span>
-                        <!-- end ngIf: vm.LoginShowUserName === true || !vm.isMobile -->
-                      </a>
-                    </li><!-- end ngIf: vm.Authentication.IsAuthenticated -->
-                    <!-- ngIf: vm.Authentication.IsAuthenticated && (!vm.isMobile || vm.MenuFixHeaderMobile) -->
-                    <li class="perfil ng-scope" ng-if="vm.Authentication.IsAuthenticated &amp;&amp; (!vm.isMobile || vm.MenuFixHeaderMobile)" id="btn-perfil-2">
-                      <ul class="superlogado OpenOrClose" ng-class="vm.messageActive == true ? 'show-menu-sign' : ''">
-                        <li><a href="/shop/myaccount/#/my-data" class="meus-dados" id="perfil-link-dados">Meus dados</a></li>
-                        <li><a href="/shop/myaccount/#/reservations" id="perfil-link-reservas">Reservas</a></li>
-                        <li class="bx-logout"><a href="javascript:void(0);" ng-click="vm.SignOut()" id="perfil-link-sair">Sair</a></li>
-                      </ul>
-                    </li><!-- end ngIf: vm.Authentication.IsAuthenticated && (!vm.isMobile || vm.MenuFixHeaderMobile) -->
-
-
-                    <!-- ngIf: !vm.Authentication.IsAuthenticated -->
-
-                  </ul><!-- end ngIf: vm.Section == 'header' || vm.Section == 'headermobile' -->
-
-
-                  <!-- ngIf: vm.Page == 'confirmation' && vm.Section == 'body' -->
-
-
-                  <!-- ngIf: vm.Page == 'checkout' && vm.Section == 'body' && vm.ShowLoginCheckout == true -->
-                </vn-authenticator><!-- end ngIf: vm.HeaderMenu.ShowAuthenticator -->
-
-                <!-- ngIf: vm.showphone -->
-                <li class="separador ng-scope" ng-if="vm.showphone"></li><!-- end ngIf: vm.showphone -->
-                <!-- ngIf: vm.showphone -->
-                <li class="telbox ng-scope" ng-if="vm.showphone">
-                  <a href="javascript:void(0);" title="Ligue" target="_self" class="btn-ligue">
-                    <svg class="icone-ligue" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
-                      <defs>
-                        <path id="m1kza"
-                          d="M1283.77 31.71s-.86 1.09-.89 1.14c-.1.19-.11.11-.18.08 0 0-1.52-.82-2.33-1.99l-.39-.55s-1.03-1.74-.92-2.87c.01-.13-.1-.05.08-.09.12-.03 1.29-.13 1.29-.13l-1.16-3.45-1.06.09s-2.38-.18-2.22 1.57l.14 1.28c1.71 4.84 6.26 8.86 6.26 8.86l.92.64c.35.18.67.2.97.11.72.82 1.56 2.05 2.25 2.05 3.11 0 4.47-7.19 4.47-8.55 0-5.05-4.47-9.9-10.1-9.9s-9.9 4.27-9.9 9.9c0 5.05 3.88 10.1 9.9 10.1.59 0 2.33-.39 3.3-.78.2 0 .39-.39.39-.58-.19-.19-.39-.58-.97-.58-.39 0-2.13.39-2.72.39-4.46 0-8.35-3.5-8.35-8.55 0-4.46 3.3-8.35 8.35-8.35 4.47 0 8.55 3.3 8.55 8.55 0 2.52-.59 4.27-2.72 6.79-.43-.42-.91-.96-1.33-1.37.29-.37.45-.71.45-.71l.8-1.85-2.88-1.25">
-                        </path>
-                      </defs>
-                      <g>
-                        <g transform="translate(-1271 -20)">
-                          <use fill="#757575" xlink:href="#m1kza"></use>
-                        </g>
-                      </g>
-                    </svg>
-                    Ligue<div class="icons-downmenu"></div>
-                  </a>
-                  <ul>
-                    <li>
-                      <p class="number"><a href="tel:40071510" id="vn-phone-local">4007-1510</a></p>
-                      <p>Capitais e Regiões Metropolitanas</p>
-                    </li>
-                    <li>
-                      <p><span class="number"><a href="tel:1140071510" id="vn-phone-full">(11) 4007-1510</a></span> | Demais Regiões</p>
-                    </li>
-                  </ul>
-                </li><!-- end ngIf: vm.showphone -->
-
-                <!-- ngIf: vm.HeaderMenu.ShowEconometer -->
-              </ul>
-
-            </nav>
-          </div>
-        </header>
-      </section>
-    </header-b2c>
-  </vn-header>
 
   <div class="wrapper">
     <section class="CookiesPage">
@@ -411,7 +263,7 @@
             </div>
           </form>
 
-          <button class="btn-default" onclick="if (!window.__cfRLUnblockHandlers) return false; updateCookie()">salvar</button>
+          <button class="btn-default" onclick="if (!window.__cfRLUnblockHandlers) return false; updateCookie()">Salvar</button>
         </div>
         <p>Ficou com dúvidas? Confira nossa <a href="" class="CookiesPage_link">Política de Cookies</a>.
           <br>Você pode alterar suas preferências a qualquer momento.
