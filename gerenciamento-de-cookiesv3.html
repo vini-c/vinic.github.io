@@ -12,16 +12,23 @@
     background: #0164bf;
     width: 100%;
   }
-  .CookiesPage{
-    padding-top:40px
+
+  .CookiesPage {
+    padding: 40px;
+    background: #fff;
+    border-radius: 3px;
   }
-  .CookiesPage_image_desktop svg{
-    width:400px;
-    height:auto;
+
+  .CookiesPage_image_desktop svg {
+    width: 400px;
+    height: auto;
   }
-  .CookiesPage p,.CookiesPage li{
-    line-height:1.2;
+
+  .CookiesPage p,
+  .CookiesPage li {
+    line-height: 1.2;
   }
+
   .CookiesPage_link {
     color: #0164bf;
     text-decoration: none;
@@ -51,16 +58,18 @@
     display: block;
     font-family: ProximaNova-Regular;
     padding-top: 0;
-    line-height:1.2;
+    line-height: 1.2;
   }
 
   .CookiesPage {
     display: flex;
-    flex-direction: column;
+    margin-top:20px;
   }
-  .CookiesPage_first_content{
-    display:flex;
+
+  .CookiesPage_first_content {
+    display: flex;
   }
+
   .CookiesPage_image {
     text-align: left
   }
@@ -82,748 +91,887 @@
     margin-right: 8px;
   }
 
-  .CookiesPage_marker.positive{
+  .CookiesPage_marker.positive {
     background: #0164bf;
   }
-  .CookiesPage_marker.negative{
+
+  .CookiesPage_marker.negative {
     background: #E7455A;
   }
 
 
-  .CookiesPage li{
-    padding-bottom:6px;
+  .CookiesPage li {
+    padding-bottom: 6px;
   }
-  .CookiesPage_image{
-    order:1;
-    width:50%;
+
+  .CookiesPage_image {
+    order: 1;
+    width: 50%;
   }
-  .CookiesPage_text{
-    order:1
+
+  .CookiesPage_text {
+    order: 1
   }
-  .CookiesPage_form{
-    order:4;
-    width:100%;
+
+  .CookiesPage_form {
+    order: 4;
+    width: 100%;
   }
+
   .CookiesPage hr {
-    order:2;
+    order: 2;
   }
-  .CookiesPage_onlyMobile{
-    display:none;
+
+  .CookiesPage_onlyMobile {
+    display: none;
   }
-  .CookiesPage_backGeneral{
-    order:5;
-    padding:0 20px;
+
+  .CookiesPage_backGeneral {
+    order: 5;
+    padding: 0 20px;
   }
-  .CookiesPage_form{
-    display:flex;
-  }
+
+
   .CookiesPage_image {
     text-align: center;
-    display:none;
+    display: none;
   }
-  .CookiesPage_column2{
-padding-right:80px;}
-.CookiesPage_column2 h2{
-  font-size:28px;
-  padding-bottom:10px;
-}
-  @media screen and (max-width:768px) {
-    .CookiesPage_image {
-      text-align: center;
-      display:block;
+
+  .CookiesPage_column2 {
+    padding-right: 80px;
+  }
+
+  .CookiesPage_column2 h2 {
+    font-size: 28px;
+    padding-bottom: 10px;
+  }
+
+  .CookiesPage_Column1_desk{width:50%;}
+  .CookiesPage_Column2_desk{width:50%;text-align:center;}
+  .CookiesPage_Column2_desk svg{
+    margin-top:6%;
+  }
+
+
+  @media screen and (max-width:801px) {
+    .institutional__nav ul {
+      display: flex;
+      position: relative;
+      opacity: 1;
+      height: auto;
+      top: 0px;
+      margin: 0px;
+    }
+    .CookiesPage_Column1_desk{
       width:100%;
     }
-    .CookiesPage_onlyMobile{
-      display:none;
+
+    .institutional__nav ul li {
+      margin: 0px;
+      text-align: left;
+      background-color: rgba(1, 100, 191, .1);
+      padding: 4px;
+      margin-right: 6px;
+      border-radius: 3px;
     }
-    .CookiesPage_column2 h2{
-      font-size:20px;
-      padding-bottom:10px;
+
+    .institutional__nav ul li.active {
+      margin: 0px;
+      text-align: left;
+      background-color: rgba(1, 100, 191, 1);
+      padding: 4px;
+      margin-right: 6px;
+      border-radius: 3px;
     }
-    .CookiesPage_image svg{width:180px;height:auto;}
-    .CookiesPage_image_desktop{
-      display:none;
+
+    .institutional__nav ul li a {
+      line-height: 0;
+      font-size: 12px;
+    }
+
+    .institutional__nav ul li.active a {
+      line-height: 0;
+      font-size: 12px;
+      color: #fff;
+    }
+
+    .institutional__nav__btn {
+      display: none;
+    }
+
+    .CookiesPage_image {
+      text-align: center;
+      display: block;
+      width: 100%;
+    }
+
+    .CookiesPage {
+      padding: 10px;
+    }
+
+    .CookiesPage_onlyMobile {
+      display: none;
+    }
+
+    .CookiesPage_column2 h2 {
+      font-size: 20px;
+      padding-bottom: 10px;
+    }
+
+    .CookiesPage_image svg {
+      width: 180px;
+      height: auto;
+    }
+
+    .CookiesPage_image_desktop {
+      display: none;
     }
 
     .CookiesPage {
       flex-direction: column;
-      padding-top:0px;
+      padding-top: 0px;
     }
 
-.CookiesPage_column2{
-  padding-right:0px;
-}
+    .CookiesPage_column2 {
+      padding-right: 0px;
+    }
+
     .CookiesPage_text,
     .CookiesPage_form {
       width: 100%;
     }
-    .CookiesPage_form{
-      padding-top:0px;
+
+    .CookiesPage_form {
+      padding-top: 0px;
     }
+
     .CookiesPage_image {
       text-align: center;
     }
 
     .CookiesPage hr {
-      display:block;
-      margin:10px 0;
+      display: block;
+      margin: 10px 0;
     }
-    .CookiesPage_image{
-      order:1;
+
+    .CookiesPage_image {
+      order: 1;
+      margin-top: 40px;
     }
-    .CookiesPage_text{
-      order:2;
+
+    .CookiesPage_text {
+      order: 2;
     }
-    .CookiesPage_form{
-      order:3;
+
+    .CookiesPage_form {
+      order: 3;
     }
   }
-
 </style>
 
 <body style="background:#f7f7f7;">
 
-  <vn-header page="home" class="ng-isolate-scope"><header-b2c>
+  <vn-header page="home" class="ng-isolate-scope">
+    <header-b2c>
       <section id="headerSection">
-          <div class="navigation-bar navmobile--full" ng-class="{'bg-colored' : !vm.WhiteBgHeader}">
-              <input id="navigation-checkbox" class="navigation-checkbox" type="checkbox">
-              <label class="navigation-toggle" for="navigation-checkbox" ng-click="vm.ShowMenuPanel()">
-                  <span class="navigation-toggle-icon"></span>
-              </label>
+        <div class="navigation-bar navmobile--full" ng-class="{'bg-colored' : !vm.WhiteBgHeader}">
+          <input id="navigation-checkbox" class="navigation-checkbox" type="checkbox">
+          <label class="navigation-toggle" for="navigation-checkbox" ng-click="vm.ShowMenuPanel()">
+            <span class="navigation-toggle-icon"></span>
+          </label>
+        </div>
+        <vn-share-checkout class="ng-isolate-scope">
+          <!-- ngIf: vmShareCheckoutBtn.IsCheckout -->
+        </vn-share-checkout>
+
+        <!-- ngIf: vm.HeaderMenu.ShowAuthenticator && vm.isMobile -->
+
+        <div class="mobile navmobile--full" ng-class="vm.HeaderMenu.ShowMenuMobile ? 'opened' : ''">
+          <div class="user-profile--header" ng-class="{'bg-colored' : !vm.WhiteBgHeader}">
+            <img itemprop="logo" src="/static/assets/platform/img/logo.svg" data-2x="/static/assets/platform/img/logo.png" alt="ViajaNet" title="ViajaNet">
           </div>
-          <vn-share-checkout class="ng-isolate-scope"><!-- ngIf: vmShareCheckoutBtn.IsCheckout --></vn-share-checkout>
-
-          <!-- ngIf: vm.HeaderMenu.ShowAuthenticator && vm.isMobile -->
-
-          <div class="mobile navmobile--full" ng-class="vm.HeaderMenu.ShowMenuMobile ? 'opened' : ''">
-              <div class="user-profile--header" ng-class="{'bg-colored' : !vm.WhiteBgHeader}">
-                  <img itemprop="logo" src="/static/assets/platform/img/logo.svg" data-2x="/static/assets/platform/img/logo.png" alt="ViajaNet" title="ViajaNet">
-              </div>
-              <div class="mobile__scroll">
-                  <ul class="navmobile navmobile--full">
-                      <li ng-show="vm.HeaderMenu.ShowBlackFriday" class="ng-hide"><a href="/promocao/black-friday" title="Black Friday" target="_blank" class="btn-black-friday" id="navmobile-link-0">Black Friday</a></li>
-                      <li><a href="/passagens-aereas" title="Passagens Aéreas" target="_self" class="btn-passagens-aereas" id="navmobile-link-1">Passagens Aéreas</a></li>
-                      <li><a href="/pacotes-viagens" title="Pacotes de Viagem" target="_blank" class="vn_menu_item" id="navmobile-link-2">Pacotes de Viagem</a></li>
-                      <!-- ngIf: vm.HeaderMenu.ShowHotel --><li ng-if="vm.HeaderMenu.ShowHotel" class="ng-scope"><a href="https://sp.booking.com/index.pt-br.html?aid=1918203&amp;lang=pt-br&amp;selected_currency=BRL&amp;label=ViajaNet_Home_Menu_Header" title="Hotéis" target="_blank" class="btn-hoteis">Hotéis</a></li><!-- end ngIf: vm.HeaderMenu.ShowHotel -->
-                      <li><a href="http://carros.viajanet.com.br" title="Carros" target="_blank" class="btn-carros btn-carros-nav" id="navmobile-link-4">Carros</a></li>
-                      <li><a href="/seguros" title="Seguros" target="_blank" id="navmobile-link-5">Seguros</a></li>
-                      <li><a href="/passagens-aereas/quandoviajar" title="QuandoViajar" target="_blank" class="vn_menu_item" id="navmobile-link-6">QuandoViajar</a></li>
-                      <li><a ng-href="https://www.viajanet.com.br/Atendimento" title="Atendimento" target="_self" class="btn-atendimento" id="navmobile-link-7" href="https://www.viajanet.com.br/Atendimento">Atendimento</a></li>
-                      <!-- ngIf: !vm.Authentication.IsAuthenticated -->
-                      <li class="boxtel">
-                          <h5>LIGUE</h5>
-                          <p class="phone"><a href="tel:40071510" id="vn-phone-local-mobile">4007-1510</a></p>
-                          <p>Capitais e Regiões Metropolitanas</p>
-                          <p class="phone phone--small"><a href="tel:1140071510" id="vn-phone-full-mobile">(11) 4007-1510</a></p>
-                          <p>Demais Regiões</p>
-                      </li>
-                  </ul>
-              </div>
-
+          <div class="mobile__scroll">
+            <ul class="navmobile navmobile--full">
+              <li ng-show="vm.HeaderMenu.ShowBlackFriday" class="ng-hide"><a href="/promocao/black-friday" title="Black Friday" target="_blank" class="btn-black-friday" id="navmobile-link-0">Black Friday</a></li>
+              <li><a href="/passagens-aereas" title="Passagens Aéreas" target="_self" class="btn-passagens-aereas" id="navmobile-link-1">Passagens Aéreas</a></li>
+              <li><a href="/pacotes-viagens" title="Pacotes de Viagem" target="_blank" class="vn_menu_item" id="navmobile-link-2">Pacotes de Viagem</a></li>
+              <!-- ngIf: vm.HeaderMenu.ShowHotel -->
+              <li ng-if="vm.HeaderMenu.ShowHotel" class="ng-scope"><a href="https://sp.booking.com/index.pt-br.html?aid=1918203&amp;lang=pt-br&amp;selected_currency=BRL&amp;label=ViajaNet_Home_Menu_Header" title="Hotéis" target="_blank"
+                  class="btn-hoteis">Hotéis</a></li><!-- end ngIf: vm.HeaderMenu.ShowHotel -->
+              <li><a href="http://carros.viajanet.com.br" title="Carros" target="_blank" class="btn-carros btn-carros-nav" id="navmobile-link-4">Carros</a></li>
+              <li><a href="/seguros" title="Seguros" target="_blank" id="navmobile-link-5">Seguros</a></li>
+              <li><a href="/passagens-aereas/quandoviajar" title="QuandoViajar" target="_blank" class="vn_menu_item" id="navmobile-link-6">QuandoViajar</a></li>
+              <li><a ng-href="https://www.viajanet.com.br/Atendimento" title="Atendimento" target="_self" class="btn-atendimento" id="navmobile-link-7" href="https://www.viajanet.com.br/Atendimento">Atendimento</a></li>
+              <!-- ngIf: !vm.Authentication.IsAuthenticated -->
+              <li class="boxtel">
+                <h5>LIGUE</h5>
+                <p class="phone"><a href="tel:40071510" id="vn-phone-local-mobile">4007-1510</a></p>
+                <p>Capitais e Regiões Metropolitanas</p>
+                <p class="phone phone--small"><a href="tel:1140071510" id="vn-phone-full-mobile">(11) 4007-1510</a></p>
+                <p>Demais Regiões</p>
+              </li>
+            </ul>
           </div>
 
-          <!-- Fim menu mobile -->
+        </div>
 
-          <header class="vn-header-novo">
-              <div class="vn-content-novo">
-                  <div class="logo" itemscope="" itemtype="http://schema.org/Organization">
-                      <a itemprop="url" id="img_logo" href="/" target="_self">
-                          <img itemprop="logo" src="/static/assets/platform/img/logo.svg" data-2x="/static/assets/platform/img/logo.png" alt="ViajaNet" title="ViajaNet">
+        <!-- Fim menu mobile -->
+
+        <header class="vn-header-novo">
+          <div class="vn-content-novo">
+            <div class="logo" itemscope="" itemtype="http://schema.org/Organization">
+              <a itemprop="url" id="img_logo" href="/" target="_self">
+                <img itemprop="logo" src="/static/assets/platform/img/logo.svg" data-2x="/static/assets/platform/img/logo.png" alt="ViajaNet" title="ViajaNet">
+              </a>
+              <i class="icons-home"></i>
+            </div>
+            <nav class="vn-nav-global-novo">
+              <!-- ngIf: vm.HeaderMenu.ShowMenuDesktop -->
+              <ul class="nav-global-novo nav-left ng-scope" ng-if="vm.HeaderMenu.ShowMenuDesktop">
+                <li ng-show="vm.HeaderMenu.ShowBlackFriday" class="ng-hide"><a href="/promocao/black-friday" title="Black Friday" target="_blank" class="btn-black-friday">Black Friday</a></li>
+                <li><a href="/passagens-aereas" title="Passagens Aéreas" target="_self" class="btn-passagens-aereas">Passagens Aéreas</a></li>
+                <li><a href="/pacotes-viagens" title="Pacotes de Viagem" target="_blank" class="vn_menu_item">Pacotes de Viagem</a></li>
+                <!-- ngIf: vm.HeaderMenu.ShowHotel -->
+                <li ng-if="vm.HeaderMenu.ShowHotel" class="ng-scope"><a href="https://sp.booking.com/index.pt-br.html?aid=1918203&amp;lang=pt-br&amp;selected_currency=BRL&amp;label=ViajaNet_Home_Menu_Header" title="Hotéis" target="_blank"
+                    class="btn-hoteis">Hotéis</a></li><!-- end ngIf: vm.HeaderMenu.ShowHotel -->
+                <li><a href="http://carros.viajanet.com.br" title="Carros" target="_blank" class="btn-carros btn-carros-nav">Carros</a></li>
+                <li><a href="/seguros" title="Seguros" target="_blank">Seguros</a></li>
+                <li><a href="/passagens-aereas/quandoviajar" title="QuandoViajar" target="_blank" class="vn_menu_item">QuandoViajar</a></li>
+                <li><a ng-href="https://www.viajanet.com.br/Atendimento" title="Atendimento" target="_self" class="btn-atendimento" href="https://www.viajanet.com.br/Atendimento">Atendimento</a></li>
+              </ul><!-- end ngIf: vm.HeaderMenu.ShowMenuDesktop -->
+
+              <ul class="nav-global-novo nav-right">
+
+                <!-- ngIf: vm.HeaderMenu.ShowAuthenticator -->
+                <vn-authenticator page="home" section="header" ng-if="vm.HeaderMenu.ShowAuthenticator" on-update="vm.RefreshCustomer(value)" tp-component="OnBoardingPopOver" tp-page="home" class="ng-scope ng-isolate-scope">
+                  <!-- ngIf: vm.Section == 'header' || vm.Section == 'headermobile' -->
+                  <ul class="user-data ng-scope" ng-if="vm.Section == 'header' || vm.Section == 'headermobile'" ng-class="vm.WhiteBgHeader === false ? 'header-colored-bg' : ''">
+
+                    <!-- ngIf: vm.Authentication.IsAuthenticated -->
+                    <li class="perfil no-border ng-scope" ng-if="vm.Authentication.IsAuthenticated" ng-click="!vm.isMobile || vm.MenuFixHeaderMobile ? vm.OpenMenuSignHeader(!vm.messageActive, $event) : vm.OpenModalUserProfile()" id="btn-perfil-1">
+                      <a href="" class="btn-perfil">
+                        <span class="photo-user">
+                          <span class="photo-user__alt">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16">
+                              <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g transform="translate(-408.000000, -121.000000)" class="photo-user__alt__fill">
+                                  <g transform="translate(80.000000, 99.000000)">
+                                    <g transform="translate(328.000000, 22.000000)">
+                                      <path d="M8,8 C10.21,8 12,6.21 12,4 C12,1.79 10.21,0 8,0 C5.79,0 4,1.79 4,4 C4,6.21 5.79,8 8,8 Z M8,10 C5.33,10 0,11.34 0,14 L0,16 L16,16 L16,14 C16,11.34 10.67,10 8,10 Z"></path>
+                                    </g>
+                                  </g>
+                                </g>
+                              </g>
+                            </svg>
+                          </span>
+                          <!-- ngIf: vm.Customer.PathImageUserFit -->
+                        </span>
+                        <!-- ngIf: vm.LoginShowUserName === true || !vm.isMobile --><span ng-if="vm.LoginShowUserName === true || !vm.isMobile" class="name-user ng-binding ng-scope">Janethy Oriundi</span>
+                        <!-- end ngIf: vm.LoginShowUserName === true || !vm.isMobile -->
                       </a>
-                      <i class="icons-home"></i>
-                  </div>
-                  <nav class="vn-nav-global-novo">
-                      <!-- ngIf: vm.HeaderMenu.ShowMenuDesktop --><ul class="nav-global-novo nav-left ng-scope" ng-if="vm.HeaderMenu.ShowMenuDesktop">
-                          <li ng-show="vm.HeaderMenu.ShowBlackFriday" class="ng-hide"><a href="/promocao/black-friday" title="Black Friday" target="_blank" class="btn-black-friday">Black Friday</a></li>
-                          <li><a href="/passagens-aereas" title="Passagens Aéreas" target="_self" class="btn-passagens-aereas">Passagens Aéreas</a></li>
-                          <li><a href="/pacotes-viagens" title="Pacotes de Viagem" target="_blank" class="vn_menu_item">Pacotes de Viagem</a></li>
-                          <!-- ngIf: vm.HeaderMenu.ShowHotel --><li ng-if="vm.HeaderMenu.ShowHotel" class="ng-scope"><a href="https://sp.booking.com/index.pt-br.html?aid=1918203&amp;lang=pt-br&amp;selected_currency=BRL&amp;label=ViajaNet_Home_Menu_Header" title="Hotéis" target="_blank" class="btn-hoteis">Hotéis</a></li><!-- end ngIf: vm.HeaderMenu.ShowHotel -->
-                          <li><a href="http://carros.viajanet.com.br" title="Carros" target="_blank" class="btn-carros btn-carros-nav">Carros</a></li>
-                          <li><a href="/seguros" title="Seguros" target="_blank">Seguros</a></li>
-                          <li><a href="/passagens-aereas/quandoviajar" title="QuandoViajar" target="_blank" class="vn_menu_item">QuandoViajar</a></li>
-                          <li><a ng-href="https://www.viajanet.com.br/Atendimento" title="Atendimento" target="_self" class="btn-atendimento" href="https://www.viajanet.com.br/Atendimento">Atendimento</a></li>
-                      </ul><!-- end ngIf: vm.HeaderMenu.ShowMenuDesktop -->
-
-                      <ul class="nav-global-novo nav-right">
-
-                          <!-- ngIf: vm.HeaderMenu.ShowAuthenticator --><vn-authenticator page="home" section="header" ng-if="vm.HeaderMenu.ShowAuthenticator" on-update="vm.RefreshCustomer(value)" tp-component="OnBoardingPopOver" tp-page="home" class="ng-scope ng-isolate-scope">
-  <!-- ngIf: vm.Section == 'header' || vm.Section == 'headermobile' --><ul class="user-data ng-scope" ng-if="vm.Section == 'header' || vm.Section == 'headermobile'" ng-class="vm.WhiteBgHeader === false ? 'header-colored-bg' : ''">
-
-  <!-- ngIf: vm.Authentication.IsAuthenticated --><li class="perfil no-border ng-scope" ng-if="vm.Authentication.IsAuthenticated" ng-click="!vm.isMobile || vm.MenuFixHeaderMobile ? vm.OpenMenuSignHeader(!vm.messageActive, $event) : vm.OpenModalUserProfile()" id="btn-perfil-1">
-  <a href="" class="btn-perfil">
-  <span class="photo-user">
-  <span class="photo-user__alt">
-  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16">
-  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-  <g transform="translate(-408.000000, -121.000000)" class="photo-user__alt__fill">
-  <g transform="translate(80.000000, 99.000000)">
-  <g transform="translate(328.000000, 22.000000)">
-  <path d="M8,8 C10.21,8 12,6.21 12,4 C12,1.79 10.21,0 8,0 C5.79,0 4,1.79 4,4 C4,6.21 5.79,8 8,8 Z M8,10 C5.33,10 0,11.34 0,14 L0,16 L16,16 L16,14 C16,11.34 10.67,10 8,10 Z"></path>
-  </g>
-  </g>
-  </g>
-  </g>
-  </svg>
-  </span>
-  <!-- ngIf: vm.Customer.PathImageUserFit -->
-  </span>
-  <!-- ngIf: vm.LoginShowUserName === true || !vm.isMobile --><span ng-if="vm.LoginShowUserName === true || !vm.isMobile" class="name-user ng-binding ng-scope">Janethy Oriundi</span><!-- end ngIf: vm.LoginShowUserName === true || !vm.isMobile -->
-  </a>
-  </li><!-- end ngIf: vm.Authentication.IsAuthenticated -->
-  <!-- ngIf: vm.Authentication.IsAuthenticated && (!vm.isMobile || vm.MenuFixHeaderMobile) --><li class="perfil ng-scope" ng-if="vm.Authentication.IsAuthenticated &amp;&amp; (!vm.isMobile || vm.MenuFixHeaderMobile)" id="btn-perfil-2">
-  <ul class="superlogado OpenOrClose" ng-class="vm.messageActive == true ? 'show-menu-sign' : ''">
-  <li><a href="/shop/myaccount/#/my-data" class="meus-dados" id="perfil-link-dados">Meus dados</a></li>
-  <li><a href="/shop/myaccount/#/reservations" id="perfil-link-reservas">Reservas</a></li>
-  <li class="bx-logout"><a href="javascript:void(0);" ng-click="vm.SignOut()" id="perfil-link-sair">Sair</a></li>
-  </ul>
-  </li><!-- end ngIf: vm.Authentication.IsAuthenticated && (!vm.isMobile || vm.MenuFixHeaderMobile) -->
-
-
-  <!-- ngIf: !vm.Authentication.IsAuthenticated -->
-
-  </ul><!-- end ngIf: vm.Section == 'header' || vm.Section == 'headermobile' -->
-
-
-  <!-- ngIf: vm.Page == 'confirmation' && vm.Section == 'body' -->
-
-
-  <!-- ngIf: vm.Page == 'checkout' && vm.Section == 'body' && vm.ShowLoginCheckout == true -->
-  </vn-authenticator><!-- end ngIf: vm.HeaderMenu.ShowAuthenticator -->
-
-                          <!-- ngIf: vm.showphone --><li class="separador ng-scope" ng-if="vm.showphone"></li><!-- end ngIf: vm.showphone -->
-                          <!-- ngIf: vm.showphone --><li class="telbox ng-scope" ng-if="vm.showphone">
-                              <a href="javascript:void(0);" title="Ligue" target="_self" class="btn-ligue">
-                                  <svg class="icone-ligue" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
-                                      <defs>
-                                          <path id="m1kza" d="M1283.77 31.71s-.86 1.09-.89 1.14c-.1.19-.11.11-.18.08 0 0-1.52-.82-2.33-1.99l-.39-.55s-1.03-1.74-.92-2.87c.01-.13-.1-.05.08-.09.12-.03 1.29-.13 1.29-.13l-1.16-3.45-1.06.09s-2.38-.18-2.22 1.57l.14 1.28c1.71 4.84 6.26 8.86 6.26 8.86l.92.64c.35.18.67.2.97.11.72.82 1.56 2.05 2.25 2.05 3.11 0 4.47-7.19 4.47-8.55 0-5.05-4.47-9.9-10.1-9.9s-9.9 4.27-9.9 9.9c0 5.05 3.88 10.1 9.9 10.1.59 0 2.33-.39 3.3-.78.2 0 .39-.39.39-.58-.19-.19-.39-.58-.97-.58-.39 0-2.13.39-2.72.39-4.46 0-8.35-3.5-8.35-8.55 0-4.46 3.3-8.35 8.35-8.35 4.47 0 8.55 3.3 8.55 8.55 0 2.52-.59 4.27-2.72 6.79-.43-.42-.91-.96-1.33-1.37.29-.37.45-.71.45-.71l.8-1.85-2.88-1.25"></path>
-                                      </defs>
-                                      <g>
-                                          <g transform="translate(-1271 -20)">
-                                              <use fill="#757575" xlink:href="#m1kza"></use>
-                                          </g>
-                                      </g>
-                                  </svg>
-                                  Ligue<div class="icons-downmenu"></div>
-                              </a>
-                              <ul>
-                                  <li>
-                                      <p class="number"><a href="tel:40071510" id="vn-phone-local">4007-1510</a></p>
-                                      <p>Capitais e Regiões Metropolitanas</p>
-                                  </li>
-                                  <li>
-                                      <p><span class="number"><a href="tel:1140071510" id="vn-phone-full">(11) 4007-1510</a></span> | Demais Regiões</p>
-                                  </li>
-                              </ul>
-                          </li><!-- end ngIf: vm.showphone -->
-
-                          <!-- ngIf: vm.HeaderMenu.ShowEconometer -->
+                    </li><!-- end ngIf: vm.Authentication.IsAuthenticated -->
+                    <!-- ngIf: vm.Authentication.IsAuthenticated && (!vm.isMobile || vm.MenuFixHeaderMobile) -->
+                    <li class="perfil ng-scope" ng-if="vm.Authentication.IsAuthenticated &amp;&amp; (!vm.isMobile || vm.MenuFixHeaderMobile)" id="btn-perfil-2">
+                      <ul class="superlogado OpenOrClose" ng-class="vm.messageActive == true ? 'show-menu-sign' : ''">
+                        <li><a href="/shop/myaccount/#/my-data" class="meus-dados" id="perfil-link-dados">Meus dados</a></li>
+                        <li><a href="/shop/myaccount/#/reservations" id="perfil-link-reservas">Reservas</a></li>
+                        <li class="bx-logout"><a href="javascript:void(0);" ng-click="vm.SignOut()" id="perfil-link-sair">Sair</a></li>
                       </ul>
+                    </li><!-- end ngIf: vm.Authentication.IsAuthenticated && (!vm.isMobile || vm.MenuFixHeaderMobile) -->
 
-                  </nav>
-              </div>
-          </header>
+
+                    <!-- ngIf: !vm.Authentication.IsAuthenticated -->
+
+                  </ul><!-- end ngIf: vm.Section == 'header' || vm.Section == 'headermobile' -->
+
+
+                  <!-- ngIf: vm.Page == 'confirmation' && vm.Section == 'body' -->
+
+
+                  <!-- ngIf: vm.Page == 'checkout' && vm.Section == 'body' && vm.ShowLoginCheckout == true -->
+                </vn-authenticator><!-- end ngIf: vm.HeaderMenu.ShowAuthenticator -->
+
+                <!-- ngIf: vm.showphone -->
+                <li class="separador ng-scope" ng-if="vm.showphone"></li><!-- end ngIf: vm.showphone -->
+                <!-- ngIf: vm.showphone -->
+                <li class="telbox ng-scope" ng-if="vm.showphone">
+                  <a href="javascript:void(0);" title="Ligue" target="_self" class="btn-ligue">
+                    <svg class="icone-ligue" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+                      <defs>
+                        <path id="m1kza"
+                          d="M1283.77 31.71s-.86 1.09-.89 1.14c-.1.19-.11.11-.18.08 0 0-1.52-.82-2.33-1.99l-.39-.55s-1.03-1.74-.92-2.87c.01-.13-.1-.05.08-.09.12-.03 1.29-.13 1.29-.13l-1.16-3.45-1.06.09s-2.38-.18-2.22 1.57l.14 1.28c1.71 4.84 6.26 8.86 6.26 8.86l.92.64c.35.18.67.2.97.11.72.82 1.56 2.05 2.25 2.05 3.11 0 4.47-7.19 4.47-8.55 0-5.05-4.47-9.9-10.1-9.9s-9.9 4.27-9.9 9.9c0 5.05 3.88 10.1 9.9 10.1.59 0 2.33-.39 3.3-.78.2 0 .39-.39.39-.58-.19-.19-.39-.58-.97-.58-.39 0-2.13.39-2.72.39-4.46 0-8.35-3.5-8.35-8.55 0-4.46 3.3-8.35 8.35-8.35 4.47 0 8.55 3.3 8.55 8.55 0 2.52-.59 4.27-2.72 6.79-.43-.42-.91-.96-1.33-1.37.29-.37.45-.71.45-.71l.8-1.85-2.88-1.25">
+                        </path>
+                      </defs>
+                      <g>
+                        <g transform="translate(-1271 -20)">
+                          <use fill="#757575" xlink:href="#m1kza"></use>
+                        </g>
+                      </g>
+                    </svg>
+                    Ligue<div class="icons-downmenu"></div>
+                  </a>
+                  <ul>
+                    <li>
+                      <p class="number"><a href="tel:40071510" id="vn-phone-local">4007-1510</a></p>
+                      <p>Capitais e Regiões Metropolitanas</p>
+                    </li>
+                    <li>
+                      <p><span class="number"><a href="tel:1140071510" id="vn-phone-full">(11) 4007-1510</a></span> | Demais Regiões</p>
+                    </li>
+                  </ul>
+                </li><!-- end ngIf: vm.showphone -->
+
+                <!-- ngIf: vm.HeaderMenu.ShowEconometer -->
+              </ul>
+
+            </nav>
+          </div>
+        </header>
       </section>
-  </header-b2c></vn-header>
+    </header-b2c>
+  </vn-header>
 
 
   <div class="wrapper">
 
-
-
     <nav class="institutional__nav">
-<h2 class="institutional__title">Política de privacidade</h2>
-<a class="institutional__nav__btn"><img src="/static/assets/platform/img/institutional/icon-arrow-down.svg" alt="Abrir menu"></a>
-<ul class="institucionalNav">
-<li><a href="/vantagens">Vantagens</a></li>
-<li><a href="/trabalhe-conosco">Trabalhe conosco</a></li>
-<li><a href="/termos-de-uso">Termos de uso</a></li>
-<li><a href="/politica-de-privacidade" class="active">Privacidade</a></li>
-</ul>
-</nav>
+      <!-- <h2 class="institutional__title">Política de privacidade</h2> -->
+      <a class="institutional__nav__btn"><img src="/static/assets/platform/img/institutional/icon-arrow-down.svg" alt="Abrir menu"></a>
+      <ul class="institucionalNav">
+        <li><a href="/termos-de-uso">Termos de Uso</a></li>
+        <li><a href="/trabalhe-conosco">Política de Privacidade</a></li>
+        <li><a href="/termos-de-uso">Política de Cookies</a></li>
+        <li class="active"><a href="/politica-de-privacidade">Gerenciamento de Cookies</a></li>
+      </ul>
+    </nav>
     <section class="CookiesPage">
-      <div class="CookiesPage_image">
-        <svg width="269px" height="212px" viewBox="0 0 269 212" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-          <title>Group 3</title>
-          <defs>
-            <rect id="path-1" x="65.8982712" y="72.1866966" width="123.861193" height="101.061375" rx="11"></rect>
-            <filter x="-22.6%" y="-19.8%" width="145.2%" height="155.4%" filterUnits="objectBoundingBox" id="filter-2">
-              <feOffset dx="0" dy="8" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
-              <feGaussianBlur stdDeviation="8" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
-              <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15533714 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
-            </filter>
-          </defs>
-          <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-            <g id="0.0---VN---Mobile---Gerenciamento-de-cookies" transform="translate(-38.000000, -86.000000)">
-              <g id="Group-3" transform="translate(38.714158, 86.268391)">
-                <path
-                  d="M56.975555,198.010797 C39.166619,202.823243 24.0994328,198.812871 11.7739965,185.979681 C-6.71415795,166.729895 -12.1905273,124.105002 62.5926633,84.9183056 C137.375854,45.7316091 140.646032,6.19070973 199.650105,0.231609057 C258.654178,-5.72749161 294.966058,105.051415 239.955556,131.17307 C203.281887,148.587506 191.344633,170.866748 204.143792,198.010797 L56.975555,198.010797 Z"
-                  id="Path-5" fill="#DFEBF5"></path>
-                <g id="tracking_asset_v1" transform="translate(10.285842, 12.731609)">
-                  <g id="Group-10" transform="translate(0.918094, 0.000000)">
-                    <g id="Group-6" transform="translate(43.050090, 54.140022)">
-                      <rect id="Rectangle-Copy-13" fill="#D1E9FF" x="140.902392" y="55.3268758" width="2.24684331" height="15.705484"></rect>
-                      <rect id="Rectangle-Copy-12" fill="#D1E9FF" x="149.889765" y="56.448696" width="2.24684331" height="14.5836637"></rect>
-                      <rect id="Rectangle-Copy-14" fill="#D1E9FF" x="130.791597" y="56.448696" width="2.24684331" height="14.5836637"></rect>
-                      <rect id="Rectangle-Copy-11" fill="#2191F7" transform="translate(1.598107, 8.210424) scale(-1, 1) translate(-1.598107, -8.210424) " x="0.474685206" y="0.35768183" width="2.24684331" height="15.705484"></rect>
-                      <polyline id="Path-12" fill="#D1E9FF" points="6.28714591 59.8141569 89.708441 59.8141569 105.436344 75.5196409 165.617668 75.5196409 165.617668 68.7887192 109.498197 68.7887192 93.7702942 53.0832352 6.28714591 53.0832352">
-                      </polyline>
-                      <rect id="Rectangle" fill="#D1E9FF" x="155.506873" y="69.9105395" width="4.49368661" height="41.5073505"></rect>
-                      <rect id="Rectangle" fill="#2191F7" x="0.474685206" y="69.9105395" width="158.402453" height="41.5073505"></rect>
-                      <polyline id="Path-14" fill="#B2DAFF" opacity="0.400000006" points="157.753717 90.6642147 8.33863678 90.6642147 8.33863678 64.301438 87.8077543 64.301438 101.342178 75.5196409 157.753717 75.5196409"></polyline>
-                      <rect id="Rectangle" fill="#B2DAFF" opacity="0.400000006" x="8.33863678" y="94.5905857" width="149.41508" height="16.8273043"></rect>
-                      <rect id="Rectangle-Copy" fill="#D1E9FF" x="28.5602265" y="59.8141569" width="2.24684331" height="53.8473736"></rect>
-                      <rect id="Rectangle-Copy-2" fill="#D1E9FF" x="47.6583947" y="59.8141569" width="2.24684331" height="53.8473736"></rect>
-                      <rect id="Rectangle-Copy-3" fill="#D1E9FF" x="66.7565628" y="59.8141569" width="2.24684331" height="53.8473736"></rect>
-                      <rect id="Rectangle-Copy-4" fill="#2191F7" x="86.9781525" y="59.8141569" width="2.24684331" height="53.8473736"></rect>
-                      <rect id="Rectangle-Copy-5" fill="#D1E9FF" x="86.9781525" y="59.8141569" width="2.24684331" height="53.8473736"></rect>
-                      <rect id="Rectangle-Copy-6" fill="#D1E9FF" x="101.582634" y="69.9105395" width="2.24684331" height="43.7509911"></rect>
-                      <rect id="Rectangle-Copy-7" fill="#D1E9FF" x="116.187116" y="69.9105395" width="2.24684331" height="43.7509911"></rect>
-                      <rect id="Rectangle-Copy-8" fill="#D1E9FF" x="130.791597" y="69.9105395" width="2.24684331" height="43.7509911"></rect>
-                      <rect id="Rectangle-Copy-9" fill="#D1E9FF" x="145.396079" y="69.9105395" width="2.24684331" height="43.7509911"></rect>
-                    </g>
+      <div class="CookiesPage_Column1_desk">
+        <div class="CookiesPage_image">
+          <svg width="241px" height="231px" viewBox="0 0 241 231" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <defs>
+              <rect id="path-1" x="56.2478968" y="61.319882" width="105.722525" height="85.8478348" rx="11"></rect>
+              <filter x="-26.5%" y="-23.3%" width="153.0%" height="165.2%" filterUnits="objectBoundingBox" id="filter-2">
+                <feOffset dx="0" dy="8" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+                <feGaussianBlur stdDeviation="8" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+                <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15533714 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+              </filter>
+            </defs>
+            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g id="Mobile---Gerenciamento-de-Cookies" transform="translate(-60.000000, -138.000000)">
+                <g id="Group-4" transform="translate(18.000000, 83.000000)">
+                  <g id="Viajanet_mobile_Icon" transform="translate(42.000000, 55.000000)">
                     <path
-                      d="M68.2526259,0 L187.40511,0 C200.659944,4.67055385e-15 211.40511,10.745166 211.40511,24 L211.40511,185.279188 L211.40511,185.279188 L44.2526259,185.279188 L44.2526259,24 C44.2526259,10.745166 54.9977919,9.54030086e-15 68.2526259,0 Z"
-                      id="Rectangle" fill="#2191F7"></path>
-                    <path
-                      d="M72.8729127,8.42178126 L183.987359,8.42178126 C194.480769,8.42178126 202.987359,16.928371 202.987359,27.4217813 L202.987359,185.421781 L202.987359,185.421781 L53.8729127,185.421781 L53.8729127,27.4217813 C53.8729127,16.928371 62.3795024,8.42178126 72.8729127,8.42178126 Z"
-                      id="Rectangle" fill="#FFFFFF"></path>
-                    <path
-                      d="M115.747555,62.0692784 L118.286698,57.6345356 C120.064098,54.6345626 117.017126,53.0693593 117.017126,53.0693593 L97.5926838,42.7651042 C97.2118124,42.5042369 97.0848552,41.9825025 97.2118124,41.5912017 C97.3387695,41.0694672 97.8465981,40.8086 98.2274695,40.9390336 L166.911283,54.1128282 L116.636255,63.7649153 L116.128426,63.7649153 C115.620598,63.6344817 115.366684,62.9823136 115.620598,62.4605792 C115.747555,62.199712 115.747555,62.199712 115.747555,62.0692784 L115.747555,62.0692784 Z"
-                      id="Shape" fill="#0164BF"></path>
-                    <path
-                      d="M106.617314,50.5306876 L95.4566719,52.3765575 C95.197122,52.3765575 94.9375722,52.6072912 94.8077973,52.8380249 C94.6780224,53.1841255 94.8077973,53.645593 95.197122,53.7609599 L114.793133,58.9524689 L115.831332,57.7988002 C117.777956,55.376096 114.144258,53.9916936 114.144258,53.9916936 L106.617314,50.5306876 L106.617314,50.5306876 Z"
-                      id="Shape" fill="#FDAC08"></path>
-                    <g id="Rectangle">
-                      <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
-                      <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
-                    </g>
-                    <rect id="Rectangle" fill="#D8D8D8" opacity="0.300000012" x="67.1008071" y="125.123607" width="122.658657" height="1.20311161"></rect>
-                    <rect id="Rectangle" fill="#EDEDED" x="92.35406" y="85.4209243" width="73.3546871" height="7.21866966"></rect>
-                    <rect id="Rectangle" fill="#D1E9FF" x="75.5185581" y="134.7485" width="102.215548" height="7.21866966" rx="3"></rect>
-                    <rect id="Rectangle" fill="#D1E9FF" x="100.771811" y="153.998286" width="52.9115776" height="7.21866966" rx="3"></rect>
-                    <rect id="Rectangle" fill="#EDEDED" x="82.7337732" y="99.8582636" width="91.3927249" height="7.21866966"></rect>
-                    <rect id="Rectangle" fill="#EDEDED" x="82.7337732" y="111.88938" width="91.3927249" height="6.01555805"></rect>
-                    <path
-                      d="M95.1388449,4.81244644 L164.126498,4.81244644 C169.649346,4.81244644 174.126498,9.28959894 174.126498,14.8124464 L174.126498,27.671567 L174.126498,27.671567 L85.1388449,27.671567 L85.1388449,14.8124464 C85.1388449,9.28959894 89.6159974,4.81244644 95.1388449,4.81244644 Z"
-                      id="Rectangle" fill="#2191F7" transform="translate(129.632672, 16.242007) rotate(180.000000) translate(-129.632672, -16.242007) "></path>
-                    <g id="Group-11" transform="translate(94.759132, 146.779616)" stroke="#FFA600">
-                      <rect id="Rectangle" fill="#FFFFFF" x="0.5" y="0.5" width="19.4431095" height="19.4528974" rx="9.72155476"></rect>
-                      <polyline id="Path-3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="6.01267927 10.2938374 8.77637021 13.2342277 14.4304303 7.21866966"></polyline>
-                    </g>
-                    <path
-                      d="M235.424522,156.526156 L225.417342,146.518465 L225.412845,142.084881 C225.412135,141.384969 225.256142,140.679489 224.949217,140.021273 L224.721272,139.589668 C224.452184,139.010253 223.890001,138.650545 223.252717,138.649891 C222.615433,138.649238 222.053978,139.007793 221.797919,139.561848 L221.547141,140.041494 C221.253404,140.675334 221.098842,141.379434 221.099553,142.080408 L221.10405,146.513992 L211.120385,156.499112 C210.611954,157.007613 210.332261,157.683527 210.33299,158.403964 L210.334274,159.66795 C210.334474,159.865311 210.442473,160.046605 210.615132,160.140609 C210.787742,160.235675 210.999118,160.22942 211.165053,160.12176 L221.320467,153.619284 C221.422405,155.251099 221.559655,156.613349 221.72738,158.271166 L221.900555,159.969936 L218.127905,162.460572 C217.975966,162.561776 217.885558,162.729924 217.885742,162.911108 L217.886836,163.989563 C217.887001,164.152396 217.961562,164.307772 218.08889,164.410374 C218.217332,164.514039 218.384476,164.553036 218.542952,164.517609 L223.277841,163.46878 L228.014868,164.527321 C228.053696,164.536005 228.09252,164.540382 228.131339,164.540382 C228.253206,164.540382 228.371745,164.49963 228.468715,164.422079 C228.595834,164.318676 228.67008,164.163452 228.669915,164.00062 L228.668821,162.922164 C228.668637,162.740981 228.577887,162.571585 228.425744,162.472192 L224.648037,159.97705 L224.817761,158.273222 C224.982125,156.61792 225.116612,155.257061 225.21524,153.625401 L235.383865,160.146543 C235.55113,160.254545 235.761407,160.260169 235.932764,160.166518 C236.106294,160.072869 236.213725,159.891796 236.213725,159.694436 L236.212443,158.430449 C236.211813,157.710063 235.931861,157.033575 235.424522,156.526156 Z"
-                      id="Path" fill="#FFFFFF" fill-rule="nonzero" transform="translate(223.273358, 151.595136) rotate(-373.000000) translate(-223.273358, -151.595136) "></path>
-                    <path d="M44.5925272,151.664026 C18.6268833,137.261598 4.33671466,124.847607 1.72202123,114.422053 C-1.89691795,92.5987175 -2.47476932,66.7487611 87.5439166,54.1400224" id="Path-2" stroke="#FFA600" stroke-width="2"
-                      stroke-dasharray="3"></path>
-                    <g id="Viajanet-Dark-Logo" transform="translate(94.759132, 40.905795)"></g>
-                  </g>
-                  <g id="Group-9" transform="translate(174.659211, 65.989848)">
-                    <rect id="Rectangle" fill="#FFA600" x="0" y="36.5309444" width="65.9898477" height="85.0571244" rx="12"></rect>
-                    <rect id="Rectangle" stroke="#FFA600" stroke-width="6" x="15.5435248" y="3" width="34.3574275" height="66.5166509" rx="8"></rect>
-                    <g id="Group-5" transform="translate(8.533170, 123.292574)" fill="#FFA600">
-                      <ellipse id="Oval" cx="2.44617539" cy="2.55675846" rx="2.44617539" ry="2.55675846"></ellipse>
-                      <ellipse id="Oval" cx="46.4773324" cy="2.55675846" rx="2.44617539" ry="2.55675846"></ellipse>
-                    </g>
-                    <g id="Group-7" transform="translate(9.598523, 50.808862)" fill="#E29402">
-                      <rect id="Rectangle" x="0" y="-5.1508978e-14" width="47.9926165" height="6.10816919" rx="3.0540846"></rect>
-                      <rect id="Rectangle" x="0" y="13.8822027" width="47.9926165" height="6.10816919" rx="3.0540846"></rect>
-                      <rect id="Rectangle" x="0" y="27.7644054" width="47.9926165" height="6.10816919" rx="3.0540846"></rect>
-                    </g>
-                  </g>
-                </g>
-              </g>
-            </g>
-          </g>
-        </svg>
-      </div>
-      <div class="CookiesPage_text">
-        <h1>Gerenciamento de cookies</h1>
-       <p>O ViajaNet utiliza cookies e outras tecnologias de identificação no site e no aplicativo, para oferecer um serviço personalizado, baseado em interesses e comportamentos dos usuários que interagem com nosso site ou aplicativo.</p>
-       <br>
-       <h4>Os cookies são utilizados para:</h4>
-       <ul>
-         <li><span class="CookiesPage_marker positive"></span>Apresentar as tendências de viagens</li>
-         <li><span class="CookiesPage_marker positive"></span>Lembrar suas preferências (como pesquisas recentes, seu aeroporto de origem)</li>
-         <li><span class="CookiesPage_marker positive"></span>Exibir anúncios de viagens que são mais relevantes para você</li>
-       </ul>
-       <h4>Os cookies não são utilizados para:</h4>
-       <ul>
-         <li><span class="CookiesPage_marker negative"></span>Compartilhado entre plataformas sem consentimento</li>
-         <li><span class="CookiesPage_marker negative"></span>Cookies nunca não armazena dados sensíveis;</li>
-       </ul>
-      </div>
-      <hr class="CookiesPage_hr">
-      <div class="CookiesPage_form">
-
-        <div class="CookiesPage_column2">
-
-        <h2>Configuração de Cookies</h2>
-        <div class="CookiesPage_optsection">
-          <form>
-
-            <div class="checkCookies">
-              <div class="itens">
-                <input type="checkbox" id="essentialCookies" name="essentialCookies" disabled="" checked="">
-                <label for="essentialCookies">Essenciais</label>
-                <label class="description-item" for="essentialCookies">Necessários para o funcionamento mínimo do site ou aplicativo.</label>
-              </div>
-              <div class="itens">
-                <input type="checkbox" id="analyticalCookies" name="analyticalCookies" checked="">
-                <label for="analyticalCookies">Estatísticas e Marketing</label>
-                <label class="description-item" for="analyticalCookies">Seus dados ajudam a testar, melhorar e desenvolver novas funcionalidades.</label>
-              </div>
-              <div class="itens">
-                <input type="checkbox" id="socialCookies" name="socialCookies" checked=""><label for="socialCookies">Personalização</label>
-                <label class="description-item" for="socialCookies">Veja os anúncios de viagem que são mais relevantes para você.</label>
-              </div>
-            </div>
-          </form>
-
-          <button class="btn-default" onclick="if (!window.__cfRLUnblockHandlers) return false; updateCookie()">Salvar</button>
-        </div>
-        </div>
-        <div class="CookiesPage_column1">
-          <div class="CookiesPage_image_desktop">
-            <svg width="269px" height="212px" viewBox="0 0 269 212" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <title>Group 3</title>
-              <defs>
-                <rect id="path-1" x="65.8982712" y="72.1866966" width="123.861193" height="101.061375" rx="11"></rect>
-                <filter x="-22.6%" y="-19.8%" width="145.2%" height="155.4%" filterUnits="objectBoundingBox" id="filter-2">
-                  <feOffset dx="0" dy="8" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
-                  <feGaussianBlur stdDeviation="8" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
-                  <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15533714 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
-                </filter>
-              </defs>
-              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                <g id="0.0---VN---Mobile---Gerenciamento-de-cookies" transform="translate(-38.000000, -86.000000)">
-                  <g id="Group-3" transform="translate(38.714158, 86.268391)">
-                    <path
-                      d="M56.975555,198.010797 C39.166619,202.823243 24.0994328,198.812871 11.7739965,185.979681 C-6.71415795,166.729895 -12.1905273,124.105002 62.5926633,84.9183056 C137.375854,45.7316091 140.646032,6.19070973 199.650105,0.231609057 C258.654178,-5.72749161 294.966058,105.051415 239.955556,131.17307 C203.281887,148.587506 191.344633,170.866748 204.143792,198.010797 L56.975555,198.010797 Z"
+                      d="M44.8171212,215.840015 C32.5133381,220.022598 21.1038052,216.537113 10.5885227,205.383558 C-5.18440108,188.653226 -9.85649299,151.607172 53.9437943,117.549316 C95.2804148,95.4830102 64.6717273,48.524053 84.7510702,34.7014158 C108.809131,18.1398258 124.435504,56.920612 159.991398,50.5394758 C209.523629,41.6500379 252.190074,135.04736 205.258594,157.750156 C173.97094,172.885353 163.786829,192.248639 174.706262,215.840015 L44.8171212,215.840015 Z"
                       id="Path-5" fill="#DFEBF5"></path>
-                    <g id="tracking_asset_v1" transform="translate(10.285842, 12.731609)">
-                      <g id="Group-10" transform="translate(0.918094, 0.000000)">
-                        <g id="Group-6" transform="translate(43.050090, 54.140022)">
-                          <rect id="Rectangle-Copy-13" fill="#D1E9FF" x="140.902392" y="55.3268758" width="2.24684331" height="15.705484"></rect>
-                          <rect id="Rectangle-Copy-12" fill="#D1E9FF" x="149.889765" y="56.448696" width="2.24684331" height="14.5836637"></rect>
-                          <rect id="Rectangle-Copy-14" fill="#D1E9FF" x="130.791597" y="56.448696" width="2.24684331" height="14.5836637"></rect>
-                          <rect id="Rectangle-Copy-11" fill="#2191F7" transform="translate(1.598107, 8.210424) scale(-1, 1) translate(-1.598107, -8.210424) " x="0.474685206" y="0.35768183" width="2.24684331" height="15.705484"></rect>
-                          <polyline id="Path-12" fill="#D1E9FF" points="6.28714591 59.8141569 89.708441 59.8141569 105.436344 75.5196409 165.617668 75.5196409 165.617668 68.7887192 109.498197 68.7887192 93.7702942 53.0832352 6.28714591 53.0832352">
+                    <path d="M191.842585,99.551072 C231.876984,87.7691503 236.242977,78.4430546 204.940563,71.5727849 C157.986943,61.2673805 55.3693398,51.2039093 77.6731314,32.551072 C99.976923,13.8982348 134.357954,28.1019597 138.613727,13.7469959"
+                      id="Path-6" stroke="#FDAC08" stroke-width="2" stroke-dasharray="3"></path>
+                    <g id="tracking_asset_v1" transform="translate(9.543694, 58.551072)">
+                      <g id="Group-10">
+                        <g id="Group-6" transform="translate(36.745684, 45.989912)">
+                          <rect id="Rectangle-Copy-13" fill="#D1E9FF" x="120.26815" y="46.9980988" width="1.91780768" height="13.3412176"></rect>
+                          <rect id="Rectangle-Copy-12" fill="#D1E9FF" x="127.939381" y="47.9510429" width="1.91780768" height="12.3882735"></rect>
+                          <rect id="Rectangle-Copy-14" fill="#D1E9FF" x="111.638016" y="47.9510429" width="1.91780768" height="12.3882735"></rect>
+                          <rect id="Rectangle-Copy-11" fill="#2191F7" transform="translate(1.364074, 6.974446) scale(-1, 1) translate(-1.364074, -6.974446) " x="0.405170636" y="0.303837253" width="1.91780768" height="13.3412176"></rect>
+                          <polyline id="Path-12" fill="#D1E9FF" points="5.36643417 50.8098752 76.5712216 50.8098752 89.9958753 64.1510928 141.364035 64.1510928 141.364035 58.4334281 93.4628965 58.4334281 80.0382427 45.0922105 5.36643417 45.0922105">
                           </polyline>
-                          <rect id="Rectangle" fill="#D1E9FF" x="155.506873" y="69.9105395" width="4.49368661" height="41.5073505"></rect>
-                          <rect id="Rectangle" fill="#2191F7" x="0.474685206" y="69.9105395" width="158.402453" height="41.5073505"></rect>
-                          <polyline id="Path-14" fill="#B2DAFF" opacity="0.400000006" points="157.753717 90.6642147 8.33863678 90.6642147 8.33863678 64.301438 87.8077543 64.301438 101.342178 75.5196409 157.753717 75.5196409"></polyline>
-                          <rect id="Rectangle" fill="#B2DAFF" opacity="0.400000006" x="8.33863678" y="94.5905857" width="149.41508" height="16.8273043"></rect>
-                          <rect id="Rectangle-Copy" fill="#D1E9FF" x="28.5602265" y="59.8141569" width="2.24684331" height="53.8473736"></rect>
-                          <rect id="Rectangle-Copy-2" fill="#D1E9FF" x="47.6583947" y="59.8141569" width="2.24684331" height="53.8473736"></rect>
-                          <rect id="Rectangle-Copy-3" fill="#D1E9FF" x="66.7565628" y="59.8141569" width="2.24684331" height="53.8473736"></rect>
-                          <rect id="Rectangle-Copy-4" fill="#2191F7" x="86.9781525" y="59.8141569" width="2.24684331" height="53.8473736"></rect>
-                          <rect id="Rectangle-Copy-5" fill="#D1E9FF" x="86.9781525" y="59.8141569" width="2.24684331" height="53.8473736"></rect>
-                          <rect id="Rectangle-Copy-6" fill="#D1E9FF" x="101.582634" y="69.9105395" width="2.24684331" height="43.7509911"></rect>
-                          <rect id="Rectangle-Copy-7" fill="#D1E9FF" x="116.187116" y="69.9105395" width="2.24684331" height="43.7509911"></rect>
-                          <rect id="Rectangle-Copy-8" fill="#D1E9FF" x="130.791597" y="69.9105395" width="2.24684331" height="43.7509911"></rect>
-                          <rect id="Rectangle-Copy-9" fill="#D1E9FF" x="145.396079" y="69.9105395" width="2.24684331" height="43.7509911"></rect>
+                          <rect id="Rectangle" fill="#D1E9FF" x="132.7339" y="59.3863722" width="3.83561535" height="35.2589322"></rect>
+                          <rect id="Rectangle" fill="#2191F7" x="0.405170636" y="59.3863722" width="135.205441" height="35.2589322"></rect>
+                          <polyline id="Path-14" fill="#B2DAFF" opacity="0.400000006" points="134.651708 77.0158383 7.1174975 77.0158383 7.1174975 54.6216517 74.9488782 54.6216517 86.5012731 64.1510928 134.651708 64.1510928"></polyline>
+                          <rect id="Rectangle" fill="#B2DAFF" opacity="0.400000006" x="7.1174975" y="80.3511427" width="127.53421" height="14.2941617"></rect>
+                          <rect id="Rectangle-Copy" fill="#D1E9FF" x="24.3777666" y="50.8098752" width="1.91780768" height="45.7413174"></rect>
+                          <rect id="Rectangle-Copy-2" fill="#D1E9FF" x="40.6791318" y="50.8098752" width="1.91780768" height="45.7413174"></rect>
+                          <rect id="Rectangle-Copy-3" fill="#D1E9FF" x="56.9804971" y="50.8098752" width="1.91780768" height="45.7413174"></rect>
+                          <rect id="Rectangle-Copy-4" fill="#2191F7" x="74.2407662" y="50.8098752" width="1.91780768" height="45.7413174"></rect>
+                          <rect id="Rectangle-Copy-5" fill="#D1E9FF" x="74.2407662" y="50.8098752" width="1.91780768" height="45.7413174"></rect>
+                          <rect id="Rectangle-Copy-6" fill="#D1E9FF" x="86.7065161" y="59.3863722" width="1.91780768" height="37.1648204"></rect>
+                          <rect id="Rectangle-Copy-7" fill="#D1E9FF" x="99.172266" y="59.3863722" width="1.91780768" height="37.1648204"></rect>
+                          <rect id="Rectangle-Copy-8" fill="#D1E9FF" x="111.638016" y="59.3863722" width="1.91780768" height="37.1648204"></rect>
+                          <rect id="Rectangle-Copy-9" fill="#D1E9FF" x="124.103766" y="59.3863722" width="1.91780768" height="37.1648204"></rect>
                         </g>
                         <path
-                          d="M68.2526259,0 L187.40511,0 C200.659944,4.67055385e-15 211.40511,10.745166 211.40511,24 L211.40511,185.279188 L211.40511,185.279188 L44.2526259,185.279188 L44.2526259,24 C44.2526259,10.745166 54.9977919,9.54030086e-15 68.2526259,0 Z"
+                          d="M61.7721158,0 L156.446202,0 C169.701036,1.28904977e-14 180.446202,10.745166 180.446202,24 L180.446202,157.387697 L180.446202,157.387697 L37.7721158,157.387697 L37.7721158,24 C37.7721158,10.745166 48.5172818,5.98758718e-15 61.7721158,0 Z"
                           id="Rectangle" fill="#2191F7"></path>
                         <path
-                          d="M72.8729127,8.42178126 L183.987359,8.42178126 C194.480769,8.42178126 202.987359,16.928371 202.987359,27.4217813 L202.987359,185.421781 L202.987359,185.421781 L53.8729127,185.421781 L53.8729127,27.4217813 C53.8729127,16.928371 62.3795024,8.42178126 72.8729127,8.42178126 Z"
+                          d="M64.983574,7.15398624 L154.261176,7.15398624 C164.754587,7.15398624 173.261176,15.660576 173.261176,26.1539862 L173.261176,157.508825 L173.261176,157.508825 L45.983574,157.508825 L45.983574,26.1539862 C45.983574,15.660576 54.4901638,7.15398624 64.983574,7.15398624 Z"
                           id="Rectangle" fill="#FFFFFF"></path>
                         <path
-                          d="M115.747555,62.0692784 L118.286698,57.6345356 C120.064098,54.6345626 117.017126,53.0693593 117.017126,53.0693593 L97.5926838,42.7651042 C97.2118124,42.5042369 97.0848552,41.9825025 97.2118124,41.5912017 C97.3387695,41.0694672 97.8465981,40.8086 98.2274695,40.9390336 L166.911283,54.1128282 L116.636255,63.7649153 L116.128426,63.7649153 C115.620598,63.6344817 115.366684,62.9823136 115.620598,62.4605792 C115.747555,62.199712 115.747555,62.199712 115.747555,62.0692784 L115.747555,62.0692784 Z"
+                          d="M98.7970763,52.725516 L100.964378,48.958369 C102.481489,46.4100048 99.8807272,45.0804235 99.8807272,45.0804235 L83.3008682,36.3273465 C82.9757729,36.1057497 82.8674078,35.6625559 82.9757729,35.3301606 C83.084138,34.8869668 83.5175984,34.6653699 83.8426936,34.7761684 L142.468208,45.966811 L99.5556319,54.1658958 L99.1221715,54.1658958 C98.6887112,54.0550973 98.471981,53.5011051 98.6887112,53.0579114 C98.7970763,52.8363145 98.7970763,52.8363145 98.7970763,52.725516 L98.7970763,52.725516 Z"
                           id="Shape" fill="#0164BF"></path>
                         <path
-                          d="M106.617314,50.5306876 L95.4566719,52.3765575 C95.197122,52.3765575 94.9375722,52.6072912 94.8077973,52.8380249 C94.6780224,53.1841255 94.8077973,53.645593 95.197122,53.7609599 L114.793133,58.9524689 L115.831332,57.7988002 C117.777956,55.376096 114.144258,53.9916936 114.144258,53.9916936 L106.617314,50.5306876 L106.617314,50.5306876 Z"
+                          d="M91.0038997,42.9239174 L81.4776613,44.4919144 C81.2561209,44.4919144 81.0345805,44.687914 80.9238103,44.8839136 C80.8130401,45.1779131 80.9238103,45.5699123 81.2561209,45.6679121 L97.9824231,50.0779036 L98.8685848,49.0979055 C100.530138,47.0399095 97.428572,45.8639118 97.428572,45.8639118 L91.0038997,42.9239174 L91.0038997,42.9239174 Z"
                           id="Shape" fill="#FDAC08"></path>
                         <g id="Rectangle">
                           <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
                           <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
                         </g>
-                        <rect id="Rectangle" fill="#D8D8D8" opacity="0.300000012" x="67.1008071" y="125.123607" width="122.658657" height="1.20311161"></rect>
-                        <rect id="Rectangle" fill="#EDEDED" x="92.35406" y="85.4209243" width="73.3546871" height="7.21866966"></rect>
-                        <rect id="Rectangle" fill="#D1E9FF" x="75.5185581" y="134.7485" width="102.215548" height="7.21866966" rx="3"></rect>
-                        <rect id="Rectangle" fill="#D1E9FF" x="100.771811" y="153.998286" width="52.9115776" height="7.21866966" rx="3"></rect>
-                        <rect id="Rectangle" fill="#EDEDED" x="82.7337732" y="99.8582636" width="91.3927249" height="7.21866966"></rect>
-                        <rect id="Rectangle" fill="#EDEDED" x="82.7337732" y="111.88938" width="91.3927249" height="6.01555805"></rect>
+                        <rect id="Rectangle" fill="#D8D8D8" opacity="0.300000012" x="57.2743291" y="106.287795" width="104.696092" height="1.02199803"></rect>
+                        <rect id="Rectangle" fill="#EDEDED" x="78.8294069" y="72.5618604" width="62.6123689" height="6.1319882"></rect>
+                        <rect id="Rectangle" fill="#D1E9FF" x="64.459355" y="114.46378" width="87.2467436" height="6.1319882" rx="3"></rect>
+                        <rect id="Rectangle" fill="#D1E9FF" x="86.0144328" y="130.815748" width="45.1630202" height="6.1319882" rx="3"></rect>
+                        <rect id="Rectangle" fill="#EDEDED" x="70.6179487" y="84.8258368" width="78.0088531" height="6.1319882"></rect>
+                        <rect id="Rectangle" fill="#EDEDED" x="70.6179487" y="95.0458171" width="78.0088531" height="5.10999017"></rect>
                         <path
-                          d="M95.1388449,4.81244644 L164.126498,4.81244644 C169.649346,4.81244644 174.126498,9.28959894 174.126498,14.8124464 L174.126498,27.671567 L174.126498,27.671567 L85.1388449,27.671567 L85.1388449,14.8124464 C85.1388449,9.28959894 89.6159974,4.81244644 95.1388449,4.81244644 Z"
-                          id="Rectangle" fill="#2191F7" transform="translate(129.632672, 16.242007) rotate(180.000000) translate(-129.632672, -16.242007) "></path>
-                        <g id="Group-11" transform="translate(94.759132, 146.779616)" stroke="#FFA600">
-                          <rect id="Rectangle" fill="#FFFFFF" x="0.5" y="0.5" width="19.4431095" height="19.4528974" rx="9.72155476"></rect>
-                          <polyline id="Path-3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="6.01267927 10.2938374 8.77637021 13.2342277 14.4304303 7.21866966"></polyline>
+                          d="M82.6708132,4.08799213 L138.626802,4.08799213 C144.149649,4.08799213 148.626802,8.56514464 148.626802,14.0879921 L148.626802,23.5059548 L148.626802,23.5059548 L72.6708132,23.5059548 L72.6708132,14.0879921 C72.6708132,8.56514464 77.1479657,4.08799213 82.6708132,4.08799213 Z"
+                          id="Rectangle" fill="#2191F7" transform="translate(110.648807, 13.796973) rotate(180.000000) translate(-110.648807, -13.796973) "></path>
+                        <g id="Group-11" transform="translate(80.882271, 124.683760)" stroke="#FFA600">
+                          <rect id="Rectangle" fill="#FFFFFF" x="0.5" y="0.5" width="16.4493487" height="16.3739666" rx="8.18698329"></rect>
+                          <polyline id="Path-3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="5.13216139 8.74422748 7.49112771 11.2419784 12.3171873 6.1319882"></polyline>
                         </g>
                         <path
-                          d="M235.424522,156.526156 L225.417342,146.518465 L225.412845,142.084881 C225.412135,141.384969 225.256142,140.679489 224.949217,140.021273 L224.721272,139.589668 C224.452184,139.010253 223.890001,138.650545 223.252717,138.649891 C222.615433,138.649238 222.053978,139.007793 221.797919,139.561848 L221.547141,140.041494 C221.253404,140.675334 221.098842,141.379434 221.099553,142.080408 L221.10405,146.513992 L211.120385,156.499112 C210.611954,157.007613 210.332261,157.683527 210.33299,158.403964 L210.334274,159.66795 C210.334474,159.865311 210.442473,160.046605 210.615132,160.140609 C210.787742,160.235675 210.999118,160.22942 211.165053,160.12176 L221.320467,153.619284 C221.422405,155.251099 221.559655,156.613349 221.72738,158.271166 L221.900555,159.969936 L218.127905,162.460572 C217.975966,162.561776 217.885558,162.729924 217.885742,162.911108 L217.886836,163.989563 C217.887001,164.152396 217.961562,164.307772 218.08889,164.410374 C218.217332,164.514039 218.384476,164.553036 218.542952,164.517609 L223.277841,163.46878 L228.014868,164.527321 C228.053696,164.536005 228.09252,164.540382 228.131339,164.540382 C228.253206,164.540382 228.371745,164.49963 228.468715,164.422079 C228.595834,164.318676 228.67008,164.163452 228.669915,164.00062 L228.668821,162.922164 C228.668637,162.740981 228.577887,162.571585 228.425744,162.472192 L224.648037,159.97705 L224.817761,158.273222 C224.982125,156.61792 225.116612,155.257061 225.21524,153.625401 L235.383865,160.146543 C235.55113,160.254545 235.761407,160.260169 235.932764,160.166518 C236.106294,160.072869 236.213725,159.891796 236.213725,159.694436 L236.212443,158.430449 C236.211813,157.710063 235.931861,157.033575 235.424522,156.526156 Z"
-                          id="Path" fill="#FFFFFF" fill-rule="nonzero" transform="translate(223.273358, 151.595136) rotate(-373.000000) translate(-223.273358, -151.595136) "></path>
-                        <path d="M44.5925272,151.664026 C18.6268833,137.261598 4.33671466,124.847607 1.72202123,114.422053 C-1.89691795,92.5987175 -2.47476932,66.7487611 87.5439166,54.1400224" id="Path-2" stroke="#FFA600" stroke-width="2"
+                          d="M200.950351,132.973444 L192.401751,124.461234 L192.393935,120.694149 C192.392701,120.099454 192.258952,119.499889 191.996446,118.940348 L191.801542,118.573421 C191.571396,118.080869 191.091335,117.774732 190.547508,117.773601 C190.003682,117.772477 189.524887,118.076627 189.306876,118.547161 L189.093306,118.954476 C188.843214,119.492767 188.71195,120.090881 188.713186,120.686477 L188.721002,124.453563 L180.210409,132.928656 C179.776996,133.360257 179.538927,133.934311 179.540192,134.546444 L179.542425,135.620416 C179.542773,135.788108 179.635096,135.942244 179.782519,136.022272 C179.929901,136.103201 180.110274,136.098077 180.251777,136.00675 L188.912057,130.490908 C189.000511,131.877503 189.118855,133.035088 189.263471,134.443835 L189.412774,135.887383 L186.195621,138.000215 C186.066054,138.086069 185.989056,138.228859 185.989375,138.382805 L185.991277,139.299137 C185.991564,139.437491 186.05533,139.569576 186.164077,139.656868 C186.273776,139.745064 186.416443,139.778348 186.551647,139.748389 L190.59122,138.861481 L194.634509,139.765141 C194.667651,139.772555 194.700785,139.776344 194.733911,139.776344 C194.837906,139.776344 194.939025,139.741933 195.021704,139.676128 C195.130088,139.588384 195.193307,139.456561 195.19302,139.318207 L195.191119,138.401876 C195.190799,138.247929 195.113206,138.103917 194.983285,138.01933 L191.757343,135.895893 L191.900647,134.448355 C192.039422,133.042043 192.152965,131.885883 192.235665,130.4996 L200.918906,136.04954 C201.061739,136.141456 201.241183,136.146424 201.387326,136.067005 C201.535324,135.98759 201.627009,135.833835 201.626662,135.666143 L201.624432,134.592171 C201.623249,133.980081 201.383744,133.405038 200.950351,132.973444 Z"
+                          id="Path" fill="#FFFFFF" fill-rule="nonzero" transform="translate(190.583427, 128.774973) rotate(-373.000000) translate(-190.583427, -128.774973) "></path>
+                        <path d="M38.0622408,128.832882 C15.8990971,116.598562 3.70163093,106.053344 1.46984239,97.1972278 C-1.61912662,78.6591256 -2.11235541,56.7005605 74.7236778,45.9899115" id="Path-2" stroke="#FFA600" stroke-width="2"
                           stroke-dasharray="3"></path>
-                        <g id="Viajanet-Dark-Logo" transform="translate(94.759132, 40.905795)"></g>
+                        <g id="Viajanet-Dark-Logo" transform="translate(80.882271, 34.747933)"></g>
                       </g>
-                      <g id="Group-9" transform="translate(174.659211, 65.989848)">
-                        <rect id="Rectangle" fill="#FFA600" x="0" y="36.5309444" width="65.9898477" height="85.0571244" rx="12"></rect>
-                        <rect id="Rectangle" stroke="#FFA600" stroke-width="6" x="15.5435248" y="3" width="34.3574275" height="66.5166509" rx="8"></rect>
-                        <g id="Group-5" transform="translate(8.533170, 123.292574)" fill="#FFA600">
-                          <ellipse id="Oval" cx="2.44617539" cy="2.55675846" rx="2.44617539" ry="2.55675846"></ellipse>
-                          <ellipse id="Oval" cx="46.4773324" cy="2.55675846" rx="2.44617539" ry="2.55675846"></ellipse>
+                      <g id="Group-9" transform="translate(148.000000, 56.000000)">
+                        <rect id="Rectangle" fill="#FFA600" x="0" y="31.2102333" width="56" height="72.668603" rx="12"></rect>
+                        <rect id="Rectangle" stroke="#FFA600" stroke-width="8" x="14.6446281" y="4" width="26.2479339" height="53.9546423" rx="8"></rect>
+                        <g id="Group-5" transform="translate(7.241379, 105.335082)" fill="#FFA600">
+                          <ellipse id="Oval" cx="2.07586207" cy="2.18436805" rx="2.07586207" ry="2.18436805"></ellipse>
+                          <ellipse id="Oval" cx="39.4413793" cy="2.18436805" rx="2.07586207" ry="2.18436805"></ellipse>
                         </g>
-                        <g id="Group-7" transform="translate(9.598523, 50.808862)" fill="#E29402">
-                          <rect id="Rectangle" x="0" y="-5.1508978e-14" width="47.9926165" height="6.10816919" rx="3.0540846"></rect>
-                          <rect id="Rectangle" x="0" y="13.8822027" width="47.9926165" height="6.10816919" rx="3.0540846"></rect>
-                          <rect id="Rectangle" x="0" y="27.7644054" width="47.9926165" height="6.10816919" rx="3.0540846"></rect>
+                        <g id="Group-7" transform="translate(8.145455, 43.408580)" fill="#E29402">
+                          <rect id="Rectangle" x="0" y="-4.40067249e-14" width="40.7272727" height="5.21851785" rx="2.60925893"></rect>
+                          <rect id="Rectangle" x="0" y="11.8602678" width="40.7272727" height="5.21851785" rx="2.60925893"></rect>
+                          <rect id="Rectangle" x="0" y="23.7205357" width="40.7272727" height="5.21851785" rx="2.60925893"></rect>
                         </g>
                       </g>
+                    </g>
+                    <path
+                      d="M158.515158,7.12780443 C159.666759,28.4678361 152.652895,39.8975492 137.473566,41.4169437 C121.994012,36.8470535 117.188374,24.397702 123.056655,4.06888937 C130.323173,2.62627807 136.47756,1.40896285 141.519817,0.416943691 C150.733826,4.19469046 156.39894,6.43164403 158.515158,7.12780443 Z"
+                      id="Path-7" fill="#FFA600"></path>
+                    <polygon id="Path-8" fill="#FFFFFF" points="138.267733 27.0226401 150.636968 16.0483117 147.72891 12.4169437 137.131791 21.7325042 132.309955 15.7113517 128.636968 18.9401472 136.555972 28.4169437"></polygon>
+                    <g id="Group-9" transform="translate(45.043694, 67.051072) rotate(-367.000000) translate(-45.043694, -67.051072) translate(23.543694, 36.551072)">
+                      <rect id="Rectangle" fill="#FFA600" x="0" y="23" width="43" height="38" rx="10"></rect>
+                      <rect id="Rectangle" stroke="#FFA600" stroke-width="8" x="10" y="4" width="22" height="39" rx="11"></rect>
+                      <g id="Group-7" transform="translate(16.000000, 32.000000)" fill="#D18800">
+                        <rect id="Rectangle" x="0.0458365164" y="-3.44505569e-14" width="9.41176471" height="9.6969697" rx="4.70588235"></rect>
+                        <rect id="Rectangle" x="3.02521008" y="6.10984831" width="3.52941176" height="13.3333333" rx="1.76470588"></rect>
+                      </g>
+                    </g>
+                    <g id="Group-14" transform="translate(223.033158, 83.613757) rotate(13.000000) translate(-223.033158, -83.613757) translate(209.533158, 65.113757)">
+                      <rect id="Rectangle" fill="#FFA600" x="0.00897916282" y="0.549026776" width="26" height="36" rx="3"></rect>
+                      <rect id="Rectangle" fill="#D18800" x="4.17217934" y="22.7583037" width="17" height="2"></rect>
+                      <rect id="Rectangle" fill="#D18800" x="8.80786931" y="4.23013352" width="9" height="9" rx="4.5"></rect>
+                      <path
+                        d="M8.82131103,13.5134411 L16.821311,13.5134411 C18.7543077,13.5134411 20.321311,15.0804444 20.321311,17.0134411 L20.321311,17.5134411 L20.321311,17.5134411 L5.32131103,17.5134411 L5.32131103,17.0134411 C5.32131103,15.0804444 6.88831441,13.5134411 8.82131103,13.5134411 Z"
+                        id="Rectangle" fill="#D18800"></path>
+                      <rect id="Rectangle" fill="#D18800" x="3.93673727" y="26.4687426" width="12" height="2"></rect>
                     </g>
                   </g>
                 </g>
               </g>
-            </svg>
-          </div>
+            </g>
+          </svg>
         </div>
 
-      </div>
-      <div class="CookiesPage_backGeneral">
-        <p>Ficou com dúvidas? Confira nossa <a href="politica-de-cookies" class="CookiesPage_link">Política de Cookies</a>.
-          <br class="CookiesPage_onlyMobile">Você pode alterar suas preferências a qualquer momento.
-        </p>
-      </div>
+        <div class="CookiesPage_text">
+          <h1>Gerenciamento de cookies</h1>
+          <p>O ViajaNet utiliza cookies e outras tecnologias de identificação no site e no aplicativo, para oferecer um serviço personalizado, baseado em interesses e comportamentos dos usuários que interagem com nosso site ou aplicativo.</p>
+          <br>
+          <h4>Os cookies são utilizados para:</h4>
+          <ul>
+            <li><span class="CookiesPage_marker positive"></span>Apresentar as tendências de viagens</li>
+            <li><span class="CookiesPage_marker positive"></span>Lembrar suas preferências (como pesquisas recentes, seu aeroporto de origem)</li>
+            <li><span class="CookiesPage_marker positive"></span>Exibir anúncios de viagens que são mais relevantes para você</li>
+          </ul>
+          <h4>Os cookies não são utilizados para:</h4>
+          <ul>
+            <li><span class="CookiesPage_marker negative"></span>Compartilhado entre plataformas sem consentimento</li>
+            <li><span class="CookiesPage_marker negative"></span>Cookies nunca não armazena dados sensíveis;</li>
+          </ul>
+        </div>
+        <hr class="CookiesPage_hr">
+        <div class="CookiesPage_form">
+          <h2>Configuração de Cookies</h2>
+          <div class="CookiesPage_optsection">
+            <form>
 
+              <div class="checkCookies">
+                <div class="itens">
+                  <input type="checkbox" id="essentialCookies" name="essentialCookies" disabled="" checked="">
+                  <label for="essentialCookies">Essenciais</label>
+                  <label class="description-item" for="essentialCookies">Necessários para o funcionamento mínimo do site ou aplicativo.</label>
+                </div>
+                <div class="itens">
+                  <input type="checkbox" id="analyticalCookies" name="analyticalCookies" checked="">
+                  <label for="analyticalCookies">Estatísticas e Marketing</label>
+                  <label class="description-item" for="analyticalCookies">Seus dados ajudam a testar, melhorar e desenvolver novas funcionalidades.</label>
+                </div>
+                <div class="itens">
+                  <input type="checkbox" id="socialCookies" name="socialCookies" checked=""><label for="socialCookies">Personalização</label>
+                  <label class="description-item" for="socialCookies">Veja os anúncios de viagem que são mais relevantes para você.</label>
+                </div>
+              </div>
+            </form>
 
+            <button class="btn-default" onclick="if (!window.__cfRLUnblockHandlers) return false; updateCookie()">Salvar</button>
+          </div>
+        </div>
+        <div class="CookiesPage_backGeneral">
+          <p>Ficou com dúvidas? Confira nossa <a href="politica-de-cookies" class="CookiesPage_link">Política de Cookies</a>.
+            <br class="CookiesPage_onlyMobile">Você pode alterar suas preferências a qualquer momento.
+          </p>
+        </div>
+      </div>
+      <div class="CookiesPage_Column2_desk">
+        <div class="CookiesPage_image_desktop">
+          <?xml version="1.0" encoding="UTF-8"?>
+          <svg width="340px" height="464px" viewBox="0 0 340 464" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="Desk---Gerenciamento-de-Cookies" transform="translate(-868.000000, -208.000000)">
+                      <g id="ic_cookies_desktop" transform="translate(868.714158, 208.500000)">
+                          <g id="Group-12">
+                              <g id="Group-3">
+                                  <path d="M90.9176941,434.740337 C54.7084555,445.776199 29.1496692,441.436426 14.2413353,421.721018 C-8.12116554,392.147906 -14.7451536,326.664022 75.7094759,266.46218 C134.315618,227.457015 90.9193009,144.450741 119.387347,120.01737 C153.496331,90.7425321 175.651056,159.292789 226.061412,148.013272 C296.287108,132.299995 356.778646,297.392326 290.240236,337.522571 C245.881296,364.276068 231.44249,398.503282 246.923819,440.204213 L90.9176941,434.740337 Z" id="Path-5" fill="#DFEBF5"></path>
+                                  <g id="tracking_asset_v1" transform="translate(3.000000, 212.500000)">
+                                      <g id="Group-10" transform="translate(0.285842, 0.000000)">
+                                          <g id="Group-6" transform="translate(54.578148, 68.693792)">
+                                              <rect id="Rectangle-Copy-13" fill="#D1E9FF" x="178.633576" y="70.1996918" width="2.84850846" height="19.9273883"></rect>
+                                              <rect id="Rectangle-Copy-12" fill="#D1E9FF" x="190.02761" y="71.6230767" width="2.84850846" height="18.5040034"></rect>
+                                              <rect id="Rectangle-Copy-14" fill="#D1E9FF" x="165.815288" y="71.6230767" width="2.84850846" height="18.5040034"></rect>
+                                              <rect id="Rectangle-Copy-11" fill="#2191F7" transform="translate(2.026052, 10.417527) scale(-1, 1) translate(-2.026052, -10.417527) " x="0.601797562" y="0.453832859" width="2.84850846" height="19.9273883"></rect>
+                                              <polyline id="Path-12" fill="#D1E9FF" points="7.9707331 75.8932313 113.730785 75.8932313 133.670344 95.8206196 209.967169 95.8206196 209.967169 87.2803103 138.81989 87.2803103 118.880331 67.3529221 7.9707331 67.3529221"></polyline>
+                                              <rect id="Rectangle" fill="#D1E9FF" x="197.148881" y="88.7036952" width="5.69701692" height="52.6652404"></rect>
+                                              <rect id="Rectangle" fill="#2191F7" x="0.601797562" y="88.7036952" width="200.819846" height="52.6652404"></rect>
+                                              <polyline id="Path-14" fill="#B2DAFF" opacity="0.400000006" points="199.99739 115.036315 10.5715772 115.036315 10.5715772 81.5867708 111.321128 81.5867708 128.479832 95.8206196 199.99739 95.8206196"></polyline>
+                                              <rect id="Rectangle" fill="#B2DAFF" opacity="0.400000006" x="10.5715772" y="120.018163" width="189.425813" height="21.3507732"></rect>
+                                              <rect id="Rectangle-Copy" fill="#D1E9FF" x="36.2081533" y="75.8932313" width="2.84850846" height="68.3224741"></rect>
+                                              <rect id="Rectangle-Copy-2" fill="#D1E9FF" x="60.4204752" y="75.8932313" width="2.84850846" height="68.3224741"></rect>
+                                              <rect id="Rectangle-Copy-3" fill="#D1E9FF" x="84.6327971" y="75.8932313" width="2.84850846" height="68.3224741"></rect>
+                                              <rect id="Rectangle-Copy-4" fill="#2191F7" x="110.269373" y="75.8932313" width="2.84850846" height="68.3224741"></rect>
+                                              <rect id="Rectangle-Copy-5" fill="#D1E9FF" x="110.269373" y="75.8932313" width="2.84850846" height="68.3224741"></rect>
+                                              <rect id="Rectangle-Copy-6" fill="#D1E9FF" x="128.784678" y="88.7036952" width="2.84850846" height="55.5120102"></rect>
+                                              <rect id="Rectangle-Copy-7" fill="#D1E9FF" x="147.299983" y="88.7036952" width="2.84850846" height="55.5120102"></rect>
+                                              <rect id="Rectangle-Copy-8" fill="#D1E9FF" x="165.815288" y="88.7036952" width="2.84850846" height="55.5120102"></rect>
+                                              <rect id="Rectangle-Copy-9" fill="#D1E9FF" x="184.330593" y="88.7036952" width="2.84850846" height="55.5120102"></rect>
+                                          </g>
+                                          <path d="M80.1027014,0 L244.015683,0 C257.270517,-1.06548173e-14 268.015683,10.745166 268.015683,24 L268.015683,235.085421 L268.015683,235.085421 L56.1027014,235.085421 L56.1027014,24 C56.1027014,10.745166 66.8478674,5.98758718e-15 80.1027014,0 Z" id="Rectangle" fill="#2191F7"></path>
+                                          <path d="M87.299132,10.685701 L238.343806,10.685701 C248.837216,10.685701 257.343806,19.1922907 257.343806,29.685701 L257.343806,235.266346 L257.343806,235.266346 L68.299132,235.266346 L68.299132,29.685701 C68.299132,19.1922907 76.8057217,10.685701 87.299132,10.685701 Z" id="Rectangle" fill="#FFFFFF"></path>
+                                          <path d="M146.742716,78.7545682 L149.961797,73.1276904 C152.215153,69.321273 148.352257,67.3353161 148.352257,67.3353161 L123.72629,54.2610999 C123.243427,53.9301071 123.082473,53.2681215 123.243427,52.7716322 C123.404381,52.1096466 124.048198,51.7786538 124.53106,51.9441502 L211.607191,68.6592874 L147.869394,80.9060215 L147.225578,80.9060215 C146.581762,80.7405251 146.259854,79.9130431 146.581762,79.2510575 C146.742716,78.9200647 146.742716,78.9200647 146.742716,78.7545682 L146.742716,78.7545682 Z" id="Shape" fill="#0164BF"></path>
+                                          <path d="M135.167557,64.1142058 L121.018291,66.4562772 C120.689238,66.4562772 120.360186,66.7490361 120.195659,67.0417951 C120.031133,67.4809335 120.195659,68.0664513 120.689238,68.2128308 L145.532717,74.7999067 L146.848927,73.3361121 C149.316823,70.2621433 144.710085,68.5055897 144.710085,68.5055897 L135.167557,64.1142058 L135.167557,64.1142058 Z" id="Shape" fill="#FDAC08"></path>
+                                          <rect id="Rectangle" stroke="#E0DDDD" fill="#FFFFFF" x="84.0446702" y="92.0917225" width="156.029044" height="127.228412" rx="11"></rect>
+                                          <rect id="Rectangle" fill="#D8D8D8" opacity="0.300000012" x="85.069224" y="158.758986" width="155.50449" height="1.52652871"></rect>
+                                          <rect id="Rectangle" fill="#EDEDED" x="117.084854" y="108.383538" width="92.9977833" height="9.15917225"></rect>
+                                          <rect id="Rectangle" fill="#D1E9FF" x="95.7411008" y="170.971215" width="129.587075" height="9.15917225" rx="3"></rect>
+                                          <rect id="Rectangle" fill="#D1E9FF" x="127.756731" y="195.395675" width="67.0803682" height="9.15917225" rx="3"></rect>
+                                          <rect id="Rectangle" fill="#EDEDED" x="104.888424" y="126.701883" width="115.866091" height="9.15917225"></rect>
+                                          <rect id="Rectangle" fill="#EDEDED" x="104.888424" y="141.96717" width="115.866091" height="7.63264354"></rect>
+                                          <path d="M117.937531,6.10611483 L210.754514,6.10611483 C216.277362,6.10611483 220.754514,10.5832673 220.754514,16.1061148 L220.754514,35.1101603 L220.754514,35.1101603 L107.937531,35.1101603 L107.937531,16.1061148 C107.937531,10.5832673 112.414684,6.10611483 117.937531,6.10611483 Z" id="Rectangle" fill="#2191F7" transform="translate(164.346023, 20.608138) rotate(180.000000) translate(-164.346023, -20.608138) "></path>
+                                          <g id="Group-11" transform="translate(120.133962, 186.236502)" stroke="#FFA600">
+                                              <rect id="Rectangle" fill="#FFFFFF" x="0.5" y="0.5" width="24.917415" height="24.950988" rx="12"></rect>
+                                              <polyline id="Path-3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="7.62276912 13.060998 11.1265279 16.7918158 18.2946459 9.15917225"></polyline>
+                                          </g>
+                                          <path d="M298.466509,198.60046 L285.781329,185.905323 L285.776633,180.280149 C285.775891,179.392125 285.578278,178.497072 285.189297,177.66202 L284.900398,177.114466 C284.55937,176.379386 283.846697,175.923129 283.038726,175.922444 C282.230755,175.92176 281.518842,176.37681 281.194075,177.079833 L280.876022,177.688448 C280.503469,178.492708 280.307349,179.386081 280.308091,180.275451 L280.312788,185.900626 L267.652886,198.57166 C267.008163,199.216943 266.653406,200.074583 266.654168,200.988647 L266.655508,202.592349 C266.655717,202.842753 266.7926,203.072748 267.011482,203.191978 C267.230301,203.312554 267.498293,203.304571 267.708695,203.167938 L280.585557,194.915522 C280.714428,196.985888 280.888129,198.714232 281.1004,200.817573 L281.319572,202.972874 L276.535911,206.133761 C276.343254,206.262199 276.228594,206.475561 276.228786,206.70544 L276.229928,208.073746 C276.2301,208.280343 276.324597,208.477462 276.486004,208.607611 C276.648823,208.739108 276.860726,208.788547 277.061656,208.743563 L283.064951,207.411772 L289.070478,208.753737 C289.119704,208.764747 289.168925,208.770282 289.218141,208.770282 C289.372648,208.770282 289.522945,208.718522 289.645904,208.620107 C289.807094,208.488884 289.901261,208.291925 289.901089,208.085329 L289.899946,206.717022 C289.899754,206.487143 289.784737,206.27224 289.591867,206.146169 L284.802925,202.981277 L285.018493,200.819482 C285.227255,198.719256 285.398071,196.992615 285.523485,194.9224 L298.414142,203.193889 C298.626182,203.330879 298.892777,203.337968 299.110051,203.219108 C299.33008,203.10025 299.46637,202.870487 299.46637,202.620083 L299.465031,201.016381 C299.464396,200.102381 299.109616,199.24414 298.466509,198.60046 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero" transform="translate(283.060269, 192.346363) rotate(-373.000000) translate(-283.060269, -192.346363) "></path>
+                                          <path d="M56.5336223,192.433926 C23.6148353,174.159878 5.49801064,158.408792 2.18314825,145.180669 C-2.40487924,117.490846 -3.13746906,84.6919765 110.986639,68.6937919" id="Path-2" stroke="#FFA600" stroke-width="2" stroke-dasharray="3"></path>
+                                          <g id="Viajanet-Dark-Logo" transform="translate(120.133962, 51.901976)"></g>
+                                      </g>
+                                  </g>
+                                  <path d="M271.301525,348.361055 C349.509379,312.426194 358.038417,283.981602 296.888639,263.027279 C205.163973,231.595796 -21.3069212,202.238847 22.2639007,145.347694 C65.8347227,88.4565401 269.718668,87.1436947 278.032389,43.3610551" id="Path-6" stroke="#FDAC08" stroke-width="2" stroke-dasharray="3"></path>
+                                  <g id="Group-4" transform="translate(194.857082, 0.000000)">
+                                      <g id="Group-8" transform="translate(51.230539, 55.189334) rotate(9.000000) translate(-51.230539, -55.189334) translate(7.230539, 7.189334)">
+                                          <path d="M81.2816377,21.6586373 C80.1044368,65.7712166 64.7916203,88.4807583 35.3431883,89.7872626 C6.28526863,78.5098462 -0.981934133,52.278593 13.54158,11.0935032 C27.7526064,8.99417031 39.7879377,7.22542346 49.6475737,5.78726265 C66.7757804,14.6792907 77.3204685,19.9697489 81.2816377,21.6586373 Z" id="Path-7" fill="#FFA600" transform="translate(43.781638, 47.787263) rotate(-9.000000) translate(-43.781638, -47.787263) "></path>
+                                          <polygon id="Path-8" fill="#FFFFFF" transform="translate(43.703420, 47.293418) rotate(-9.000000) translate(-43.703420, -47.293418) " points="39.5453536 60.1943314 66.2034205 39.5842652 60.8378831 31.7934185 38.0116254 49.2747547 29.1150557 36.3567921 21.2034205 42.4158648 35.8742467 62.7934185"></polygon>
+                                      </g>
+                                  </g>
+                                  <g id="Group-2" transform="translate(132.457765, 107.494468) rotate(-362.000000) translate(-132.457765, -107.494468) translate(99.957765, 62.994468)">
+                                      <g id="Group" transform="translate(0.310538, 0.499224)">
+                                          <path d="M48.8668626,8.91774556 L62.7201215,68.3389522 C64.0994677,74.2554238 60.4214008,80.1698526 54.5049292,81.5491988 L54.4589897,81.5598052 L48.0226304,83.030159 C47.5279701,81.1340041 46.0932045,79.5390169 44.109097,78.9182308 L43.8582506,78.8457552 L43.7615753,78.8201032 C40.6907354,78.00528 37.5405853,79.7637967 36.6040494,82.7718646 L36.5409495,82.9888338 L36.533544,83.0164704 C36.2948458,83.916057 36.279148,84.8223168 36.4524046,85.676611 L28.2809255,87.5446851 C22.3765376,88.8945577 16.491786,85.2174342 15.1166185,79.3188863 L1.26335954,19.8976797 C-0.115986615,13.9812081 3.56208027,8.06677925 9.47855185,6.6874331 C9.49385744,6.6838648 9.50917066,6.68032931 9.52449141,6.67682666 L16.3152181,5.12356533 C16.7646858,7.20489651 18.3378251,8.96578116 20.5371383,9.54935152 L20.5371383,9.54935152 L20.633752,9.5749872 C23.7777243,10.4092153 27.0048286,8.54609024 27.8544169,5.40623389 L27.8544169,5.40623389 L27.8618224,5.3785971 C28.1230272,4.39418958 28.1171976,3.40179107 27.888946,2.47823977 L35.7025555,0.691946812 C41.6069435,-0.657925825 47.4916951,3.01919764 48.8668626,8.91774556 Z" id="Combined-Shape" fill="#2191F7"></path>
+                                          <polygon id="Rectangle" fill="#0164BF" transform="translate(25.106115, 18.994867) rotate(-13.000000) translate(-25.106115, -18.994867) " points="8.80419826 17.4855628 41.4080715 17.4851309 41.4080316 20.504172 8.80415827 20.5046039"></polygon>
+                                          <polygon id="Rectangle" fill="#0164BF" transform="translate(22.412822, 26.429168) rotate(-13.000000) translate(-22.412822, -26.429168) " points="10.6392213 24.9198038 34.1864631 24.9194919 34.1864232 27.938533 10.6391813 27.9388449"></polygon>
+                                          <g id="aeroplane" transform="translate(35.296457, 56.848096) rotate(15.000000) translate(-35.296457, -56.848096) translate(16.796457, 38.848096)" fill="#0164BF" fill-rule="nonzero">
+                                              <path d="M30.5789234,23.1007968 L20.3300269,12.8766402 L20.3112936,8.36126649 C20.3083362,7.64844282 20.1468229,6.92945336 19.8313633,6.25811915 L19.5972627,5.8178268 C19.3206855,5.22686749 18.7455691,4.85873458 18.0949227,4.85602411 C17.4442764,4.85334344 16.8721949,5.21672362 16.6125343,5.78018215 L16.3580294,6.26787596 C16.0601565,6.91247118 15.9045991,7.62906586 15.9075609,8.34297073 L15.9262942,12.8583444 L5.76517667,22.9958333 C5.24770828,23.5120931 4.96430788,24.1995839 4.96732769,24.9333109 L4.97269271,26.2206153 C4.97352663,26.4216167 5.08436743,26.6065985 5.26094621,26.7028864 C5.43747787,26.8002554 5.65326614,26.7945593 5.82233569,26.6854419 L16.169912,20.0953807 C16.2791925,21.7576185 16.4236644,23.1454319 16.6001937,24.8343602 L16.7824178,26.565015 L12.9386211,29.089572 C12.7838191,29.1921584 12.6920523,29.3631206 12.6928178,29.5476465 L12.6973747,30.6459973 C12.6980627,30.8118337 12.7746827,30.9703134 12.9050075,31.0752137 C13.0364722,31.1811998 13.2072452,31.2214479 13.3689307,31.1858722 L18.199739,30.1327816 L23.0394516,31.2259363 C23.0791215,31.2349046 23.1187729,31.2396141 23.1584062,31.2396141 C23.2828279,31.2401248 23.4037219,31.1988712 23.502477,31.1201992 C23.6319315,31.015294 23.707239,30.8574437 23.706551,30.6916073 L23.7019942,29.5932565 C23.7012286,29.4087307 23.6080356,29.2359209 23.452386,29.1342108 L19.5875228,26.5810126 L19.7553698,24.8462992 C19.9179001,23.1609894 20.0508659,21.775458 20.1463572,20.1140171 L30.5489625,26.7878306 C30.7200787,26.8983573 30.9347818,26.9047557 31.1094323,26.8099229 C31.2863019,26.7150993 31.3956116,26.5310295 31.3947825,26.3300281 L31.389437,25.0427237 C31.3864963,24.3090486 31.0985169,23.6191906 30.5789234,23.1007968 Z" id="Path" transform="translate(18.181055, 18.047819) rotate(-29.000000) translate(-18.181055, -18.047819) "></path>
+                                          </g>
+                                          <line x1="14.4403118" y1="41.9104171" x2="47.2789055" y2="24.5329286" id="Path-37" stroke="#0164BF" stroke-width="4" stroke-dasharray="7" transform="translate(30.859609, 33.221673) rotate(15.000000) translate(-30.859609, -33.221673) "></line>
+                                      </g>
+                                  </g>
+                                  <g id="Group-9" transform="translate(73.001940, 202.675071) rotate(-360.000000) translate(-73.001940, -202.675071) translate(50.001940, 170.175071)">
+                                      <rect id="Rectangle" fill="#FFA600" x="0.283902355" y="25.3249289" width="45" height="39" rx="10"></rect>
+                                      <rect id="Rectangle" stroke="#FFA600" stroke-width="8" x="11.2839024" y="4.32492893" width="24" height="43" rx="12"></rect>
+                                      <g id="Group-7" transform="translate(18.283902, 35.324929)" fill="#D18800">
+                                          <rect id="Rectangle" x="0.0458365164" y="-3.44505569e-14" width="9.41176471" height="9.6969697" rx="4.70588235"></rect>
+                                          <rect id="Rectangle" x="3.02521008" y="6.10984831" width="3.52941176" height="13.3333333" rx="1.76470588"></rect>
+                                      </g>
+                                  </g>
+                              </g>
+                              <path d="M254.651668,101.873033 C218.290002,95.8254624 215.788992,165.636313 246.63325,142.947686 C277.477508,120.258256 268.180591,104.123105 254.651668,101.873033" id="Fill-5" fill="#DFEBF5" transform="translate(246.285842, 124.500000) rotate(39.000000) translate(-246.285842, -124.500000) "></path>
+                              <path d="M163.285842,25.4993061 C167.801837,27.3673236 171.418518,30.9840053 173.286536,35.5 C175.154553,30.9840053 178.771235,27.3673236 183.285842,25.4993061 C178.771235,23.6326764 175.154553,20.0159947 173.286536,15.5 C171.418518,20.0159947 167.801837,23.6326764 163.285842,25.4993061 Z M174.672805,42.5 L171.898879,42.5 C171.898879,33.8907722 164.894719,26.8863256 156.285842,26.8863256 L156.285842,24.1122874 C164.894719,24.1122874 171.898879,17.1092278 171.898879,8.5 L174.672805,8.5 C174.672805,17.1092278 181.676965,24.1122874 190.285842,24.1122874 L190.285842,26.8863256 C181.676965,26.8863256 174.672805,33.8907722 174.672805,42.5 L174.672805,42.5 Z" id="Fill-22" fill="#D0E8FF"></path>
+                          </g>
+                          <rect id="Rectangle" fill="#DFEBF5" x="209.285842" y="455.5" width="109" height="7" rx="3.5"></rect>
+                          <rect id="Rectangle" fill="#DFEBF5" x="34.285842" y="444.5" width="241" height="7" rx="3.5"></rect>
+                          <g id="Group-9" transform="translate(223.285842, 296.500000)">
+                              <rect id="Rectangle" fill="#FFA600" x="0" y="46.3935901" width="84" height="108.020896" rx="12"></rect>
+                              <rect id="Rectangle" stroke="#FFA600" stroke-width="8" x="19.9669421" y="4" width="43.3719008" height="84.0947386" rx="8"></rect>
+                              <g id="Group-5" transform="translate(10.862069, 156.579176)" fill="#FFA600">
+                                  <ellipse id="Oval" cx="3.1137931" cy="3.24703359" rx="3.1137931" ry="3.24703359"></ellipse>
+                                  <ellipse id="Oval" cx="59.162069" cy="3.24703359" rx="3.1137931" ry="3.24703359"></ellipse>
+                              </g>
+                              <g id="Group-7" transform="translate(12.218182, 64.526268)" fill="#E29402">
+                                  <rect id="Rectangle" x="0" y="-6.54154018e-14" width="61.0909091" height="7.75725627" rx="3.87862813"></rect>
+                                  <rect id="Rectangle" x="0" y="17.6301279" width="61.0909091" height="7.75725627" rx="3.87862813"></rect>
+                                  <rect id="Rectangle" x="0" y="35.2602558" width="61.0909091" height="7.75725627" rx="3.87862813"></rect>
+                              </g>
+                          </g>
+                          <g id="Group-14" transform="translate(280.946092, 180.258840) rotate(13.000000) translate(-280.946092, -180.258840) translate(258.946092, 150.258840)">
+                              <rect id="Rectangle" fill="#FFA600" x="0.285631488" y="0.283842753" width="43" height="59" rx="6"></rect>
+                              <rect id="Rectangle" fill="#D18800" x="7.37426582" y="37.615551" width="28" height="3"></rect>
+                              <rect id="Rectangle" fill="#D18800" x="14.7091854" y="6.89377806" width="14" height="14" rx="7"></rect>
+                              <path d="M12.7605368,22.2867019 L29.7605368,22.2867019 C31.6935334,22.2867019 33.2605368,23.8537053 33.2605368,25.7867019 L33.2605368,28.2867019 L33.2605368,28.2867019 L9.26053678,28.2867019 L9.26053678,25.7867019 C9.26053678,23.8537053 10.8275402,22.2867019 12.7605368,22.2867019 Z" id="Rectangle" fill="#D18800"></path>
+                              <rect id="Rectangle" fill="#D18800" x="7.41503468" y="42.750262" width="19" height="3"></rect>
+                          </g>
+                      </g>
+                  </g>
+              </g>
+          </svg>
+        </div>
+      </div>
     </section>
-
   </div>
 
 
   <script>
-	const cookie = 'LGPD';
-	const valueCookie = 'Opt-Out';
+    const cookie = 'LGPD';
+    const valueCookie = 'Opt-Out';
 
-	function deleteOptOutCookie(){
-		let containsCookie = getOptOutCookie();
-        	if(containsCookie){
-            		setCookie('expires=Thu, 01 Jan 1970 00:00:00 UTC');
-        	}
-	}
+    function deleteOptOutCookie() {
+      let containsCookie = getOptOutCookie();
+      if (containsCookie) {
+        setCookie('expires=Thu, 01 Jan 1970 00:00:00 UTC');
+      }
+    }
 
-	function getOptOutCookie(){
-  		let value = document.cookie.split(';').filter((item) => { return item === ' ' + cookie + '=' + valueCookie })[0];
-		if(value !== undefined){
-			value = value.substring(1);
-		}
-		return value;
-	}
+    function getOptOutCookie() {
+      let value = document.cookie.split(';').filter((item) => {
+        return item === ' ' + cookie + '=' + valueCookie
+      })[0];
+      if (value !== undefined) {
+        value = value.substring(1);
+      }
+      return value;
+    }
 
-	function setOptOutCookie(){
-		let containsCookie = getOptOutCookie();
-        	if(!containsCookie){
-            		setCookie('Sessao');
-        	}
-	}
+    function setOptOutCookie() {
+      let containsCookie = getOptOutCookie();
+      if (!containsCookie) {
+        setCookie('Sessao');
+      }
+    }
 
-    	function setCookie(expired){
-        	document.cookie = cookie + "=" + valueCookie + ";" + expired + ";path=/";
-    	}
+    function setCookie(expired) {
+      document.cookie = cookie + "=" + valueCookie + ";" + expired + ";path=/";
+    }
 
-	function redirectHome(elementChecked){
-		let value = getOptOutCookie();
-		if(elementChecked){
-			!value ? window.location.href = window.location.origin : redirectHome(elementChecked);
-		}else{
-			!value ? redirectHome(elementChecked) : window.location.href = window.location.origin;
-		}
-	}
+    function redirectHome(elementChecked) {
+      let value = getOptOutCookie();
+      if (elementChecked) {
+        !value ? window.location.href = window.location.origin : redirectHome(elementChecked);
+      } else {
+        !value ? redirectHome(elementChecked) : window.location.href = window.location.origin;
+      }
+    }
 
-	function updateCookie(){
-		let elementChecked = document.getElementById('socialCookies').checked;
-		elementChecked ? deleteOptOutCookie() : setOptOutCookie();
-		redirectHome(elementChecked);
-	}
+    function updateCookie() {
+      let elementChecked = document.getElementById('socialCookies').checked;
+      elementChecked ? deleteOptOutCookie() : setOptOutCookie();
+      redirectHome(elementChecked);
+    }
 
-	window.onload = () => {
-		document.getElementById('socialCookies').checked = getOptOutCookie() === undefined;
-	}
-</script>
-
-
+    window.onload = () => {
+      document.getElementById('socialCookies').checked = getOptOutCookie() === undefined;
+    }
+  </script>
 
 
 
-<div class="footer-default" data-ng-hide="ctrl.pagecheckout">
-<div class="footer_searchresult">
-<div class="footer-news">
-<div class="wrapper">
-<div class="cards-home">
-<div class="wrapper-newsletter-box inferior">
-<form id="newsletterFormFooter" name="newsletterFormFooter" class="form-newsletter inferior ng-pristine ng-untouched ng-empty ng-valid-email ng-valid-vn-email ng-invalid ng-invalid-required ng-valid-maxlength" ng-submit="ValidatorOnSubmit(newsletterFormFooter) &amp;&amp; ctrl.AddNewsletter('footer')" ng-model="ctrl.newsletter" novalidate="novalidate" vn-validator="">
-<span class="offer-executive">
-Receba ofertas exclusivas<br>do ViajaNet no seu e-mail
-</span>
 
-<div class="items newsletter-form messageFooter-input" data-ng-show="ctrl.showForm &amp;&amp; !ctrl.showLoading &amp;&amp; !ctrl.showError">
-<fieldset class="fs_input">
-<input class="input-text ng-pristine ng-untouched ng-empty ng-valid-email ng-valid-vn-email ng-invalid ng-invalid-required ng-valid-maxlength" type="email" data-ng-model="ctrl.EmailNewsletter" placeholder="Informe seu e-mail" name="ipt_email" id="ipt_email" maxlength="56" required="" autocomplete="off" data-vn-non-space="" data-vn-email="" data-ng-blur="ValidatorOnEvents($event)">
-</fieldset>
-<fieldset>
-<button class="btn-default btn-cadastrar" type="submit">
-Cadastre-se
-</button>
-</fieldset>
-<fieldset>
-<a href="/politica-de-privacidade" title="" target="_blank">Política de Privacidade</a>
-</fieldset>
-</div>
 
-<div class="items newsletter-return-message messageFooter messageFooter-loading ng-hide" data-ng-show="!ctrl.showForm &amp;&amp; ctrl.showLoading &amp;&amp; !ctrl.showError">
-<div class="loader loader-news">
-<span>Carregando, aguarde...</span>
-<div>
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
+  <div class="footer-default" data-ng-hide="ctrl.pagecheckout">
+    <div class="footer_searchresult">
+      <div class="footer-news">
+        <div class="wrapper">
+          <div class="cards-home">
+            <div class="wrapper-newsletter-box inferior">
+              <form id="newsletterFormFooter" name="newsletterFormFooter" class="form-newsletter inferior ng-pristine ng-untouched ng-empty ng-valid-email ng-valid-vn-email ng-invalid ng-invalid-required ng-valid-maxlength"
+                ng-submit="ValidatorOnSubmit(newsletterFormFooter) &amp;&amp; ctrl.AddNewsletter('footer')" ng-model="ctrl.newsletter" novalidate="novalidate" vn-validator="">
+                <span class="offer-executive">
+                  Receba ofertas exclusivas<br>do ViajaNet no seu e-mail
+                </span>
 
-<div class="items newsletter-return-message messageFooter messageFooter-success ng-hide" data-ng-show="!ctrl.showForm &amp;&amp; !ctrl.showLoading &amp;&amp; !ctrl.showError">
-<p>Acesse seu e-mail e confirme seu cadastro para receber nossas ofertas.</p>
-</div>
+                <div class="items newsletter-form messageFooter-input" data-ng-show="ctrl.showForm &amp;&amp; !ctrl.showLoading &amp;&amp; !ctrl.showError">
+                  <fieldset class="fs_input">
+                    <input class="input-text ng-pristine ng-untouched ng-empty ng-valid-email ng-valid-vn-email ng-invalid ng-invalid-required ng-valid-maxlength" type="email" data-ng-model="ctrl.EmailNewsletter" placeholder="Informe seu e-mail"
+                      name="ipt_email" id="ipt_email" maxlength="56" required="" autocomplete="off" data-vn-non-space="" data-vn-email="" data-ng-blur="ValidatorOnEvents($event)">
+                  </fieldset>
+                  <fieldset>
+                    <button class="btn-default btn-cadastrar" type="submit">
+                      Cadastre-se
+                    </button>
+                  </fieldset>
+                  <fieldset>
+                    <a href="/politica-de-privacidade" title="" target="_blank">Política de Privacidade</a>
+                  </fieldset>
+                </div>
 
-<div class="items newsletter-return-message messageFooter messageFooter-failure ng-hide" data-ng-show="!ctrl.showForm &amp;&amp; !ctrl.showLoading &amp;&amp; ctrl.showError">
-<p>Não foi possível cadastrar seu e-mail neste momento. <a href="javascript:void(0);" data-ng-click="BackNews();" class="btn-tente-novamente">Tente novamente</a></p>
-</div>
-</form>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="wrapper">
-<div class="footer-default__banner">
-<div class="banner" id="div-gpt-ad-footer" data-google-query-id="CILQj-P9uvECFbQE1AodCrcGiQ" style=""><div id="google_ads_iframe_/5204993/one2one_superbanner_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/5204993/one2one_superbanner_0" title="3rd party ad content" name="google_ads_iframe_/5204993/one2one_superbanner_0" width="728" height="90" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" srcdoc="" data-google-container-id="1" data-load-complete="true" style="border: 0px; vertical-align: bottom;"></iframe></div></div>
-<img alt="Publicidade" title="Publicidade" class="label-publicidade" src="/static/assets/platform/img/newfooter/bg-publicidade.png">
-</div>
-<div class="footer-default__links">
-<ul class="col6">
-<li><a title="ViajaNet:" href="/">ViajaNet:</a></li>
-<li><a title="Passagens Aéreas" href="/passagens-aereas">Passagens Aéreas</a></li>
+                <div class="items newsletter-return-message messageFooter messageFooter-loading ng-hide" data-ng-show="!ctrl.showForm &amp;&amp; ctrl.showLoading &amp;&amp; !ctrl.showError">
+                  <div class="loader loader-news">
+                    <span>Carregando, aguarde...</span>
+                    <div>
+                      <div></div>
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
 
-<li><a title="Pacotes de Viagem" href="/pacotes-viagens">Pacotes de Viagem</a></li>
-<!-- ngIf: ctrl.ShowHotel --><li ng-if="ctrl.ShowHotel" class="ng-scope">
-<a title="Hotéis" data-ng-href="https://sp.booking.com/index.pt-br.html?aid=1918203&amp;lang=pt-br&amp;selected_currency=BRL&amp;label=ViajaNet_Home_Menu_Footer" target="_blank" href="https://sp.booking.com/index.pt-br.html?aid=1918203&amp;lang=pt-br&amp;selected_currency=BRL&amp;label=ViajaNet_Home_Menu_Footer">Hotéis</a>
-</li><!-- end ngIf: ctrl.ShowHotel -->
-<li><a title="Aplicativo ViajaNet" href="/especial/aplicativos">Aplicativo ViajaNet</a></li>
-<li><a title="Ranking ViajaNet" href="/ranking">Ranking ViajaNet</a></li>
-<li><a title="Blog do ViajaNet" href="http://blogdoviajanet.com.br/">Blog do ViajaNet</a></li>
-<li><a title="Atendimento ao Cliente" data-ng-href="https://www.viajanet.com.br/Atendimento" href="https://www.viajanet.com.br/Atendimento">Atendimento ao Cliente</a></li>
-<li><a title="Trabalhe Conosco" href="/trabalhe-conosco">Trabalhe Conosco</a></li>
-<li><a title="Termos de Uso" href="/termos-de-uso">Termos de Uso</a></li>
-<li><a title="Políticas de Privacidade" href="/politica-de-privacidade">Políticas de Privacidade</a></li>
-<li><a title="Passagens Aéreas com Desconto" href="/promocao">Passagens Aéreas com Desconto</a></li>
-<li><a title="Vantagens" href="/vantagens">Vantagens</a></li>
-</ul>
-<ul class="col6">
-<li><a title="Linhas Aéreas Nacionais:" href="/linhas-aereas/nacionais">Linhas Aéreas<br> Nacionais:</a></li>
-<li><a title="Gol" href="/gol">Gol</a></li>
-<li><a title="TAM" href="/tam">TAM</a> agora é <a title="LATAM" href="/latam">LATAM</a></li>
-<li><a title="Azul" href="/azul">Azul</a></li>
-<li><a title="Passaredo" href="/linhas-aereas/nacionais/passaredo">Passaredo</a></li>
-</ul>
-<ul class="col6">
-<li><a title="Linhas Aéreas Internacionais:" href="/linhas-aereas/internacionais">Linhas Aéreas<br> Internacionais:</a></li>
-<li><a title="Aerolíneas Argentinas" href="/aerolineas-argentinas">Aerolíneas Argentinas</a></li>
-<li><a title="Air Canada" href="/air-canada">Air Canada</a></li>
-<li><a title="American Airlines" href="/american-airlines">American Airlines</a></li>
-<li><a title="Avianca" href="/avianca">Avianca</a></li>
-<li><a title="Copa Airlines" href="/copa-airlines">Copa Airlines</a></li>
-<li><a title="Delta Air Lines" href="/delta-airlines">Delta Air Lines</a></li>
-<li><a title="Lufthansa" href="/lufthansa">Lufthansa</a></li>
-<li><a title="South African" href="/south-african">South African</a></li>
-<li><a title="TAP Portugal" href="/tap">TAP Portugal</a></li>
-<li><a title="Turkish Airlines" href="/turkish">Turkish Airlines</a></li>
-<li><a title="United Airlines" href="/united-airlines">United Airlines</a></li>
-</ul>
-<ul class="col6">
-<li><a title="Passagens Nacionais:" href="/passagens-aereas/nacionais">Passagens <br>Nacionais:</a></li>
-<li><a title="Belo Horizonte" href="/passagens-aereas/belo-horizonte">Belo Horizonte</a></li>
-<li><a title="Brasilia" href="/passagens-aereas/brasilia">Brasilia</a></li>
-<li><a title="Curitiba" href="/passagens-aereas/curitiba">Curitiba</a></li>
-<li><a title="Florianópolis" href="/passagens-aereas/florianopolis">Florianópolis</a></li>
-<li><a title="Fortaleza" href="/passagens-aereas/fortaleza">Fortaleza</a></li>
-<li><a title="Maceió" href="/passagens-aereas/maceio">Maceió</a></li>
-<li><a title="Porto Alegre" href="/passagens-aereas/porto-alegre">Porto Alegre</a></li>
-<li><a title="Recife" href="/passagens-aereas/recife">Recife</a></li>
-<li><a title="Rio de Janeiro" href="/passagens-aereas/rio-de-janeiro">Rio de Janeiro</a></li>
-<li><a title="Salvador" href="/passagens-aereas/salvador">Salvador</a></li>
-<li><a title="São Paulo" href="/passagens-aereas/sao-paulo">São Paulo</a></li>
-</ul>
-<ul class="col6">
-<li><a title="Passagens Internacionais:" href="/passagens-internacionais">Passagens <br>Internacionais:</a></li>
-<li><a title="Miami" href="/passagens-aereas/miami">Miami</a></li>
-<li><a title="Orlando" href="/passagens-aereas/orlando">Orlando</a></li>
-<li><a title="Nova Iorque" href="/passagens-aereas/new-york">Nova Iorque</a></li>
-<li><a title="Buenos Aires" href="/passagens-aereas/buenos-aires">Buenos Aires</a></li>
-<li><a title="Paris" href="/passagens-aereas/paris">Paris</a></li>
-<li><a title="Lisboa" href="/passagens-aereas/lisboa">Lisboa</a></li>
-<li><a title="Los Angeles" href="/passagens-aereas/los-angeles ">Los Angeles</a></li>
-<li><a title="Newark" href="/passagens-aereas/internacionais/newark">Newark</a></li>
-<li><a title="Madrid" href="/passagens-aereas/madrid">Madrid</a></li>
-<li><a title="Las Vegas" href="/passagens-aereas/las-vegas">Las Vegas</a></li>
-<li><a title="Toronto" href="/passagens-aereas/internacionais/toronto">Toronto</a></li>
-</ul>
-<ul class="col6">
-<li><a title="Principais Rotas:" href="/passagens-aereas">Principais <br>Rotas:</a></li>
-<li><a title="Rio de Janeiro" href="/passagens-aereas/rotas/sao-paulo-sao/rio-de-janeiro-rio">Rio de Janeiro</a></li>
-<li><a title="Salvador" href="/passagens-aereas/rotas/sao-paulo-sao/salvador-ssa">Salvador</a></li>
-<li><a title="Fortaleza" href="/passagens-aereas/rotas/sao-paulo-sao/fortaleza-for">Fortaleza</a></li>
-<li><a title="Miami" href="/passagens-aereas/rotas/sao-paulo-sao/miami-mia">Miami</a></li>
-<li><a title="Buenos Aires" href="/passagens-aereas/rotas/sao-paulo-sao/buenos-aires-bue">Buenos Aires</a></li>
-<li><a title="Orlando" href="/passagens-aereas/rotas/sao-paulo-sao/orlando-mco">Orlando</a></li>
-<li><a title="Nova Iorque" href="/passagens-aereas/rotas/sao-paulo-sao/new-york-nyc">Nova Iorque</a></li>
-<li><a title="Santiago" href="/passagens-aereas/rotas/sao-paulo-sao/santiago-scl">Santiago</a></li>
-</ul>
-</div>
-<hr class="first">
-<div class="footer-default__logos">
-<div ng-class="{'afiliadosMobile': ctrl.ShowAffiliates &amp;&amp; ctrl.SetStyleAffiliatesMobile,
+                <div class="items newsletter-return-message messageFooter messageFooter-success ng-hide" data-ng-show="!ctrl.showForm &amp;&amp; !ctrl.showLoading &amp;&amp; !ctrl.showError">
+                  <p>Acesse seu e-mail e confirme seu cadastro para receber nossas ofertas.</p>
+                </div>
+
+                <div class="items newsletter-return-message messageFooter messageFooter-failure ng-hide" data-ng-show="!ctrl.showForm &amp;&amp; !ctrl.showLoading &amp;&amp; ctrl.showError">
+                  <p>Não foi possível cadastrar seu e-mail neste momento. <a href="javascript:void(0);" data-ng-click="BackNews();" class="btn-tente-novamente">Tente novamente</a></p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="footer-default__banner">
+        <div class="banner" id="div-gpt-ad-footer" data-google-query-id="CILQj-P9uvECFbQE1AodCrcGiQ" style="">
+          <div id="google_ads_iframe_/5204993/one2one_superbanner_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/5204993/one2one_superbanner_0" title="3rd party ad content"
+              name="google_ads_iframe_/5204993/one2one_superbanner_0" width="728" height="90" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" srcdoc="" data-google-container-id="1" data-load-complete="true"
+              style="border: 0px; vertical-align: bottom;"></iframe></div>
+        </div>
+        <img alt="Publicidade" title="Publicidade" class="label-publicidade" src="/static/assets/platform/img/newfooter/bg-publicidade.png">
+      </div>
+      <div class="footer-default__links">
+        <ul class="col6">
+          <li><a title="ViajaNet:" href="/">ViajaNet:</a></li>
+          <li><a title="Passagens Aéreas" href="/passagens-aereas">Passagens Aéreas</a></li>
+
+          <li><a title="Pacotes de Viagem" href="/pacotes-viagens">Pacotes de Viagem</a></li>
+          <!-- ngIf: ctrl.ShowHotel -->
+          <li ng-if="ctrl.ShowHotel" class="ng-scope">
+            <a title="Hotéis" data-ng-href="https://sp.booking.com/index.pt-br.html?aid=1918203&amp;lang=pt-br&amp;selected_currency=BRL&amp;label=ViajaNet_Home_Menu_Footer" target="_blank"
+              href="https://sp.booking.com/index.pt-br.html?aid=1918203&amp;lang=pt-br&amp;selected_currency=BRL&amp;label=ViajaNet_Home_Menu_Footer">Hotéis</a>
+          </li><!-- end ngIf: ctrl.ShowHotel -->
+          <li><a title="Aplicativo ViajaNet" href="/especial/aplicativos">Aplicativo ViajaNet</a></li>
+          <li><a title="Ranking ViajaNet" href="/ranking">Ranking ViajaNet</a></li>
+          <li><a title="Blog do ViajaNet" href="http://blogdoviajanet.com.br/">Blog do ViajaNet</a></li>
+          <li><a title="Atendimento ao Cliente" data-ng-href="https://www.viajanet.com.br/Atendimento" href="https://www.viajanet.com.br/Atendimento">Atendimento ao Cliente</a></li>
+          <li><a title="Trabalhe Conosco" href="/trabalhe-conosco">Trabalhe Conosco</a></li>
+          <li><a title="Termos de Uso" href="/termos-de-uso">Termos de Uso</a></li>
+          <li><a title="Políticas de Privacidade" href="/politica-de-privacidade">Políticas de Privacidade</a></li>
+          <li><a title="Passagens Aéreas com Desconto" href="/promocao">Passagens Aéreas com Desconto</a></li>
+          <li><a title="Vantagens" href="/vantagens">Vantagens</a></li>
+        </ul>
+        <ul class="col6">
+          <li><a title="Linhas Aéreas Nacionais:" href="/linhas-aereas/nacionais">Linhas Aéreas<br> Nacionais:</a></li>
+          <li><a title="Gol" href="/gol">Gol</a></li>
+          <li><a title="TAM" href="/tam">TAM</a> agora é <a title="LATAM" href="/latam">LATAM</a></li>
+          <li><a title="Azul" href="/azul">Azul</a></li>
+          <li><a title="Passaredo" href="/linhas-aereas/nacionais/passaredo">Passaredo</a></li>
+        </ul>
+        <ul class="col6">
+          <li><a title="Linhas Aéreas Internacionais:" href="/linhas-aereas/internacionais">Linhas Aéreas<br> Internacionais:</a></li>
+          <li><a title="Aerolíneas Argentinas" href="/aerolineas-argentinas">Aerolíneas Argentinas</a></li>
+          <li><a title="Air Canada" href="/air-canada">Air Canada</a></li>
+          <li><a title="American Airlines" href="/american-airlines">American Airlines</a></li>
+          <li><a title="Avianca" href="/avianca">Avianca</a></li>
+          <li><a title="Copa Airlines" href="/copa-airlines">Copa Airlines</a></li>
+          <li><a title="Delta Air Lines" href="/delta-airlines">Delta Air Lines</a></li>
+          <li><a title="Lufthansa" href="/lufthansa">Lufthansa</a></li>
+          <li><a title="South African" href="/south-african">South African</a></li>
+          <li><a title="TAP Portugal" href="/tap">TAP Portugal</a></li>
+          <li><a title="Turkish Airlines" href="/turkish">Turkish Airlines</a></li>
+          <li><a title="United Airlines" href="/united-airlines">United Airlines</a></li>
+        </ul>
+        <ul class="col6">
+          <li><a title="Passagens Nacionais:" href="/passagens-aereas/nacionais">Passagens <br>Nacionais:</a></li>
+          <li><a title="Belo Horizonte" href="/passagens-aereas/belo-horizonte">Belo Horizonte</a></li>
+          <li><a title="Brasilia" href="/passagens-aereas/brasilia">Brasilia</a></li>
+          <li><a title="Curitiba" href="/passagens-aereas/curitiba">Curitiba</a></li>
+          <li><a title="Florianópolis" href="/passagens-aereas/florianopolis">Florianópolis</a></li>
+          <li><a title="Fortaleza" href="/passagens-aereas/fortaleza">Fortaleza</a></li>
+          <li><a title="Maceió" href="/passagens-aereas/maceio">Maceió</a></li>
+          <li><a title="Porto Alegre" href="/passagens-aereas/porto-alegre">Porto Alegre</a></li>
+          <li><a title="Recife" href="/passagens-aereas/recife">Recife</a></li>
+          <li><a title="Rio de Janeiro" href="/passagens-aereas/rio-de-janeiro">Rio de Janeiro</a></li>
+          <li><a title="Salvador" href="/passagens-aereas/salvador">Salvador</a></li>
+          <li><a title="São Paulo" href="/passagens-aereas/sao-paulo">São Paulo</a></li>
+        </ul>
+        <ul class="col6">
+          <li><a title="Passagens Internacionais:" href="/passagens-internacionais">Passagens <br>Internacionais:</a></li>
+          <li><a title="Miami" href="/passagens-aereas/miami">Miami</a></li>
+          <li><a title="Orlando" href="/passagens-aereas/orlando">Orlando</a></li>
+          <li><a title="Nova Iorque" href="/passagens-aereas/new-york">Nova Iorque</a></li>
+          <li><a title="Buenos Aires" href="/passagens-aereas/buenos-aires">Buenos Aires</a></li>
+          <li><a title="Paris" href="/passagens-aereas/paris">Paris</a></li>
+          <li><a title="Lisboa" href="/passagens-aereas/lisboa">Lisboa</a></li>
+          <li><a title="Los Angeles" href="/passagens-aereas/los-angeles ">Los Angeles</a></li>
+          <li><a title="Newark" href="/passagens-aereas/internacionais/newark">Newark</a></li>
+          <li><a title="Madrid" href="/passagens-aereas/madrid">Madrid</a></li>
+          <li><a title="Las Vegas" href="/passagens-aereas/las-vegas">Las Vegas</a></li>
+          <li><a title="Toronto" href="/passagens-aereas/internacionais/toronto">Toronto</a></li>
+        </ul>
+        <ul class="col6">
+          <li><a title="Principais Rotas:" href="/passagens-aereas">Principais <br>Rotas:</a></li>
+          <li><a title="Rio de Janeiro" href="/passagens-aereas/rotas/sao-paulo-sao/rio-de-janeiro-rio">Rio de Janeiro</a></li>
+          <li><a title="Salvador" href="/passagens-aereas/rotas/sao-paulo-sao/salvador-ssa">Salvador</a></li>
+          <li><a title="Fortaleza" href="/passagens-aereas/rotas/sao-paulo-sao/fortaleza-for">Fortaleza</a></li>
+          <li><a title="Miami" href="/passagens-aereas/rotas/sao-paulo-sao/miami-mia">Miami</a></li>
+          <li><a title="Buenos Aires" href="/passagens-aereas/rotas/sao-paulo-sao/buenos-aires-bue">Buenos Aires</a></li>
+          <li><a title="Orlando" href="/passagens-aereas/rotas/sao-paulo-sao/orlando-mco">Orlando</a></li>
+          <li><a title="Nova Iorque" href="/passagens-aereas/rotas/sao-paulo-sao/new-york-nyc">Nova Iorque</a></li>
+          <li><a title="Santiago" href="/passagens-aereas/rotas/sao-paulo-sao/santiago-scl">Santiago</a></li>
+        </ul>
+      </div>
+      <hr class="first">
+      <div class="footer-default__logos">
+        <div ng-class="{'afiliadosMobile': ctrl.ShowAffiliates &amp;&amp; ctrl.SetStyleAffiliatesMobile,
                                'footer-default__app': !ctrl.ShowAffiliates,
                                'afiliadoDesktop':  ctrl.ShowAffiliates &amp;&amp; !ctrl.SetStyleAffiliatesMobile}" class="afiliadoDesktop">
-<!-- ngIf: ctrl.ShowAffiliates --><div class="afiliados ng-scope" ng-if="ctrl.ShowAffiliates">
-<a href="https://www.afilio.com.br/cadastro-viajanet.html" target="_blank">
-<img alt="Afiliados" title="Afiliado" src="/static/assets/platform/img/newfooter/afiliado.png">
-</a>
-</div><!-- end ngIf: ctrl.ShowAffiliates -->
-<!-- ngIf: !ctrl.ShowAffiliates -->
-<div ng-class="{'storesMobileAfiliados': ctrl.ShowAffiliates &amp;&amp; ctrl.SetStyleAffiliatesMobile,
+          <!-- ngIf: ctrl.ShowAffiliates -->
+          <div class="afiliados ng-scope" ng-if="ctrl.ShowAffiliates">
+            <a href="https://www.afilio.com.br/cadastro-viajanet.html" target="_blank">
+              <img alt="Afiliados" title="Afiliado" src="/static/assets/platform/img/newfooter/afiliado.png">
+            </a>
+          </div><!-- end ngIf: ctrl.ShowAffiliates -->
+          <!-- ngIf: !ctrl.ShowAffiliates -->
+          <div ng-class="{'storesMobileAfiliados': ctrl.ShowAffiliates &amp;&amp; ctrl.SetStyleAffiliatesMobile,
                                         'stores': !ctrl.ShowAffiliates,
                                         'stores-flex': ctrl.ShowAffiliates &amp;&amp; !ctrl.SetStyleAffiliatesMobile}" class="stores-flex">
-</div>
-</div>
-<ul ng-class="{'ul_afiliados-desligado': ctrl.ShowAffiliates}" class="ul_afiliados-desligado">
-<li><img alt="IATA" title="IATA" src="/static/assets/platform/img/newfooter/selo-iata.svg"></li>
-<li><img alt="Brasil" title="Brasil" src="/static/assets/platform/img/newfooter/selo-brasil.svg"></li>
-<li><img alt="ABAV" title="ABAV" src="/static/assets/platform/img/newfooter/selo-abav.svg"></li>
-</ul>
-</div>
-<hr>
-<div itemscope="" itemtype="http://schema.org/WebPage" class="copyright">
-<p>
-TVLX Viagens e Turismo S.A. CNPJ:
-<span class="display-line"><span class="pipe">|</span></span> 12.337.454/0001-31
-<span class="pipe">|</span>
-<span itemtype="http://schema.org/PostalAddress" itemscope="" itemprop="address">
-<span itemprop="streetAddress">Rua Manoel Coelho, 600 - 1º andar</span>
-<span class="divisor-line">-</span>
-<span>
-<span itemprop="addressLocality">São Caetano do Sul</span>-
-<span itemprop="addressRegion">SP</span>
-</span>
-<span class="divisor-line">-</span>
-CEP
-<span itemprop="postalCode">09510-101</span>
-<span class="display-line display-line--last ng-binding">
-© 2021 ViajaNet Viagens Online - Todos os direitos reservados
-</span>
-</span>
-</p>
-</div>
-</div>
-</div>
+          </div>
+        </div>
+        <ul ng-class="{'ul_afiliados-desligado': ctrl.ShowAffiliates}" class="ul_afiliados-desligado">
+          <li><img alt="IATA" title="IATA" src="/static/assets/platform/img/newfooter/selo-iata.svg"></li>
+          <li><img alt="Brasil" title="Brasil" src="/static/assets/platform/img/newfooter/selo-brasil.svg"></li>
+          <li><img alt="ABAV" title="ABAV" src="/static/assets/platform/img/newfooter/selo-abav.svg"></li>
+        </ul>
+      </div>
+      <hr>
+      <div itemscope="" itemtype="http://schema.org/WebPage" class="copyright">
+        <p>
+          TVLX Viagens e Turismo S.A. CNPJ:
+          <span class="display-line"><span class="pipe">|</span></span> 12.337.454/0001-31
+          <span class="pipe">|</span>
+          <span itemtype="http://schema.org/PostalAddress" itemscope="" itemprop="address">
+            <span itemprop="streetAddress">Rua Manoel Coelho, 600 - 1º andar</span>
+            <span class="divisor-line">-</span>
+            <span>
+              <span itemprop="addressLocality">São Caetano do Sul</span>-
+              <span itemprop="addressRegion">SP</span>
+            </span>
+            <span class="divisor-line">-</span>
+            CEP
+            <span itemprop="postalCode">09510-101</span>
+            <span class="display-line display-line--last ng-binding">
+              © 2021 ViajaNet Viagens Online - Todos os direitos reservados
+            </span>
+          </span>
+        </p>
+      </div>
+    </div>
+  </div>
 </body>
