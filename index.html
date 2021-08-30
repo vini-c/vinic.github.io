@@ -57,6 +57,10 @@
       position: relative
     }
 
+    .mobile_phone.tela img {
+      transition: all .3s;
+    }
+
     @media screen and (min-width: 280px) and(max-width: 950px) {
       .banner-full__device {
         width: 100%;
@@ -260,7 +264,7 @@
       width: 785px;
       height: 785px;
       padding-top: 80px;
-      padding-bottom: 80px;
+      padding-bottom: 130px;
     }
 
     .vn-app-features .c1 {
@@ -754,6 +758,9 @@
     .mobile_phone.tela img{
       width:100%;
       border-radius:20px;
+      position: absolute;
+top: 0;
+left: 0;
     }
     .vn-welcome-app {
       background: #0164bf;
@@ -919,7 +926,15 @@
 }
 
 
-
+.features_title{
+  font-size: 34px;
+font-family: ProximaNova-Semibold;
+color: #fff;
+letter-spacing: -.25px;
+padding-bottom: 40px;
+width: 100%;
+text-align: center;
+}
     @media screen and (max-width:1280px) {
 
     .vn_welcome_img {
@@ -1018,6 +1033,13 @@
         display: flex;
       }
 
+
+      .features_title{
+        font-size: 24px;
+      padding-bottom: 20px;
+      width: 100%;
+      text-align: center;
+      }
       .vn-app_qr_code_content {
         display: none;
       }
@@ -1072,6 +1094,7 @@
         display:block;
       }
     }
+
 
     @media screen and (max-width:500px) {
       .vn_welcome_img_mobile {
@@ -1328,9 +1351,11 @@
           </div>
         </section>
       <section class="vn-app-features desktop_visible tablet_invisible">
+        <h2 class="features_title">Conheça nosso app</h2>
+
         <div class="wrap " id="features">
 
-          <div class="app-feature1">
+          <div class="app-feature1" id="ofertas_hover">
             <svg viewBox="0 0 87 87" class="icon-features">
               <defs>
                 <style>
@@ -1357,9 +1382,10 @@
               <line class="b" x1="33.81" y1="30.49" x2="53.48" y2="30.49" />
             </svg>
             <span><span class="feature-title">Ofertas para você</span> Acesso ilimitado a ofertas personalizadas baseadas na sua localização.</span>
+
           </div>
 
-          <div class="app-feature2">
+          <div class="app-feature2"  id="paises_hover">
             <svg viewBox="0 0 87 87" class="icon-features">
               <defs>
                 <style>
@@ -1392,7 +1418,7 @@
             </span>
           </div>
 
-          <div class="app-feature3">
+          <div class="app-feature3"  id="hoteis_hover">
             <svg viewBox="0 0 87 87" class="icon-features">
               <defs>
                 <style>
@@ -1428,7 +1454,7 @@
             <span><span class="feature-title">Hotéis</span>Você prefere hotel, pousadas ou casas de temporada? Não importa sua escolha, aqui você encontra as melhores opções de hospedagem.</span>
           </div>
 
-          <div class="app-feature4">
+          <div class="app-feature4"  id="carros_hover">
             <svg viewBox="0 0 87 87" class="icon-features">
               <defs>
                 <style>
@@ -1458,7 +1484,7 @@
             </span>
           </div>
 
-          <div class="app-feature5">
+          <div class="app-feature5"  id="quando_viajar_hover">
             <svg viewBox="0 0 87 87" class="icon-features">
               <defs>
                 <style>
@@ -1498,7 +1524,7 @@
             <span><span class="feature-title">Quando Viajar</span> Escolha a viagem que você quer fazer e nós buscaremos o melhor preço dos próximos 6 meses.</span>
           </div>
 
-          <div class="app-feature6">
+          <div class="app-feature6"  id="whatsapp_hover">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 87 87" class="icon-features">
               <defs>
                 <style>
@@ -1545,7 +1571,7 @@
             <span><span class="feature-title">Canal de atendimento</span> Precisa de atendimento especializado para suas viagens? No nosso app você tem acesso fácil e rápido ao WhatsApp do ViajaNet.</span>
           </div>
 
-          <div class="app-feature7">
+          <div class="app-feature7"  id="push_hover">
             <svg viewBox="0 0 87 87" class="icon-features">
               <defs>
                 <style>
@@ -1583,7 +1609,7 @@
             <span><span class="feature-title">Notificações</span> Receba alertas de preços e promoções imperdíveis no seu celular</span>
           </div>
 
-          <div class="app-feature8 ">
+          <div class="app-feature8" id="reservas_hover">
 
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 87 87" class="icon-features">
               <defs>
@@ -1620,15 +1646,24 @@
 
           <div class="mobile_phone mockup">
               <div class="mobile_phone tela">
-                <img src="https://www.viajanet.com.br/static/assets/platform/img/catalog/BaseOne/whatsapp.jpg" alt="">
+                <img src="https://www.viajanet.com.br/static/assets/platform/img/catalog/BaseOne/home-d.jpg"  id="home_screen" alt="">
+                <img src="https://www.viajanet.com.br/static/assets/platform/img/catalog/BaseOne/ofertas_para_voce-d.jpg" id="oferta_screen" alt="tela do aplicativo com ofertas para você" style="opacity:0">
+                <img src="https://www.viajanet.com.br/static/assets/platform/img/catalog/BaseOne/paises-d.jpg" id="paises_screen" alt="tela do aplicativo com paises mais buscados"  style="opacity:0">
+                <img src="https://www.viajanet.com.br/static/assets/platform/img/catalog/BaseOne/hoteis-d.jpg" id="hoteis_screen" alt="tela do aplicativo com pesquisa de hoteis"  style="opacity:0">
+                <img src="https://www.viajanet.com.br/static/assets/platform/img/catalog/BaseOne/carros-d.jpg" id="carros_screen" alt="tela do aplicativo com pesquisa de carros" style="opacity:0">
+                <img src="https://www.viajanet.com.br/static/assets/platform/img/catalog/BaseOne/quando_viajar-d.jpg" id="quando_viajar_screen" alt="tela do aplicativo com quando viajar"  style="opacity:0">
+                <img src="https://www.viajanet.com.br/static/assets/platform/img/catalog/BaseOne/whatsapp.jpg" id="whatsapp_screen" alt="tela do aplicativo com atendimento"  style="opacity:0">
+                <img src="https://www.viajanet.com.br/static/assets/platform/img/catalog/BaseOne/push-d.jpg" id="push_screen" alt="tela do aplicativo com push"  style="opacity:0">
+                <img src="https://www.viajanet.com.br/static/assets/platform/img/catalog/BaseOne/reservas-d.jpg" id="reservas_screen" alt="tela do aplicativo com reservas"  style="opacity:0">
               </div>
           </div>
         </div>
 
-
       </section>
 
       <section class="vn-app-features_mobile tablet_visible">
+        <h2 class="features_title">Conheça nosso app</h2>
+
           <div class="vn-app-slider_features">
             <div class="vn-app-slider-item atendimento">
               <img src="https://www.viajanet.com.br/static/assets/platform/img/catalog/BaseOne/mais.jpg" class="app_mockup_carousel" alt="Tela de atendimento via WhatsApp">
@@ -2072,6 +2107,127 @@ friction: 0.15,
       pageDots:false,
       imagesLoaded: true    });
     </script>
+
+
+            <script>
+            document.getElementById("ofertas_hover").onmouseover = function() {mouseOverOfertas()};
+            document.getElementById("ofertas_hover").onmouseout = function() {mouseOutOfertas()};
+
+            function mouseOverOfertas() {
+              document.getElementById("home_screen").style.opacity = "0";
+              document.getElementById("oferta_screen").style.opacity = "1";
+            }
+
+            function mouseOutOfertas() {
+              document.getElementById("oferta_screen").style.opacity = "0";
+              document.getElementById("home_screen").style.opacity = "1";
+            }
+            </script>
+            <script>
+            document.getElementById("paises_hover").onmouseover = function() {mouseOverPaises()};
+            document.getElementById("paises_hover").onmouseout = function() {mouseOutPaises()};
+
+            function mouseOverPaises() {
+              document.getElementById("home_screen").style.opacity = "0";
+              document.getElementById("paises_screen").style.opacity = "1";
+            }
+
+            function mouseOutPaises() {
+              document.getElementById("paises_screen").style.opacity = "0";
+              document.getElementById("home_screen").style.opacity = "1";
+            }
+            </script>
+            <script>
+            document.getElementById("hoteis_hover").onmouseover = function() {mouseOverHoteis()};
+            document.getElementById("hoteis_hover").onmouseout = function() {mouseOutHoteis()};
+
+            function mouseOverHoteis() {
+              document.getElementById("home_screen").style.opacity = "0";
+              document.getElementById("hoteis_screen").style.opacity = "1";
+            }
+
+            function mouseOutHoteis() {
+              document.getElementById("hoteis_screen").style.opacity = "0";
+              document.getElementById("home_screen").style.opacity = "1";
+            }
+            </script>
+
+            <script>
+            document.getElementById("carros_hover").onmouseover = function() {mouseOvercarros()};
+            document.getElementById("carros_hover").onmouseout = function() {mouseOutcarros()};
+
+            function mouseOvercarros() {
+              document.getElementById("home_screen").style.opacity = "0";
+              document.getElementById("carros_screen").style.opacity = "1";
+            }
+
+            function mouseOutcarros() {
+              document.getElementById("carros_screen").style.opacity = "0";
+              document.getElementById("home_screen").style.opacity = "1";
+            }
+            </script>
+
+            <script>
+            document.getElementById("quando_viajar_hover").onmouseover = function() {mouseOverquando_viajar()};
+            document.getElementById("quando_viajar_hover").onmouseout = function() {mouseOutquando_viajar()};
+
+            function mouseOverquando_viajar() {
+              document.getElementById("home_screen").style.opacity = "0";
+              document.getElementById("quando_viajar_screen").style.opacity = "1";
+            }
+
+            function mouseOutquando_viajar() {
+              document.getElementById("quando_viajar_screen").style.opacity = "0";
+              document.getElementById("home_screen").style.opacity = "1";
+            }
+            </script>
+
+
+            <script>
+            document.getElementById("whatsapp_hover").onmouseover = function() {mouseOverwhatsapp()};
+            document.getElementById("whatsapp_hover").onmouseout = function() {mouseOutwhatsapp()};
+
+            function mouseOverwhatsapp() {
+              document.getElementById("home_screen").style.opacity = "0";
+              document.getElementById("whatsapp_screen").style.opacity = "1";
+            }
+
+            function mouseOutwhatsapp() {
+              document.getElementById("whatsapp_screen").style.opacity = "0";
+              document.getElementById("home_screen").style.opacity = "1";
+            }
+            </script>
+
+            <script>
+            document.getElementById("reservas_hover").onmouseover = function() {mouseOverreservas()};
+            document.getElementById("reservas_hover").onmouseout = function() {mouseOutreservas()};
+
+            function mouseOverreservas() {
+              document.getElementById("home_screen").style.opacity = "0";
+              document.getElementById("reservas_screen").style.opacity = "1";
+            }
+
+            function mouseOutreservas() {
+              document.getElementById("reservas_screen").style.opacity = "0";
+              document.getElementById("home_screen").style.opacity = "1";
+            }
+            </script>
+
+            <script>
+            document.getElementById("push_hover").onmouseover = function() {mouseOverpush()};
+            document.getElementById("push_hover").onmouseout = function() {mouseOutpush()};
+
+            function mouseOverpush() {
+              document.getElementById("home_screen").style.opacity = "0";
+              document.getElementById("push_screen").style.opacity = "1";
+            }
+
+            function mouseOutpush() {
+              document.getElementById("push_screen").style.opacity = "0";
+              document.getElementById("home_screen").style.opacity = "1";
+            }
+            </script>
+
   </div>
 </body>
 
