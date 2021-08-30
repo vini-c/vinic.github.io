@@ -879,6 +879,45 @@
       margin-bottom:10px;
     }
 
+    .pulsate-fwd {
+	-webkit-animation: pulsate-fwd 3s ease-in-out infinite both;
+	        animation: pulsate-fwd 3s ease-in-out infinite both;
+}
+
+.pulsate-fwd_2 {
+-webkit-animation: pulsate-fwd 5s ease-in-out infinite both;
+      animation: pulsate-fwd 5s ease-in-out infinite both;
+}
+
+@-webkit-keyframes pulsate-fwd {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes pulsate-fwd {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 
 
     @media screen and (max-width:1280px) {
@@ -1010,11 +1049,16 @@
       .vn-app-features_mobile {
         padding: 40px 0px;
         padding-top: 70px;
+        padding-bottom:120px;
+
       }
       .footer--download_mobile{
         background:#fff;
         padding:20px 40px;
         border-radius:20px 20px 0px 0px;
+        position:fixed;
+        bottom:0;
+        width:100%;
       }
       .footer--download_mobile a{
         background:#0164bf;
@@ -1134,7 +1178,7 @@
     <main>
       <section class="vn-welcome-app">
         <div class="vn-app_container">
-          <div class="vn_one-second img desktop_visible tablet_visible">
+          <div class="vn_one-second img desktop_visible tablet_visible pulsate-fwd_2">
             <img src="https://www.viajanet.com.br/static/assets/platform/img/catalog/BaseOne/paises_no-img.jpg" class="vn_welcome_img" alt="">
           </div>
           <div class="vn_one-second">
@@ -1160,7 +1204,7 @@
               </div>
               <h1>Baixe grátis <br>e tenha em mãos os <br>melhores preços!</h1>
               <br>
-              <a href="" target="_blank" class="googleplay download_svg">
+              <a href="https://play.google.com/store/apps/details?id=br.com.ioasys.viajanet&referrer=utm_source%3Dviajanet%26utm_medium%3Dsite%26utm_content%3Dbotao-loja%26utm_campaign%3DHotsite-App" target="_blank" class="googleplay download_svg">
                 <svg viewBox="0 0 135 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
                   <g transform="matrix(1,0,0,1,-10,-10)">
                       <g>
@@ -1227,7 +1271,7 @@
                   </defs>
                 </svg>
               </a>
-              <a href="" target="_blank" class="appstore download_svg">
+              <a href="https://itunes.apple.com/br/app/viajanet-passagens-aéreas-voos" target="_blank" class="appstore download_svg">
                 <svg viewBox="0 0 135 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
                     <g>
                         <path d="M130.197,40L4.729,40C2.122,40 0,37.872 0,35.267L0,4.726C0,2.12 2.122,0 4.729,0L130.197,0C132.803,0 135,2.12 135,4.726L135,35.267C135,37.872 132.803,40 130.197,40Z" style="fill:rgb(166,166,166);fill-rule:nonzero;"/>
@@ -1272,8 +1316,8 @@
               </div>
             </div>
           </div>
-          <img src="https://www.viajanet.com.br/static/assets/platform/img/catalog/BaseOne/paises_no-img.jpg" class="vn_welcome_img_mobile mobile_visible tablet_invisible" alt="imagem da home do aplicativo com promoções">
-          <img src="https://www.viajanet.com.br/static/assets/platform/img/catalog/BaseOne/paises_no-img_2.jpg" class="vn_welcome_img_mobile_2 mobile_visible tablet_invisible" alt="imagem das ofertas para você">
+          <img src="https://www.viajanet.com.br/static/assets/platform/img/catalog/BaseOne/paises_no-img.jpg" class="vn_welcome_img_mobile mobile_visible tablet_invisible pulsate-fwd" alt="imagem da home do aplicativo com promoções">
+          <img src="https://www.viajanet.com.br/static/assets/platform/img/catalog/BaseOne/paises_no-img_2.jpg" class="vn_welcome_img_mobile_2 mobile_visible tablet_invisible pulsate-fwd_2" alt="imagem das ofertas para você">
 
           </div>
         </section>
@@ -2019,8 +2063,8 @@
       friction: 1,
       cellAlign: 'center',
       prevNextButtons: false,
-      pageDots:false
-    });
+      pageDots:false,
+      imagesLoaded: true    });
     </script>
   </div>
 </body>
