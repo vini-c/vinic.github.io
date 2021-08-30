@@ -1059,6 +1059,7 @@
         position:fixed;
         bottom:0;
         width:100%;
+        box-shadow: 0px -10px 30px rgba(0,0,0,.1);
       }
       .footer--download_mobile a{
         background:#0164bf;
@@ -1098,6 +1099,11 @@
         top: 110px;
         right: 36px;
       }
+    }
+
+    .flickity-button{
+      background:#fff;
+      color:#FFA600;
     }
 
     .vn-app-slider-item {
@@ -2059,10 +2065,10 @@
       autoPlay: true,
       adaptiveHeight: true,
       dragThreshold: 1,
-      selectedAttraction: 0.1,
-      friction: 1,
+      selectedAttraction: 0.01,
+friction: 0.15,
       cellAlign: 'center',
-      prevNextButtons: false,
+      prevNextButtons: true,
       pageDots:false,
       imagesLoaded: true    });
     </script>
