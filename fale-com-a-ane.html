@@ -11,181 +11,206 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <style>
-    #AtendimentoVN a{
+    #AtendimentoVN a {
       text-decoration: none;
     }
 
-    #AtendimentoVN .containerAtd{
-      max-width:1240px;
-      margin:0 auto;
-      position:relative;
+    #AtendimentoVN .containerAtd {
+      max-width: 1240px;
+      margin: 0 auto;
+      position: relative;
     }
 
-    #AtendimentoVN .introAtd{
-      background:#0164bf;
-      position:relative;
+    #AtendimentoVN .introAtd {
+      background: #0164bf;
+      position: relative;
 
     }
 
-    #AtendimentoVN .introAtd h1{
-      color:#fff;
-      font-size:32px;
-      font-family:ProximaNova-SemiBold;
-      letter-spacing:-0.25px;
-      width:100%;
-      padding-top:80px;
+    #AtendimentoVN .introAtd h1 {
+      color: #fff;
+      font-size: 32px;
+      font-family: ProximaNova-SemiBold;
+      letter-spacing: -0.25px;
+      width: 100%;
+      padding-top: 80px;
     }
 
-    #AtendimentoVN .introAtd h3{
-      color:#fff;
-      font-size:16px;
-      font-family:ProximaNova-Regular;
-      letter-spacing:-0.25px;
-      width:100%;
-      padding-bottom:80px;
-      line-height:1.25;
+    #AtendimentoVN .introAtd h3 {
+      color: #fff;
+      font-size: 16px;
+      font-family: ProximaNova-Regular;
+      letter-spacing: -0.25px;
+      width: 100%;
+      padding-bottom: 80px;
+      line-height: 1.25;
     }
 
-    #AtendimentoVN .aneAvatarAtd{
-      position:absolute;
-      right:0px;
-      top:-40px;
-    }
-    #AtendimentoVN .bgDetailAtd{
-      position:absolute;
-      left:0px;
-      top:0px;
-      height:100%;
-      z-index:1;
-    }
-    #AtendimentoVN .bgDetailAtd_2{
-      position:absolute;
-      right:0px;
-      top:0px;
-      height:100%;
-      z-index:0;
+    #AtendimentoVN .aneAvatarAtd {
+      position: absolute;
+      right: 0px;
+      top: -40px;
     }
 
-    #AtendimentoVN .AtdQuestions{
-      position:relative;
-      background:#F7F7F7;
-      width:100%;
-      z-index:2;
+    #AtendimentoVN .bgDetailAtd {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      height: 100%;
+      z-index: 1;
     }
 
-    #AtendimentoVN .contentAtdFlex{
-      display:flex;
+    #AtendimentoVN .bgDetailAtd_2 {
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      height: 100%;
+      z-index: 0;
+    }
+
+    #AtendimentoVN .AtdQuestions {
+      position: relative;
+      background: #F7F7F7;
+      width: 100%;
+      z-index: 2;
+    }
+
+    #AtendimentoVN .contentAtdFlex {
+      display: flex;
       flex-wrap: wrap;
     }
-    #AtendimentoVN .servicesAtd{
-      background:#fff;
-      border-radius:3px;
-      width:48%;
-      position:relative;
+
+    #AtendimentoVN .servicesAtd {
+      background: #fff;
+      border-radius: 3px;
+      width: 48%;
+      position: relative;
       padding: 10px;
       margin-top: -40px;
     }
 
     #AtendimentoVN .titleAtd h2 {
-      font-size:18px;
-      font-family:ProximaNova-SemiBold;
-      letter-spacing:-0.25px;
-      margin-left:20px;
-      margin-top:20px;
-      color:#424242;
+      font-size: 18px;
+      font-family: ProximaNova-SemiBold;
+      letter-spacing: -0.25px;
+      margin-left: 20px;
+      margin-top: 20px;
+      color: #424242;
     }
 
-    #AtendimentoVN .titleAtd p{
-      font-size:14px;
-      font-family:ProximaNova-Regular;
-      letter-spacing:-0.25px;
-      margin-top:6px;
-      margin-bottom:16px;
-      margin-left:20px;
-      color:#424242;
-      line-height:1.2;
+    #AtendimentoVN .titleAtd p {
+      font-size: 14px;
+      font-family: ProximaNova-Regular;
+      letter-spacing: -0.25px;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      margin-left: 20px;
+      color: #424242;
+      line-height: 1.2;
     }
-    #AtendimentoVN button.ButtonAtd{
-      background:#fff;
-      width:100%;
-      border:0px;
-      border-radius:3px;
-      border:1px #e5e5e5 solid;
-      text-align:left;
-      padding:10px 18px;
-      display:flex;
+
+    #AtendimentoVN button.ButtonAtd {
+      background: #fff;
+      width: 100%;
+      border: 0px;
+      border-radius: 3px;
+      border: 1px #e5e5e5 solid;
+      text-align: left;
+      padding: 10px 18px;
+      display: flex;
       align-items: center;
-      margin-top:8px;
+      margin-top: 8px;
       transition: transform .5s;
-      cursor:pointer;
+      cursor: pointer;
     }
 
-    #AtendimentoVN .otherContacts .ctaTabAtd{padding:16px 24px;margin-right:8px;}
-    #AtendimentoVN .otherContacts .ctaTabAtd.whatsApp {background:#4CBD3E;}
-    #AtendimentoVN .otherContacts .ctaTabAtd p{ color:#fff; font-family:ProximaNova-SemiBold;display: inline-block;transform:translateY(-2.4px);margin-left:4px;}
-    #AtendimentoVN button.ButtonAtd{
-      margin-bottom:0px;
+    #AtendimentoVN .otherContacts .ctaTabAtd {
+      padding: 16px 24px;
+      margin-right: 8px;
     }
 
-    #AtendimentoVN  button.ButtonAtd h4{
-      font-family:ProximaNova-Regular;
-      font-size:16px;
-      color:#424242;
+    #AtendimentoVN .otherContacts .ctaTabAtd.whatsApp {
+      background: #4CBD3E;
     }
-    #AtendimentoVN   button.ButtonAtd:hover, #AtendimentoVN .tab:hover{
+
+    #AtendimentoVN .otherContacts .ctaTabAtd p {
+      color: #fff;
+      font-family: ProximaNova-SemiBold;
+      display: inline-block;
+      transform: translateY(-2.4px);
+      margin-left: 4px;
+    }
+
+    #AtendimentoVN button.ButtonAtd {
+      margin-bottom: 0px;
+    }
+
+    #AtendimentoVN button.ButtonAtd h4 {
+      font-family: ProximaNova-Regular;
+      font-size: 16px;
+      color: #424242;
+    }
+
+    #AtendimentoVN button.ButtonAtd:hover,
+    #AtendimentoVN .tab:hover {
       transform: scale(1.02);
       transition: transform .3s;
     }
-    #AtendimentoVN .tab{
+
+    #AtendimentoVN .tab {
       transition: transform .3s;
     }
-    #AtendimentoVN button.ButtonAtd .textAtdModal{
-      width:90%;
+
+    #AtendimentoVN button.ButtonAtd .textAtdModal {
+      width: 90%;
     }
-    #AtendimentoVN button.ButtonAtd p{
-      font-family:ProximaNova-Regular;
-      font-size:14px;
-      color:#757575;
+
+    #AtendimentoVN button.ButtonAtd p {
+      font-family: ProximaNova-Regular;
+      font-size: 14px;
+      color: #757575;
     }
-    #AtendimentoVN button.ButtonAtd .iconAtdModal{
-      width:10%;
+
+    #AtendimentoVN button.ButtonAtd .iconAtdModal {
+      width: 10%;
       text-align: center;
     }
 
-    #AtendimentoVN .minhaContaBtn_atd{
-      text-align:center;
-      margin:20px auto;
-      margin-top:30px;
+    #AtendimentoVN .minhaContaBtn_atd {
+      text-align: center;
+      margin: 20px auto;
+      margin-top: 30px;
     }
 
-    #AtendimentoVN .minhaContaBtn_atd a{
-      background:#0164bf;
-      color:#fff;
-      padding:12px 24px;
-      border-radius:3px;
-      text-decoration:none;
-      font-family:ProximaNova-SemiBold;
+    #AtendimentoVN .minhaContaBtn_atd a {
+      background: #0164bf;
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 3px;
+      text-decoration: none;
+      font-family: ProximaNova-SemiBold;
     }
 
-    #AtendimentoVN .AtdCattegory{
-      margin-left:30px;
-      margin-top:30px;
-      font-size:18px;
+    #AtendimentoVN .AtdCattegory {
+      margin-left: 30px;
+      margin-top: 30px;
+      font-size: 18px;
       width: 49%;
     }
-    #AtendimentoVN .AtdCattegory h2{
-      font-size:18px;
-      font-family:ProximaNova-SemiBold;
-      letter-spacing:-0.25px;
-      color:#424242;
+
+    #AtendimentoVN .AtdCattegory h2 {
+      font-size: 18px;
+      font-family: ProximaNova-SemiBold;
+      letter-spacing: -0.25px;
+      color: #424242;
     }
 
-    #AtendimentoVN .servicesAtd .tipsAtd button.AtdCollapseVn{
-      display:block;
+    #AtendimentoVN .servicesAtd .tipsAtd button.AtdCollapseVn {
+      display: block;
     }
 
-    #AtendimentoVN .servicesAtd .tipsAtd button .AtdCollapseCTAVn{
-      display:flex;
+    #AtendimentoVN .servicesAtd .tipsAtd button .AtdCollapseCTAVn {
+      display: flex;
     }
 
 
@@ -194,233 +219,466 @@
       color: white;
       overflow: hidden;
     }
+
     #AtendimentoVN .tab-label {
       display: flex;
       align-items: center;
-      background:#fff;
-      width:100%;
-      border:0px;
-      border-radius:3px;
-      border:1px #e5e5e5 solid;
-      text-align:left;
-      padding:10px 18px;
+      background: #fff;
+      width: 100%;
+      border: 0px;
+      border-radius: 3px;
+      border: 1px #e5e5e5 solid;
+      text-align: left;
+      padding: 10px 18px;
       cursor: pointer;
-      border-bottom:0px;
+      border-bottom: 0px;
     }
-    #AtendimentoVN .tab-label .contentLabel{
-      width:90%;
+
+    #AtendimentoVN .tab-label .contentLabel {
+      width: 90%;
     }
-    #AtendimentoVN .tab-label .iconLabel{
-      width:10%;
+
+    #AtendimentoVN .tab-label .iconLabel {
+      width: 10%;
       text-align: center;
     }
-    #AtendimentoVN .tab-label h4{
-      color:#424242;
-      letter-spacing:-0.25px;
+
+    #AtendimentoVN .tab-label h4 {
+      color: #424242;
+      letter-spacing: -0.25px;
       font-family: ProximaNova-Regular;
       font-size: 16px;
     }
-    #AtendimentoVN .tab-label p{
+
+    #AtendimentoVN .tab-label p {
       font-family: ProximaNova-Regular;
       font-size: 14px;
       color: #757575;
       padding-top: 4px;
     }
 
-    #AtendimentoVN #covidCTAAtd .textAtdModal{
-      margin-left:16px;
-    }
-    #AtendimentoVN #covidCTAAtd .textAtdModal p{
-      color:#424242;
+    #AtendimentoVN #covidCTAAtd .textAtdModal {
+      margin-left: 16px;
     }
 
-    #AtendimentoVN button.ButtonAtd#covidCTAAtd{
+    #AtendimentoVN #covidCTAAtd .textAtdModal p {
+      color: #424242;
+    }
+
+    #AtendimentoVN button.ButtonAtd#covidCTAAtd {
       align-items: flex-start;
     }
 
-    #AtendimentoVN .mainQuestions{
-      width:100%;
+    #AtendimentoVN .mainQuestions {
+      width: 100%;
     }
 
-    #AtendimentoVN button.ButtonAtd .ctaTabAtd{
-      background:#0164bf;
-      display:inline-block;
-      color:#fff;
-      font-size:14px;
-      padding:10px 18px;
-      border-radius:3px;
-      font-family:ProximaNova-Semibold
+    #AtendimentoVN button.ButtonAtd .ctaTabAtd {
+      background: #0164bf;
+      display: inline-block;
+      color: #fff;
+      font-size: 14px;
+      padding: 10px 18px;
+      border-radius: 3px;
+      font-family: ProximaNova-Semibold
     }
 
-    #AtendimentoVN .ctaTabAtd{
-      background:#0164bf;
-      display:inline-block;
-      color:#fff;
-      font-size:14px;
-      padding:10px 18px;
-      border-radius:3px;
-      font-family:ProximaNova-Semibold
+    #AtendimentoVN .ctaTabAtd {
+      background: #0164bf;
+      display: inline-block;
+      color: #fff;
+      font-size: 14px;
+      padding: 10px 18px;
+      border-radius: 3px;
+      font-family: ProximaNova-Semibold
     }
+
     #AtendimentoVN .tab-content {
       max-height: 0;
       padding: 0 1em;
       transition: all 0.35s;
-      background:#fff;
-      width:100%;
-      border:0px;
-      border-radius:0px 0px 3px 3px;
-      border:1px #e5e5e5 solid;
-      border-top:0px;
-    }
-    #AtendimentoVN .tab-content p{
-      font-family:ProximaNova-Regular;
-      font-size:16px;
-      line-height:1.2;
-      letter-spacing:-0.25px;
-      color:#424242;
-    }
-    #AtendimentoVN input {
-      display:none
+      background: #fff;
+      width: 100%;
+      border: 0px;
+      border-radius: 0px 0px 3px 3px;
+      border: 1px #e5e5e5 solid;
+      border-top: 0px;
     }
 
-    #AtendimentoVN input + .tab-label .arrowSVG {
+    #AtendimentoVN .tab-content p {
+      font-family: ProximaNova-Regular;
+      font-size: 14px;
+      line-height: 1.2;
+      letter-spacing: -0.25px;
+      color: #424242;
+    }
+
+    #AtendimentoVN .tab input {
+      display: none
+    }
+
+    #AtendimentoVN input+.tab-label .arrowSVG {
       transition: transform .3s;
     }
-    #AtendimentoVN input:checked + .tab-label .arrowSVG {
+
+    #AtendimentoVN input:checked+.tab-label .arrowSVG {
       transform: rotate(-180deg);
       transition: transform .3s;
     }
 
-    #AtendimentoVN input:checked + .tab-label h4 {
-     font-family:ProximaNova-Semibold
+    #AtendimentoVN input:checked+.tab-label h4 {
+      font-family: ProximaNova-Semibold
     }
-    #AtendimentoVN input:checked ~ .tab-content {
+
+    #AtendimentoVN input:checked~.tab-content {
       max-height: 100vh;
       padding: 4px 20px 20px 20px;
     }
 
     #AtendimentoVN .tab.withIcon .tab-label h4 {
-        color:#0164bf;
-        margin-left:16px;
+      color: #0164bf;
+      margin-left: 16px;
     }
 
-    #AtendimentoVN .AtdCattegory .ButtonAtd h4{
-      color:#0164bf;
-    line-height: 1.2;
+    #AtendimentoVN .AtdCattegory .ButtonAtd h4 {
+      color: #0164bf;
+      line-height: 1.2;
     }
 
 
-    #AtendimentoVN .AtdCattegory .tab-label, #AtendimentoVN .AtdCattegory button{
-      padding:24px 20px;
+    #AtendimentoVN .AtdCattegory .tab-label,
+    #AtendimentoVN .AtdCattegory button {
+      padding: 24px 20px;
     }
 
-    #AtendimentoVN .AtdCattegory .tab-label{
-      margin-top:8px;
-    }
-
-    #AtendimentoVN .AtdCattegory h2{
-      margin-bottom: 14px;
-    }
-    #AtendimentoVN .questionsAtd .tab{
+    #AtendimentoVN .AtdCattegory .tab-label {
       margin-top: 8px;
     }
-    #AtendimentoVN b{
+
+    #AtendimentoVN .AtdCattegory h2 {
+      margin-bottom: 14px;
+    }
+
+    #AtendimentoVN .questionsAtd .tab {
+      margin-top: 8px;
+    }
+
+    #AtendimentoVN b {
       font-family: ProximaNova-SemiBold;
     }
-    #AtendimentoVN .questionsAtd .tab-label{
-      padding:20px;
+
+    #AtendimentoVN .questionsAtd .tab-label {
+      padding: 20px;
     }
 
-    #AtendimentoVN .questionsAtd .tab-label .contentLabel{
-      width:97%;
+    #AtendimentoVN .questionsAtd .tab-label .contentLabel {
+      width: 97%;
     }
 
-    #AtendimentoVN .questionsAtd .tab-label .iconLabel{
-      width:4%;
+    #AtendimentoVN .questionsAtd .tab-label .iconLabel {
+      width: 4%;
     }
 
     #AtendimentoVN .questionsAtd .tab-content p small {
-      font-size:14px;
+      font-size: 14px;
       display: block;
-    padding-top: 10px;
+      padding-top: 10px;
     }
 
     #AtendimentoVN .mainQuestions .titleAtd {
-      padding-bottom:10px;
+      padding-bottom: 10px;
     }
 
-    #AtendimentoVN .otherContacts{
+    #AtendimentoVN .otherContacts {
       margin-top: 20px;
       border-top: 1px #dfdfdf solid;
       padding-top: 20px;
-      padding-bottom:40px;
+      padding-bottom: 40px;
     }
 
-    #AtendimentoVN .otherContacts .tab-label,#AtendimentoVN .otherContacts .tab-content{
-      background:transparent;
-      border:0px;
+    #AtendimentoVN .otherContacts .tab-label,
+    #AtendimentoVN .otherContacts .tab-content {
+      background: transparent;
+      border: 0px;
     }
 
 
 
     /* The Modal (background) */
     #AtendimentoVN .modal {
-      display: none; /* Hidden by default */
-      position: fixed; /* Stay in place */
-      z-index: 1; /* Sit on top */
+      display: none;
+      /* Hidden by default */
+      position: fixed;
+      /* Stay in place */
+      z-index: 1;
+      /* Sit on top */
       left: 0;
       top: 0;
-      width: 100%; /* Full width */
-      height: 100%; /* Full height */
-      overflow: auto; /* Enable scroll if needed */
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+      width: 100%;
+      /* Full width */
+      height: 100%;
+      /* Full height */
+      overflow: auto;
+      /* Enable scroll if needed */
+      background-color: rgb(0, 0, 0);
+      /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.4);
+      /* Black w/ opacity */
     }
 
     /* Modal Content/Box */
     #AtendimentoVN .modal-content {
       background-color: #ffffff;
-      margin: 8% auto; /* 15% from the top and centered */
+      margin: 8% auto;
+      /* 15% from the top and centered */
       padding: 20px;
-      border-radius:3px;
-      width: 60%; /* Could be more or less, depending on screen size */
-      text-align:center;
+      border-radius: 3px;
+      width: 60%;
+      /* Could be more or less, depending on screen size */
+      text-align: center;
     }
 
     #AtendimentoVN .modal-content a.btnMyAccountAcess {
-    background: #0164bf;
-    color: #fff;
-    padding: 12px 24px;
-    border-radius: 3px;
-    text-decoration: none;
-    font-family: ProximaNova-SemiBold;
+      background: #0164bf;
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 3px;
+      text-decoration: none;
+      font-family: ProximaNova-SemiBold;
+    }
+    #AtendimentoVN .modal-content input.btnMyAccountAcess {
+      background: #0164bf;
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 3px;
+      text-decoration: none;
+      font-family: ProximaNova-SemiBold;
     }
 
-    #AtendimentoVN .modal-content iframe{
-      width:400px;height:400px;border-radius:3px;
+    #AtendimentoVN .modal-content iframe {
+      width: 400px;
+      height: 400px;
+      border-radius: 3px;
     }
 
-    #AtendimentoVN .modal-content h2{
-      font-family:ProximaNova-SemiBold;
-      color:#0164bf;
+    #AtendimentoVN .modal-content h2 {
+      font-family: ProximaNova-SemiBold;
+      color: #0164bf;
       display: block;
-      font-size:22px;
-      letter-spacing:-0.25px;
+      font-size: 22px;
+      letter-spacing: -0.25px;
     }
-    #AtendimentoVN .modal-content p{
-      font-family:ProximaNova-Regular;
-      color:#424242;
+
+    #AtendimentoVN .modal-content p {
+      font-family: ProximaNova-Regular;
+      color: #424242;
       display: block;
-      font-size:16px;
-      letter-spacing:-0.25px;
-      margin-bottom:20px;
+      font-size: 16px;
+      letter-spacing: -0.25px;
+      margin-bottom: 20px;
     }
+
+    .pure-material-textfield-outlined {
+      --pure-material-safari-helper1: rgb(var(--pure-material-primary-rgb, 33, 150, 243));
+      position: relative;
+      display: inline-block;
+      padding-top: 6px;
+      font-family: ProximaNova-Regular;
+      font-size: 16px;
+      line-height: 1.5;
+      overflow: hidden;
+      width: 50%;
+    }
+
+    /* Input, Textarea */
+    .pure-material-textfield-outlined>input,
+    .pure-material-textfield-outlined>textarea {
+      box-sizing: border-box;
+      margin: 0;
+      border: solid 1px;
+      /* Safari */
+      border-color:rgba(0,0,0,.38);
+      border-top-color: transparent;
+      border-radius: 4px;
+      padding: 15px 13px 15px;
+      width: 100%;
+      height: inherit;
+      color:rgba(0,0,0,.9);
+      background-color: transparent;
+      box-shadow: none;
+      /* Firefox */
+      font-family: inherit;
+      font-size: inherit;
+      line-height: inherit;
+      caret-color: rgba(0,0,0,.38);
+      transition: border 0.2s, box-shadow 0.2s;
+    }
+
+    /* Span */
+    .pure-material-textfield-outlined>input+span,
+    .pure-material-textfield-outlined>textarea+span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      border-color:rgba(0,0,0,.38);
+      width: 100%;
+      max-height: 100%;
+      color: rgba(0,0,0,.8);
+      font-size: 75%;
+      line-height: 15px;
+      cursor: text;
+      transition: color 0.2s, font-size 0.2s, line-height 0.2s;
+    }
+
+    /* Corners */
+    .pure-material-textfield-outlined>input+span::before,
+    .pure-material-textfield-outlined>input+span::after,
+    .pure-material-textfield-outlined>textarea+span::before,
+    .pure-material-textfield-outlined>textarea+span::after {
+      content: "";
+      display: block;
+      box-sizing: border-box;
+      margin-top: 6px;
+      border-top: solid 1px;
+      border-top-color:  rgba(0,0,0,.38);
+      min-width: 10px;
+      height: 8px;
+      pointer-events: none;
+      box-shadow: inset 0 1px transparent;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .pure-material-textfield-outlined>input+span::before,
+    .pure-material-textfield-outlined>textarea+span::before {
+      margin-right: 4px;
+      border-left: solid 1px transparent;
+      border-radius: 4px 0;
+    }
+
+    .pure-material-textfield-outlined>input+span::after,
+    .pure-material-textfield-outlined>textarea+span::after {
+      flex-grow: 1;
+      margin-left: 4px;
+      border-right: solid 1px transparent;
+      border-radius: 0 4px;
+    }
+
+    /* Hover */
+    .pure-material-textfield-outlined:hover>input,
+    .pure-material-textfield-outlined:hover>textarea {
+      border-color:  rgba(0,0,0,.38);
+      border-top-color: transparent;
+    }
+
+    .pure-material-textfield-outlined:hover>input+span::before,
+    .pure-material-textfield-outlined:hover>textarea+span::before,
+    .pure-material-textfield-outlined:hover>input+span::after,
+    .pure-material-textfield-outlined:hover>textarea+span::after {
+      border-top-color:  #0164bf;
+    }
+
+    .pure-material-textfield-outlined:hover>input:not(:focus):placeholder-shown,
+    .pure-material-textfield-outlined:hover>textarea:not(:focus):placeholder-shown {
+      border-color:  #0164bf;
+    }
+
+    /* Placeholder-shown */
+    .pure-material-textfield-outlined>input:not(:focus):placeholder-shown,
+    .pure-material-textfield-outlined>textarea:not(:focus):placeholder-shown {
+      border-top-color:  rgba(0,0,0,.38);
+    }
+
+    .pure-material-textfield-outlined>input:not(:focus):placeholder-shown+span,
+    .pure-material-textfield-outlined>textarea:not(:focus):placeholder-shown+span {
+      font-size: inherit;
+      line-height: 68px;
+    }
+
+    .pure-material-textfield-outlined>input:not(:focus):placeholder-shown+span::before,
+    .pure-material-textfield-outlined>textarea:not(:focus):placeholder-shown+span::before,
+    .pure-material-textfield-outlined>input:not(:focus):placeholder-shown+span::after,
+    .pure-material-textfield-outlined>textarea:not(:focus):placeholder-shown+span::after {
+      border-top-color: transparent;
+    }
+
+    /* Focus */
+    .pure-material-textfield-outlined>input:focus,
+    .pure-material-textfield-outlined>textarea:focus {
+      border-color:  #0164bf;
+      border-top-color: transparent;
+      box-shadow: inset 1px 0 var(--pure-material-safari-helper1), inset -1px 0 var(--pure-material-safari-helper1), inset 0 -1px var(--pure-material-safari-helper1);
+      outline: none;
+    }
+
+    .pure-material-textfield-outlined>input:focus+span,
+    .pure-material-textfield-outlined>textarea:focus+span {
+      color:  #0164bf;
+    }
+
+    .pure-material-textfield-outlined>input:focus+span::before,
+    .pure-material-textfield-outlined>input:focus+span::after,
+    .pure-material-textfield-outlined>textarea:focus+span::before,
+    .pure-material-textfield-outlined>textarea:focus+span::after {
+      border-top-color:  #0164bf;
+      box-shadow: inset 0 1px var(--pure-material-safari-helper1);
+    }
+
+    /* Disabled */
+    .pure-material-textfield-outlined>input:disabled,
+    .pure-material-textfield-outlined>input:disabled+span,
+    .pure-material-textfield-outlined>textarea:disabled,
+    .pure-material-textfield-outlined>textarea:disabled+span {
+      border-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.38) !important;
+      border-top-color: transparent !important;
+      color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.38);
+      pointer-events: none;
+    }
+
+    .pure-material-textfield-outlined>input:disabled+span::before,
+    .pure-material-textfield-outlined>input:disabled+span::after,
+    .pure-material-textfield-outlined>textarea:disabled+span::before,
+    .pure-material-textfield-outlined>textarea:disabled+span::after {
+      border-top-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.38) !important;
+    }
+
+    .pure-material-textfield-outlined>input:disabled:placeholder-shown,
+    .pure-material-textfield-outlined>input:disabled:placeholder-shown+span,
+    .pure-material-textfield-outlined>textarea:disabled:placeholder-shown,
+    .pure-material-textfield-outlined>textarea:disabled:placeholder-shown+span {
+      border-top-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.38) !important;
+    }
+
+    .pure-material-textfield-outlined>input:disabled:placeholder-shown+span::before,
+    .pure-material-textfield-outlined>input:disabled:placeholder-shown+span::after,
+    .pure-material-textfield-outlined>textarea:disabled:placeholder-shown+span::before,
+    .pure-material-textfield-outlined>textarea:disabled:placeholder-shown+span::after {
+      border-top-color: transparent !important;
+    }
+
+    /* Faster transition in Safari for less noticable fractional font-size issue */
+    @media not all and (min-resolution:.001dpcm) {
+      @supports (-webkit-appearance:none) {
+
+        .pure-material-textfield-outlined>input,
+        .pure-material-textfield-outlined>input+span,
+        .pure-material-textfield-outlined>textarea,
+        .pure-material-textfield-outlined>textarea+span,
+        .pure-material-textfield-outlined>input+span::before,
+        .pure-material-textfield-outlined>input+span::after,
+        .pure-material-textfield-outlined>textarea+span::before,
+        .pure-material-textfield-outlined>textarea+span::after {
+          transition-duration: 0.1s;
+        }
+      }
+    }
+
     /* The Close Button */
     #AtendimentoVN .closeAtd {
-    color: #e63838;
-    float: right;
-    font-size: 32px;
-    font-weight: bold;
+      color: #e63838;
+      float: right;
+      font-size: 32px;
+      font-weight: bold;
     }
 
     #AtendimentoVN .closeAtd:hover,
@@ -430,166 +688,191 @@
       cursor: pointer;
     }
 
-    @media screen and (max-width:1366px){
-      #AtendimentoVN .bgDetailAtd{
-        left:-180px;
+    @media screen and (max-width:1366px) {
+      #AtendimentoVN .bgDetailAtd {
+        left: -180px;
       }
     }
 
-    @media screen and (max-width:1200px){
-      #AtendimentoVN .containerAtd{
-        max-width:1000px;
-        margin:0 auto;
-        position:relative;
+    @media screen and (max-width:1200px) {
+      #AtendimentoVN .containerAtd {
+        max-width: 1000px;
+        margin: 0 auto;
+        position: relative;
       }
     }
-    @media screen and (max-width:1023px){
-      #AtendimentoVN .containerAtd{
-        max-width:1000px;
-        margin:0 auto;
-        position:relative;
-        padding:0px 20px
+
+    @media screen and (max-width:1023px) {
+      #AtendimentoVN .containerAtd {
+        max-width: 1000px;
+        margin: 0 auto;
+        position: relative;
+        padding: 0px 20px
       }
-      #AtendimentoVN .servicesAtd{
-        width:100%;
-        order:0
+
+      #AtendimentoVN .servicesAtd {
+        width: 100%;
+        order: 0
       }
-      #AtendimentoVN .AtdCattegory{
-        width:100%;
-        order:1;
-        margin:0;
+
+      #AtendimentoVN .AtdCattegory {
+        width: 100%;
+        order: 1;
+        margin: 0;
       }
-      #AtendimentoVN .mainQuestions{
-        order:2;
+
+      #AtendimentoVN .mainQuestions {
+        order: 2;
       }
-      #AtendimentoVN .AtdCattegory h2{
+
+      #AtendimentoVN .AtdCattegory h2 {
         margin-bottom: 14px;
-      margin-left: 20px;
-      margin-top: 30px;
-      }
-      #AtendimentoVN .titleAtd h2{
+        margin-left: 20px;
         margin-top: 30px;
       }
-      #AtendimentoVN .introAtd h3{
+
+      #AtendimentoVN .titleAtd h2 {
+        margin-top: 30px;
+      }
+
+      #AtendimentoVN .introAtd h3 {
         width: 60%;
       }
-      #AtendimentoVN .aneAvatarAtd {
-    position: absolute;
-    right: -30px;
-    top: 0px;
-    width: 250px;
-    z-index: 2;
-    }
-    #AtendimentoVN .otherContacts{
-      order:3;
-    }
-    }
-
-    @media screen and (max-width:801px){
-      #AtendimentoVN .questionsAtd .tab-label .contentLabel {
-    width: 90%;
-    }
-
-    #AtendimentoVN .aneAvatarAtd {
-    position: absolute;
-    right: 40px;
-    top: 0px;
-    width: 210px;
-    z-index: 2;
-    }
-    #AtendimentoVN .questionsAtd .tab-label .iconLabel{
-      width:10%;
-    }
-    #AtendimentoVN .modal-content {
-      background-color: #ffffff;
-      margin:0 auto; /* 15% from the top and centered */
-      padding: 20px;
-      border-radius:0px;
-      width: 100%; /* Could be more or less, depending on screen size */
-      text-align:center;
-      height:100vh;
-    }
-
-    #AtendimentoVN .modal-content {
-      background-color: #ffffff;
-      margin:0 auto; /* 15% from the top and centered */
-      padding: 20px;
-    }
-    #AtendimentoVN .modal-content h2 {
-    margin-top: 32px;
-    }
-    #AtendimentoVN .modal-content iframe{
-      width:100%;
-      height:450px;
-    }
-
-    #AtendimentoVN .modal-content a.btnMyAccountAcess {
-    background: #0164bf;
-    color: #fff;
-    padding: 12px 24px;
-    border-radius: 3px;
-    text-decoration: none;
-    font-family: ProximaNova-SemiBold;
-    display: block;
-    margin-top: 12px;
-    margin-left: 30px;
-    margin-right: 30px;
-    }
-    #AtendimentoVN .bgDetailAtd{
-      left:60px;
-    }
-
-    #AtendimentoVN .introAtd h1{
-      font-size:22px;
-    }
-
-    #AtendimentoVN .bgDetailAtd_2{
-      display:none;
-      z-index:0;
-    }
-    }
-
-    @media screen and  (max-width:500px){
 
       #AtendimentoVN .aneAvatarAtd {
-      position: absolute;
-      right: -20px;
-      top: 0px;
-      width: 210px;
-      z-index: 2;
+        position: absolute;
+        right: -30px;
+        top: 0px;
+        width: 250px;
+        z-index: 2;
+      }
+
+      #AtendimentoVN .otherContacts {
+        order: 3;
       }
     }
 
-    @media screen and (max-width:330px){
-    #AtendimentoVN .introAtd h1{
-      padding-top:40px;
+    @media screen and (max-width:801px) {
+      #AtendimentoVN .questionsAtd .tab-label .contentLabel {
+        width: 90%;
+      }
+
+      #AtendimentoVN .aneAvatarAtd {
+        position: absolute;
+        right: 40px;
+        top: 0px;
+        width: 210px;
+        z-index: 2;
+      }
+
+      #AtendimentoVN .questionsAtd .tab-label .iconLabel {
+        width: 10%;
+      }
+
+      #AtendimentoVN .modal-content {
+        background-color: #ffffff;
+        margin: 0 auto;
+        /* 15% from the top and centered */
+        padding: 20px;
+        border-radius: 0px;
+        width: 100%;
+        /* Could be more or less, depending on screen size */
+        text-align: center;
+        height: 100vh;
+      }
+
+      #AtendimentoVN .modal-content {
+        background-color: #ffffff;
+        margin: 0 auto;
+        /* 15% from the top and centered */
+        padding: 20px;
+      }
+
+      #AtendimentoVN .modal-content h2 {
+        margin-top: 32px;
+      }
+
+      #AtendimentoVN .modal-content iframe {
+        width: 100%;
+        height: 450px;
+      }
+
+      #AtendimentoVN .modal-content a.btnMyAccountAcess {
+        background: #0164bf;
+        color: #fff;
+        padding: 12px 24px;
+        border-radius: 3px;
+        text-decoration: none;
+        font-family: ProximaNova-SemiBold;
+        display: block;
+        margin-top: 12px;
+        margin-left: 30px;
+        margin-right: 30px;
+      }
+
+      #AtendimentoVN .bgDetailAtd {
+        left: 60px;
+      }
+
+      #AtendimentoVN .introAtd h1 {
+        font-size: 22px;
+      }
+
+      #AtendimentoVN .bgDetailAtd_2 {
+        display: none;
+        z-index: 0;
+      }
     }
 
-    #AtendimentoVN .introAtd p{
-      padding-bottom:40px;
-    }
-    #AtendimentoVN .aneAvatarAtd {
-    position: absolute;
-    right: -40px;
-    top: auto;
-    width: 63%;
-    z-index: 2;
-    bottom: 0px;
+    @media screen and (max-width:500px) {
+
+      #AtendimentoVN .aneAvatarAtd {
+        position: absolute;
+        right: -20px;
+        top: 0px;
+        width: 210px;
+        z-index: 2;
+      }
+      .pure-material-textfield-outlined{
+        width:100%;
+      }
     }
 
-    #AtendimentoVN .introAtd h3 {
-    width: 63%;
-    font-size: 14px;
-    }
-    #AtendimentoVN .titleAtd p, #AtendimentoVN .titleAtd h2, #AtendimentoVN .AtdCattegory h2{
-      margin-left:10px;
-    }
-    #AtendimentoVN .titleAtd h2{
-      margin-top:10px;
-    }
+    @media screen and (max-width:330px) {
+      #AtendimentoVN .introAtd h1 {
+        padding-top: 40px;
+      }
+
+      #AtendimentoVN .introAtd p {
+        padding-bottom: 40px;
+      }
+
+      #AtendimentoVN .aneAvatarAtd {
+        position: absolute;
+        right: -40px;
+        top: auto;
+        width: 63%;
+        z-index: 2;
+        bottom: 0px;
+      }
+
+      #AtendimentoVN .introAtd h3 {
+        width: 63%;
+        font-size: 14px;
+      }
+
+      #AtendimentoVN .titleAtd p,
+      #AtendimentoVN .titleAtd h2,
+      #AtendimentoVN .AtdCattegory h2 {
+        margin-left: 10px;
+      }
+
+      #AtendimentoVN .titleAtd h2 {
+        margin-top: 10px;
+      }
 
     }
-</style>
+  </style>
 </head>
 
 <body>
@@ -876,40 +1159,40 @@
                 </div>
               </div>
               <a href="https://www.viajanet.com.br/informacao-coronavirus#!#Atendimento" target="_blank">
-              <button class="ButtonAtd" id="covidCTAAtd">
-                <svg width="35px" height="23px" viewBox="0 0 35 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <g id="mobile-perguntas-fechadas" transform="translate(-34.000000, -1387.000000)">
-                      <g id="Group-16" transform="translate(13.000000, 1130.000000)">
-                        <g id="Group-20" transform="translate(0.000000, 33.000000)">
-                          <g id="Group-8" transform="translate(0.000000, 195.000000)">
-                            <g id="Group-6" transform="translate(21.581655, 29.000000)">
-                              <path
-                                d="M4.65858361,4.38781526 L16.9824496,0 L28.9611441,4.38781526 L27.4202356,17.5364952 C24.5172091,21.1788317 20.6861305,23 15.9269998,23 C11.1678691,23 7.73470644,21.1788317 5.62751189,17.5364952 L4.65858361,4.38781526 Z"
-                                id="Path-6" fill="#0164BF"></path>
-                              <path
-                                d="M28.5635203,4.88095238 C29.5300186,4.88095238 30.4050186,5.27270322 31.0383941,5.90607865 C31.6717695,6.53945407 32.0635203,7.41445407 32.0635203,8.38095238 C32.0635203,8.58102501 32.0463651,8.78072922 32.0122431,8.97787065 L32.0122431,8.97787065 L31.3116655,13.0254897 C31.1664705,13.8643604 30.7299616,14.5901309 30.1169155,15.1061836 C29.5038694,15.6222364 28.7142862,15.9285714 27.8629428,15.9285714 L27.8629428,15.9285714 L5.53307824,15.9285714 C4.65341225,15.9285714 3.8421023,15.6020732 3.22248244,15.0574775 C2.60286258,14.5128817 2.17493282,13.7501885 2.06202722,12.8777983 L2.06202722,12.8777983 L1.53818031,8.83017928 C1.41412973,7.871675 1.69033362,6.95363082 2.23717623,6.24420005 C2.78401884,5.53476928 3.60150016,5.03395194 4.56000444,4.90990136 L4.56000444,4.90990136 Z"
-                                id="Rectangle" stroke="#0164BF"></path>
-                              <rect id="Rectangle" fill="#FFFFFF" x="8.12485352" y="14.2380952" width="17.5238095" height="2.19047619" rx="1"></rect>
-                              <rect id="Rectangle" fill="#FFFFFF" x="8.12485352" y="9.85714286" width="17.5238095" height="2.19047619" rx="1"></rect>
-                              <rect id="Rectangle" fill="#FFFFFF" x="8.12485352" y="5.47619048" width="17.5238095" height="2.19047619" rx="1"></rect>
+                <button class="ButtonAtd" id="covidCTAAtd">
+                  <svg width="35px" height="23px" viewBox="0 0 35 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="mobile-perguntas-fechadas" transform="translate(-34.000000, -1387.000000)">
+                        <g id="Group-16" transform="translate(13.000000, 1130.000000)">
+                          <g id="Group-20" transform="translate(0.000000, 33.000000)">
+                            <g id="Group-8" transform="translate(0.000000, 195.000000)">
+                              <g id="Group-6" transform="translate(21.581655, 29.000000)">
+                                <path
+                                  d="M4.65858361,4.38781526 L16.9824496,0 L28.9611441,4.38781526 L27.4202356,17.5364952 C24.5172091,21.1788317 20.6861305,23 15.9269998,23 C11.1678691,23 7.73470644,21.1788317 5.62751189,17.5364952 L4.65858361,4.38781526 Z"
+                                  id="Path-6" fill="#0164BF"></path>
+                                <path
+                                  d="M28.5635203,4.88095238 C29.5300186,4.88095238 30.4050186,5.27270322 31.0383941,5.90607865 C31.6717695,6.53945407 32.0635203,7.41445407 32.0635203,8.38095238 C32.0635203,8.58102501 32.0463651,8.78072922 32.0122431,8.97787065 L32.0122431,8.97787065 L31.3116655,13.0254897 C31.1664705,13.8643604 30.7299616,14.5901309 30.1169155,15.1061836 C29.5038694,15.6222364 28.7142862,15.9285714 27.8629428,15.9285714 L27.8629428,15.9285714 L5.53307824,15.9285714 C4.65341225,15.9285714 3.8421023,15.6020732 3.22248244,15.0574775 C2.60286258,14.5128817 2.17493282,13.7501885 2.06202722,12.8777983 L2.06202722,12.8777983 L1.53818031,8.83017928 C1.41412973,7.871675 1.69033362,6.95363082 2.23717623,6.24420005 C2.78401884,5.53476928 3.60150016,5.03395194 4.56000444,4.90990136 L4.56000444,4.90990136 Z"
+                                  id="Rectangle" stroke="#0164BF"></path>
+                                <rect id="Rectangle" fill="#FFFFFF" x="8.12485352" y="14.2380952" width="17.5238095" height="2.19047619" rx="1"></rect>
+                                <rect id="Rectangle" fill="#FFFFFF" x="8.12485352" y="9.85714286" width="17.5238095" height="2.19047619" rx="1"></rect>
+                                <rect id="Rectangle" fill="#FFFFFF" x="8.12485352" y="5.47619048" width="17.5238095" height="2.19047619" rx="1"></rect>
+                              </g>
                             </g>
                           </g>
                         </g>
                       </g>
                     </g>
-                  </g>
-                </svg>
-                <div class="textAtdModal">
-                  <h4>Covid 19:<br>Informações para viajar</h4>
-                  <p>Confira as atualizações e tire as dúvidas sobre sua viagem
-                  </p>
-                  <br>
-                  <div class="ctaTabAtd">
-                    Saiba mais
+                  </svg>
+                  <div class="textAtdModal">
+                    <h4>Covid 19:<br>Informações para viajar</h4>
+                    <p>Confira as atualizações e tire as dúvidas sobre sua viagem
+                    </p>
+                    <br>
+                    <div class="ctaTabAtd">
+                      Saiba mais
+                    </div>
                   </div>
-                </div>
-              </button>
+                </button>
               </a>
             </div>
           </div>
@@ -1014,7 +1297,7 @@
                 </div>
               </a>
 
-              <a href="https://www.viajanet.com.br/shop/myaccount/#/reservations" target="_blank" >
+              <a href="https://www.viajanet.com.br/shop/myaccount/#/reservations" target="_blank">
                 <div class="tab">
                   <input type="checkbox" id="cancelarQuestion_tips">
                   <label class="tab-label" for="cancelarQuestion_tips">
@@ -1051,43 +1334,40 @@
                 </div>
               </a>
 
-              <a
-                href="https://www.viajanet.com.br/atendimento/enviar-email">
-                <div class="tab">
-                  <input type="checkbox" id="erreiNome_tips">
-                  <label class="tab-label" for="erreiNome_tips">
-                    <div class="contentLabel">
-                      <h4>Errei meu nome ao digitar. Posso corrigir?</h4>
-                    </div>
-                    <div class="iconLabel">
-                      <svg class="arrowSVG" width="15px" height="9px" viewBox="0 0 15 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
-                          <g id="Desktop_v2" transform="translate(-1099.000000, -386.000000)" stroke="#0164BF" stroke-width="2">
-                            <g id="Group-16" transform="translate(696.000000, 318.000000)">
-                              <g id="Group-20" transform="translate(0.000000, 33.000000)">
-                                <polyline id="Path-5" points="404.773722 36.8076179 410.773722 42.8076179 416.773722 36.8076179"></polyline>
-                              </g>
+
+              <div class="tab">
+                <input type="checkbox" id="erreiNome_tips">
+                <label class="tab-label" for="erreiNome_tips">
+                  <div class="contentLabel">
+                    <h4>Errei meu nome ao digitar. Posso corrigir?</h4>
+                  </div>
+                  <div class="iconLabel">
+                    <svg class="arrowSVG" width="15px" height="9px" viewBox="0 0 15 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                        <g id="Desktop_v2" transform="translate(-1099.000000, -386.000000)" stroke="#0164BF" stroke-width="2">
+                          <g id="Group-16" transform="translate(696.000000, 318.000000)">
+                            <g id="Group-20" transform="translate(0.000000, 33.000000)">
+                              <polyline id="Path-5" points="404.773722 36.8076179 410.773722 42.8076179 416.773722 36.8076179"></polyline>
                             </g>
                           </g>
                         </g>
-                      </svg>
-                    </div>
-                  </label>
+                      </g>
+                    </svg>
+                  </div>
+                </label>
 
-                  <div class="tab-content">
-                    <p>
-                      As cias aéreas consideram consideram correção de nome somente em alguns casos, como: erro de digitação de até 3 letras, sobrenome duplicado, inclusão de sobrenome do meio e sobrenome invertido. Mas fique tranquilo, os nossos
-                      especialistas vão tirar todas as suas dúvidas, entre em contato por meio do formulário de e-mail, eles vão analisar seu caso e te retornar em breve.
-                    </p>
-                    <br>
-                    <div class="ctaTabAtd">
-                      Enviar E-mail
-                    </div>
+                <div class="tab-content">
+                  <p>
+                    As cias aéreas consideram consideram correção de nome somente em alguns casos, como: erro de digitação de até 3 letras, sobrenome duplicado, inclusão de sobrenome do meio e sobrenome invertido. Mas fique tranquilo, os nossos
+                    especialistas vão tirar todas as suas dúvidas, entre em contato por meio do formulário de e-mail, eles vão analisar seu caso e te retornar em breve.
+                  </p>
+                  <br>
+                  <div class="ctaTabAtd" id="erreiNomeEnvio">
+                    Solicitar agora
                   </div>
                 </div>
-              </a>
+              </div>
 
-              <a href="https://www.viajanet.com.br/atendimento/enviar-email">
                 <div class="tab">
                   <input type="checkbox" id="incluirPax_tips">
                   <label class="tab-label" for="incluirPax_tips">
@@ -1108,17 +1388,15 @@
                       </svg>
                     </div>
                   </label>
-
                   <div class="tab-content">
                     <p>
                       Para incluir um novo passageiro é preciso realizar uma nova compra. Caso você precise cancelar um dos passageiros de sua reserva os nossos especialistas podem te ajudar, entre em contato através do formulário de e-mail. </p>
                     <br>
-                    <div class="ctaTabAtd">
-                      Enviar E-mail
+                    <div class="ctaTabAtd" id="incluirPassageiroEnvio">
+                      Solicitar inclusão
                     </div>
                   </div>
                 </div>
-              </a>
 
               <div class="tab">
                 <input type="checkbox" id="payMethods_tips">
@@ -1217,29 +1495,29 @@
                 </p>
                 <br>
                 <a href="https://www.viajanet.com.br/atendimento/enviar-email" target="_blank">
-                <div class="ctaTabAtd">
-                  <svg width="16px" height="18px" viewBox="0 0 16 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                      <g id="Mobile-perguntas-abertas" transform="translate(-66.000000, -1524.000000)">
-                        <g id="Group-22" transform="translate(10.000000, 737.000000)">
-                          <g id="Group" transform="translate(0.000000, 562.000000)">
-                            <g id="Group-5" transform="translate(14.000000, 210.000000)">
-                              <g id="Icons/ic_Mail" transform="translate(38.000000, 9.827818)">
-                                <rect id="area" x="0" y="0" width="24" height="24"></rect>
-                                <path
-                                  d="M18,6 C19.1045695,6 20,6.8954305 20,8 L20,16 C20,17.1045695 19.1045695,18 18,18 L6,18 C4.8954305,18 4,17.1045695 4,16 L4,8 C4,6.8954305 4.8954305,6 6,6 L18,6 Z M17.430306,10.7453694 C17.2896774,10.507718 16.9830209,10.4290654 16.7453694,10.569694 L16.7453694,10.569694 L11.934,13.416 L7.25990959,10.5728618 L7.17894348,10.5330245 C6.95767716,10.4479437 6.70045661,10.5303998 6.57286185,10.7400904 C6.42931774,10.9759923 6.50418852,11.283594 6.74009041,11.4271382 L6.74009041,11.4271382 L11.6703219,14.4271382 L11.7521788,14.4672372 C11.8929536,14.5208973 12.0524148,14.5086807 12.1848621,14.430306 L12.1848621,14.430306 L17.2546306,11.430306 L17.3278762,11.377603 C17.5070532,11.2223835 17.5553092,10.9566152 17.430306,10.7453694 Z"
-                                  id="Combined-Shape" fill="#FFFFFF"></path>
+                  <div class="ctaTabAtd">
+                    <svg width="16px" height="18px" viewBox="0 0 16 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="Mobile-perguntas-abertas" transform="translate(-66.000000, -1524.000000)">
+                          <g id="Group-22" transform="translate(10.000000, 737.000000)">
+                            <g id="Group" transform="translate(0.000000, 562.000000)">
+                              <g id="Group-5" transform="translate(14.000000, 210.000000)">
+                                <g id="Icons/ic_Mail" transform="translate(38.000000, 9.827818)">
+                                  <rect id="area" x="0" y="0" width="24" height="24"></rect>
+                                  <path
+                                    d="M18,6 C19.1045695,6 20,6.8954305 20,8 L20,16 C20,17.1045695 19.1045695,18 18,18 L6,18 C4.8954305,18 4,17.1045695 4,16 L4,8 C4,6.8954305 4.8954305,6 6,6 L18,6 Z M17.430306,10.7453694 C17.2896774,10.507718 16.9830209,10.4290654 16.7453694,10.569694 L16.7453694,10.569694 L11.934,13.416 L7.25990959,10.5728618 L7.17894348,10.5330245 C6.95767716,10.4479437 6.70045661,10.5303998 6.57286185,10.7400904 C6.42931774,10.9759923 6.50418852,11.283594 6.74009041,11.4271382 L6.74009041,11.4271382 L11.6703219,14.4271382 L11.7521788,14.4672372 C11.8929536,14.5208973 12.0524148,14.5086807 12.1848621,14.430306 L12.1848621,14.430306 L17.2546306,11.430306 L17.3278762,11.377603 C17.5070532,11.2223835 17.5553092,10.9566152 17.430306,10.7453694 Z"
+                                    id="Combined-Shape" fill="#FFFFFF"></path>
+                                </g>
                               </g>
                             </g>
                           </g>
                         </g>
                       </g>
-                    </g>
-                  </svg>
-                  <p>
-                    E-mail
-                  </p>
-                </div>
+                    </svg>
+                    <p>
+                      E-mail
+                    </p>
+                  </div>
                 </a>
                 <a href="https://wa.me/551149505771" target="blank">
                   <div class="ctaTabAtd whatsApp">
@@ -1329,6 +1607,77 @@
     </div>
 
 
+    <div id="erreiNomeEnvio_modal" class="modal">
+      <div class="modal-content">
+        <span id="erreiNomeEnvio_close" class="closeAtd">&times;</span>
+        <h2>Correção de Nome</h2>
+        <p>Preencha os campos abaixo e clique em "Solicitar Agora"<br><small>Entraremos em contato através do e-mail indicado.</small></p>
+        <form class="">
+          <label class="pure-material-textfield-outlined">
+            <input placeholder=" " required>
+            <span>Nome Completo</span>
+          </label>
+          <br>
+          <label class="pure-material-textfield-outlined">
+            <input placeholder=" " type="email" required>
+            <span>E-mail</span>
+          </label>
+          <br>
+          <label class="pure-material-textfield-outlined">
+            <input placeholder=" " type="number" required>
+            <span>Numero da Reserva</span>
+          </label>
+          <br>
+          <label class="pure-material-textfield-outlined">
+            <input placeholder=" " required>
+            <span>Telefone</span>
+          </label>
+          <br>
+          <br><br><input type="submit" value="Solicitar Alteração" class="btnMyAccountAcess"></input>
+          <br>
+        </form>
+
+
+      </div>
+    </div>
+
+    <div id="incluirPassageiroEnvio_modal" class="modal">
+      <div class="modal-content">
+        <span id="incluirPassageiroEnvio_close" class="closeAtd">&times;</span>
+        <h2>Excluir Passageiro</h2>
+        <p>Preencha os campos abaixo e clique em "Solicitar Agora"<br><small>Entraremos em contato através do e-mail indicado.</small></p>
+        <form class="">
+          <label class="pure-material-textfield-outlined">
+            <input placeholder=" " required>
+            <span>Nome Completo</span>
+          </label>
+          <br>
+          <label class="pure-material-textfield-outlined">
+            <input placeholder=" " type="email" required>
+            <span>E-mail</span>
+          </label>
+          <br>
+          <label class="pure-material-textfield-outlined">
+            <input placeholder=" " type="number" required>
+            <span>Numero da Reserva</span>
+          </label>
+          <br>
+          <label class="pure-material-textfield-outlined">
+            <input placeholder=" " required>
+            <span>Telefone</span>
+          </label>
+          <label class="pure-material-textfield-outlined">
+            <input placeholder=" " required>
+            <span>Nome do Passageiro Completo</span>
+          </label>
+          <br>
+          <br><br><input type="submit" value="Solicitar Alteração" class="btnMyAccountAcess"></input>
+          <br>
+        </form>
+      </div>
+    </div>
+
+
   </div>
 
   <script>
@@ -1355,6 +1704,9 @@
       // When the user clicks on <span> (x), close the modal
       span.onclick = function() {
         modal.style.display = "none";
+        $('.yt_player_iframe').each(function(){
+  this.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*')
+});
       }
 
     };
@@ -1365,6 +1717,9 @@
     modalVNatd("reserva_video_modal", "reserva_video", "reserva_video_close");
     modalVNatd("cancelamento_video_modal", "cancelamento_video", "cancelamento_video_close");
     modalVNatd("marcar-assento_video_modal", "marcar-assento_video", "marcar-assento_video_close");
+    modalVNatd("erreiNomeEnvio_modal", "erreiNomeEnvio", "erreiNomeEnvio_close");
+    modalVNatd("incluirPassageiroEnvio_modal", "incluirPassageiroEnvio", "incluirPassageiroEnvio_close");
+
   </script>
 </body>
 
