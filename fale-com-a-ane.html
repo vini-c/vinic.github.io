@@ -1,18 +1,68 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="stylesheet" type="text/css" href="https://www.viajanet.com.br/static/ashx/css.ashx?company=ViajaNet&debug=False&filename=travel-insurance-overwrite&g=9e27984f-92f4-40bd-a73f-3037b4dc2407">
-
-  <title>ViajaNet - Atendimento</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
+  <link rel="stylesheet" type="text/css" href="https://www.viajanet.com.br/static/ashx/css.ashx?company=ViajaNet&debug=False&filename=travel-insurance-overwrite&g=9e27984f-92f4-40bd-a73f-3037b4dc2407">
   <style>
+    #InformacoesImportantesAne{
+      background-color:#004E97;
+    }
+    #InformacoesImportantesAne .closeInformacoesImportantesAne{
+      position:absolute;
+      top:0px;
+      right:20px;
+      padding:20px;
+    }
+    #InformacoesImportantesAne .closeInformacoesImportantesAne{
+      position:absolute;
+      top:0px;
+      right:0px;
+      padding: 20px 10px;
+    }
+    #InformacoesImportantesAne .InformationTitle{
+      display:flex;
+      width:100%;
+      align-items:center;
+    }
+    #InformacoesImportantesAne .InformationTitle h4{
+      color:#fff;
+      font-family:ProximaNova-Semibold;
+      font-size:18px;
+      letter-spacing:-.25px;
+      padding-left:6px;
+    }
+    #InformacoesImportantesAne .InformationOpened h2{
+      color:#fff;
+      font-family:ProximaNova-Semibold;
+      font-size:16px;
+      letter-spacing:-.25px;
+      margin-bottom:4px;
+    }
+    #InformacoesImportantesAne .InformationOpened p{
+      color:#fff;
+      font-family:ProximaNova-Regular;
+      font-size:16px;
+      letter-spacing:-.25px;
+      line-height:1.25;
+    }
+    #InformacoesImportantesAne .InformationOpened{
+      color:#fff;
+      padding-bottom:20px;
+    }
+    #InformacoesImportantesAne .InformationTitle{
+      padding-top:20px;
+      padding-bottom:12px;
+    }
     #AtendimentoVN a {
       text-decoration: none;
+    }
+
+    #InformacoesImportantesAne .containerAtd {
+      max-width: 1240px;
+      margin: 0 auto;
+      position: relative;
     }
 
     #AtendimentoVN .containerAtd {
@@ -68,6 +118,10 @@
       z-index: 0;
     }
 
+    #AtendimentoVN .otherContacts .icon_accordionAtd {
+      width: auto;
+    }
+
     #AtendimentoVN .AtdQuestions {
       position: relative;
       background: #F7F7F7;
@@ -90,12 +144,16 @@
     }
 
     #AtendimentoVN .titleAtd h2 {
-      font-size: 18px;
+      font-size: 22px;
       font-family: ProximaNova-SemiBold;
       letter-spacing: -0.25px;
       margin-left: 20px;
       margin-top: 20px;
       color: #424242;
+    }
+
+    #AtendimentoVN .mainQuestions .titleAtd h2 {
+      margin-top: 40px;
     }
 
     #AtendimentoVN .titleAtd p {
@@ -147,7 +205,7 @@
 
     #AtendimentoVN button.ButtonAtd h4 {
       font-family: ProximaNova-Regular;
-      font-size: 16px;
+      font-size: 18px;
       color: #424242;
     }
 
@@ -189,6 +247,7 @@
       border-radius: 3px;
       text-decoration: none;
       font-family: ProximaNova-SemiBold;
+      font-size: 16px;
     }
 
     #AtendimentoVN .AtdCattegory {
@@ -199,7 +258,7 @@
     }
 
     #AtendimentoVN .AtdCattegory h2 {
-      font-size: 18px;
+      font-size: 22px;
       font-family: ProximaNova-SemiBold;
       letter-spacing: -0.25px;
       color: #424242;
@@ -247,7 +306,7 @@
       color: #424242;
       letter-spacing: -0.25px;
       font-family: ProximaNova-Regular;
-      font-size: 16px;
+      font-size: 18px;
     }
 
     #AtendimentoVN .tab-label p {
@@ -265,6 +324,10 @@
       color: #424242;
     }
 
+    #covidCTAAtd svg {
+      width: 12%;
+    }
+
     #AtendimentoVN button.ButtonAtd#covidCTAAtd {
       align-items: flex-start;
     }
@@ -277,7 +340,7 @@
       background: #0164bf;
       display: inline-block;
       color: #fff;
-      font-size: 14px;
+      font-size: 16px;
       padding: 10px 18px;
       border-radius: 3px;
       font-family: ProximaNova-Semibold
@@ -287,7 +350,7 @@
       background: #0164bf;
       display: inline-block;
       color: #fff;
-      font-size: 14px;
+      font-size: 16px;
       padding: 10px 18px;
       border-radius: 3px;
       font-family: ProximaNova-Semibold
@@ -307,14 +370,27 @@
 
     #AtendimentoVN .tab-content p {
       font-family: ProximaNova-Regular;
-      font-size: 14px;
-      line-height: 1.2;
+      font-size: 16px;
+      line-height: 1.3;
       letter-spacing: -0.25px;
       color: #424242;
     }
 
-    #AtendimentoVN .tab input {
+    #AtendimentoVN input {
       display: none
+    }
+
+    #AtendimentoVN .icon_accordionAtd {
+      width: 12%;
+      text-align: center;
+    }
+
+    #AtendimentoVN .icon_accordionAtd svg {
+      width: 28px;
+    }
+
+    #AtendimentoVN .icon_accordionAtd svg.reserva_icon {
+      width: 34px;
     }
 
     #AtendimentoVN input+.tab-label .arrowSVG {
@@ -365,6 +441,7 @@
 
     #AtendimentoVN b {
       font-family: ProximaNova-SemiBold;
+      font-weight: normal;
     }
 
     #AtendimentoVN .questionsAtd .tab-label {
@@ -429,24 +506,16 @@
     /* Modal Content/Box */
     #AtendimentoVN .modal-content {
       background-color: #ffffff;
-      margin: 8% auto;
-      /* 15% from the top and centered */
+      margin: 6% auto;
       padding: 20px;
       border-radius: 3px;
       width: 60%;
-      /* Could be more or less, depending on screen size */
       text-align: center;
+      position: relative;
+      padding-bottom: 40px;
     }
 
     #AtendimentoVN .modal-content a.btnMyAccountAcess {
-      background: #0164bf;
-      color: #fff;
-      padding: 12px 24px;
-      border-radius: 3px;
-      text-decoration: none;
-      font-family: ProximaNova-SemiBold;
-    }
-    #AtendimentoVN .modal-content input.btnMyAccountAcess {
       background: #0164bf;
       color: #fff;
       padding: 12px 24px;
@@ -459,6 +528,7 @@
       width: 400px;
       height: 400px;
       border-radius: 3px;
+      margin-bottom: 10px;
     }
 
     #AtendimentoVN .modal-content h2 {
@@ -467,6 +537,7 @@
       display: block;
       font-size: 22px;
       letter-spacing: -0.25px;
+      margin-top: 20px;
     }
 
     #AtendimentoVN .modal-content p {
@@ -476,214 +547,23 @@
       font-size: 16px;
       letter-spacing: -0.25px;
       margin-bottom: 20px;
-    }
-
-    .pure-material-textfield-outlined {
-      --pure-material-safari-helper1: rgb(var(--pure-material-primary-rgb, 33, 150, 243));
-      position: relative;
-      display: inline-block;
-      padding-top: 6px;
-      font-family: ProximaNova-Regular;
-      font-size: 16px;
-      line-height: 1.5;
-      overflow: hidden;
-      width: 50%;
-    }
-
-    /* Input, Textarea */
-    .pure-material-textfield-outlined>input,
-    .pure-material-textfield-outlined>textarea {
-      box-sizing: border-box;
-      margin: 0;
-      border: solid 1px;
-      /* Safari */
-      border-color:rgba(0,0,0,.38);
-      border-top-color: transparent;
-      border-radius: 4px;
-      padding: 15px 13px 15px;
-      width: 100%;
-      height: inherit;
-      color:rgba(0,0,0,.9);
-      background-color: transparent;
-      box-shadow: none;
-      /* Firefox */
-      font-family: inherit;
-      font-size: inherit;
-      line-height: inherit;
-      caret-color: rgba(0,0,0,.38);
-      transition: border 0.2s, box-shadow 0.2s;
-    }
-
-    /* Span */
-    .pure-material-textfield-outlined>input+span,
-    .pure-material-textfield-outlined>textarea+span {
-      position: absolute;
-      top: 0;
-      left: 0;
-      display: flex;
-      border-color:rgba(0,0,0,.38);
-      width: 100%;
-      max-height: 100%;
-      color: rgba(0,0,0,.8);
-      font-size: 75%;
-      line-height: 15px;
-      cursor: text;
-      transition: color 0.2s, font-size 0.2s, line-height 0.2s;
-    }
-
-    /* Corners */
-    .pure-material-textfield-outlined>input+span::before,
-    .pure-material-textfield-outlined>input+span::after,
-    .pure-material-textfield-outlined>textarea+span::before,
-    .pure-material-textfield-outlined>textarea+span::after {
-      content: "";
-      display: block;
-      box-sizing: border-box;
       margin-top: 6px;
-      border-top: solid 1px;
-      border-top-color:  rgba(0,0,0,.38);
-      min-width: 10px;
-      height: 8px;
-      pointer-events: none;
-      box-shadow: inset 0 1px transparent;
-      transition: border-color 0.2s, box-shadow 0.2s;
-    }
-
-    .pure-material-textfield-outlined>input+span::before,
-    .pure-material-textfield-outlined>textarea+span::before {
-      margin-right: 4px;
-      border-left: solid 1px transparent;
-      border-radius: 4px 0;
-    }
-
-    .pure-material-textfield-outlined>input+span::after,
-    .pure-material-textfield-outlined>textarea+span::after {
-      flex-grow: 1;
-      margin-left: 4px;
-      border-right: solid 1px transparent;
-      border-radius: 0 4px;
-    }
-
-    /* Hover */
-    .pure-material-textfield-outlined:hover>input,
-    .pure-material-textfield-outlined:hover>textarea {
-      border-color:  rgba(0,0,0,.38);
-      border-top-color: transparent;
-    }
-
-    .pure-material-textfield-outlined:hover>input+span::before,
-    .pure-material-textfield-outlined:hover>textarea+span::before,
-    .pure-material-textfield-outlined:hover>input+span::after,
-    .pure-material-textfield-outlined:hover>textarea+span::after {
-      border-top-color:  #0164bf;
-    }
-
-    .pure-material-textfield-outlined:hover>input:not(:focus):placeholder-shown,
-    .pure-material-textfield-outlined:hover>textarea:not(:focus):placeholder-shown {
-      border-color:  #0164bf;
-    }
-
-    /* Placeholder-shown */
-    .pure-material-textfield-outlined>input:not(:focus):placeholder-shown,
-    .pure-material-textfield-outlined>textarea:not(:focus):placeholder-shown {
-      border-top-color:  rgba(0,0,0,.38);
-    }
-
-    .pure-material-textfield-outlined>input:not(:focus):placeholder-shown+span,
-    .pure-material-textfield-outlined>textarea:not(:focus):placeholder-shown+span {
-      font-size: inherit;
-      line-height: 68px;
-    }
-
-    .pure-material-textfield-outlined>input:not(:focus):placeholder-shown+span::before,
-    .pure-material-textfield-outlined>textarea:not(:focus):placeholder-shown+span::before,
-    .pure-material-textfield-outlined>input:not(:focus):placeholder-shown+span::after,
-    .pure-material-textfield-outlined>textarea:not(:focus):placeholder-shown+span::after {
-      border-top-color: transparent;
-    }
-
-    /* Focus */
-    .pure-material-textfield-outlined>input:focus,
-    .pure-material-textfield-outlined>textarea:focus {
-      border-color:  #0164bf;
-      border-top-color: transparent;
-      box-shadow: inset 1px 0 var(--pure-material-safari-helper1), inset -1px 0 var(--pure-material-safari-helper1), inset 0 -1px var(--pure-material-safari-helper1);
-      outline: none;
-    }
-
-    .pure-material-textfield-outlined>input:focus+span,
-    .pure-material-textfield-outlined>textarea:focus+span {
-      color:  #0164bf;
-    }
-
-    .pure-material-textfield-outlined>input:focus+span::before,
-    .pure-material-textfield-outlined>input:focus+span::after,
-    .pure-material-textfield-outlined>textarea:focus+span::before,
-    .pure-material-textfield-outlined>textarea:focus+span::after {
-      border-top-color:  #0164bf;
-      box-shadow: inset 0 1px var(--pure-material-safari-helper1);
-    }
-
-    /* Disabled */
-    .pure-material-textfield-outlined>input:disabled,
-    .pure-material-textfield-outlined>input:disabled+span,
-    .pure-material-textfield-outlined>textarea:disabled,
-    .pure-material-textfield-outlined>textarea:disabled+span {
-      border-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.38) !important;
-      border-top-color: transparent !important;
-      color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.38);
-      pointer-events: none;
-    }
-
-    .pure-material-textfield-outlined>input:disabled+span::before,
-    .pure-material-textfield-outlined>input:disabled+span::after,
-    .pure-material-textfield-outlined>textarea:disabled+span::before,
-    .pure-material-textfield-outlined>textarea:disabled+span::after {
-      border-top-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.38) !important;
-    }
-
-    .pure-material-textfield-outlined>input:disabled:placeholder-shown,
-    .pure-material-textfield-outlined>input:disabled:placeholder-shown+span,
-    .pure-material-textfield-outlined>textarea:disabled:placeholder-shown,
-    .pure-material-textfield-outlined>textarea:disabled:placeholder-shown+span {
-      border-top-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.38) !important;
-    }
-
-    .pure-material-textfield-outlined>input:disabled:placeholder-shown+span::before,
-    .pure-material-textfield-outlined>input:disabled:placeholder-shown+span::after,
-    .pure-material-textfield-outlined>textarea:disabled:placeholder-shown+span::before,
-    .pure-material-textfield-outlined>textarea:disabled:placeholder-shown+span::after {
-      border-top-color: transparent !important;
-    }
-
-    /* Faster transition in Safari for less noticable fractional font-size issue */
-    @media not all and (min-resolution:.001dpcm) {
-      @supports (-webkit-appearance:none) {
-
-        .pure-material-textfield-outlined>input,
-        .pure-material-textfield-outlined>input+span,
-        .pure-material-textfield-outlined>textarea,
-        .pure-material-textfield-outlined>textarea+span,
-        .pure-material-textfield-outlined>input+span::before,
-        .pure-material-textfield-outlined>input+span::after,
-        .pure-material-textfield-outlined>textarea+span::before,
-        .pure-material-textfield-outlined>textarea+span::after {
-          transition-duration: 0.1s;
-        }
-      }
     }
 
     /* The Close Button */
     #AtendimentoVN .closeAtd {
-      color: #e63838;
-      float: right;
-      font-size: 32px;
+      color: #0164bf;
+      position: absolute;
+      font-size: 42px;
+      right: 0px;
+      top: -12px;
       font-weight: bold;
+      padding: 20px;
     }
 
     #AtendimentoVN .closeAtd:hover,
     #AtendimentoVN .closeAtd:focus {
-      color: black;
+      color: #0164bf;
       text-decoration: none;
       cursor: pointer;
     }
@@ -695,7 +575,8 @@
     }
 
     @media screen and (max-width:1200px) {
-      #AtendimentoVN .containerAtd {
+      #AtendimentoVN .containerAtd,    #InformacoesImportantesAne .containerAtd
+ {
         max-width: 1000px;
         margin: 0 auto;
         position: relative;
@@ -703,7 +584,8 @@
     }
 
     @media screen and (max-width:1023px) {
-      #AtendimentoVN .containerAtd {
+      #AtendimentoVN .containerAtd ,     #InformacoesImportantesAne .containerAtd {
+
         max-width: 1000px;
         margin: 0 auto;
         position: relative;
@@ -743,7 +625,7 @@
         position: absolute;
         right: -30px;
         top: 0px;
-        width: 250px;
+        width: 56%;
         z-index: 2;
       }
 
@@ -755,6 +637,10 @@
     @media screen and (max-width:801px) {
       #AtendimentoVN .questionsAtd .tab-label .contentLabel {
         width: 90%;
+      }
+
+      #AtendimentoVN .ctaTabAtd {
+        margin-bottom: 10px;
       }
 
       #AtendimentoVN .aneAvatarAtd {
@@ -789,7 +675,8 @@
       }
 
       #AtendimentoVN .modal-content h2 {
-        margin-top: 32px;
+        margin-top: 10px;
+        font-size: 18px;
       }
 
       #AtendimentoVN .modal-content iframe {
@@ -805,9 +692,10 @@
         text-decoration: none;
         font-family: ProximaNova-SemiBold;
         display: block;
-        margin-top: 12px;
+        margin-top: 0px;
         margin-left: 30px;
         margin-right: 30px;
+        font-size: 16px;
       }
 
       #AtendimentoVN .bgDetailAtd {
@@ -833,14 +721,43 @@
         width: 210px;
         z-index: 2;
       }
-      .pure-material-textfield-outlined{
-        width:100%;
+
+      .pure-material-textfield-outlined {
+        width: 100%;
+      }
+
+      #AtendimentoVN .titleAtd h2,
+      #AtendimentoVN .AtdCattegory h2 {
+        font-size: 18px;
+        line-height: 1.2;
+      }
+
+      #AtendimentoVN .tab-label h4,
+      #AtendimentoVN button.ButtonAtd h4 {
+        font-size: 16px;
+        line-height: 1.2;
       }
     }
 
     @media screen and (max-width:330px) {
       #AtendimentoVN .introAtd h1 {
         padding-top: 40px;
+      }
+
+      #AtendimentoVN .modal-content iframe {
+        height: 280px;
+      }
+
+      #AtendimentoVN .titleAtd h2,
+      #AtendimentoVN .AtdCattegory h2 {
+        font-size: 18px;
+        line-height: 1.2;
+      }
+
+      #AtendimentoVN .tab-label h4,
+      #AtendimentoVN button.ButtonAtd h4 {
+        font-size: 16px;
+        line-height: 1.2;
       }
 
       #AtendimentoVN .introAtd p {
@@ -873,23 +790,61 @@
 
     }
   </style>
+
 </head>
 
 <body>
+  <div id="InformacoesImportantesAne">
+    <div class="containerAtd">
+      <div class="closeInformacoesImportantesAne" onclick="document.getElementById('InformacoesImportantesAne').remove();">
+      <svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <title>close</title>
+          <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+              <g id="Desktop_v2" transform="translate(-1097.000000, -85.000000)" stroke="#FFFFFF" stroke-width="2">
+                  <g id="Group-24" transform="translate(1098.000000, 86.000000)">
+                      <line x1="0" y1="0" x2="11.4960954" y2="11.4960954" id="Path-2"></line>
+                      <line x1="-1.8189894e-12" y1="-6.58873103e-13" x2="11.4960954" y2="11.4960954" id="Path-2" transform="translate(5.748048, 5.748048) rotate(-90.000000) translate(-5.748048, -5.748048) "></line>
+                  </g>
+              </g>
+          </g>
+      </svg>
+    </div>
+
+        <div class="InformationTitle">
+          <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="Desktop_v2-Copy" transform="translate(-728.000000, -318.000000)">
+                      <g id="Informacoes-" transform="translate(700.000000, 297.000000)">
+                          <g id="Group-28" transform="translate(28.000000, 20.000000)">
+                              <g id="Group-26" transform="translate(0.000000, 1.000000)">
+                                  <g id="Icons/ic_notification" fill="#FAFAFA">
+                                      <path d="M8,19.5555556 C9.1,19.5555556 10,18.6529915 10,17.5498575 L6,17.5498575 C6,18.6529915 6.89,19.5555556 8,19.5555556 Z M14,13.5384615 L14,8.52421652 C14,5.44547009 12.36,2.86814815 9.5,2.18621083 L9.5,1.5042735 C9.5,0.671908832 8.83,0 8,0 C7.17,0 6.5,0.671908832 6.5,1.5042735 L6.5,2.18621083 C3.63,2.86814815 2,5.4354416 2,8.52421652 L2,13.5384615 L0,15.5441595 L0,16.5470085 L16,16.5470085 L16,15.5441595 L14,13.5384615 Z" id="ic_notification"></path>
+                                  </g>
+                                  <rect id="Rectangle" fill="#E7455A" x="11" y="1" width="9" height="9" rx="4.5"></rect>
+                              </g>
+                          </g>
+                      </g>
+                  </g>
+              </g>
+          </svg>
+          <h4>Informações Importantes</h4>
+        </div>
+        <div class="InformationOpened">
+          <h2>Nova regra de embarque doméstico</h2>
+          <p>Devido a Resolução ANAC nº595/2020, é obrigatório informar o CPF e dados de contato de todos os passageiros em voos domésticos, incluindo crianças e adolescentes menores de 16 anos.</p>
+        </div>
+    </div>
+  </div>
   <div id="AtendimentoVN">
     <section class="introAtd">
-      <!-- <img src="https://www.viajanet.com.br/static/assets/platform/img/catalog/BaseOne/linha_2.png" class="bgDetailAtd_2" alt="traçado para background">
-      <img src="https://www.viajanet.com.br/static/assets/platform/img/catalog/BaseOne/linha_1.png" class="bgDetailAtd" alt="traçado para background"> -->
       <div class="containerAtd">
         <img src="https://i.ibb.co/VYhPgt0/atd-avatar-ane-1.png" class="aneAvatarAtd" alt="traçado para background">
-
         <h1>Fale com a Ane</h1>
         <h3>
           Olá, eu sou a Ane a assistente digital do ViajaNet.
           <br class="VNhideMobile">
           Selecionei as principais dúvidas dos nossos viajantes.
           Se precisar estou por aqui!</h3>
-
       </div>
     </section>
     <section class="AtdQuestions">
@@ -906,7 +861,7 @@
                 <input type="checkbox" id="recibo_tips">
                 <label class="tab-label" for="recibo_tips">
                   <div class="contentLabel">
-                    <h4>Recibo de Viagem</h4><br>
+                    <h4>Recibo de viagem</h4><br>
                     <p>Precisando do recibo de sua viagem?</p>
                   </div>
                   <div class="iconLabel">
@@ -975,7 +930,7 @@
               <button class="modalAtd ButtonAtd" id="reserva_video">
                 <div class="textAtdModal">
                   <h4>Status da reserva</h4>
-                  <p>Não sabe como está sua reserva? confira no vídeo como verificar.
+                  <p>Não sabe como está sua reserva? Confira no vídeo como verificar.
                   </p>
                 </div>
                 <div class="iconAtdModal">
@@ -995,7 +950,7 @@
               </button>
               <button class="modalAtd ButtonAtd" id="cancelamento_video">
                 <div class="textAtdModal">
-                  <h4>Cancelar Reserva</h4>
+                  <h4>Cancelar reserva</h4>
                   <p>Veja como cancelar sua passagem no ViajaNet.
                   </p>
                 </div>
@@ -1016,8 +971,8 @@
               </button>
               <button class="modalAtd ButtonAtd" id="marcar-assento_video">
                 <div class="textAtdModal">
-                  <h4>Marcar Assento</h4>
-                  <p>Gostaria de marcar o assento? veja o vídeo
+                  <h4>Marcar assento</h4>
+                  <p>Gostaria de marcar o assento? Veja o vídeo.
                   </p>
                 </div>
                 <div class="iconAtdModal">
@@ -1036,7 +991,7 @@
                 </div>
               </button>
               <div class="minhaContaBtn_atd">
-                <a href="https://www.viajanet.com.br/shop/myaccount/#/reservations" target="_blank">Acessar Minhas Reservas</a>
+                <a href="https://www.viajanet.com.br/shop/myaccount/#/reservations" target="_blank">Acessar minhas reservas</a>
               </div>
             </div>
           </div>
@@ -1047,7 +1002,7 @@
                 <input type="checkbox" id="status-de-reserva_tips">
                 <label class="tab-label" for="status-de-reserva_tips">
                   <div class="icon_accordionAtd">
-                    <svg width="39px" height="45px" viewBox="0 0 39 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <svg width="39px" class="reserva_icon" height="45px" viewBox="0 0 39 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                       <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                         <g id="mobile-perguntas-fechadas" transform="translate(-33.000000, -1186.000000)">
                           <g id="Group-16" transform="translate(13.000000, 1130.000000)">
@@ -1099,7 +1054,7 @@
                 </label>
                 <div class="tab-content">
                   <p>
-                    Você pode simular e alterar sua passagem aérea, acessando seu pedido em nosso site através da opção <b>Minhas Reservas</b>. Consulte as opções disponíveis, valores e regras antes de escolher e finalizar.
+                    Você pode consultar o status, simular e alterar sua passagem aérea, acessando seu pedido em nosso site através da opção <b>Minhas Reservas</b>. Consulte as opções disponíveis, valores e regras antes de escolher e finalizar.
                   </p>
                 </div>
               </div>
@@ -1134,7 +1089,7 @@
                     </svg>
                   </div>
                   <div class="contentLabel">
-                    <h4>Remarcações e Cancelamentos</h4>
+                    <h4>Reembolsos e Cancelamentos</h4>
                   </div>
                   <div class="iconLabel">
                     <svg class="arrowSVG" width="15px" height="9px" viewBox="0 0 15 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -1229,112 +1184,125 @@
                   </p>
                 </div>
               </div>
-              <a href="https://carros.viajanet.com.br/" target="_blank">
-                <div class="tab">
-                  <input type="checkbox" id="alterarCarros_tips">
-                  <label class="tab-label" for="alterarCarros_tips">
-                    <div class="contentLabel">
-                      <h4>Como alterar ou cancelar a minha reserva de aluguel de carro?</h4>
-                    </div>
-                    <div class="iconLabel">
-                      <svg class="arrowSVG" width="15px" height="9px" viewBox="0 0 15 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
-                          <g id="Desktop_v2" transform="translate(-1099.000000, -386.000000)" stroke="#0164BF" stroke-width="2">
-                            <g id="Group-16" transform="translate(696.000000, 318.000000)">
-                              <g id="Group-20" transform="translate(0.000000, 33.000000)">
-                                <polyline id="Path-5" points="404.773722 36.8076179 410.773722 42.8076179 416.773722 36.8076179"></polyline>
-                              </g>
+              <div class="tab">
+                <input type="checkbox" id="alterarCarros_tips">
+                <label class="tab-label" for="alterarCarros_tips">
+                  <div class="contentLabel">
+                    <h4>Como alterar minha reserva de hotel ou aluguel de carro?</h4>
+                  </div>
+                  <div class="iconLabel">
+                    <svg class="arrowSVG" width="15px" height="9px" viewBox="0 0 15 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                        <g id="Desktop_v2" transform="translate(-1099.000000, -386.000000)" stroke="#0164BF" stroke-width="2">
+                          <g id="Group-16" transform="translate(696.000000, 318.000000)">
+                            <g id="Group-20" transform="translate(0.000000, 33.000000)">
+                              <polyline id="Path-5" points="404.773722 36.8076179 410.773722 42.8076179 416.773722 36.8076179"></polyline>
                             </g>
                           </g>
                         </g>
-                      </svg>
-                    </div>
-                  </label>
+                      </g>
+                    </svg>
+                  </div>
+                </label>
 
-                  <div class="tab-content">
-                    <p>
-                      É possível realizar alterações e verificar informações sobre cancelamentos diretamente no site do nosso parceiro Rentcars.
-                    </p>
-                    <br>
+                <div class="tab-content">
+                  <p>
+                    É possível realizar alterações e verificar informações sobre cancelamentos diretamente no site dos nossos parceiros. No caso de reservas de hotéis, entre em contato com o nosso parceiro Booking, agora se você alugou um carro e
+                    precisa de ajuda, entre em contato com o parceiro Rentcars.
+                  </p>
+                  <br>
+                  <a href="https://carros.viajanet.com.br/" target="_blank">
                     <div class="ctaTabAtd">
                       Ir para o parceiro RentCars
                     </div>
-                  </div>
-                </div>
-              </a>
-
-              <a href="https://sp.booking.com/index.pt-br.html?aid=1918203&lang=pt-br&selected_currency=BRL&label=ViajaNet_Pagina_Atendimento" target="_blank">
-                <div class="tab">
-                  <input type="checkbox" id="alterarHotel_tips">
-                  <label class="tab-label" for="alterarHotel_tips">
-                    <div class="contentLabel">
-                      <h4>Como alterar ou cancelar a minha reserva de reserva de hotel?</h4>
-                    </div>
-                    <div class="iconLabel">
-                      <svg class="arrowSVG" width="15px" height="9px" viewBox="0 0 15 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
-                          <g id="Desktop_v2" transform="translate(-1099.000000, -386.000000)" stroke="#0164BF" stroke-width="2">
-                            <g id="Group-16" transform="translate(696.000000, 318.000000)">
-                              <g id="Group-20" transform="translate(0.000000, 33.000000)">
-                                <polyline id="Path-5" points="404.773722 36.8076179 410.773722 42.8076179 416.773722 36.8076179"></polyline>
-                              </g>
-                            </g>
-                          </g>
-                        </g>
-                      </svg>
-                    </div>
-                  </label>
-
-                  <div class="tab-content">
-                    <p>
-                      É possível visualizar e alterar sua reserva de hotel diretamente no site do nosso parceiro Booking,
-                    </p>
-                    <br>
+                  </a>
+                  <a href="https://sp.booking.com/index.pt-br.html?aid=1918203&lang=pt-br&selected_currency=BRL&label=ViajaNet_Pagina_Atendimento" target="_blank">
                     <div class="ctaTabAtd">
                       Ir para o parceiro Booking
                     </div>
-                  </div>
+                  </a>
                 </div>
-              </a>
+              </div>
 
-              <a href="https://www.viajanet.com.br/shop/myaccount/#/reservations" target="_blank">
-                <div class="tab">
-                  <input type="checkbox" id="cancelarQuestion_tips">
-                  <label class="tab-label" for="cancelarQuestion_tips">
-                    <div class="contentLabel">
-                      <h4>Como cancelo minha reserva?</h4>
-                    </div>
-                    <div class="iconLabel">
-                      <svg class="arrowSVG" width="15px" height="9px" viewBox="0 0 15 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
-                          <g id="Desktop_v2" transform="translate(-1099.000000, -386.000000)" stroke="#0164BF" stroke-width="2">
-                            <g id="Group-16" transform="translate(696.000000, 318.000000)">
-                              <g id="Group-20" transform="translate(0.000000, 33.000000)">
-                                <polyline id="Path-5" points="404.773722 36.8076179 410.773722 42.8076179 416.773722 36.8076179"></polyline>
-                              </g>
+
+              <div class="tab">
+                <input type="checkbox" id="alterarHotel_tips">
+                <label class="tab-label" for="alterarHotel_tips">
+                  <div class="contentLabel">
+                    <h4>Como alterar minha passagem aérea ou pacote?</h4>
+                  </div>
+                  <div class="iconLabel">
+                    <svg class="arrowSVG" width="15px" height="9px" viewBox="0 0 15 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                        <g id="Desktop_v2" transform="translate(-1099.000000, -386.000000)" stroke="#0164BF" stroke-width="2">
+                          <g id="Group-16" transform="translate(696.000000, 318.000000)">
+                            <g id="Group-20" transform="translate(0.000000, 33.000000)">
+                              <polyline id="Path-5" points="404.773722 36.8076179 410.773722 42.8076179 416.773722 36.8076179"></polyline>
                             </g>
                           </g>
                         </g>
-                      </svg>
-                    </div>
-                  </label>
-
-                  <div class="tab-content">
-                    <p>
-                      Você pode simular, cotar e alterar sua passagem aérea, acessando o seu pedido em nosso site: com seu login, acesse a página Minhas Reservas, e escolha a reserva que deseja alterar. Você poderá consultar as opções disponíveis, e,
-                      seus valores e regras antes de escolher e finalizar.
-                    </p>
-                    <br>
-                    <div class="ctaTabAtd">
-                      Clique para acessar a sua conta
-                    </div>
-                    <br>
-                    <p><small><b>Importante:</b> As alterações dependem da política de cada companhia aérea, fique atento às regras e tarifas cobradas em cada caso.</small></p>
+                      </g>
+                    </svg>
                   </div>
+                </label>
+
+                <div class="tab-content">
+                  <p>
+                    Você pode simular e alterar sua passagem aérea, acessando seu pedido em nosso site através da opção Minhas Reservas. Consulte as opções disponíveis, valores e regras antes de escolher e finalizar. Se você precisa remarcar um
+                    pacote de viagens, entre em contato com a nossa equipe através do formulário de e-mail.
+                  </p>
+                  <br>
+                  <a href="https://www.viajanet.com.br/shop/myaccount/#/reservations" target="_blank">
+                    <div class="ctaTabAtd">
+                      Acessar minha reservas
+                    </div>
+                  </a>
+                  <a href="https://www.viajanet.com.br/atendimento/enviar-email" target="_blank">
+                    <div class="ctaTabAtd">
+                      Enviar e-mail
+                    </div>
+                  </a>
                 </div>
-              </a>
+              </div>
 
+              <a href="https://www.viajanet.com.br/shop/myaccount/#/reservations" target="_blank"" >
+                <div class=" tab">
+                <input type="checkbox" id="cancelarQuestion_tips">
+                <label class="tab-label" for="cancelarQuestion_tips">
+                  <div class="contentLabel">
+                    <h4>Como cancelo minha reserva?</h4>
+                  </div>
+                  <div class="iconLabel">
+                    <svg class="arrowSVG" width="15px" height="9px" viewBox="0 0 15 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                        <g id="Desktop_v2" transform="translate(-1099.000000, -386.000000)" stroke="#0164BF" stroke-width="2">
+                          <g id="Group-16" transform="translate(696.000000, 318.000000)">
+                            <g id="Group-20" transform="translate(0.000000, 33.000000)">
+                              <polyline id="Path-5" points="404.773722 36.8076179 410.773722 42.8076179 416.773722 36.8076179"></polyline>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                </label>
 
+                <div class="tab-content">
+                  <p>
+                    Na área Minhas Reservas é possível solicitar o cancelamento sem custos em até 24 horas após a emissão da passagem, desde que seu embarque esteja previsto pelo menos 7 dias depois desta compra. Se a sua reserva não estiver dentro
+                    dessas condições entre em contato conosco
+                  </p>
+                  <br>
+                  <div class="ctaTabAtd">
+                    Acessar minhas reservas
+                  </div>
+                  <br>
+                  <p><small><b>Importante:</b> As alterações dependem da política de cada companhia aérea, fique atento às regras e tarifas cobradas em cada caso.</small></p>
+                </div>
+            </div>
+            </a>
+
+            <a href="https://www.viajanet.com.br/atendimento/enviar-email">
               <div class="tab">
                 <input type="checkbox" id="erreiNome_tips">
                 <label class="tab-label" for="erreiNome_tips">
@@ -1362,47 +1330,19 @@
                     especialistas vão tirar todas as suas dúvidas, entre em contato por meio do formulário de e-mail, eles vão analisar seu caso e te retornar em breve.
                   </p>
                   <br>
-                  <div class="ctaTabAtd" id="erreiNomeEnvio">
-                    Solicitar agora
+                  <div class="ctaTabAtd">
+                    Enviar e-mail
                   </div>
                 </div>
               </div>
+            </a>
 
-                <div class="tab">
-                  <input type="checkbox" id="incluirPax_tips">
-                  <label class="tab-label" for="incluirPax_tips">
-                    <div class="contentLabel">
-                      <h4>Como posso incluir um passageiro na minha reserva?</h4>
-                    </div>
-                    <div class="iconLabel">
-                      <svg class="arrowSVG" width="15px" height="9px" viewBox="0 0 15 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
-                          <g id="Desktop_v2" transform="translate(-1099.000000, -386.000000)" stroke="#0164BF" stroke-width="2">
-                            <g id="Group-16" transform="translate(696.000000, 318.000000)">
-                              <g id="Group-20" transform="translate(0.000000, 33.000000)">
-                                <polyline id="Path-5" points="404.773722 36.8076179 410.773722 42.8076179 416.773722 36.8076179"></polyline>
-                              </g>
-                            </g>
-                          </g>
-                        </g>
-                      </svg>
-                    </div>
-                  </label>
-                  <div class="tab-content">
-                    <p>
-                      Para incluir um novo passageiro é preciso realizar uma nova compra. Caso você precise cancelar um dos passageiros de sua reserva os nossos especialistas podem te ajudar, entre em contato através do formulário de e-mail. </p>
-                    <br>
-                    <div class="ctaTabAtd" id="incluirPassageiroEnvio">
-                      Solicitar inclusão
-                    </div>
-                  </div>
-                </div>
-
+            <a href="https://www.viajanet.com.br/atendimento/enviar-email">
               <div class="tab">
-                <input type="checkbox" id="payMethods_tips">
-                <label class="tab-label" for="payMethods_tips">
+                <input type="checkbox" id="incluirPax_tips">
+                <label class="tab-label" for="incluirPax_tips">
                   <div class="contentLabel">
-                    <h4>Quais as formas de pagamento disponíveis?</h4>
+                    <h4>Como posso incluir um passageiro na minha reserva?</h4>
                   </div>
                   <div class="iconLabel">
                     <svg class="arrowSVG" width="15px" height="9px" viewBox="0 0 15 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -1421,57 +1361,20 @@
 
                 <div class="tab-content">
                   <p>
-                    Aqui no ViajaNet você tem várias opções para pagar sua viagem do seu jeito. Nós aceitamos cartão de crédito, PIX, transferência bancária, pagamento em dinheiro nas lotéricas ou boleto bancário parcelado (mediante análise de
-                    crédito).
-
+                    Para incluir um novo passageiro é preciso realizar uma nova compra. Caso você precise cancelar um dos passageiros de sua reserva os nossos especialistas podem te ajudar, entre em contato através do formulário de e-mail. </p>
+                  <br>
+                  <div class="ctaTabAtd">
+                    Enviar e-mail
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="otherContacts">
-            <div class="tab withIcon">
-              <input type="checkbox" id="otherContacts_tips">
-              <label class="tab-label" for="otherContacts_tips">
-                <div class="icon_accordionAtd">
-                  <svg width="30" height="30" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/"
-                    style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-                    <g id="Prancheta1" transform="matrix(1,0,0,1,-20.1359,-20)">
-                      <rect x="20.136" y="20" width="29.696" height="29.314" style="fill:none;" />
-                      <clipPath id="_clip1">
-                        <rect x="20.136" y="20" width="29.696" height="29.314" />
-                      </clipPath>
-                      <g clip-path="url(#_clip1)">
-                        <g transform="matrix(1,0,0,1,-391.18,-358.786)">
-                          <path
-                            d="M428.175,405.517C429.92,405.34 431.567,404.619 432.882,403.457C434.493,401.775 435.429,399.558 435.513,397.23L435.513,389.602C435.317,384.947 431.542,381.173 426.887,380.977L425.769,380.977C421.114,381.173 417.339,384.947 417.144,389.602L417.144,397.23C417.153,397.274 417.158,397.32 417.158,397.365C417.158,397.718 416.867,398.009 416.514,398.009C416.469,398.009 416.424,398.004 416.379,397.994C415.945,397.994 415.832,397.359 415.575,397.375L415.575,389.594C415.592,384.031 420.165,379.458 425.729,379.44L426.847,379.44C432.411,379.458 436.984,384.031 437.001,389.594L437.001,390.085L436.993,398.276C436.5,402.864 432.953,406.573 428.392,407.271C428.344,407.446 428.273,407.613 428.183,407.77L428.183,405.517L428.175,405.517Z"
-                            style="fill:rgb(1,100,191);" />
-                        </g>
-                        <g transform="matrix(1,0,0,1,-391.18,-358.786)">
-                          <path
-                            d="M422.929,389.964C423.719,389.964 424.369,390.615 424.369,391.405C424.369,392.195 423.719,392.845 422.929,392.845C422.139,392.845 421.489,392.195 421.489,391.405C421.489,390.615 422.139,389.964 422.929,389.964ZM429.728,389.964C430.518,389.964 431.168,390.615 431.168,391.405C431.168,392.195 430.518,392.845 429.728,392.845C428.937,392.845 428.287,392.195 428.287,391.405C428.287,390.615 428.937,389.964 429.728,389.964Z"
-                            style="fill:rgb(1,100,191);fill-rule:nonzero;" />
-                        </g>
-                        <g transform="matrix(1,0,0,1,-391.18,-358.786)">
-                          <path
-                            d="M421.879,397.063C422.68,398.787 424.416,399.894 426.316,399.894C428.217,399.894 429.952,398.787 430.754,397.063L429.393,396.431C428.838,397.626 427.634,398.394 426.316,398.394C424.998,398.394 423.794,397.626 423.239,396.431L421.879,397.063ZM416.345,396.648C414.409,396.38 412.952,394.707 412.952,392.752C412.952,390.798 414.409,389.125 416.345,388.857L416.14,387.371C413.465,387.741 411.452,390.052 411.452,392.752C411.452,395.452 413.465,397.763 416.14,398.134L416.345,396.648ZM436.46,398.134C439.135,397.763 441.148,395.452 441.148,392.752C441.148,390.052 439.135,387.741 436.46,387.371L436.255,388.857C438.191,389.125 439.648,390.798 439.648,392.752C439.648,394.707 438.191,396.38 436.255,396.648L436.46,398.134Z"
-                            style="fill:rgb(1,100,191);" />
-                        </g>
-                        <g transform="matrix(1,0,0,1,-390.18,-358.786)">
-                          <path d="M426.316,404.157C427.397,404.157 428.287,405.047 428.287,406.129C428.287,407.21 427.397,408.1 426.316,408.1C425.235,408.1 424.345,407.21 424.345,406.129C424.345,405.047 425.235,404.157 426.316,404.157Z"
-                            style="fill:rgb(1,100,191);fill-rule:nonzero;" />
-                        </g>
-                        <g transform="matrix(1,0,0,1,-391.18,-358.786)">
-                          <path
-                            d="M416.507,389.082C419.257,388.515 421.66,386.882 423.203,384.566C426.557,387.454 431.433,387.974 435.342,385.766L434.605,384.46C431.006,386.492 426.454,385.832 423.58,382.861C423.414,382.69 423.176,382.607 422.94,382.64C422.703,382.672 422.496,382.815 422.382,383.025C421.101,385.389 418.837,387.07 416.204,387.613L416.507,389.082Z"
-                            style="fill:rgb(1,100,191);" />
-                        </g>
-                      </g>
-                    </g>
-                  </svg>
+            </a>
 
-                </div>
+            <div class="tab">
+              <input type="checkbox" id="payMethods_tips">
+              <label class="tab-label" for="payMethods_tips">
                 <div class="contentLabel">
-                  <h4>Ainda com dúvida, entre em contato conosco </h4>
+                  <h4>Quais as formas de pagamento disponíveis?</h4>
                 </div>
                 <div class="iconLabel">
                   <svg class="arrowSVG" width="15px" height="9px" viewBox="0 0 15 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -1490,198 +1393,198 @@
 
               <div class="tab-content">
                 <p>
-                  Nosso atendimento funciona de segunda a sexta, das 08h às 19h, e aos sábados, domingos e feriados das 09h às 15h. Envie sua solicitação através do WhatsApp ou preencha o formulário, retornaremos por e- mail. Em nosso site você
-                  encontra vários serviços disponíveis 24hs por dia!
-                </p>
-                <br>
-                <a href="https://www.viajanet.com.br/atendimento/enviar-email" target="_blank">
-                  <div class="ctaTabAtd">
-                    <svg width="16px" height="18px" viewBox="0 0 16 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                        <g id="Mobile-perguntas-abertas" transform="translate(-66.000000, -1524.000000)">
-                          <g id="Group-22" transform="translate(10.000000, 737.000000)">
-                            <g id="Group" transform="translate(0.000000, 562.000000)">
-                              <g id="Group-5" transform="translate(14.000000, 210.000000)">
-                                <g id="Icons/ic_Mail" transform="translate(38.000000, 9.827818)">
-                                  <rect id="area" x="0" y="0" width="24" height="24"></rect>
-                                  <path
-                                    d="M18,6 C19.1045695,6 20,6.8954305 20,8 L20,16 C20,17.1045695 19.1045695,18 18,18 L6,18 C4.8954305,18 4,17.1045695 4,16 L4,8 C4,6.8954305 4.8954305,6 6,6 L18,6 Z M17.430306,10.7453694 C17.2896774,10.507718 16.9830209,10.4290654 16.7453694,10.569694 L16.7453694,10.569694 L11.934,13.416 L7.25990959,10.5728618 L7.17894348,10.5330245 C6.95767716,10.4479437 6.70045661,10.5303998 6.57286185,10.7400904 C6.42931774,10.9759923 6.50418852,11.283594 6.74009041,11.4271382 L6.74009041,11.4271382 L11.6703219,14.4271382 L11.7521788,14.4672372 C11.8929536,14.5208973 12.0524148,14.5086807 12.1848621,14.430306 L12.1848621,14.430306 L17.2546306,11.430306 L17.3278762,11.377603 C17.5070532,11.2223835 17.5553092,10.9566152 17.430306,10.7453694 Z"
-                                    id="Combined-Shape" fill="#FFFFFF"></path>
-                                </g>
-                              </g>
-                            </g>
-                          </g>
-                        </g>
-                      </g>
-                    </svg>
-                    <p>
-                      E-mail
-                    </p>
-                  </div>
-                </a>
-                <a href="https://wa.me/551149505771" target="blank">
-                  <div class="ctaTabAtd whatsApp">
-                    <svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                        <g id="Mobile-perguntas-abertas" transform="translate(-196.000000, -2901.000000)" fill="#FFFFFF" fill-rule="nonzero">
-                          <g id="Group" transform="translate(9.000000, 2676.000000)">
-                            <g id="Group-5" transform="translate(29.000000, 209.000000)">
-                              <g id="whatsapp" transform="translate(158.000000, 16.000000)">
-                                <path
-                                  d="M13.0522539,10.1288273 C13.0173501,10.1121721 11.7111322,9.472739 11.4790217,9.38969423 C11.3842578,9.35586332 11.2827458,9.32284204 11.1747766,9.32284204 C10.9983959,9.32284204 10.8502292,9.4102241 10.7348138,9.58186537 C10.6043316,9.77467264 10.2093366,10.2336742 10.0872895,10.3707906 C10.0713501,10.3888916 10.0495934,10.4105203 10.0365626,10.4105203 C10.0248698,10.4105203 9.82271843,10.3277647 9.76152038,10.3013361 C8.36030594,9.69625433 7.29672792,8.2411782 7.15088807,7.9958029 C7.13006211,7.96052622 7.12918952,7.94450714 7.129015,7.94450714 C7.13413423,7.92582785 7.1812544,7.87886939 7.20557074,7.85463837 C7.27671639,7.78466332 7.35379569,7.69242349 7.42837355,7.60319085 C7.4636846,7.56091667 7.49905382,7.51858466 7.53378313,7.47868153 C7.64198502,7.35353608 7.69015231,7.25638064 7.74599845,7.14384227 L7.7752595,7.08537551 C7.91161714,6.81605834 7.79515468,6.58878401 7.75751671,6.51539696 C7.72662682,6.45398085 7.17508806,5.1307007 7.11644962,4.9916759 C6.97543812,4.65620049 6.78910982,4.5 6.53018154,4.5 C6.50615607,4.5 6.53018154,4.5 6.4294258,4.50422163 C6.30673883,4.50936856 5.63862126,4.59680845 5.34321847,4.78192425 C5.02995656,4.97825919 4.5,5.60410212 4.5,6.7047344 C4.5,7.69531502 5.13234114,8.63060957 5.4038348,8.98632569 C5.41058287,8.99528943 5.42297373,9.01350608 5.44094921,9.03964552 C6.48067627,10.5491403 7.77683017,11.6678157 9.09078502,12.1896213 C10.3557582,12.6919381 10.9547661,12.75 11.2953112,12.75 C11.2953694,12.75 11.2953694,12.75 11.2953694,12.75 C11.4384751,12.75 11.5530179,12.7388387 11.6540645,12.7289497 L11.7181712,12.7228774 C12.1551672,12.6843623 13.115488,12.1896792 13.3339279,11.5862167 C13.5060038,11.1109069 13.5513787,10.5915879 13.4368942,10.4031179 C13.3584769,10.2749653 13.2233409,10.2104842 13.0522539,10.1288273 Z"
-                                  id="XMLID_469_"></path>
-                                <path
-                                  d="M9.15977256,0 C4.28480784,0 0.318726931,3.93627273 0.318726931,8.77459091 C0.318726931,10.3394805 0.737519454,11.8712922 1.53086421,13.2119416 L0.0123760505,17.6911948 C-0.0159096851,17.7747078 0.00512929179,17.8670455 0.0669020656,17.9299286 C0.111493008,17.9754545 0.171980067,18 0.233752841,18 C0.25742169,18 0.281265864,17.9964351 0.304525621,17.989013 L4.97517849,16.5048312 C6.25329634,17.1877208 7.69785587,17.5481883 9.159831,17.5481883 C14.0343282,17.5482468 18,13.6123831 18,8.77459091 C18,3.93627273 14.0343282,0 9.15977256,0 Z M9.15977256,15.7204286 C7.78411568,15.7204286 6.45170558,15.3232013 5.30636705,14.5716429 C5.26785404,14.5463377 5.22314621,14.5333636 5.17814618,14.5333636 C5.15436045,14.5333636 5.13051627,14.536987 5.10731496,14.5443506 L2.7676054,15.2880779 L3.52290467,13.0597597 C3.54733326,12.9876429 3.53511897,12.9081039 3.49011893,12.8466234 C2.61793646,11.6548831 2.15689065,10.2468506 2.15689065,8.77459091 C2.15689065,4.94415584 5.29836055,1.82781818 9.15971412,1.82781818 C13.0206001,1.82781818 16.1617194,4.94415584 16.1617194,8.77459091 C16.1617194,12.6045584 13.020717,15.7204286 9.15977256,15.7204286 Z"
-                                  id="XMLID_470_"></path>
-                              </g>
-                            </g>
-                          </g>
-                        </g>
-                      </g>
-                    </svg>
-                    <p>
-                      WhatsApp
-                    </p>
-                  </div>
-                </a>
+                  Aqui no ViajaNet você tem várias opções para pagar sua viagem do seu jeito. Nós aceitamos cartão de crédito, PIX, transferência bancária, pagamento em dinheiro nas lotéricas ou boleto bancário parcelado (mediante análise de
+                  crédito).
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+        <div class="otherContacts">
+          <div class="tab withIcon">
+            <input type="checkbox" id="otherContacts_tips" checked>
+            <label class="tab-label" for="otherContacts_tips">
+              <div class="icon_accordionAtd">
+                <svg width="30" height="30" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/"
+                  style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+                  <g id="Prancheta1" transform="matrix(1,0,0,1,-20.1359,-20)">
+                    <rect x="20.136" y="20" width="29.696" height="29.314" style="fill:none;" />
+                    <clipPath id="_clip1">
+                      <rect x="20.136" y="20" width="29.696" height="29.314" />
+                    </clipPath>
+                    <g clip-path="url(#_clip1)">
+                      <g transform="matrix(1,0,0,1,-391.18,-358.786)">
+                        <path
+                          d="M428.175,405.517C429.92,405.34 431.567,404.619 432.882,403.457C434.493,401.775 435.429,399.558 435.513,397.23L435.513,389.602C435.317,384.947 431.542,381.173 426.887,380.977L425.769,380.977C421.114,381.173 417.339,384.947 417.144,389.602L417.144,397.23C417.153,397.274 417.158,397.32 417.158,397.365C417.158,397.718 416.867,398.009 416.514,398.009C416.469,398.009 416.424,398.004 416.379,397.994C415.945,397.994 415.832,397.359 415.575,397.375L415.575,389.594C415.592,384.031 420.165,379.458 425.729,379.44L426.847,379.44C432.411,379.458 436.984,384.031 437.001,389.594L437.001,390.085L436.993,398.276C436.5,402.864 432.953,406.573 428.392,407.271C428.344,407.446 428.273,407.613 428.183,407.77L428.183,405.517L428.175,405.517Z"
+                          style="fill:rgb(1,100,191);" />
+                      </g>
+                      <g transform="matrix(1,0,0,1,-391.18,-358.786)">
+                        <path
+                          d="M422.929,389.964C423.719,389.964 424.369,390.615 424.369,391.405C424.369,392.195 423.719,392.845 422.929,392.845C422.139,392.845 421.489,392.195 421.489,391.405C421.489,390.615 422.139,389.964 422.929,389.964ZM429.728,389.964C430.518,389.964 431.168,390.615 431.168,391.405C431.168,392.195 430.518,392.845 429.728,392.845C428.937,392.845 428.287,392.195 428.287,391.405C428.287,390.615 428.937,389.964 429.728,389.964Z"
+                          style="fill:rgb(1,100,191);fill-rule:nonzero;" />
+                      </g>
+                      <g transform="matrix(1,0,0,1,-391.18,-358.786)">
+                        <path
+                          d="M421.879,397.063C422.68,398.787 424.416,399.894 426.316,399.894C428.217,399.894 429.952,398.787 430.754,397.063L429.393,396.431C428.838,397.626 427.634,398.394 426.316,398.394C424.998,398.394 423.794,397.626 423.239,396.431L421.879,397.063ZM416.345,396.648C414.409,396.38 412.952,394.707 412.952,392.752C412.952,390.798 414.409,389.125 416.345,388.857L416.14,387.371C413.465,387.741 411.452,390.052 411.452,392.752C411.452,395.452 413.465,397.763 416.14,398.134L416.345,396.648ZM436.46,398.134C439.135,397.763 441.148,395.452 441.148,392.752C441.148,390.052 439.135,387.741 436.46,387.371L436.255,388.857C438.191,389.125 439.648,390.798 439.648,392.752C439.648,394.707 438.191,396.38 436.255,396.648L436.46,398.134Z"
+                          style="fill:rgb(1,100,191);" />
+                      </g>
+                      <g transform="matrix(1,0,0,1,-390.18,-358.786)">
+                        <path d="M426.316,404.157C427.397,404.157 428.287,405.047 428.287,406.129C428.287,407.21 427.397,408.1 426.316,408.1C425.235,408.1 424.345,407.21 424.345,406.129C424.345,405.047 425.235,404.157 426.316,404.157Z"
+                          style="fill:rgb(1,100,191);fill-rule:nonzero;" />
+                      </g>
+                      <g transform="matrix(1,0,0,1,-391.18,-358.786)">
+                        <path
+                          d="M416.507,389.082C419.257,388.515 421.66,386.882 423.203,384.566C426.557,387.454 431.433,387.974 435.342,385.766L434.605,384.46C431.006,386.492 426.454,385.832 423.58,382.861C423.414,382.69 423.176,382.607 422.94,382.64C422.703,382.672 422.496,382.815 422.382,383.025C421.101,385.389 418.837,387.07 416.204,387.613L416.507,389.082Z"
+                          style="fill:rgb(1,100,191);" />
+                      </g>
+                    </g>
+                  </g>
+                </svg>
 
-    <div id="reenvio-de-bilhete_video_modal" class="modal">
-      <div class="modal-content">
-        <span id="reenvio-de-bilhete_close" class="closeAtd">&times;</span>
-        <h2>Reenvio de Bilhete Eletrônico</h2>
-        <p>Aperte play para assistir</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/7hShvrpT16A?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
-        <br><br><a href="https://www.viajanet.com.br/shop/myaccount/#/reservations" class="btnMyAccountAcess">Acessar Minhas Reservas</a>
+              </div>
+              <div class="contentLabel">
+                <h4>Ainda com dúvida? Entre em contato conosco.</h4>
+              </div>
+              <div class="iconLabel">
+                <svg class="arrowSVG" width="15px" height="9px" viewBox="0 0 15 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                    <g id="Desktop_v2" transform="translate(-1099.000000, -386.000000)" stroke="#0164BF" stroke-width="2">
+                      <g id="Group-16" transform="translate(696.000000, 318.000000)">
+                        <g id="Group-20" transform="translate(0.000000, 33.000000)">
+                          <polyline id="Path-5" points="404.773722 36.8076179 410.773722 42.8076179 416.773722 36.8076179"></polyline>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+            </label>
+
+            <div class="tab-content">
+              <p>
+                Nosso atendimento funciona de segunda a sexta, das 08h às 19h, e aos sábados, domingos e feriados das 09h às 15h. Envie sua solicitação através do WhatsApp ou preencha o formulário, retornaremos por e- mail. Em nosso site você
+                encontra vários serviços disponíveis 24hs por dia!
+              </p>
+              <br>
+              <a href="https://www.viajanet.com.br/atendimento/enviar-email" target="_blank">
+                <div class="ctaTabAtd">
+                  <svg width="16px" height="18px" viewBox="0 0 16 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Mobile-perguntas-abertas" transform="translate(-66.000000, -1524.000000)">
+                        <g id="Group-22" transform="translate(10.000000, 737.000000)">
+                          <g id="Group" transform="translate(0.000000, 562.000000)">
+                            <g id="Group-5" transform="translate(14.000000, 210.000000)">
+                              <g id="Icons/ic_Mail" transform="translate(38.000000, 9.827818)">
+                                <rect id="area" x="0" y="0" width="24" height="24"></rect>
+                                <path
+                                  d="M18,6 C19.1045695,6 20,6.8954305 20,8 L20,16 C20,17.1045695 19.1045695,18 18,18 L6,18 C4.8954305,18 4,17.1045695 4,16 L4,8 C4,6.8954305 4.8954305,6 6,6 L18,6 Z M17.430306,10.7453694 C17.2896774,10.507718 16.9830209,10.4290654 16.7453694,10.569694 L16.7453694,10.569694 L11.934,13.416 L7.25990959,10.5728618 L7.17894348,10.5330245 C6.95767716,10.4479437 6.70045661,10.5303998 6.57286185,10.7400904 C6.42931774,10.9759923 6.50418852,11.283594 6.74009041,11.4271382 L6.74009041,11.4271382 L11.6703219,14.4271382 L11.7521788,14.4672372 C11.8929536,14.5208973 12.0524148,14.5086807 12.1848621,14.430306 L12.1848621,14.430306 L17.2546306,11.430306 L17.3278762,11.377603 C17.5070532,11.2223835 17.5553092,10.9566152 17.430306,10.7453694 Z"
+                                  id="Combined-Shape" fill="#FFFFFF"></path>
+                              </g>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                  <p>
+                    E-mail
+                  </p>
+                </div>
+              </a>
+              <a href="https://wa.me/551149505771" target="_blank">
+                <div class="ctaTabAtd whatsApp">
+                  <svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Mobile-perguntas-abertas" transform="translate(-196.000000, -2901.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                        <g id="Group" transform="translate(9.000000, 2676.000000)">
+                          <g id="Group-5" transform="translate(29.000000, 209.000000)">
+                            <g id="whatsapp" transform="translate(158.000000, 16.000000)">
+                              <path
+                                d="M13.0522539,10.1288273 C13.0173501,10.1121721 11.7111322,9.472739 11.4790217,9.38969423 C11.3842578,9.35586332 11.2827458,9.32284204 11.1747766,9.32284204 C10.9983959,9.32284204 10.8502292,9.4102241 10.7348138,9.58186537 C10.6043316,9.77467264 10.2093366,10.2336742 10.0872895,10.3707906 C10.0713501,10.3888916 10.0495934,10.4105203 10.0365626,10.4105203 C10.0248698,10.4105203 9.82271843,10.3277647 9.76152038,10.3013361 C8.36030594,9.69625433 7.29672792,8.2411782 7.15088807,7.9958029 C7.13006211,7.96052622 7.12918952,7.94450714 7.129015,7.94450714 C7.13413423,7.92582785 7.1812544,7.87886939 7.20557074,7.85463837 C7.27671639,7.78466332 7.35379569,7.69242349 7.42837355,7.60319085 C7.4636846,7.56091667 7.49905382,7.51858466 7.53378313,7.47868153 C7.64198502,7.35353608 7.69015231,7.25638064 7.74599845,7.14384227 L7.7752595,7.08537551 C7.91161714,6.81605834 7.79515468,6.58878401 7.75751671,6.51539696 C7.72662682,6.45398085 7.17508806,5.1307007 7.11644962,4.9916759 C6.97543812,4.65620049 6.78910982,4.5 6.53018154,4.5 C6.50615607,4.5 6.53018154,4.5 6.4294258,4.50422163 C6.30673883,4.50936856 5.63862126,4.59680845 5.34321847,4.78192425 C5.02995656,4.97825919 4.5,5.60410212 4.5,6.7047344 C4.5,7.69531502 5.13234114,8.63060957 5.4038348,8.98632569 C5.41058287,8.99528943 5.42297373,9.01350608 5.44094921,9.03964552 C6.48067627,10.5491403 7.77683017,11.6678157 9.09078502,12.1896213 C10.3557582,12.6919381 10.9547661,12.75 11.2953112,12.75 C11.2953694,12.75 11.2953694,12.75 11.2953694,12.75 C11.4384751,12.75 11.5530179,12.7388387 11.6540645,12.7289497 L11.7181712,12.7228774 C12.1551672,12.6843623 13.115488,12.1896792 13.3339279,11.5862167 C13.5060038,11.1109069 13.5513787,10.5915879 13.4368942,10.4031179 C13.3584769,10.2749653 13.2233409,10.2104842 13.0522539,10.1288273 Z"
+                                id="XMLID_469_"></path>
+                              <path
+                                d="M9.15977256,0 C4.28480784,0 0.318726931,3.93627273 0.318726931,8.77459091 C0.318726931,10.3394805 0.737519454,11.8712922 1.53086421,13.2119416 L0.0123760505,17.6911948 C-0.0159096851,17.7747078 0.00512929179,17.8670455 0.0669020656,17.9299286 C0.111493008,17.9754545 0.171980067,18 0.233752841,18 C0.25742169,18 0.281265864,17.9964351 0.304525621,17.989013 L4.97517849,16.5048312 C6.25329634,17.1877208 7.69785587,17.5481883 9.159831,17.5481883 C14.0343282,17.5482468 18,13.6123831 18,8.77459091 C18,3.93627273 14.0343282,0 9.15977256,0 Z M9.15977256,15.7204286 C7.78411568,15.7204286 6.45170558,15.3232013 5.30636705,14.5716429 C5.26785404,14.5463377 5.22314621,14.5333636 5.17814618,14.5333636 C5.15436045,14.5333636 5.13051627,14.536987 5.10731496,14.5443506 L2.7676054,15.2880779 L3.52290467,13.0597597 C3.54733326,12.9876429 3.53511897,12.9081039 3.49011893,12.8466234 C2.61793646,11.6548831 2.15689065,10.2468506 2.15689065,8.77459091 C2.15689065,4.94415584 5.29836055,1.82781818 9.15971412,1.82781818 C13.0206001,1.82781818 16.1617194,4.94415584 16.1617194,8.77459091 C16.1617194,12.6045584 13.020717,15.7204286 9.15977256,15.7204286 Z"
+                                id="XMLID_470_"></path>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                  <p>
+                    WhatsApp
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
+  </div>
+  </section>
+
+  <div id="reenvio-de-bilhete_video_modal" class="modal">
+    <div class="modal-content">
+      <span id="reenvio-de-bilhete_close" class="closeAtd">&times;</span>
+      <h2>Reenvio de bilhete eletrônico</h2>
+      <p>Para assistir o vídeo, selecione o botão play.</p>
+      <iframe width="560" height="315" id="iframeReenvio" src="https://www.youtube.com/embed/7hShvrpT16A?controls=0" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <br><br><a href="https://www.viajanet.com.br/shop/myaccount/#/reservations" class="btnMyAccountAcess">Acessar minhas reservas</a>
     </div>
+  </div>
 
-    <div id="reembolso_video_modal" class="modal">
-      <div class="modal-content">
-        <span id="reembolso_video_close" class="closeAtd">&times;</span>
-        <h2>Status de Reembolso</h2>
-        <p>Aperte play para assistir</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/LqfYaMRrnY4?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
-        <br><br><a href="https://www.viajanet.com.br/shop/myaccount/#/reservations" class="btnMyAccountAcess">Acessar Minhas Reservas</a>
-      </div>
+  <div id="reembolso_video_modal" class="modal">
+    <div class="modal-content">
+      <span id="reembolso_video_close" class="closeAtd">&times;</span>
+      <h2>Status de reembolso</h2>
+      <p>Para assistir o vídeo, selecione o botão play.</p>
+      <iframe width="560" height="315" id="iframeReembolso" src="https://www.youtube.com/embed/LqfYaMRrnY4?controls=0" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <br><br><a href="https://www.viajanet.com.br/shop/myaccount/#/reservations" class="btnMyAccountAcess">Acessar minhas reservas</a>
     </div>
+  </div>
 
-    <div id="reserva_video_modal" class="modal">
-      <div class="modal-content">
-        <span id="reserva_video_close" class="closeAtd">&times;</span>
-        <h2>Status da Reserva</h2>
-        <p>Aperte play para assistir</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/pLGOHLJea1I?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
-        <br><br><a href="https://www.viajanet.com.br/shop/myaccount/#/reservations" class="btnMyAccountAcess">Acessar Minhas Reservas</a>
-      </div>
+  <div id="reserva_video_modal" class="modal">
+    <div class="modal-content">
+      <span id="reserva_video_close" class="closeAtd">&times;</span>
+      <h2>Status da reserva</h2>
+      <p>Para assistir o vídeo, selecione o botão play.</p>
+      <iframe width="560" height="315" id="iframeReserva" src="https://www.youtube.com/embed/pLGOHLJea1I?controls=0" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <br><br><a href="https://www.viajanet.com.br/shop/myaccount/#/reservations" class="btnMyAccountAcess">Acessar minhas reservas</a>
     </div>
+  </div>
 
-    <div id="cancelamento_video_modal" class="modal">
-      <div class="modal-content">
-        <span id="cancelamento_video_close" class="closeAtd">&times;</span>
-        <h2>Cancelar Reserva</h2>
-        <p>Aperte play para assistir</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/MAZieSYxND8?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
-        <br><br><a href="https://www.viajanet.com.br/shop/myaccount/#/reservations" class="btnMyAccountAcess">Acessar Minhas Reservas</a>
-      </div>
+  <div id="cancelamento_video_modal" class="modal">
+    <div class="modal-content">
+      <span id="cancelamento_video_close" class="closeAtd">&times;</span>
+      <h2>Cancelar reserva</h2>
+      <p>Para assistir o vídeo, selecione o botão play.</p>
+      <iframe width="560" height="315" id="iframeCancelamento" src="https://www.youtube.com/embed/MAZieSYxND8?controls=0" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <br><br><a href="https://www.viajanet.com.br/shop/myaccount/#/reservations" class="btnMyAccountAcess">Acessar minhas reservas</a>
     </div>
+  </div>
 
-    <div id="marcar-assento_video_modal" class="modal">
-      <div class="modal-content">
-        <span id="marcar-assento_video_close" class="closeAtd">&times;</span>
-        <h2>Marcar Assento</h2>
-        <p>Aperte play para assistir</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/TzUbG5ETGlg?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
-        <br><br><a href="https://www.viajanet.com.br/shop/myaccount/#/reservations" class="btnMyAccountAcess">Acessar Minhas Reservas</a>
-      </div>
+  <div id="marcar-assento_video_modal" class="modal">
+    <div class="modal-content">
+      <span id="marcar-assento_video_close" class="closeAtd">&times;</span>
+      <h2>Marcar assento</h2>
+      <p>Para assistir o vídeo, selecione o botão play.</p>
+      <iframe width="560" height="315" id="iframeAssento" src="https://www.youtube.com/embed/TzUbG5ETGlg?controls=0" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <br><br><a href="https://www.viajanet.com.br/shop/myaccount/#/reservations" class="btnMyAccountAcess">Acessar minhas reservas</a>
     </div>
-
-
-    <div id="erreiNomeEnvio_modal" class="modal">
-      <div class="modal-content">
-        <span id="erreiNomeEnvio_close" class="closeAtd">&times;</span>
-        <h2>Correção de Nome</h2>
-        <p>Preencha os campos abaixo e clique em "Solicitar Agora"<br><small>Entraremos em contato através do e-mail indicado.</small></p>
-        <form class="">
-          <label class="pure-material-textfield-outlined">
-            <input placeholder=" " required>
-            <span>Nome Completo</span>
-          </label>
-          <br>
-          <label class="pure-material-textfield-outlined">
-            <input placeholder=" " type="email" required>
-            <span>E-mail</span>
-          </label>
-          <br>
-          <label class="pure-material-textfield-outlined">
-            <input placeholder=" " type="number" required>
-            <span>Numero da Reserva</span>
-          </label>
-          <br>
-          <label class="pure-material-textfield-outlined">
-            <input placeholder=" " required>
-            <span>Telefone</span>
-          </label>
-          <br>
-          <br><br><input type="submit" value="Solicitar Alteração" class="btnMyAccountAcess"></input>
-          <br>
-        </form>
-
-
-      </div>
-    </div>
-
-    <div id="incluirPassageiroEnvio_modal" class="modal">
-      <div class="modal-content">
-        <span id="incluirPassageiroEnvio_close" class="closeAtd">&times;</span>
-        <h2>Excluir Passageiro</h2>
-        <p>Preencha os campos abaixo e clique em "Solicitar Agora"<br><small>Entraremos em contato através do e-mail indicado.</small></p>
-        <form class="">
-          <label class="pure-material-textfield-outlined">
-            <input placeholder=" " required>
-            <span>Nome Completo</span>
-          </label>
-          <br>
-          <label class="pure-material-textfield-outlined">
-            <input placeholder=" " type="email" required>
-            <span>E-mail</span>
-          </label>
-          <br>
-          <label class="pure-material-textfield-outlined">
-            <input placeholder=" " type="number" required>
-            <span>Numero da Reserva</span>
-          </label>
-          <br>
-          <label class="pure-material-textfield-outlined">
-            <input placeholder=" " required>
-            <span>Telefone</span>
-          </label>
-          <label class="pure-material-textfield-outlined">
-            <input placeholder=" " required>
-            <span>Nome do Passageiro Completo</span>
-          </label>
-          <br>
-          <br><br><input type="submit" value="Solicitar Alteração" class="btnMyAccountAcess"></input>
-          <br>
-        </form>
-      </div>
-    </div>
+  </div>
 
 
   </div>
-
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
   <script>
-    function modalVNatd(modalId, ctaId, closeATDmodal) {
+    function modalVNatd(modalId, ctaId, closeATDmodal, iframeVideo) {
+
+
+
       // Get the modal
       var modal = document.getElementById(modalId);
 
@@ -1690,37 +1593,32 @@
 
       // Get the <span> element that closes the modal
       var span = document.getElementById(closeATDmodal);
+      var iframe = document.getElementById(iframeVideo);
 
       // When the user clicks on the button, open the modal
       btn.onclick = function() {
         modal.style.display = "block";
-      }
+      };
 
-      window.addEventListener('keydown', function(event) {
-        if (event.key === 'Escape') {
-          modal.style.display = 'none'
-        }
-      })
       // When the user clicks on <span> (x), close the modal
       span.onclick = function() {
         modal.style.display = "none";
-        $('.yt_player_iframe').each(function(){
-  this.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*')
-});
-      }
+      };
 
+      $(span).click(function() {
+        $(iframe).attr('src', $('iframe').attr('src'));
+      });
     };
 
 
-    modalVNatd("reenvio-de-bilhete_video_modal", "reenvio-de-bilhete_video", "reenvio-de-bilhete_close");
-    modalVNatd("reembolso_video_modal", "reembolso_video", "reembolso_video_close");
-    modalVNatd("reserva_video_modal", "reserva_video", "reserva_video_close");
-    modalVNatd("cancelamento_video_modal", "cancelamento_video", "cancelamento_video_close");
-    modalVNatd("marcar-assento_video_modal", "marcar-assento_video", "marcar-assento_video_close");
-    modalVNatd("erreiNomeEnvio_modal", "erreiNomeEnvio", "erreiNomeEnvio_close");
-    modalVNatd("incluirPassageiroEnvio_modal", "incluirPassageiroEnvio", "incluirPassageiroEnvio_close");
 
+    modalVNatd("reenvio-de-bilhete_video_modal", "reenvio-de-bilhete_video", "reenvio-de-bilhete_close", "iframeReenvio");
+    modalVNatd("reembolso_video_modal", "reembolso_video", "reembolso_video_close", "iframeReembolso");
+    modalVNatd("reserva_video_modal", "reserva_video", "reserva_video_close", "iframeReserva");
+    modalVNatd("cancelamento_video_modal", "cancelamento_video", "cancelamento_video_close", "iframeCancelamento");
+    modalVNatd("marcar-assento_video_modal", "marcar-assento_video", "marcar-assento_video_close", "iframeAssento");
   </script>
+
 </body>
 
 </html>
