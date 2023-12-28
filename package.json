@@ -1,8 +1,8 @@
 {
-  "homepage": "https://https://vini-c.github.io/vinic.github.io/ecproject/"
+  "homepage": "https://https://vini-c.github.io/vinic.github.io/",
   "name": "embarque-certo",
   "version": "0.0.0",
-  "scripts": {
+  "scripts": {n
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "dev": "vite",
