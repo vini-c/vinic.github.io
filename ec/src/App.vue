@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar class="navBar" :elevation="0">
+    <!-- <v-app-bar class="navBar" :elevation="0">
       <h1 class="text-primary-darker-1">Nome</h1>
     </v-app-bar>
     <v-app-bar class="navBar" scroll-behavior="hide" scroll-threshold="120" :elevation="0">
@@ -155,7 +155,7 @@
           <v-btn class="rounded-xl " variant="outlined" elevation="0" prepend-icon="mdi-filter-outline">Filtrar</v-btn>
         </v-row>
       </div>
-    </v-navigation-drawer>
+    </v-navigation-drawer> -->
     <div class="bg-body">
       <v-main>
         <v-container class="">
