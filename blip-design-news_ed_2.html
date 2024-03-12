@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+    <meta charset="utf-8"> <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+    <meta name="x-apple-disable-message-reformatting">  <!-- Disable auto-scale in iOS 10 Mail entirely -->
+    <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no"> <!-- Tell iOS not to automatically link certain text strings. -->
+    <meta name="color-scheme" content="light">
+    <meta name="supported-color-schemes" content="light">
+    <title>A Blip Design News, a newsletter para você acompanhar os projetos e atividades de Design na Blip</title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+
+    <!-- What it does: Makes background images in 72ppi Outlook render at correct size. -->
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:AllowPNG/>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
+
+    <!-- Web Font / @font-face : BEGIN -->
+    <!-- NOTE: If web fonts are not required, lines 23 - 41 can be safely removed. -->
+
+    <!-- Desktop Outlook chokes on web font references and defaults to Times New Roman, so we force a safe fallback font. -->
+    <!--[if mso]>
+        <style>
+            * {
+                font-family: sans-serif !important;
+            }
+        </style>
+    <![endif]-->
+
+    <!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
+    <!--[if !mso]><!-->
+    <!-- insert web font reference, eg: <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'> -->
+    <!--<![endif]-->
+
+    <!-- Web Font / @font-face : END -->
+
+    <!-- CSS Reset : BEGIN -->
+    <style>
+
+        /* What it does: Tells the email client that only light styles are provided but the client can transform them to dark. A duplicate of meta color-scheme meta tag above. */
+        :root {
+          color-scheme: light;
+          supported-color-schemes: light;
+        }
+
+        /* What it does: Remove spaces around the email design added by some email clients. */
+        /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+        html,
+        body {
+            margin: 0 auto !important;
+            padding: 0 !important;
+            height: 100% !important;
+            width: 100% !important;
+        }
+
+        /* What it does: Stops email clients resizing small text. */
+        * {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        /* What it does: Centers email on Android 4.4 */
+        div[style*="margin: 16px 0"] {
+            margin: 0 !important;
+        }
+
+        /* What it does: forces Samsung Android mail clients to use the entire viewport */
+        #MessageViewBody, #MessageWebViewDiv{
+            width: 100% !important;
+        }
+
+        /* What it does: Stops Outlook from adding extra spacing to tables. */
+        table,
+        td {
+            mso-table-lspace: 0pt !important;
+            mso-table-rspace: 0pt !important;
+        }
+
+        /* What it does: Replaces default bold style. */
+        th {
+        	font-weight: normal;
+        }
+
+        /* What it does: Fixes webkit padding issue. */
+        table {
+            border-spacing: 0 !important;
+            border-collapse: collapse !important;
+            table-layout: fixed !important;
+            margin: 0 auto !important;
+        }
+
+        /* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+        a {
+            text-decoration: none;
+        }
+
+        /* What it does: Uses a better rendering method when resizing images in IE. */
+        img {
+            -ms-interpolation-mode:bicubic;
+        }
+
+        /* What it does: A work-around for email clients meddling in triggered links. */
+        a[x-apple-data-detectors],  /* iOS */
+        .unstyle-auto-detected-links a,
+        .aBn {
+            border-bottom: 0 !important;
+            cursor: default !important;
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+
+        /* What it does: Prevents Gmail from changing the text color in conversation threads. */
+        .im {
+            color: inherit !important;
+        }
+
+        /* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+        .a6S {
+           display: none !important;
+           opacity: 0.01 !important;
+		}
+		/* If the above doesn't work, add a .g-img class to any image in question. */
+		img.g-img + div {
+		   display: none !important;
+		}
+
+        /* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+        /* Create one of these media queries for each additional viewport size you'd like to fix */
+
+        /* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
+        @media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+            u ~ div .email-container {
+                min-width: 320px !important;
+            }
+        }
+        /* iPhone 6, 6S, 7, 8, and X */
+        @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+            u ~ div .email-container {
+                min-width: 375px !important;
+            }
+        }
+        /* iPhone 6+, 7+, and 8+ */
+        @media only screen and (min-device-width: 414px) {
+            u ~ div .email-container {
+                min-width: 414px !important;
+            }
+        }
+
+    </style>
+    <!-- CSS Reset : END -->
+
+    <!-- Progressive Enhancements : BEGIN -->
+    <style>
+
+        /* What it does: Hover styles for buttons */
+        .button-td,
+        .button-a {
+            transition: all 100ms ease-in;
+        }
+	    .button-td-primary:hover,
+	    .button-a-primary:hover {
+	        background: #1152C4 !important;
+	        border-color: #1152C4 !important;
+	    }
+
+        /* Media Queries */
+        @media screen and (max-width: 600px) {
+
+            .email-container {
+                width: 100% !important;
+                margin: auto !important;
+            }
+
+            /* What it does: Forces table cells into full-width rows. */
+            .stack-column,
+            .stack-column-center {
+                display: block !important;
+                width: 100% !important;
+                max-width: 100% !important;
+                direction: ltr !important;
+            }
+            /* And center justify these ones. */
+            .stack-column-center {
+                text-align: center !important;
+            }
+
+            /* What it does: Generic utility class for centering. Useful for images, buttons, and nested tables. */
+            .center-on-narrow {
+                text-align: left !important;
+                display: block !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+                float: none !important;
+            }
+            table.center-on-narrow {
+                display: inline-block !important;
+            }
+
+            /* What it does: Adjust typography on small screens to improve readability */
+            .email-container p {
+                font-size: 17px !important;
+            }
+        }
+
+    </style>
+    <!-- Progressive Enhancements : END -->
+
+</head>
+<!--
+	The email background color (#222222) is defined in three places:
+	1. body tag: for most email clients
+	2. center tag: for Gmail and Inbox mobile apps and web versions of Gmail, GSuite, Inbox, Yahoo, AOL, Libero, Comcast, freenet, Mail.ru, Orange.fr
+	3. mso conditional: For Windows 10 Mail
+-->
+<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #E0E0E0;">
+  <center role="article" aria-roledescription="email" lang="en" style="width: 100%; background-color: #E0E0E0;">
+    <!--[if mso | IE]>
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #E0E0E0;">
+    <tr>
+    <td>
+    <![endif]-->
+
+        <!-- Visually Hidden Preheader Text : BEGIN -->
+        <div style="max-height:0; overflow:hidden; mso-hide:all;" aria-hidden="true">
+            A Blip Design News é a nova newsletter dos times de Design de R&D e CSPS.
+            <br>Aquelas informações que você já acompanhava na NeUX, agora estarão por aqui, junto de conteúdos sobre projetos de Design que estão impactando a Blip e nossos clientes, além de atualizações das iniciativas e, é claro, as novidades do nosso Design System, o UAI!
+            <br>Vem muita coisa boa por aí, boa leitura! 😉
+
+        </div>
+        <!-- Visually Hidden Preheader Text : END -->
+
+        <!-- Create white space after the desired preview text so email clients don’t pull other distracting text into the inbox preview. Extend as necessary. -->
+        <!-- Preview Text Spacing Hack : BEGIN -->
+        <div style="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">
+            &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+        </div>
+        <!-- Preview Text Spacing Hack : END -->
+
+        <!-- Email Body : BEGIN -->
+        <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="margin: auto;" class="email-container">
+	     
+	        <!-- Errata -->
+
+            <tr>
+                <td style="background-color: #0D4EC0;">
+                    
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tr>
+                            <td  width="10%" style="padding-top:22px;padding-left:32px; padding-right:12px; padding-bottom:20px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
+                                <img src="https://i.ibb.co/jTsVFmK/speaker-azul.jpg" alt="Blip Design News" border="0" width="600" height="" alt="alt_text" border="0" style="width: 100%; max-width: 600px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555; margin: auto; display: block;" class="g-img">
+                            </td>
+                            <td  width="90%" style="padding-top:22px;padding-right:32px; padding-bottom:20px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
+                                <p style="margin: 0 0 10px; font-size: 16px; color: #ffffff; font-weight: bold;"><b></b>Que tal consumir essa News da Blip Design por áudio? </p>
+                                <a href="https://drive.google.com/file/d/1vEIlKfgDFLyhZhE_jnLy9w4RY6iyNbP7/view" target="_blank" style="color:#fff;text-decoration:underline;"><p style="margin: 0 0 10px; font-size: 16px; color: #fff; font-weight: regular;"><b></b> Clique aqui para ouvir</p></a>
+
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- fim da errata -->
+            <!-- Hero Image, Flush : BEGIN -->
+            <tr>
+                <td style="background-color: #ffffff;">
+                    <img src="https://i.ibb.co/xqXn8c9/IntroImg.png" alt="Blip Design News" border="0" width="600" height="" alt="alt_text" border="0" style="width: 100%; max-width: 600px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555; margin: auto; display: block;" class="g-img">
+                </td>
+            </tr>
+
+			<tr>
+	            <td dir="ltr" width="100%" style="padding: 24px; background-color: #141414;">
+	                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+	                    <tr>
+	                        <!-- Column : BEGIN -->
+	                        <th width="33.33%" class="stack-column-center">
+	                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+	                                <tr>
+	                                    <td dir="ltr" valign="top" style="padding: 0 10px;">
+	                                        <img src="https://i.ibb.co/ykbLM4B/intro-Icon.png" width="170" alt="Ilustração de pessoas analisando dados" border="0" class="center-on-narrow" style="height: auto; background: #141414; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;">
+	                                    </td>
+	                                </tr>
+	                            </table>
+	                        </th>
+	                        <!-- Column : END -->
+	                        <!-- Column : BEGIN -->
+	                        <th width="66.66%" class="stack-column-center">
+	                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+									<!-- Conteúdo topo -->
+	                                <tr>
+	                                    <td dir="ltr" valign="top" style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #fff; padding: 10px; text-align: left;" class="center-on-narrow">
+	                                        <h2 style="margin: 0 0 10px 0; font-family: sans-serif; font-size: 22px; line-height: 22px; color: #fff; font-weight: bold;">Voltamos!</h2>
+	                                        <p style="margin: 0 0 10px 0;line-height:1.4;">A Blip Design News está de volta com muitas novidades dos times de <b style="color:#B2DFFD">Design de R&D e CSPS</b>.
+											</p>
+	                                        <!-- Button : BEGIN -->
+	                                        <!-- <table role="presentation" cellspacing="0" cellpadding="0" border="0" class="center-on-narrow" style="float:left;">
+	                                            <tr>
+		                                            <td class="button-td button-td-primary" style="border-radius: 4px; background: #222222;">
+														<a class="button-a button-a-primary" href="https://google.com/" style="background: #222222; border: 1px solid #000000; font-family: sans-serif; font-size: 15px; line-height: 15px; text-decoration: none; padding: 13px 17px; color: #ffffff; display: block; border-radius: 4px;">Primary Button</a>
+													</td>
+	                                          </tr>
+	                                      </table> -->
+	                                      <!-- Button : END -->
+	                                    </td>
+	                                </tr>
+	                            </table>
+	                        </th>
+	                        <!-- Column : END -->
+	                    </tr>
+	                </table>
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+	                    <tr>
+	                        <!-- Column : END -->
+	                        <!-- Column : BEGIN -->
+	                        <th width="100%" class="stack-column-center">
+	                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+									<!-- Conteúdo topo -->
+	                                <tr>
+	                                    <td dir="ltr" valign="top" style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #fff; padding: 10px; text-align: left;" class="center-on-narrow">
+	                                        <p style="margin: 0 0 10px 0; line-height:1.4;">Nesta edição, você vai descobrir como a iniciativa Roads of Reliability está impactando a  experiência dos usuários Blip, além de conferir o case de um projeto de UX Design que automatizou a jornada de contestação de compras para o Banco Pan.<br>
+                                                <br>
+                                                E ainda temos o lançamento do Repositório de Conhecimento de Design R&D! 
+                                                <br><br>
+                                                Leitura imperdível 🤩
+                                                
+											</p>
+	                                        <!-- Button : BEGIN -->
+	                                        <!-- <table role="presentation" cellspacing="0" cellpadding="0" border="0" class="center-on-narrow" style="float:left;">
+	                                            <tr>
+		                                            <td class="button-td button-td-primary" style="border-radius: 4px; background: #222222;">
+														<a class="button-a button-a-primary" href="https://google.com/" style="background: #222222; border: 1px solid #000000; font-family: sans-serif; font-size: 15px; line-height: 15px; text-decoration: none; padding: 13px 17px; color: #ffffff; display: block; border-radius: 4px;">Primary Button</a>
+													</td>
+	                                          </tr>
+	                                      </table> -->
+	                                      <!-- Button : END -->
+	                                    </td>
+	                                </tr>
+	                            </table>
+	                        </th>
+	                        <!-- Column : END -->
+	                    </tr>
+	                </table>
+	            </td>
+	        </tr>
+
+			<!-- tópico 1 -->
+
+            <tr>
+                <td style="background-color: #ffffff;">
+                    
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tr>
+                            <td style="padding:32px; padding-bottom:0px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
+								<p style="padding:4px 10px; color:#000;background:#B2DFFD; border-radius:20px; display:inline-block; font-size:12px; font-weight:600;">Design Impact</p>
+                                <h1 style="margin: 0 0 10px; font-size: 24px; line-height: 30px; color: #333333; font-weight: bold;">Roads of Reliability</h1>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: #ffffff;">
+                    
+                    <table role="presentation" cellspacing="0" cellpadding="20px" border="0" width="100%">
+                        <!-- image -->
+                        <!-- <tr> 
+                            <td style="background-color: #ffffff;">
+                                <img src="https://i.ibb.co/hsV6cVP/capa-do-portal.png" alt="Blip Design: Onde você encontra tudo sobre design na Blip" border="0" width="500" height="" alt="alt_text" border="0" style="width: 100%; max-width: 600px; height: auto; background: #fff; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #000; margin: auto; display: block;" class="g-img">
+                            </td>
+                        </tr> -->
+                        <tr>
+                            <td style="padding:32px; padding-top:8px; padding-bottom:12px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #333;">
+								 <p style="margin: 0 0 10px;line-height:1.4">Você já ouviu falar sobre o programa Roads of Reliability? Esta é uma iniciativa muito importante para a Blip - e que envolve diversas áreas da empresa - , porque analisa como os incidentes de <b>indisponibilidade e instabilidade</b> impactam nossos clientes e busca soluções técnicas para isso.</p>
+                                 <p style="margin: 0 0 10px;line-height:1.4">Durante o segundo semestre de 2023, o time de Design R&D atuou em diversas atividades para investigar o impacto e desenvolver feedbacks adequados para <b>melhorar a experiência dos nossos usuários</b>. Os entregáveis e insights desse projeto já estão disponíveis no relatório publicado na Degreed!</p>
+                                 <table role="presentation" cellspacing="0" cellpadding="0" border="0" class="center-on-narrow" style="float:left;">
+                                    <tr>
+                                        <td class="button-td button-td-primary" style="border-radius: 8px; background: #1E6BF1;">
+                                            <a class="button-a button-a-primary" href="https://eu.degreed.com/articles/roads-od-reliability-a-experi-ncia-do-usu-rio?d=26997946&inputtype=article&hosted=true&hosted=true&contentSource=CMS" target="_blank" style="background: #1E6BF1; border: 1px solid #1E6BF1; font-family: sans-serif; font-size: 15px; line-height: 15px; text-decoration: none; padding: 13px 17px; color: #ffffff; display: block; border-radius: 8px;">Abrir relatório</a>
+                                        </td>
+                                  </tr>
+                              </table>
+                            </td>
+                        </tr>
+
+
+                    </table>
+                </td>
+            </tr>
+
+            <!--topico 2  -->
+            <tr>
+                <td style="background-color: #ffffff;">
+
+                    
+                    
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                          <!-- image -->
+
+                          <tr> 
+                            <td style="padding:32px; padding-bottom:0px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
+                                <img src="https://i.ibb.co/YXtkM2K/bancoPan.png" alt="Aplicativo Banco Pan" border="0" width="500" height="" alt="alt_text" border="0" style="width: 100%; max-width: 600px; height: auto; background: #fff; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #000; margin: auto; display: block;" class="g-img">
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td style="padding:32px; padding-bottom:0px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
+                               
+								<!-- <p style="padding:4px 10px; color:#000;background:#B2DFFD; border-radius:20px; display:inline-block; font-size:12px; font-weight:600;"> Design Impact</p> -->
+                                <h1 style="margin: 0 0 10px; font-size: 24px; line-height: 30px; color: #333333; font-weight: bold;">Case: Contestação de Compras para o Banco Pan</h1>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: #ffffff;">
+                    
+
+
+                    <table role="presentation" cellspacing="0" cellpadding="20px" border="0" width="100%">
+                        <!-- image -->
+                        <!-- <tr> 
+                            <td style="background-color: #ffffff;">
+                                <img src="https://i.ibb.co/hsV6cVP/capa-do-portal.png" alt="Blip Design: Onde você encontra tudo sobre design na Blip" border="0" width="500" height="" alt="alt_text" border="0" style="width: 100%; max-width: 600px; height: auto; background: #fff; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #000; margin: auto; display: block;" class="g-img">
+                            </td>
+                        </tr> -->
+                        <tr>
+                            <td style="padding:32px; padding-top:8px; padding-bottom:12px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #333;">
+								 <p style="margin: 0 0 10px;line-height:1.4">Em 2023, a Célula Miami encarou a missão de criar um autosserviço no WhatsApp do Banco Pan para contestação de compras no cartão de crédito. A falta de automatização para esse tipo de requisição gerava um alto volume de chamados para a operação de atendimento do banco, além de inúmeras reclamações de clientes no Bacen (Banco Central).</p>
+                                 <p style="margin: 0 0 10px; line-height:1.4">Quer entender como foi o processo, desafios e as soluções que reduziram em 40% os tickets sobre contestação de compras fechados pelo atendimento humano do Banco Pan? Confira o case completo desenvolvido pelo UX Designer Samuel Calais.</p>
+                                 <table role="presentation" cellspacing="0" cellpadding="0" border="0" class="center-on-narrow" style="float:left;">
+                                    <tr>
+                                        <td class="button-td button-td-primary" style="border-radius: 8px; background: #1E6BF1;">
+                                            <a class="button-a button-a-primary" href="https://eu.degreed.com/articles/case-ux-design-contesta-o-de-compra-banco-pan?d=26983421&inputtype=article&hosted=true&hosted=true&contentSource=CMS" target="_blank" style="background: #1E6BF1; border: 1px solid #1E6BF1; font-family: sans-serif; font-size: 15px; line-height: 15px; text-decoration: none; padding: 13px 17px; color: #ffffff; display: block; border-radius: 8px;">Ver case completo</a>
+                                        </td>
+                                  </tr>
+                              </table>
+                            </td>
+                        </tr>
+
+
+                    </table>
+
+
+
+                    <!-- Estrutura 50/50 -->
+                    <!-- <table role="presentation" cellspacing="0" cellpadding="20px" border="0" width="100%">
+
+
+                        <tr>
+                            <td style="padding: 22px; background-color: #ffffff;">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                    <tr>
+                                        <!-- Column : BEGIN -->
+                                        <!-- <th valign="top" width="50%" class="stack-column-center">
+                                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                                <tr>
+                                                    <td style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 0 10px 10px; text-align: left;" class="center-on-narrow">
+                                                        <p style="margin: 0;">Em 2023, a Célula Miami encarou a missão de criar um autosserviço no WhatsApp do Banco Pan para contestação de compras no cartão de crédito. A falta de automatização para esse tipo de requisição gerava um alto volume de chamados para a operação de atendimento do banco, além de inúmeras reclamações de clientes no Bacen (Banco Central).</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </th> -->
+                                        <!-- Column : END -->
+                                        <!-- Column : BEGIN -->
+                                        <!-- <th valign="top" width="50%" class="stack-column-center">
+                                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                                <tr>
+                                                    <td style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 0 10px 10px; text-align: left;" class="center-on-narrow">
+                                                        <p style="margin: 0;">Esses são apenas alguns dos aprendizados de duas pesquisas super importantes feitas pelo time de UX Research no último mês. 
+
+                                                            Quer entender mais sobre a dificuldade na adoção do produto por clientes PaaS e os motivos para perda de leads? <a href="https://design.blip.ai/document/190#/-/visao-geral"  target="_blank" style="text-decoration:underline;color:#000">Acesse os reports (via SSO) </a>.
+                                                            </p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </th> -->
+                                        <!-- Column : END -->
+                                    <!-- </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        
+                    </table>  -->
+                </td>
+            </tr>
+
+            <!-- topico 3-->
+
+            <tr>
+                <td style="background-color: #000;">
+                    
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tr>
+                            <td style="padding:32px; padding-bottom:0px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
+								<p style="padding:4px 10px; color:#000;background:#B2DFFD; border-radius:20px; display:inline-block; font-size:12px; font-weight:600;">Gestão de conhecimento</p>
+                                <h1 style="margin: 0 0 10px; font-size: 24px; line-height: 30px; color: #fff; font-weight: bold;">Repositório Design R&D</h1>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: #000;">
+                    
+                    <table role="presentation" cellspacing="0" cellpadding="20px" border="0" width="100%">
+
+                        <!-- <tr>
+                            <td style="background-color: #000;">
+                                <a href="https://docs.google.com/presentation/d/1SEUhMhqD3lP0RX4JU4qI9h7ASQM7LPsfu774ju6KlFU/edit#slide=id.g1ec78f05e0b_0_60" target="_blank">
+                                <img src="https://i.ibb.co/yynm5hX/certificacao.png" alt="Blip Design: Onde você encontra tudo sobre design na Blip" border="0" width="500" height="" border="0" style="width: 100%; max-width: 600px; height: auto; background: #000; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555; margin: auto; display: block;" class="g-img">
+                            </a>
+                            </td>
+                        </tr> -->
+                        <tr>
+                            <td style="padding:32px; padding-top:8px; padding-bottom:24px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #e9e9e9;">
+								 <p style="margin: 0 0 10px;line-height:1.4;">
+                                    
+                                    Dentro de Design R&D, temos diversos times especialistas produzindo conhecimento com foco em impactar a experiência dos nossos clientes. Pensando em organizar e disponibilizar esse conhecimento já existente para Blippers de todas as áreas, apresentamos o <a href="https://eu.degreed.com/plan/741313" target="_blank" style="color:#e9e9e9;text-decoration: underline"><b>Repositório de Conhecimento do Design R&D</b>!</a>
+                                    </p>
+                                    <p style="margin: 0 0 10px;line-height:1.4;">
+                                        Este espaço reúne diversos conteúdos, ferramentas e templates das disciplinas de <b>Content Design, Design Ops, Visual Interaction, UX Research e Product Design</b> e impulsiona o desenvolvimento dessas habilidades. Se você deseja se desenvolver em alguma dessas áreas, não deixe de seguir o plano e colocar em prática os conhecimentos compartilhados! <br><br>
+                                        </p>
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" class="center-on-narrow" style="float:left;">
+                                            <tr>
+                                                <td class="button-td button-td-primary" style="border-radius: 8px; background: #1E6BF1;">
+                                                    <a class="button-a button-a-primary" href="https://eu.degreed.com/plan/741313" target="_blank" style="background: #1E6BF1; border: 1px solid #1E6BF1; font-family: sans-serif; font-size: 15px; line-height: 15px; text-decoration: none; padding: 13px 17px; color: #ffffff; display: block; border-radius: 8px;">Conferir repositório</a>
+                                                </td>
+                                          </tr>
+                                      </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding:32px; padding-top:8px; padding-bottom:24px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #e9e9e9;">
+								 <p style="margin: 0 0 10px;line-height:1.4;">
+                                    Caso tenha alguma sugestão de conteúdos para o repositório, é só acionar o  <a href="https://take.workplace.com/groups/378779561358634" target="_blank" style="color:#e9e9e9;text-decoration: underline">Comitê de Enabling de Design R&D.</a>
+                                    </p>
+                            </td>
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+
+
+			<tr>
+	            <td style="padding: 10px; background-color: #ffffff;">
+	                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+	                    <tr>
+	                        <!-- Column : BEGIN -->
+	                        <th valign="top" width="50%" class="stack-column-center">
+	                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+	                                <tr>
+	                                    <td style="padding: 10px; text-align: center">
+	                                        <img src="https://i.ibb.co/CKxqGbG/illustrations.png" width="270" height="" alt="Ilustração do personagem Blipinho com um pacote de presente" border="0" style="width: 100%; max-width: 270px; height: auto; background: #fff; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;">
+	                                    </td>
+	                                </tr>
+	                                <tr>
+	                                    <td style="font-family: sans-serif; font-size: 15px; line-height: 1.4; color: #000; padding: 0 10px 10px; text-align: left;" class="center-on-narrow">
+                                            <h3>Ilustrações animadas</h3>
+	                                        <p style="margin: 0; ">
+                                                Agora você pode adicionar gifs da Blip em suas apresentações, vídeos e peças de divulgação! O time de Branding acaba de atualizar o portal  <a href="https://design.blip.ai/d/aTaHWAvQMQ3z/ilustracoes#/-/biblioteca-de-ilustracoes-animadas" target="_blank" style="text-decoration:underline;color:#000">Blip Design</a> com diversas ilustrações animadas que vão deixar seus materiais mais dinâmicos e atrativos.
+                                            
+                                            </p>
+	                                    </td>
+	                                </tr>
+	                            </table>
+	                        </th>
+	                        <!-- Column : END -->
+	                        <!-- Column : BEGIN -->
+                            <th valign="top" width="50%" class="stack-column-center">
+	                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+	                                <tr>
+	                                    <td style="padding: 10px; text-align: center">
+	                                        <img src="https://i.ibb.co/TY0PNpg/skills.png" width="270" height="" alt="Pacote com paraquedas sobre skills componentizadas" border="0" style="width: 100%; max-width: 270px; height: auto; background: #fff; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;">
+	                                    </td>
+	                                </tr>
+	                                <tr>
+	                                    <td style="font-family: sans-serif; font-size: 15px; line-height: 1.4; color: #000; padding: 0 10px 10px; text-align: left;" class="center-on-narrow">
+                                            <h3>Skills Componentizadas</h3>
+	                                        <p style="margin: 0;">Bora produtizar? Nosso Capítulo de UX Design tem uma biblioteca incrível com skills prontas para serem replicadas, necessitando somente alterar variáveis e possíveis regras de negócio. <a href="https://www.figma.com/file/45lpyB6Lcl7QlO8qWxXnW0/%5BCSPS%5D-1.0.0---Biblioteca-de-Skills?type=design&node-id=829%3A2938&mode=design&t=l0g12f2qK7iYbeWT-1" target="_blank" style="text-decoration: underline; color:#000; font-weight:bolder;">Acesse a biblioteca</a> e não esqueça de dar seu <a href="https://licenastake.typeform.com/to/Ffp8FgRk" target="_blank" style="color:#000;text-decoration:underline;">feedback</a></p>
+	                                    </td>
+	                                </tr>
+	                            </table>
+	                        </th>
+	                        <!-- Column : END -->
+	                    </tr>
+	                </table>
+	            </td>
+	        </tr>
+            <!-- 1 Column Text + Button : END -->
+            <tr>
+                <td style="background-color: #F6F6F6;">
+                    
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tr>
+                            <td style="padding:42px; padding-top:10px;padding-bottom:0px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
+                                <h2 style="margin: 0 0 10px; font-size: 20px; line-height: 28px; color: #333333; font-weight:400; text-align:center;padding:12px;">Participe do grupo <a href="https://eu.degreed.com/plan/732639" target="_blank" style="text-decoration: underline; color:#000">Design Crew no Workplace</a> e fique por dentro de todas as atualizações dos times de Design na Blip!</h2>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- Background Image with Text : BEGIN -->
+            <tr>
+                <td style="background-color: #0C4EC0;">
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tr>
+                            <td style="padding:32px; padding-bottom:0px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
+								<p style="padding:4px 10px; color:#000;background:#B2DFFD; border-radius:20px; display:inline-block; font-size:12px; font-weight:600;">Tell me UAI</p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: #0C4EC0;">
+                    <table role="presentation" cellspacing="0" cellpadding="20px" border="0" width="100%">
+                        <tr>
+                            <td style="background-color: #0C4EC0;">
+                                <img src="https://i.ibb.co/17DHCTK/acessibility-img.png" alt="Ilustrações de acessibilidade" border="0" width="500" height="" border="0" style="width: 100%; max-width: 600px; height: auto; background: #0C4EC0; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555; margin: auto; display: block;" class="g-img">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="background-color: #0C4EC0;">
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tr>
+                            <td style="padding:20px; padding-bottom:0px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
+                                <h1 style="margin: 0 0 10px; font-size: 24px; line-height: 30px; color: #fff; font-weight: bold;">Acessibilidade no DS</h1>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+	            <td style="padding: 10px; padding-top:0px; background-color: #0C4EC0;">
+	                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+	                    <tr>
+	                        <!-- Column : BEGIN -->
+	                        <th valign="top" width="50%" class="stack-column-center">
+	                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+	                                <tr>
+	                                    <td style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #fff; padding: 0 10px 10px; text-align: left;" class="center-on-narrow">
+	                                        <p style="margin: 0;line-height:1.4">Considerando que no Brasil existem quase <a  style="color:#fff;text-decoration:underline;" href="https://www.gov.br/mdh/pt-br/assuntos/noticias/2023/julho/brasil-tem-18-6-milhoes-de-pessoas-com-deficiencia-indica-pesquisa-divulgada-pelo-ibge-e-mdhc" target="_blank">19 milhões de pessoas com deficiência</a>, é fundamental considerar a a acessibilidade quando criamos uma interface, um fluxo conversacional ou mesmo uma apresentação</p>
+                                            <br>
+                                            <p style="margin: 0;line-height:1.4">É por isso que o <a  style="color:#fff;text-decoration:underline;" href="https://design.blip.ai/d/aTaHWAvQMQ3z/ilustracoes#/-/biblioteca-de-ilustracoes" target="_blank">UAI Design System</a> agora conta com seis novas ilustrações de pessoas com diferentes tipos de deficiência!</p>
+
+	                                    </td>
+	                                </tr>
+	                            </table>
+	                        </th>
+	                        <!-- Column : END -->
+	                        <!-- Column : BEGIN -->
+                            <th valign="top" width="50%" class="stack-column-center">
+	                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+	                                <tr>
+	                                    <td style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #fff; padding: 0 10px 10px; text-align: left;" class="center-on-narrow">
+	                                        <p style="margin: 0; line-height:1.4">Desenvolvidas a partir da nova identidade visual da Blip, o time de Visual & Interaction aumentou as opções de ilustrações disponíveis no DS para diversificar o seu uso e reforçar que as PCDs são um público muito importante para a Blip, por isso devem ser representadas em todos os nossos produtos. 
+                                            </p>
+	                                    </td>
+	                                </tr>
+	                            </table>
+	                        </th>
+	                        <!-- Column : END -->
+	                    </tr>
+	                </table>
+	            </td>
+	        </tr>
+            <tr>
+                <td style="background-color: #ffffff;">
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">                        
+                        <tr>
+                            <td style="padding:32px; padding-bottom:0px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
+                               
+								<p style="padding:4px 10px; color:#000;background:#B2DFFD; border-radius:20px; display:inline-block; font-size:12px; font-weight:600;"> Design em foco</p>
+                                <h1 style="margin: 0 0 10px; font-size: 24px; line-height: 30px; color: #333333; font-weight: bold;">Estratégia de Localização é #GoGlobal!</h1>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: #ffffff;">
+                    
+
+
+                    <table role="presentation" cellspacing="0" cellpadding="20px" border="0" width="100%">
+                        <!-- image -->
+                        <!-- <tr> 
+                            <td style="background-color: #ffffff;">
+                                <img src="https://i.ibb.co/hsV6cVP/capa-do-portal.png" alt="Blip Design: Onde você encontra tudo sobre design na Blip" border="0" width="500" height="" alt="alt_text" border="0" style="width: 100%; max-width: 600px; height: auto; background: #fff; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #000; margin: auto; display: block;" class="g-img">
+                            </td>
+                        </tr> -->
+                        <tr>
+                            <td style="padding:32px; padding-top:8px; padding-bottom:24px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #333;">
+								 <p style="margin: 0 0 10px;line-height:1.4">Você já ouviu falar sobre Localização? Essa é uma das principais estratégias para empresas em internacionalização, como a Blip. A Content Designer Gabriela Tirelli fez um post no <a href="https://www.blip.ai/blog/design/localizacao-estrategia-presenca-global/" target="_blank" style="text-decoration:underline;color:#000;">Blip Blog</a></a> explicando esse conceito (spoiler: vai muito além de apenas tradução de texto) e qual a sua relação com produtos digitais. Acompanhe nossas comunicações, pois este é só o início do projeto de Localização para uma Blip Global!</p>
+                           
+                            </td>
+                        </tr>
+                    </table>
+
+
+
+                    <!-- Estrutura 50/50 -->
+                    <!-- <table role="presentation" cellspacing="0" cellpadding="20px" border="0" width="100%">
+
+
+                        <tr>
+                            <td style="padding: 22px; background-color: #ffffff;">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                    <tr>
+                                        <!-- Column : BEGIN -->
+                                        <!-- <th valign="top" width="50%" class="stack-column-center">
+                                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                                <tr>
+                                                    <td style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 0 10px 10px; text-align: left;" class="center-on-narrow">
+                                                        <p style="margin: 0;">Em 2023, a Célula Miami encarou a missão de criar um autosserviço no WhatsApp do Banco Pan para contestação de compras no cartão de crédito. A falta de automatização para esse tipo de requisição gerava um alto volume de chamados para a operação de atendimento do banco, além de inúmeras reclamações de clientes no Bacen (Banco Central).</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </th> -->
+                                        <!-- Column : END -->
+                                        <!-- Column : BEGIN -->
+                                        <!-- <th valign="top" width="50%" class="stack-column-center">
+                                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                                <tr>
+                                                    <td style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 0 10px 10px; text-align: left;" class="center-on-narrow">
+                                                        <p style="margin: 0;">Esses são apenas alguns dos aprendizados de duas pesquisas super importantes feitas pelo time de UX Research no último mês. 
+
+                                                            Quer entender mais sobre a dificuldade na adoção do produto por clientes PaaS e os motivos para perda de leads? <a href="https://design.blip.ai/document/190#/-/visao-geral"  target="_blank" style="text-decoration:underline;color:#000">Acesse os reports (via SSO) </a>.
+                                                            </p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </th> -->
+                                        <!-- Column : END -->
+                                    <!-- </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        
+                    </table>  -->
+                </td>
+            </tr>
+
+
+			
+
+	        <!-- Thumbnail Right, Text Left : BEGIN -->
+	        <tr>
+	            <td dir="ltr" width="100%" style="padding: 10px; background-color: #e0e0e0;">
+	                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+	                    <tr>
+							<th width="66.66%" class="stack-column-center">
+	                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+	                                <tr>
+	                                    <td dir="ltr" valign="top" style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 16px; text-align: center;" class="center-on-narrow">
+	                                        <h2 style="margin: 0 0 0px 0; font-family: sans-serif; font-size: 18px; line-height: 22px; color: #333333; font-weight: bold;">O que achou dessa newsletter?</h2>
+	                                        <!-- Button : BEGIN -->
+	                                       
+	                                        <!-- Button : END -->
+	                                    </td>
+	                                </tr>
+	                            </table>
+	                        </th>
+	                        <!-- Column : BEGIN -->
+	                        <th width="33.33%" class="stack-column-center">
+								<table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: auto;">
+                                    <tr>
+                                        <td class="button-td button-td-primary" style="border-radius: 4px; background: #1E6BF1;">
+											<a class="button-a button-a-primary" href="https://forms.gle/PbXGNmSP26KJzZ9p6" target="_blank" style="background: #1E6BF1; border: 1px solid #1E6BF1; font-family: sans-serif; font-size: 15px; line-height: 15px; text-decoration: none; padding: 13px 17px; color: #ffffff; display: block; border-radius: 4px;">Conte aqui</a>
+										</td>
+                                    </tr>
+                                </table>
+	                        </th>
+	                        <!-- Column : END -->
+	                        <!-- Column : BEGIN -->
+	                        
+	                        <!-- Column : END -->
+	                    </tr>
+	                </table>
+	            </td>
+	        </tr>
+	        <!-- Thumbnail Right, Text Left : END -->
+
+	        <!-- Clear Spacer : BEGIN -->
+	        <tr>
+	            <td aria-hidden="true" height="40" style="font-size: 0px; line-height: 0px;">
+	                &nbsp;
+	            </td>
+	        </tr>
+	        <!-- Clear Spacer : END -->
+
+	        <!-- 1 Column Text : BEGIN -->
+	        
+	        <!-- 1 Column Text : END -->
+
+	    </table>
+	    <!-- Email Body : END -->
+
+	    <!-- Email Footer : BEGIN -->
+        <!-- <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="margin: auto;" class="email-container">
+	        <tr>
+	            <td style="padding: 24px; font-family: sans-serif; font-size: 12px; line-height: 15px; text-align: center; color: #000;">
+	                <webversion style="color: #000; text-decoration: underline; font-weight: bold;">Ver como página da Web</webversion>
+	                <br><br>
+	                enviado por www.blip.ai<br><span class="unstyle-auto-detected-links">Rua Sergipe, 1440, Belo Horizonte, Minas Gerais</span>
+	                <br><br>
+	                <unsubscribe style="color: #000; text-decoration: underline;">Se deseja não receber mais mensagens como esta, clique aqui.</unsubscribe>
+	            </td>
+	        </tr>
+	    </table> -->
+	    <!-- Email Footer : END -->
+    <!--[if mso | IE]>
+    </td>
+    </tr>
+    </table>
+    <![endif]-->
+    </center>
+</body>
+</html>
